@@ -1,28 +1,46 @@
 ---
-
 layout: page
 permalink: /contact/
 title: Contact
+#description: Contact information and professional social media links.
 nav: true
 nav_order: 6
-------------
+---
 
 <style>
   :root {
     --bg-deep: #0b1120;
     --bg-panel: #111a2e;
     --bg-card: #16213a;
-    --border-soft: rgba(255, 255, 255, 0.08);
+    --border-soft: rgba(255,255,255,0.08);
     --text-main: #dde3ef;
     --text-dim: #8b93a7;
     --accent: #5b8def;
-    --accent-soft: rgba(91, 141, 239, 0.15);
+    --accent-soft: rgba(91,141,239,0.15);
   }
 
   .contact-page {
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px 0 40px;
+  }
+
+  .contact-intro {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    text-align: center;
+  }
+
+  .contact-intro h1 {
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #eef1f8;
+  }
+
+  .contact-intro p {
+    margin-bottom: 0;
+    color: var(--text-dim);
+    line-height: 1.7;
   }
 
   .contact-grid {
@@ -111,6 +129,30 @@ nav_order: 6
     background: #74a0f2;
   }
 
+  .contact-details {
+    margin-top: 45px;
+  }
+
+  .contact-details h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #eef1f8;
+  }
+
+  .contact-details p {
+    line-height: 1.8;
+    color: var(--text-main);
+  }
+
+  .contact-details ul {
+    padding-left: 20px;
+  }
+
+  .contact-details li {
+    margin-bottom: 10px;
+    color: var(--text-main);
+  }
+
   @media (max-width: 768px) {
     .contact-grid {
       grid-template-columns: 1fr;
@@ -126,6 +168,10 @@ nav_order: 6
   @media (max-width: 576px) {
     .contact-page {
       padding: 10px 0 30px;
+    }
+
+    .contact-intro {
+      margin-bottom: 25px;
     }
 
     .contact-card {
@@ -145,64 +191,81 @@ nav_order: 6
 
 <div class="contact-page">
 
+  <!-- <div class="contact-intro">
+    <h1>Contact Information</h1>
+
+    <p>
+      If you would like to discuss research, academic collaboration,
+      teaching, or other professional opportunities, please feel free
+      to contact me through the following platforms.
+    </p>
+  </div> -->
+
   <div class="contact-grid">
 
-```
-<div class="contact-card">
-  <div>
-    <div class="contact-icon">
-      <i class="fas fa-envelope"></i>
+    <!-- Email -->
+    <div class="contact-card">
+
+      <div>
+        <div class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+
+        <h3 class="contact-title">Email</h3>
+      </div>
+
+      
+        href="mailto:shakil.ahmed@bubt.edu.bd"
+        class="contact-button primary"
+      >
+        shakil.ahmed@bubt.edu.bd
+      </a>
+
     </div>
 
-    <h3 class="contact-title">Email</h3>
-  </div>
+    <!-- LinkedIn -->
+    <div class="contact-card">
 
-  <a
-    href="mailto:shakil.ahmed@bubt.edu.bd"
-    class="contact-button primary"
-  >
-    shakil.ahmed@bubt.edu.bd
-  </a>
-</div>
+      <div>
+        <div class="contact-icon">
+          <i class="fab fa-linkedin"></i>
+        </div>
 
-<div class="contact-card">
-  <div>
-    <div class="contact-icon">
-      <i class="fab fa-linkedin"></i>
+        <h3 class="contact-title">LinkedIn</h3>
+      </div>
+
+      
+        href="https://www.linkedin.com/in/md-shakil-ahmed-6482b13b3/"
+        class="contact-button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Connect
+      </a>
+
     </div>
 
-    <h3 class="contact-title">LinkedIn</h3>
-  </div>
+    <!-- Twitter/X -->
+    <div class="contact-card">
 
-  <a
-    href="https://www.linkedin.com/in/md-shakil-ahmed-6482b13b3/"
-    class="contact-button"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Connect
-  </a>
-</div>
+      <div>
+        <div class="contact-icon">
+          <i class="fab fa-twitter"></i>
+        </div>
 
-<div class="contact-card">
-  <div>
-    <div class="contact-icon">
-      <i class="fab fa-twitter"></i>
+        <h3 class="contact-title">Twitter</h3>
+      </div>
+
+      
+        href="https://x.com/home"
+        class="contact-button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Follow
+      </a>
+
     </div>
-
-    <h3 class="contact-title">Twitter</h3>
-  </div>
-
-  <a
-    href="https://x.com/home"
-    class="contact-button"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Follow
-  </a>
-</div>
-```
 
   </div>
 
