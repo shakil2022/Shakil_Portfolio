@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: >
   <a href="https://bubt.edu.bd/department/department-of-computer-science-engineering/faculty/profile/MDSHA">
@@ -25,431 +25,789 @@ latest_posts:
   scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 0 # leave blank to include all the blog posts
 ---
-
 <style>
-  :root {
-    --bg-deep: #0b1120;
-    --bg-panel: #111a2e;
-    --bg-card: #16213a;
-    --border-soft: rgba(255,255,255,0.08);
-    --text-main: #dde3ef;
-    --text-dim: #8b93a7;
-    --accent: #5b8def;
-    --accent-soft: rgba(91,141,239,0.15);
-  }
 
-  * {
-    box-sizing: border-box;
-  }
+/* =========================================================
+   GLOBAL DESIGN
+   Clean academic portfolio:
+   White background + black typography only
+   ========================================================= */
 
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
+:root {
+  --page-bg: #ffffff;
+  --text-main: #111111;
+  --text-secondary: #333333;
+  --text-muted: #555555;
+  --border-color: #d9d9d9;
+  --card-bg: #ffffff;
+}
 
-  body {
-    background: var(--bg-deep);
-    color: var(--text-main);
-    font-family: 'Inter', system-ui, sans-serif;
-    line-height: 1.7;
-  }
 
-  a {
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(91,141,239,0.3);
-  }
+/* =========================================================
+   GLOBAL RESET
+   ========================================================= */
 
-  a:hover {
-    border-bottom-color: var(--accent);
-  }
+* {
+  box-sizing: border-box;
+}
 
-  .hero {
-    position: relative;
-    overflow: hidden;
-    background:
-      radial-gradient(
-        ellipse at 20% 10%,
-        rgba(91,141,239,0.10),
-        transparent 60%
-      ),
-      var(--bg-panel);
-    padding: 64px 24px 56px;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
-  .stars {
-    position: absolute;
-    inset: 0;
-    background-image:
-      radial-gradient(1px 1px at 10% 20%, #ffffff55 50%, transparent 51%),
-      radial-gradient(1px 1px at 80% 15%, #ffffff40 50%, transparent 51%),
-      radial-gradient(1.5px 1.5px at 60% 60%, #ffffff35 50%, transparent 51%),
-      radial-gradient(1px 1px at 30% 80%, #ffffff45 50%, transparent 51%),
-      radial-gradient(1px 1px at 90% 70%, #ffffff30 50%, transparent 51%),
-      radial-gradient(1.5px 1.5px at 45% 35%, #ffffff40 50%, transparent 51%);
-    opacity: 0.6;
-    pointer-events: none;
-  }
 
-  .hero-inner {
-    position: relative;
-    max-width: 760px;
-    margin: 0 auto;
-    display: flex;
-    gap: 28px;
-    align-items: flex-start;
-  }
+/* =========================================================
+   PAGE TYPOGRAPHY
+   ========================================================= */
 
-  .avatar {
-    width: 110px;
-    height: 110px;
-    flex: none;
-    border-radius: 14px;
-    object-fit: cover;
-    border: 2px solid var(--border-soft);
-  }
+body {
+  background: #ffffff !important;
+  color: #111111 !important;
 
-  .bio p {
-    margin: 0 0 16px;
-    font-size: 15px;
-    color: var(--text-main);
-  }
+  /*
+    Professional academic typography.
+    Georgia provides a natural and readable appearance
+    for long-form academic content.
+  */
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
-  .bio p:last-child {
-    margin-bottom: 0;
-  }
+  font-size: 18px;
+  line-height: 1.85;
+  font-weight: 400;
+}
 
-  .interests {
-    max-width: 760px;
-    margin: 40px auto 0;
-    padding: 0 24px;
-    position: relative;
-  }
 
-  .interests h3 {
-    font-size: 12px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-    margin: 0 0 14px;
-  }
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
 
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+.post,
+.post-content,
+.about,
+.container {
+  color: #111111;
+}
 
-  .tag {
-    background: var(--accent-soft);
-    color: #a9c6ff;
-    border: 1px solid rgba(91,141,239,0.25);
-    padding: 7px 14px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 500;
-    white-space: nowrap;
-  }
 
-  .divider {
-    height: 36px;
-  }
+/*
+  Introductory biography paragraphs
+*/
 
-  .education-section {
-    background:
-      radial-gradient(
-        ellipse at 70% 0%,
-        rgba(91,141,239,0.08),
-        transparent 55%
-      ),
-      var(--bg-deep);
-    padding: 56px 24px 72px;
-  }
+.post p,
+.post-content p,
+.about p {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #111111;
 
-  .education-section h2,
-  .section-block h2 {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    font-size: 32px;
-    margin: 0 0 40px;
-    color: #eef1f8;
-  }
+  text-align: justify;
+  text-justify: inter-word;
 
-  .timeline {
-    max-width: 760px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
+  margin-bottom: 22px;
+}
 
-  .edu-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-soft);
-    border-radius: 12px;
-    padding: 20px 24px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
 
-  .edu-main {
-    flex: 1;
-    min-width: 220px;
-  }
+/* =========================================================
+   HEADINGS
+   Keep heading size unchanged / professional
+   ========================================================= */
 
-  .edu-school {
-    font-size: 16px;
-    font-weight: 600;
-    color: #f0f3fa;
-    margin: 0 0 4px;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000 !important;
 
-  .edu-degree {
-    font-size: 14px;
-    color: var(--text-dim);
-    margin: 0;
-  }
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
-  .edu-note {
-    font-size: 13px;
-    color: #7c8aa8;
-    margin: 8px 0 0;
-    font-style: italic;
-  }
+  font-weight: 700;
+}
 
-  .edu-side {
-    text-align: right;
-    font-size: 13px;
-    color: var(--text-dim);
-    flex: none;
-  }
 
-  .edu-loc {
-    font-weight: 500;
-    color: #c3cbe0;
-  }
+/*
+  Section headings
+*/
 
-  .edu-date {
-    margin-top: 4px;
-  }
+.education-section h2,
+.section-block h2 {
+  text-align: center;
 
-  .divider-line {
-    max-width: 760px;
-    margin: 0 auto;
-    border: true;
-    border-top: 1px solid var(--border-soft);
-  }
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
-  .section-block {
-    padding: 56px 24px;
-  }
+  font-weight: 700;
+  font-size: 32px;
 
-  .cert-list {
-    max-width: 760px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-  }
+  color: #000000;
 
-  .cert-item {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
+  margin: 0 0 42px;
+}
 
-  .cert-main {
-    flex: 1;
-    min-width: 220px;
-  }
 
-  .cert-name {
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--accent);
-    margin: 0 0 6px;
-  }
+/* =========================================================
+   LINKS
+   Black only
+   ========================================================= */
 
-  .cert-desc {
-    font-size: 14px;
-    color: var(--text-dim);
-    margin: 0;
-  }
+a {
+  color: #000000 !important;
 
-  .cert-date {
-    font-size: 13px;
-    color: var(--text-dim);
-    flex: none;
-    white-space: nowrap;
-  }
+  text-decoration: underline;
 
-  .edu-school-group {
-    margin-bottom: 2px;
-  }
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 
-  .edu-sub {
-    margin: 14px 0 0;
-    padding-top: 14px;
-    border-top: 1px solid var(--border-soft);
-  }
+  transition: opacity 0.2s ease;
+}
 
-  .edu-sub:first-of-type {
-    margin-top: 10px;
-    padding-top: 0;
-    border-top: none;
-  }
+a:hover {
+  color: #000000 !important;
+  opacity: 0.65;
+}
 
-  .placeholder-note {
-    max-width: 760px;
-    margin: 0 auto;
-    font-size: 14px;
-    color: var(--text-dim);
-    text-align: center;
-  }
 
-  @media (max-width: 600px) {
-    .hero-inner {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+/* =========================================================
+   STRONG AND EMPHASIS
+   ========================================================= */
 
-    .edu-card {
-      flex-direction: column;
-    }
+strong {
+  color: #000000;
+  font-weight: 700;
+}
 
-    .edu-side {
-      text-align: left;
-    }
+em {
+  color: #111111;
+}
 
-    .cert-item {
-      flex-direction: column;
-    }
-  }
-  /* ==================== RESEARCH INTERESTS ==================== */
+
+/* =========================================================
+   HORIZONTAL DIVIDERS
+   ========================================================= */
+
+.divider-line {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 60px auto;
+
+  border: none;
+  border-top: 1px solid #cccccc;
+}
+
+
+/* =========================================================
+   RESEARCH INTERESTS
+   ========================================================= */
 
 .research-interests {
-  max-width: 760px;
-  margin: 40px auto 0;
-  padding: 28px 0 0;
-  border-top: 1px solid var(--border-soft);
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 50px 24px;
+
+  text-align: center;
 }
 
+
 .research-interests h2 {
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 17px;
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 32px;
+
   font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #eef1f8;
-  margin: 0 0 16px;
+
+  color: #000000;
+
+  margin: 0 0 28px;
 }
+
+
+/*
+  Research interest tags
+*/
 
 .interest-tags {
   display: flex;
+
   flex-wrap: wrap;
-  gap: 10px;
+
+  justify-content: center;
+
+  gap: 12px;
 }
+
 
 .interest-tag {
   display: inline-flex;
+
   align-items: center;
-  padding: 8px 13px;
-  border-radius: 18px;
-  background: rgba(91, 141, 239, 0.10);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  color: #dce5f5;
-  font-size: 13px;
+
+  justify-content: center;
+
+  padding: 8px 16px;
+
+  border: 1px solid #000000;
+
+  border-radius: 4px;
+
+  background: #ffffff;
+
+  color: #000000;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
   font-weight: 500;
-  line-height: 1.2;
+
+  line-height: 1.4;
+
   white-space: nowrap;
+
   transition: all 0.2s ease;
 }
 
+
 .interest-tag:hover {
-  background: rgba(91, 141, 239, 0.18);
-  border-color: rgba(91, 141, 239, 0.35);
-  color: #ffffff;
+  background: #f5f5f5;
+
+  color: #000000;
 }
 
-@media (max-width: 600px) {
-  .research-interests {
-    margin-top: 32px;
-    padding: 24px 0 0;
-  }
 
-  .research-interests h2 {
-    font-size: 16px;
-  }
+/* =========================================================
+   EDUCATION SECTION
+   ========================================================= */
 
-  .interest-tags {
-    gap: 8px;
-  }
+.education-section {
+  background: #ffffff;
 
-  .interest-tag {
-    font-size: 12px;
-    padding: 7px 11px;
-  }
+  padding: 56px 24px 70px;
 }
+
+
+.timeline {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+/*
+  Education cards
+*/
+
+.edu-card {
+  background: #ffffff;
+
+  border: 1px solid #d0d0d0;
+
+  border-radius: 0;
+
+  padding: 24px 28px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+
+.edu-main {
+  flex: 1;
+
+  min-width: 240px;
+
+  text-align: left;
+}
+
+
+/*
+  University / institution
+*/
+
+.edu-school {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  color: #000000;
+
+  margin: 0 0 6px;
+}
+
+
+/*
+  Degree
+*/
+
+.edu-degree {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  color: #111111;
+
+  margin: 0;
+}
+
+
+/*
+  Thesis
+*/
+
+.edu-note {
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  color: #333333;
+
+  margin: 12px 0 0;
+
+  font-style: italic;
+
+  text-align: justify;
+}
+
+
+/*
+  Location and date
+*/
+
+.edu-side {
+  text-align: right;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  color: #222222;
+
+  flex: none;
+}
+
+
+.edu-loc {
+  font-weight: 600;
+
+  color: #000000;
+}
+
+
+.edu-date {
+  margin-top: 5px;
+}
+
+
+/*
+  School grouping
+*/
+
+.edu-school-group {
+  margin-bottom: 4px;
+}
+
+
+.edu-sub {
+  margin: 14px 0 0;
+
+  padding-top: 14px;
+
+  border-top: 1px solid #dddddd;
+}
+
+
+.edu-sub:first-of-type {
+  margin-top: 10px;
+
+  padding-top: 0;
+
+  border-top: none;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.section-block {
+  max-width: 100%;
+
+  padding: 56px 24px;
+
+  background: #ffffff;
+}
+
+
+.cert-list {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 26px;
+}
+
+
+/* =========================================================
+   HONORS / CERTIFICATIONS / ACTIVITIES
+   ========================================================= */
+
+.cert-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid #dddddd;
+}
+
+
+.cert-item:last-child {
+  border-bottom: none;
+}
+
+
+.cert-main {
+  flex: 1;
+
+  min-width: 240px;
+
+  text-align: left;
+}
+
+
+/*
+  Item title
+*/
+
+.cert-name {
+  margin: 0 0 8px;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  color: #000000;
+}
+
+
+.cert-name a {
+  color: #000000 !important;
+}
+
+
+/*
+  Description
+*/
+
+.cert-desc {
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: #222222;
+
+  text-align: justify;
+}
+
+
+/*
+  Date
+*/
+
+.cert-date {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  color: #222222;
+
+  flex: none;
+
+  white-space: nowrap;
+
+  text-align: right;
+}
+
 
 /* =========================================================
    TECHNICAL SKILLS
    ========================================================= */
 
 .skills-list {
+  max-width: 900px;
+
+  margin: 0 auto;
 
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 18px;
+  gap: 22px;
 }
+
+
+/*
+  Skill cards
+*/
 
 .skill-item {
+  background: #ffffff;
 
-  background: var(--portfolio-card);
+  border: 1px solid #cccccc;
 
-  border: 1px solid var(--portfolio-border);
+  border-radius: 0;
 
-  border-radius: 10px;
+  padding: 26px;
 
-  padding: 22px;
-
-  transition: all 0.25s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
 
 .skill-item:hover {
+  transform: translateY(-3px);
 
-  background: var(--portfolio-card-hover);
-
-  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
+
+/*
+  Skill category
+*/
+
 .skill-name {
+  margin: 0 0 12px;
 
-  margin: 0 0 10px;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 
-  color: var(--portfolio-accent);
+  color: #000000;
 
   font-weight: 700;
 
-  font-size: 1rem;
+  font-size: 18px;
 }
 
-.skill-desc {
 
+/*
+  Skill description
+*/
+
+.skill-desc {
   margin: 0;
 
-  color: var(--portfolio-muted);
+  font-size: 16px;
 
-  line-height: 1.7;
+  line-height: 1.8;
 
-  font-size: 0.88rem;
+  color: #222222;
+
+  text-align: justify;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+  background: #ffffff !important;
+
+  color: #111111 !important;
+
+  border-top: 1px solid #cccccc;
+
+  margin-top: 50px;
+
+  padding: 28px 0;
+}
+
+
+.site-footer p {
+  margin: 0;
+
+  color: #111111 !important;
+
+  text-align: center;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 17px;
+  }
+
+
+  .post p,
+  .post-content p,
+  .about p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    text-align: left;
+  }
+
+
+  .education-section h2,
+  .section-block h2,
+  .research-interests h2 {
+    font-size: 28px;
+  }
+
+
+  .edu-card {
+    flex-direction: column;
+
+    gap: 16px;
+
+    padding: 22px;
+  }
+
+
+  .edu-side {
+    text-align: left;
+  }
+
+
+  .cert-item {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+
+  .cert-date {
+    text-align: left;
+  }
+
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+
+  .skill-item {
+    padding: 22px;
+  }
+
+
+  .interest-tag {
+    font-size: 13px;
+
+    padding: 7px 13px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .section-block,
+  .education-section,
+  .research-interests {
+    padding-left: 18px;
+
+    padding-right: 18px;
+  }
+
+
+  .education-section h2,
+  .section-block h2,
+  .research-interests h2 {
+    font-size: 25px;
+  }
+
+
+  .post p,
+  .post-content p,
+  .about p {
+    font-size: 16px;
+  }
+
 }
 
 </style>
