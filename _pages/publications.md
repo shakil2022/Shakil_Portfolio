@@ -1003,13 +1003,12 @@ html[data-theme="light"] .academic-publications .bibliography .year {
 
   <div class="container text-center">
 
-```
 <p class="mb-0">
 
   © 2026 Md. Shakil Ahmed. All rights reserved.
 
 </p>
-```
+
 
   </div>
 
