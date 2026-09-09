@@ -5,80 +5,364 @@
 </style> <link rel="stylesheet" href="/Shakil_Portfolio/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/Shakil_Portfolio/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/Shakil_Portfolio/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://shakil2022.github.io/Shakil_Portfolio/projects/"> <script src="/Shakil_Portfolio/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/Shakil_Portfolio/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/Shakil_Portfolio/"> <span class="font-weight-bold">Md.</span> Shakil Ahmed </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/Shakil_Portfolio/projects/">Projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/contact/">Contact </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Projects</h1> <p class="post-description"></p> </header> <article> <style>
-  :root {
-    --bg-deep: #0b1120;
-    --bg-panel: #111a2e;
-    --bg-card: #16213a;
-    --border-soft: rgba(255,255,255,0.08);
-    --text-main: #dde3ef;
-    --text-dim: #8b93a7;
-    --accent: #5b8def;
-    --accent-soft: rgba(91,141,239,0.15);
-  }
+  /* =========================================================
+     PROJECTS PAGE — WHITE / BLACK ACADEMIC STYLE
+     ========================================================= */
 
   .projects,
   .projects .container {
-    font-family: 'Inter', system-ui, sans-serif;
-    color: var(--text-main);
+    width: 100%;
+    color: #111111;
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.8;
   }
 
+  /* Main headings */
   .projects h1,
   .projects h2,
   .projects h3,
   .projects h4,
+  .projects h5,
+  .projects h6,
   .projects .card-title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    color: #eef1f8;
+    color: #000000 !important;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
   }
 
-  /* Project cards */
+  .projects h1 {
+    font-size: 32px;
+  }
+
+  /* =========================================================
+     PROJECT GRID
+     ========================================================= */
+
+  .projects > .row {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 24px;
+  }
+
+  /* =========================================================
+     PROJECT CARDS
+     ========================================================= */
+
   .projects .card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-soft);
-    border-radius: 12px;
-    color: var(--text-main);
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    height: 100%;
+    background: #ffffff;
+    color: #111111;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+
+    box-shadow:
+      0 4px 14px rgba(0, 0, 0, 0.07);
+
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
   }
 
   .projects .card:hover {
     transform: translateY(-4px);
-    border-color: rgba(91, 141, 239, 0.35);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+
+    border-color: #999999;
+
+    box-shadow:
+      0 10px 26px rgba(0, 0, 0, 0.13);
   }
 
-  .projects .card-subtitle,
+  /* =========================================================
+     CARD BODY
+     ========================================================= */
+
+  .projects .card-body {
+    padding: 24px;
+    background: #ffffff;
+  }
+
+  /* Project title */
+  .projects .card-title {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    color: #000000 !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    line-height: 1.45;
+    font-weight: 700;
+  }
+
+  /* Project description */
   .projects .card-text,
-  .projects .text-muted {
-    color: var(--text-dim) !important;
+  .projects .card-subtitle {
+    color: #2b2b2b !important;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 16px;
+    line-height: 1.75;
+
+    text-align: justify;
+    text-justify: inter-word;
   }
 
-  /* Links inside cards */
+  /* Muted text */
+  .projects .text-muted {
+    color: #555555 !important;
+  }
+
+  /* =========================================================
+     PROJECT LINKS
+     ========================================================= */
+
   .projects .card a,
   .projects a.stretched-link {
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(91,141,239,0.3);
+    color: #000000 !important;
+    text-decoration: underline;
+
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
+    transition: opacity 0.2s ease;
   }
 
-  .projects .card a:hover {
-    border-bottom-color: var(--accent);
+  .projects .card a:hover,
+  .projects a.stretched-link:hover {
+    color: #000000 !important;
+    opacity: 0.6;
   }
 
-  /* Tags / badges (e.g. category, year) */
+  /* =========================================================
+     PROJECT IMAGE
+     ========================================================= */
+
+  .projects .card-img-top {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+
+    border-bottom: 1px solid #d6d6d6;
+  }
+
+  /* =========================================================
+     TAGS / BADGES
+     ========================================================= */
+
   .projects .badge,
   .projects .tag {
-    background: var(--accent-soft);
-    color: #a9c6ff;
-    border: 1px solid rgba(91,141,239,0.25);
-    border-radius: 8px;
-    font-weight: 500;
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    background: #f5f5f5 !important;
+    color: #222222 !important;
+
+    border: 1px solid #cfcfcf;
+
+    border-radius: 4px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.4;
   }
 
-  /* Category / importance dividers, if theme renders them */
+  /* =========================================================
+     BUTTONS
+     ========================================================= */
+
+  .projects .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 17px;
+
+    background: #ffffff !important;
+    color: #000000 !important;
+
+    border: 1px solid #000000;
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none !important;
+
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .projects .btn:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+
+    border-color: #000000;
+
+    transform: translateY(-2px);
+  }
+
+  /* =========================================================
+     DIVIDERS
+     ========================================================= */
+
   .projects hr,
   .projects .divider {
-    border-top: 1px solid var(--border-soft);
+    border: none;
+    border-top: 2px solid #000000;
+    margin: 30px auto;
+  }
+
+  /* =========================================================
+     HORIZONTAL PROJECTS
+     ========================================================= */
+
+  .projects .row-cols-md-2 .card {
+    min-height: 200px;
+  }
+
+  /* =========================================================
+     FOOTER
+     ========================================================= */
+
+  .site-footer {
+    background: #ffffff !important;
+    color: #111111 !important;
+
+    border-top: 2px solid #000000;
+
+    margin-top: 0;
+    padding: 25px 0;
+  }
+
+  .site-footer p {
+    margin: 0;
+
+    color: #111111 !important;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* =========================================================
+     TABLET
+     ========================================================= */
+
+  @media (max-width: 900px) {
+
+    .projects {
+      font-size: 17px;
+    }
+
+    .projects > .row {
+      padding-left: 20px;
+      padding-right: 20px;
+      row-gap: 20px;
+    }
+
+    .projects .card-body {
+      padding: 22px;
+    }
+
+    .projects .card-title {
+      font-size: 20px;
+    }
+
+    .projects .card-text,
+    .projects .card-subtitle {
+      font-size: 16px;
+    }
+  }
+
+  /* =========================================================
+     MOBILE
+     ========================================================= */
+
+  @media (max-width: 768px) {
+
+    .projects {
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .projects > .row {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .projects .card {
+      border-radius: 7px;
+    }
+
+    .projects .card-body {
+      padding: 20px;
+    }
+
+    .projects .card-title {
+      font-size: 19px;
+    }
+
+    .projects .card-text,
+    .projects .card-subtitle {
+      font-size: 15.5px;
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .projects .card-img-top {
+      height: 190px;
+    }
+  }
+
+  /* =========================================================
+     SMALL MOBILE
+     ========================================================= */
+
+  @media (max-width: 480px) {
+
+    .projects > .row {
+      padding-left: 10px;
+      padding-right: 10px;
+      row-gap: 16px;
+    }
+
+    .projects .card-body {
+      padding: 18px;
+    }
+
+    .projects .card-title {
+      font-size: 18px;
+    }
+
+    .projects .card-text,
+    .projects .card-subtitle {
+      font-size: 15px;
+    }
+
+    .projects .card-img-top {
+      height: 170px;
+    }
+
+    .site-footer {
+      padding: 22px 0;
+    }
   }
 </style> <div class="projects"> <div class="row row-cols-1 row-cols-md-3"> <div class="col"> <a href="/Shakil_Portfolio/projects/4_project/"> <div class="card h-100 hoverable"> <figure> <picture> <source class="responsive-img-srcset" srcset="/Shakil_Portfolio/assets/img/12-480.webp 480w,/Shakil_Portfolio/assets/img/12-800.webp 800w,/Shakil_Portfolio/assets/img/12-1400.webp 1400w," type="image/webp" sizes="250px"></source> <img src="/Shakil_Portfolio/assets/img/12.jpg" class="card-img-top" width="100%" height="auto" alt="project thumbnail" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="card-body"> <h2 class="card-title">Learning Management System</h2> <p class="card-text">A full-stack Learning Management System with React, Node.js, Express, MongoDB, and Docker.</p> <div class="row ml-1 mr-1 p-0"> </div> </div> </div> </a> </div> <div class="col"> <a href="/Shakil_Portfolio/projects/7_project/"> <div class="card h-100 hoverable"> <figure> <picture> <source class="responsive-img-srcset" srcset="/Shakil_Portfolio/assets/img/Cafe_management-480.webp 480w,/Shakil_Portfolio/assets/img/Cafe_management-800.webp 800w,/Shakil_Portfolio/assets/img/Cafe_management-1400.webp 1400w," type="image/webp" sizes="250px"></source> <img src="/Shakil_Portfolio/assets/img/Cafe_management.png" class="card-img-top" width="100%" height="auto" alt="project thumbnail" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="card-body"> <h2 class="card-title">University Cafeteria Management System</h2> <p class="card-text">A full-stack University Cafeteria Management System with role-based features for customers, administrators, managers, cashiers, and delivery personnel.</p> <div class="row ml-1 mr-1 p-0"> </div> </div> </div> </a> </div> <div class="col"> <a href="/Shakil_Portfolio/projects/3_project/"> <div class="card h-100 hoverable"> <figure> <picture> <source class="responsive-img-srcset" srcset="/Shakil_Portfolio/assets/img/qr-code-scanner-480.webp 480w,/Shakil_Portfolio/assets/img/qr-code-scanner-800.webp 800w,/Shakil_Portfolio/assets/img/qr-code-scanner-1400.webp 1400w," type="image/webp" sizes="250px"></source> <img src="/Shakil_Portfolio/assets/img/qr-code-scanner.jpg" class="card-img-top" width="100%" height="auto" alt="project thumbnail" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="card-body"> <h2 class="card-title">QR Code Scanner</h2> <p class="card-text">A feature-rich Android application for generating, scanning, and decoding QR codes with a simple and user-friendly mobile interface.</p> <div class="row ml-1 mr-1 p-0"> </div> </div> </div> </a> </div> <div class="col"> <a href="/Shakil_Portfolio/projects/1_project/"> <div class="card h-100 hoverable"> <figure> <picture> <source class="responsive-img-srcset" srcset="/Shakil_Portfolio/assets/img/training-program-480.webp 480w,/Shakil_Portfolio/assets/img/training-program-800.webp 800w,/Shakil_Portfolio/assets/img/training-program-1400.webp 1400w," type="image/webp" sizes="250px"></source> <img src="/Shakil_Portfolio/assets/img/training-program.jpg" class="card-img-top" width="100%" height="auto" alt="project thumbnail" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="card-body"> <h2 class="card-title">Training Program Management System</h2> <p class="card-text">A web-based Training Program Management System for managing courses, trainees, enrollment, payments, communication, and training activities.</p> <div class="row ml-1 mr-1 p-0"> </div> </div> </div> </a> </div> <div class="col"> <a href="/Shakil_Portfolio/projects/2_project/"> <div class="card h-100 hoverable"> <figure> <picture> <source class="responsive-img-srcset" srcset="/Shakil_Portfolio/assets/img/sign_language-480.webp 480w,/Shakil_Portfolio/assets/img/sign_language-800.webp 800w,/Shakil_Portfolio/assets/img/sign_language-1400.webp 1400w," type="image/webp" sizes="250px"></source> <img src="/Shakil_Portfolio/assets/img/sign_language.jpg" class="card-img-top" width="100%" height="auto" alt="project thumbnail" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="card-body"> <h2 class="card-title">Bangladeshi Sign Language Detection</h2> <p class="card-text">A YOLOv10-based system for recognizing static Bangladeshi Sign Language gestures and translating them into text.</p> <div class="row ml-1 mr-1 p-0"> </div> </div> </div> </a> </div> <div class="col"> <a href="/Shakil_Portfolio/projects/8_project/"> <div class="card h-100 hoverable"> <figure> <picture> <source class="responsive-img-srcset" srcset="/Shakil_Portfolio/assets/img/fire-Detection-480.webp 480w,/Shakil_Portfolio/assets/img/fire-Detection-800.webp 800w,/Shakil_Portfolio/assets/img/fire-Detection-1400.webp 1400w," type="image/webp" sizes="250px"></source> <img src="/Shakil_Portfolio/assets/img/fire-Detection.jpg" class="card-img-top" width="100%" height="auto" alt="project thumbnail" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="card-body"> <h2 class="card-title">Automated Fire Detecting and Extinguishing Car</h2> <p class="card-text">An Arduino-based robotic firefighting car that detects fire, moves toward the affected area, and automatically extinguishes the fire using a water-pumping mechanism.</p> <div class="row ml-1 mr-1 p-0"> </div> </div> </div> </a> </div> </div> </div> <footer class="site-footer"> <div class="container text-center"> <p class="mb-0"> © 2026 Md. Shakil Ahmed. All rights reserved. </p> </div> </footer> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Md. Shakil Ahmed. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
   window.alFolio = {
