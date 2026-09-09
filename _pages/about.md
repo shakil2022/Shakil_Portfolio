@@ -29,16 +29,15 @@ latest_posts:
 
 /* =========================================================
    GLOBAL DESIGN
-   Clean academic portfolio:
-   White background + black typography only
+   White background + black academic typography
    ========================================================= */
 
 :root {
   --page-bg: #ffffff;
   --text-main: #111111;
-  --text-secondary: #333333;
+  --text-secondary: #222222;
   --text-muted: #555555;
-  --border-color: #d9d9d9;
+  --border-color: #cccccc;
   --card-bg: #ffffff;
 }
 
@@ -66,11 +65,6 @@ body {
   background: #ffffff !important;
   color: #111111 !important;
 
-  /*
-    Professional academic typography.
-    Georgia provides a natural and readable appearance
-    for long-form academic content.
-  */
   font-family:
     "Source Serif 4",
     Georgia,
@@ -95,27 +89,28 @@ body {
 }
 
 
-/*
-  Introductory biography paragraphs
-*/
+/* =========================================================
+   INTRODUCTORY BIOGRAPHY PARAGRAPHS
+   ========================================================= */
 
 .post p,
 .post-content p,
 .about p {
   font-size: 18px;
   line-height: 1.85;
+
   color: #111111;
 
   text-align: justify;
   text-justify: inter-word;
 
+  margin-top: 0;
   margin-bottom: 22px;
 }
 
 
 /* =========================================================
    HEADINGS
-   Keep heading size unchanged / professional
    ========================================================= */
 
 h1,
@@ -135,12 +130,13 @@ h6 {
 }
 
 
-/*
-  Section headings
-*/
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
 
 .education-section h2,
-.section-block h2 {
+.section-block h2,
+.research-interests h2 {
   text-align: center;
 
   font-family:
@@ -149,17 +145,18 @@ h6 {
     serif;
 
   font-weight: 700;
+
   font-size: 32px;
 
   color: #000000;
 
-  margin: 0 0 42px;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 
 /* =========================================================
    LINKS
-   Black only
    ========================================================= */
 
 a {
@@ -168,13 +165,16 @@ a {
   text-decoration: underline;
 
   text-decoration-thickness: 1px;
+
   text-underline-offset: 3px;
 
   transition: opacity 0.2s ease;
 }
 
+
 a:hover {
   color: #000000 !important;
+
   opacity: 0.65;
 }
 
@@ -185,8 +185,10 @@ a:hover {
 
 strong {
   color: #000000;
+
   font-weight: 700;
 }
+
 
 em {
   color: #111111;
@@ -194,17 +196,22 @@ em {
 
 
 /* =========================================================
-   HORIZONTAL DIVIDERS
+   SECTION DIVIDER
+   BOLD BLACK LINE + NO EXTRA GAP
    ========================================================= */
 
 .divider-line {
   width: 100%;
+
   max-width: 900px;
 
-  margin: 60px auto;
+  height: 0;
+
+  margin: 0 auto;
 
   border: none;
-  border-top: 1px solid #cccccc;
+
+  border-top: 2px solid #000000;
 }
 
 
@@ -217,31 +224,22 @@ em {
 
   margin: 0 auto;
 
-  padding: 50px 24px;
+  padding: 35px 24px;
 
   text-align: center;
 }
 
 
 .research-interests h2 {
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  margin-top: 0;
 
-  font-size: 32px;
-
-  font-weight: 700;
-
-  color: #000000;
-
-  margin: 0 0 28px;
+  margin-bottom: 25px;
 }
 
 
-/*
-  Research interest tags
-*/
+/* =========================================================
+   RESEARCH INTEREST TAGS
+   ========================================================= */
 
 .interest-tags {
   display: flex;
@@ -284,14 +282,18 @@ em {
 
   white-space: nowrap;
 
-  transition: all 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 
 .interest-tag:hover {
-  background: #f5f5f5;
+  background: #f2f2f2;
 
   color: #000000;
+
+  transform: translateY(-2px);
 }
 
 
@@ -302,9 +304,13 @@ em {
 .education-section {
   background: #ffffff;
 
-  padding: 56px 24px 70px;
+  padding: 35px 24px;
 }
 
+
+/* =========================================================
+   EDUCATION TIMELINE
+   ========================================================= */
 
 .timeline {
   max-width: 900px;
@@ -315,22 +321,22 @@ em {
 
   flex-direction: column;
 
-  gap: 20px;
+  gap: 18px;
 }
 
 
-/*
-  Education cards
-*/
+/* =========================================================
+   EDUCATION CARD
+   ========================================================= */
 
 .edu-card {
   background: #ffffff;
 
-  border: 1px solid #d0d0d0;
+  border: 1px solid #cfcfcf;
 
   border-radius: 0;
 
-  padding: 24px 28px;
+  padding: 22px 26px;
 
   display: flex;
 
@@ -353,9 +359,9 @@ em {
 }
 
 
-/*
-  University / institution
-*/
+/* =========================================================
+   EDUCATION SCHOOL
+   ========================================================= */
 
 .edu-school {
   font-family:
@@ -373,9 +379,9 @@ em {
 }
 
 
-/*
-  Degree
-*/
+/* =========================================================
+   EDUCATION DEGREE
+   ========================================================= */
 
 .edu-degree {
   font-family:
@@ -393,9 +399,9 @@ em {
 }
 
 
-/*
-  Thesis
-*/
+/* =========================================================
+   EDUCATION THESIS
+   ========================================================= */
 
 .edu-note {
   font-size: 16px;
@@ -412,9 +418,9 @@ em {
 }
 
 
-/*
-  Location and date
-*/
+/* =========================================================
+   EDUCATION LOCATION AND DATE
+   ========================================================= */
 
 .edu-side {
   text-align: right;
@@ -444,9 +450,9 @@ em {
 }
 
 
-/*
-  School grouping
-*/
+/* =========================================================
+   EDUCATION SUBSECTION
+   ========================================================= */
 
 .edu-school-group {
   margin-bottom: 4px;
@@ -472,17 +478,21 @@ em {
 
 
 /* =========================================================
-   GENERAL SECTIONS
+   GENERAL CONTENT SECTIONS
    ========================================================= */
 
 .section-block {
   max-width: 100%;
 
-  padding: 56px 24px;
+  padding: 35px 24px;
 
   background: #ffffff;
 }
 
+
+/* =========================================================
+   CERTIFICATE / HONOR LIST
+   ========================================================= */
 
 .cert-list {
   max-width: 900px;
@@ -493,12 +503,12 @@ em {
 
   flex-direction: column;
 
-  gap: 26px;
+  gap: 22px;
 }
 
 
 /* =========================================================
-   HONORS / CERTIFICATIONS / ACTIVITIES
+   CERTIFICATE / HONOR ITEM
    ========================================================= */
 
 .cert-item {
@@ -512,7 +522,7 @@ em {
 
   flex-wrap: wrap;
 
-  padding-bottom: 24px;
+  padding-bottom: 22px;
 
   border-bottom: 1px solid #dddddd;
 }
@@ -520,6 +530,8 @@ em {
 
 .cert-item:last-child {
   border-bottom: none;
+
+  padding-bottom: 0;
 }
 
 
@@ -532,9 +544,9 @@ em {
 }
 
 
-/*
-  Item title
-*/
+/* =========================================================
+   CERTIFICATE TITLE
+   ========================================================= */
 
 .cert-name {
   margin: 0 0 8px;
@@ -557,9 +569,9 @@ em {
 }
 
 
-/*
-  Description
-*/
+/* =========================================================
+   CERTIFICATE DESCRIPTION
+   ========================================================= */
 
 .cert-desc {
   margin: 0;
@@ -574,9 +586,9 @@ em {
 }
 
 
-/*
-  Date
-*/
+/* =========================================================
+   CERTIFICATE DATE
+   ========================================================= */
 
 .cert-date {
   font-family:
@@ -611,22 +623,22 @@ em {
 
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 22px;
+  gap: 20px;
 }
 
 
-/*
-  Skill cards
-*/
+/* =========================================================
+   SKILL CARD
+   ========================================================= */
 
 .skill-item {
   background: #ffffff;
 
-  border: 1px solid #cccccc;
+  border: 1px solid #cfcfcf;
 
   border-radius: 0;
 
-  padding: 26px;
+  padding: 24px;
 
   transition:
     transform 0.2s ease,
@@ -637,13 +649,13 @@ em {
 .skill-item:hover {
   transform: translateY(-3px);
 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.08);
 }
 
 
-/*
-  Skill category
-*/
+/* =========================================================
+   SKILL NAME
+   ========================================================= */
 
 .skill-name {
   margin: 0 0 12px;
@@ -661,9 +673,9 @@ em {
 }
 
 
-/*
-  Skill description
-*/
+/* =========================================================
+   SKILL DESCRIPTION
+   ========================================================= */
 
 .skill-desc {
   margin: 0;
@@ -687,11 +699,11 @@ em {
 
   color: #111111 !important;
 
-  border-top: 1px solid #cccccc;
+  border-top: 2px solid #000000;
 
-  margin-top: 50px;
+  margin-top: 0;
 
-  padding: 28px 0;
+  padding: 25px 0;
 }
 
 
@@ -712,7 +724,7 @@ em {
 
 
 /* =========================================================
-   MOBILE RESPONSIVE DESIGN
+   TABLET AND MOBILE
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -740,12 +752,21 @@ em {
   }
 
 
+  .education-section,
+  .section-block,
+  .research-interests {
+    padding-top: 30px;
+
+    padding-bottom: 30px;
+  }
+
+
   .edu-card {
     flex-direction: column;
 
-    gap: 16px;
+    gap: 15px;
 
-    padding: 22px;
+    padding: 20px;
   }
 
 
@@ -781,8 +802,13 @@ em {
 
     padding: 7px 13px;
   }
+
 }
 
+
+/* =========================================================
+   SMALL MOBILE DEVICES
+   ========================================================= */
 
 @media (max-width: 480px) {
 
@@ -792,6 +818,10 @@ em {
     padding-left: 18px;
 
     padding-right: 18px;
+
+    padding-top: 25px;
+
+    padding-bottom: 25px;
   }
 
 
@@ -799,6 +829,8 @@ em {
   .section-block h2,
   .research-interests h2 {
     font-size: 25px;
+
+    margin-bottom: 25px;
   }
 
 
@@ -808,9 +840,15 @@ em {
     font-size: 16px;
   }
 
+
+  .divider-line {
+    border-top: 2px solid #000000;
+  }
+
 }
 
 </style>
+
 
 <p>
 I am a machine learning researcher and
