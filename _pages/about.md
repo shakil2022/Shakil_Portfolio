@@ -1,22 +1,23 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 nav: true
 nav_order: 1
 subtitle: >
   <a href="https://bubt.edu.bd/department/department-of-computer-science-engineering/faculty/profile/MDSHA">
-  Lecturer</a>, Department of Computer Science and Engineering,
+    Lecturer
+  </a>, Department of Computer Science and Engineering,
   Bangladesh University of Business and Technology
 
 profile:
   align: left
   image: prof_pic.jpg
   image_circular: false
-  more_info: >
+  more_info: ""
 
-social: true 
-  ---
+social: true
+---
 <style>
   :root {
     --bg-deep: #0b1120;
