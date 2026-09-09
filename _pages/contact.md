@@ -190,9 +190,7 @@ nav_order: 6
       </div>
 
       <a
-        href="mailto:shakil.ahmed@bubt.edu.bd"
-        class="contact-button primary contact-email"
-      >
+        href="shakil.ahmed@bubt.edu.bd">
         shakil.ahmed@bubt.edu.bd
       </a>
 
