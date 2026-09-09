@@ -1,7 +1,7 @@
 ---
 layout: about
-title: about
-permalink: /
+#title: about
+permalink: /about/
 nav: true
 subtitle: >
   <a href="https://bubt.edu.bd/department/department-of-computer-science-engineering/faculty/profile/MDSHA">
