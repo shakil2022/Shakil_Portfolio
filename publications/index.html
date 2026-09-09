@@ -6,7 +6,7 @@
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/Shakil_Portfolio/"> <span class="font-weight-bold">Md.</span> Shakil Ahmed </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/">About </a> </li> <li class="nav-item active"> <a class="nav-link" href="/Shakil_Portfolio/publications/">Publications <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/projects/">Projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/contact/">Contact </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Publications</h1> <p class="post-description"></p> </header> <article> <style>
   /* =========================================================
-     PUBLICATIONS PAGE — ACADEMIC YEAR / DETAILS LAYOUT
+     PUBLICATIONS — CLEAN ACADEMIC STYLE
      ========================================================= */
 
   .publications {
@@ -14,143 +14,6 @@
     max-width: 1000px;
     margin: 0 auto;
 
-    color: #111111;
-
-    font-family:
-      "Source Serif 4",
-      Georgia,
-      "Times New Roman",
-      serif;
-
-    font-size: 17px;
-    line-height: 1.8;
-  }
-
-  /* =========================================================
-     BIBLIOGRAPHY
-     ========================================================= */
-
-  .publications .bibliography {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
-
-  /*
-   * Each publication becomes:
-   *
-   * YEAR     PUBLICATION INFORMATION
-   *
-   * The year is placed in the left column.
-   */
-
-  .publications .bibliography li {
-    display: grid;
-
-    grid-template-columns: 90px minmax(0, 1fr);
-
-    column-gap: 28px;
-
-    align-items: start;
-
-    margin: 0 0 24px;
-    padding: 0 0 22px;
-
-    background: #ffffff;
-
-    color: #222222;
-
-    border: none;
-    border-bottom: 1px solid #d6d6d6;
-
-    box-shadow: none;
-
-    transition: none;
-  }
-
-  .publications .bibliography li:hover {
-    transform: none;
-
-    border-color: #d6d6d6;
-
-    box-shadow: none;
-  }
-
-  /* =========================================================
-     YEAR — LEFT SIDE
-     ========================================================= */
-
-  .publications .bibliography li .year {
-    grid-column: 1;
-
-    color: #000000 !important;
-
-    font-family:
-      Georgia,
-      "Times New Roman",
-      serif;
-
-    font-size: 19px;
-    font-weight: 700;
-
-    line-height: 1.55;
-
-    text-align: left;
-
-    white-space: nowrap;
-
-    padding-top: 1px;
-  }
-
-  /* =========================================================
-     PUBLICATION INFORMATION — RIGHT SIDE
-     ========================================================= */
-
-  .publications .bibliography li > *:not(.year) {
-    grid-column: 2;
-  }
-
-  .publications .bibliography li,
-  .publications .bibliography li p {
-    color: #222222;
-
-    font-family:
-      "Source Serif 4",
-      Georgia,
-      "Times New Roman",
-      serif;
-
-    font-size: 16px;
-    line-height: 1.75;
-
-    text-align: justify;
-    text-justify: inter-word;
-  }
-
-  /* =========================================================
-     TITLE
-     ========================================================= */
-
-  .publications .title {
-    color: #000000 !important;
-
-    font-family:
-      Georgia,
-      "Times New Roman",
-      serif;
-
-    font-size: 18px;
-    font-weight: 700;
-
-    line-height: 1.55;
-  }
-
-  /* =========================================================
-     AUTHORS
-     ========================================================= */
-
-  .publications .author {
     color: #222222;
 
     font-family:
@@ -163,6 +26,153 @@
     line-height: 1.7;
   }
 
+
+  /* =========================================================
+     BIBLIOGRAPHY
+     ========================================================= */
+
+  .publications .bibliography {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+
+  /* =========================================================
+     YEAR HEADING
+     ========================================================= */
+
+  .publications .bibliography h2,
+  .publications .bibliography .year {
+    margin: 0;
+
+    padding: 0 0 10px;
+
+    color: #000000 !important;
+
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 26px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    text-align: left;
+
+    border-bottom: 1px solid #d6d6d6;
+  }
+
+
+  /* =========================================================
+     EACH PUBLICATION
+     ========================================================= */
+
+  .publications .bibliography li {
+    position: relative;
+
+    margin: 0;
+
+    padding: 25px 0 22px;
+
+    background: transparent !important;
+
+    color: #222222;
+
+    border: none;
+
+    border-bottom: 1px solid #d6d6d6;
+
+    box-shadow: none !important;
+
+    border-radius: 0;
+
+    transition: none;
+  }
+
+
+  .publications .bibliography li:hover {
+    background: transparent !important;
+
+    border-color: #d6d6d6;
+
+    box-shadow: none !important;
+
+    transform: none;
+  }
+
+
+  /* =========================================================
+     PUBLICATION TEXT
+     ========================================================= */
+
+  .publications .bibliography li,
+  .publications .bibliography li p {
+    color: #222222;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    text-align: left;
+  }
+
+
+  /* =========================================================
+     TITLE
+     ========================================================= */
+
+  .publications .title {
+    margin-bottom: 6px;
+
+    color: #000000 !important;
+
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+  }
+
+
+  /* =========================================================
+     AUTHORS
+     ========================================================= */
+
+  .publications .author {
+    margin-bottom: 4px;
+
+    color: #222222;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+  }
+
+
   /* =========================================================
      JOURNAL / CONFERENCE
      ========================================================= */
@@ -170,13 +180,18 @@
   .publications .periodical,
   .publications .journal,
   .publications .booktitle {
+    margin-bottom: 5px;
+
     color: #444444;
 
-    font-style: italic;
+    font-size: 14px;
+
+    line-height: 1.6;
   }
 
+
   /* =========================================================
-     LINKS
+     PUBLICATION LINKS
      ========================================================= */
 
   .publications a {
@@ -185,15 +200,19 @@
     text-decoration: underline;
 
     text-decoration-thickness: 1px;
+
     text-underline-offset: 3px;
 
     transition: opacity 0.2s ease;
   }
 
+
   .publications a:hover {
     color: #000000 !important;
+
     opacity: 0.6;
   }
+
 
   /* =========================================================
      BUTTONS
@@ -206,58 +225,75 @@
     align-items: center;
     justify-content: center;
 
-    margin-top: 7px;
+    margin-top: 8px;
     margin-right: 6px;
 
-    padding: 5px 12px;
+    padding: 4px 10px;
 
     background: #ffffff !important;
+
     color: #000000 !important;
 
     border: 1px solid #000000;
-    border-radius: 4px;
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    border-radius: 3px;
+
+    font-family:
+      Arial,
+      Helvetica,
+      sans-serif;
+
+    font-size: 11px;
+
     font-weight: 600;
 
     text-decoration: none !important;
 
     transition:
       background-color 0.2s ease,
-      color 0.2s ease,
-      transform 0.2s ease;
+      color 0.2s ease;
   }
+
 
   .publications .btn:hover,
   .publications .btn-sm:hover {
     background: #000000 !important;
+
     color: #ffffff !important;
 
     border-color: #000000;
 
-    transform: translateY(-1px);
+    transform: none;
   }
 
+
   /* =========================================================
-     BADGES / TAGS
+     BADGES
      ========================================================= */
 
   .publications .badge {
     display: inline-block;
 
-    padding: 4px 9px;
+    padding: 3px 8px;
 
     background: #f4f4f4 !important;
+
     color: #222222 !important;
 
     border: 1px solid #cccccc;
-    border-radius: 4px;
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    border-radius: 3px;
+
+    font-family:
+      Arial,
+      Helvetica,
+      sans-serif;
+
+    font-size: 10px;
+
     font-weight: 600;
   }
+
 
   /* =========================================================
      BIBSEARCH
@@ -268,22 +304,29 @@
     margin-bottom: 25px;
   }
 
+
   .publications input[type="text"],
   .publications input[type="search"] {
     background: #ffffff !important;
+
     color: #111111 !important;
 
     border: 1px solid #bdbdbd;
-    border-radius: 5px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+
+    font-family:
+      Arial,
+      Helvetica,
+      sans-serif;
+
     font-size: 14px;
 
-    padding: 9px 12px;
+    padding: 8px 11px;
 
-    box-shadow:
-      0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: none;
   }
+
 
   .publications input[type="text"]:focus,
   .publications input[type="search"]:focus {
@@ -291,9 +334,9 @@
 
     outline: none;
 
-    box-shadow:
-      0 0 0 2px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
   }
+
 
   /* =========================================================
      FOOTER
@@ -301,13 +344,16 @@
 
   .site-footer {
     background: #ffffff !important;
+
     color: #111111 !important;
 
     border-top: 2px solid #000000;
 
-    margin-top: 0;
+    margin-top: 40px;
+
     padding: 25px 0;
   }
+
 
   .site-footer p {
     margin: 0;
@@ -316,10 +362,16 @@
 
     text-align: center;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:
+      Arial,
+      Helvetica,
+      sans-serif;
+
     font-size: 14px;
+
     line-height: 1.5;
   }
+
 
   /* =========================================================
      TABLET
@@ -332,21 +384,21 @@
       padding-right: 20px;
     }
 
-    .publications .bibliography li {
-      grid-template-columns: 75px minmax(0, 1fr);
+    .publications .bibliography h2,
+    .publications .bibliography .year {
+      font-size: 24px;
+    }
 
-      column-gap: 22px;
+    .publications .title {
+      font-size: 17px;
     }
 
     .publications .bibliography li,
     .publications .bibliography li p {
-      font-size: 15.5px;
-    }
-
-    .publications .bibliography li .year {
-      font-size: 18px;
+      font-size: 15px;
     }
   }
+
 
   /* =========================================================
      MOBILE
@@ -359,35 +411,30 @@
       padding-right: 15px;
     }
 
+    .publications .bibliography h2,
+    .publications .bibliography .year {
+      font-size: 22px;
+    }
+
     .publications .bibliography li {
-      grid-template-columns: 65px minmax(0, 1fr);
+      padding: 20px 0;
+    }
 
-      column-gap: 18px;
+    .publications .title {
+      font-size: 16px;
+    }
 
-      margin-bottom: 20px;
-      padding-bottom: 20px;
+    .publications .author {
+      font-size: 14px;
     }
 
     .publications .bibliography li,
     .publications .bibliography li p {
-      font-size: 15px;
-      line-height: 1.7;
-
-      text-align: left;
-    }
-
-    .publications .bibliography li .year {
-      font-size: 17px;
-    }
-
-    .publications .title {
-      font-size: 17px;
-    }
-
-    .publications .author {
-      font-size: 15px;
+      font-size: 14px;
+      line-height: 1.65;
     }
   }
+
 
   /* =========================================================
      SMALL MOBILE
@@ -400,36 +447,29 @@
       padding-right: 10px;
     }
 
+    .publications .bibliography h2,
+    .publications .bibliography .year {
+      font-size: 20px;
+    }
+
     .publications .bibliography li {
-      grid-template-columns: 58px minmax(0, 1fr);
+      padding: 18px 0;
+    }
 
-      column-gap: 14px;
-
-      margin-bottom: 18px;
-      padding-bottom: 18px;
+    .publications .title {
+      font-size: 15px;
     }
 
     .publications .bibliography li,
     .publications .bibliography li p {
-      font-size: 14px;
-    }
-
-    .publications .bibliography li .year {
-      font-size: 16px;
-    }
-
-    .publications .title {
-      font-size: 16px;
+      font-size: 13.5px;
     }
 
     .publications .btn,
     .publications .btn-sm {
-      font-size: 11px;
-      padding: 5px 10px;
-    }
+      font-size: 10px;
 
-    .site-footer {
-      padding: 22px 0;
+      padding: 4px 8px;
     }
   }
 </style> <script src="/Shakil_Portfolio/assets/js/bibsearch.js?v=1bc438ca9037884cc579601c09afd847" type="module"></script> <p><input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter"></p> <div class="publications"> <h2 class="bibliography">2026</h2> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> </div> <div id="ahmed2026enhanced" class="col-sm-8"> <div class="title">Enhanced Detection of GAN-Generated Image Forgeries Using Error Level Analysis and Deep Learning Models</div> <div class="author"> K. R. Ahmed, M. S. Ali, A. Rahman, and <span class="more-authors" title="click to view 5 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '5 more authors' ? 'S. Sharmin, M. S. Ahmed, F. Al Farid, S. Mansor, A. S. M. Miah' : '5 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">5 more authors</span> </div> <div class="periodical"> <em>IET Image Processing</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.1049/ipr2.70345" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">ahmed2026enhanced</span><span class="p">,</span>
