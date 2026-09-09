@@ -7,173 +7,421 @@ nav_order: 6
 ---
 
 <style>
-  :root {
-    --contact-card: #213d69;
-    --contact-border: #4c6d9f;
-    --contact-text: #ffffff;
-    --contact-icon: #a9c3ff;
-    --contact-button-bg: #1e3559;
-    --contact-button-border: #a9c3ff;
-  }
+
+/* =========================================================
+   CONTACT PAGE
+   Clean white + black academic design
+   ========================================================= */
+
+.contact-page {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 20px 0 35px;
+}
+
+
+/* =========================================================
+   CONTACT GRID
+   ========================================================= */
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   CONTACT CARD
+   ========================================================= */
+
+.contact-card {
+  min-height: 220px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 30px 22px 28px;
+
+  text-align: center;
+
+  /*
+    Very light white/gray card.
+    The subtle shadow makes the box visible
+    without introducing another color.
+  */
+  background: #ffffff;
+
+  border: 1px solid #d6d6d6;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+   ========================================================= */
+
+.contact-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #999999;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   CARD TOP AREA
+   ========================================================= */
+
+.contact-card-top {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =========================================================
+   CONTACT ICON
+   ========================================================= */
+
+.contact-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 60px;
+
+  height: 60px;
+
+  margin-bottom: 15px;
+
+  /*
+    Black icon only.
+  */
+  color: #000000;
+
+  font-size: 32px;
+}
+
+
+/* =========================================================
+   CONTACT TITLE
+   ========================================================= */
+
+.contact-title {
+  margin: 0;
+
+  color: #000000;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   EMAIL LINK
+   ========================================================= */
+
+.contact-card > a:not(.contact-button) {
+  display: inline-block;
+
+  max-width: 100%;
+
+  color: #000000 !important;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  text-decoration: underline;
+
+  text-decoration-thickness: 1px;
+
+  text-underline-offset: 3px;
+
+  overflow-wrap: anywhere;
+
+  transition: opacity 0.2s ease;
+}
+
+
+.contact-card > a:not(.contact-button):hover {
+  color: #000000 !important;
+
+  opacity: 0.6;
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+   ========================================================= */
+
+.contact-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 105px;
+
+  min-height: 42px;
+
+  max-width: 100%;
+
+  padding: 9px 20px;
+
+  border: 1px solid #000000;
+
+  border-radius: 5px;
+
+  /*
+    White button with black text.
+  */
+  color: #000000 !important;
+
+  background: #ffffff;
+
+  text-decoration: none !important;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* =========================================================
+   BUTTON HOVER
+   ========================================================= */
+
+.contact-button:hover {
+  background: #000000;
+
+  color: #ffffff !important;
+
+  border-color: #000000;
+
+  text-decoration: none !important;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   EMAIL
+   ========================================================= */
+
+.contact-email {
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+  background: #ffffff !important;
+
+  color: #111111 !important;
+
+  border-top: 2px solid #000000;
+
+  margin-top: 0;
+
+  padding: 25px 0;
+}
+
+
+.site-footer p {
+  margin: 0;
+
+  color: #111111 !important;
+
+  text-align: center;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
 
   .contact-page {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px 0 20px;
+    padding-left: 20px;
+
+    padding-right: 20px;
   }
 
   .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 480px;
+
+    margin: 0 auto;
+
+    gap: 18px;
+  }
+
 
   .contact-card {
-    min-height: 230px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 32px 20px 30px;
-    text-align: center;
+    min-height: 205px;
 
-    background: var(--contact-card);
-    border: 1px solid var(--contact-border);
-    border-radius: 16px;
-
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
-
-    transition:
-      transform 0.25s ease,
-      box-shadow 0.25s ease,
-      border-color 0.25s ease;
+    padding: 28px 20px 25px;
   }
 
-  .contact-card:hover {
-    transform: translateY(-5px);
-    border-color: #6d8fca;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
-  }
-
-  .contact-card-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 58px;
-    height: 58px;
-    margin-bottom: 14px;
-
-    color: var(--contact-icon);
-    font-size: 34px;
-  }
 
   .contact-title {
-    margin: 0;
-    color: var(--contact-text);
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 19px;
   }
+
+
+  .contact-icon {
+    font-size: 30px;
+
+    width: 55px;
+
+    height: 55px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+  .contact-page {
+    padding: 10px 18px 25px;
+  }
+
+
+  .contact-card {
+    min-height: 195px;
+
+    padding: 25px 18px;
+  }
+
+
+  .contact-title {
+    font-size: 18px;
+  }
+
 
   .contact-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    min-width: 95px;
 
-    min-height: 42px;
-    max-width: 100%;
-    padding: 9px 16px;
+    min-height: 40px;
 
-    border: 1px solid var(--contact-button-border);
-    border-radius: 7px;
+    font-size: 13px;
 
-    color: #ffffff !important;
-    background: var(--contact-button-bg);
+    padding: 8px 16px;
+  }
 
-    text-decoration: none !important;
+
+  .contact-card > a:not(.contact-button) {
     font-size: 14px;
-    font-weight: 600;
-    line-height: 1.4;
-
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease,
-      transform 0.2s ease;
   }
 
-  .contact-button:hover {
-    background: #a9c3ff;
-    color: #172b4d !important;
-    text-decoration: none !important;
-    transform: translateY(-2px);
-  }
-
-  .contact-button.primary {
-    background: #a9bde8;
-    border-color: #a9bde8;
-    color: #172b4d !important;
-  }
-
-  .contact-button.primary:hover {
-    background: #c0d0f2;
-    color: #172b4d !important;
-  }
 
   .contact-email {
-    white-space: nowrap;
+    white-space: normal;
+
+    overflow-wrap: anywhere;
   }
+
 
   .site-footer {
-    margin-top: 40px;
+    margin-top: 0;
+
+    padding: 22px 0;
   }
 
-  @media (max-width: 768px) {
-    .contact-grid {
-      grid-template-columns: 1fr;
-      max-width: 420px;
-      margin: 0 auto;
-    }
+}
 
-    .contact-card {
-      min-height: 210px;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .contact-page {
-      padding: 10px 0 20px;
-    }
-
-    .contact-card {
-      padding: 28px 18px;
-    }
-
-    .contact-title {
-      font-size: 19px;
-    }
-
-    .contact-button {
-      font-size: 13px;
-    }
-
-    .contact-email {
-      white-space: normal;
-      overflow-wrap: anywhere;
-    }
-
-    .site-footer {
-      margin-top: 30px;
-    }
-  }
 </style>
+
 
 <div class="contact-page">
 
