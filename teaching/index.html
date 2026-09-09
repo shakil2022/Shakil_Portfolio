@@ -5,23 +5,30 @@
 </style> <link rel="stylesheet" href="/Shakil_Portfolio/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/Shakil_Portfolio/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/Shakil_Portfolio/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://shakil2022.github.io/Shakil_Portfolio/teaching/"> <script src="/Shakil_Portfolio/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/Shakil_Portfolio/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/Shakil_Portfolio/"> <span class="font-weight-bold">Md.</span> Shakil Ahmed </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/projects/">Projects </a> </li> <li class="nav-item active"> <a class="nav-link" href="/Shakil_Portfolio/teaching/">Teaching <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/contact/">Contact </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Teaching</h1> <p class="post-description"></p> </header> <article> <style>
-  :root {
-    --bg-deep: #080e1d;
-    --bg-panel: #111a2e;
-    --bg-card: #16213a;
-    --border-soft: rgba(255,255,255,0.08);
-    --text-main: #dde3ef;
-    --text-dim: #8b93a7;
-    --accent: #5b8def;
-    --accent-soft: rgba(91,141,239,0.15);
-  }
+  /* =========================================================
+     TEACHING PAGE — WHITE / BLACK ACADEMIC STYLE
+     ========================================================= */
 
   .teaching,
   .courses,
   .page-content {
-    font-family: 'Inter', system-ui, sans-serif;
-    color: var(--text-main);
+    width: 100%;
+
+    color: #111111;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 18px;
+    line-height: 1.8;
   }
+
+  /* =========================================================
+     HEADINGS
+     ========================================================= */
 
   .teaching h1,
   .teaching h2,
@@ -30,65 +37,440 @@
   .courses h2,
   .courses h3,
   .course-title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    color: #eef1f8;
+    color: #000000 !important;
+
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-weight: 700;
   }
 
-  /* Course cards */
+  .teaching h1,
+  .courses h1 {
+    font-size: 32px;
+  }
+
+  .teaching h2,
+  .courses h2 {
+    font-size: 28px;
+  }
+
+  .teaching h3,
+  .courses h3 {
+    font-size: 22px;
+  }
+
+  /* =========================================================
+     COURSE CONTAINER
+     ========================================================= */
+
+  .courses {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* =========================================================
+     COURSE CARDS
+     ========================================================= */
+
   .course,
   .course-item,
   .courses .card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-soft);
-    border-radius: 12px;
-    padding: 20px 24px;
-    margin-bottom: 18px;
-    color: var(--text-main);
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    background: #ffffff !important;
+
+    color: #111111 !important;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+
+    padding: 24px 26px;
+    margin-bottom: 20px;
+
+    box-shadow:
+      0 4px 14px rgba(0, 0, 0, 0.07);
+
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
   }
 
   .course:hover,
   .course-item:hover,
   .courses .card:hover {
     transform: translateY(-3px);
-    border-color: rgba(91, 141, 239, 0.35);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+
+    border-color: #999999;
+
+    box-shadow:
+      0 10px 25px rgba(0, 0, 0, 0.13);
   }
+
+  /* =========================================================
+     COURSE TITLE
+     ========================================================= */
+
+  .course-title,
+  .courses .card-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: #000000 !important;
+
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    line-height: 1.45;
+  }
+
+  /* =========================================================
+     COURSE DESCRIPTION
+     ========================================================= */
 
   .course-subtitle,
   .course-desc,
   .course-meta,
-  .courses .text-muted {
-    color: var(--text-dim) !important;
+  .courses .card-text {
+    color: #222222 !important;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 16px;
+    line-height: 1.75;
+
+    text-align: justify;
+    text-justify: inter-word;
   }
 
-  /* Links */
+  /* Muted information */
+  .courses .text-muted {
+    color: #555555 !important;
+  }
+
+  /* =========================================================
+     COURSE LINKS
+     ========================================================= */
+
   .teaching a,
   .courses a {
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(91,141,239,0.3);
+    color: #000000 !important;
+
+    text-decoration: underline;
+
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
+    transition: opacity 0.2s ease;
   }
 
   .teaching a:hover,
   .courses a:hover {
-    border-bottom-color: var(--accent);
+    color: #000000 !important;
+    opacity: 0.6;
   }
 
-  /* Calendar widget container */
+  /* =========================================================
+     COURSE BUTTONS
+     ========================================================= */
+
+  .teaching .btn,
+  .courses .btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 16px;
+
+    background: #ffffff !important;
+    color: #000000 !important;
+
+    border: 1px solid #000000;
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none !important;
+
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .teaching .btn:hover,
+  .courses .btn:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+
+    border-color: #000000;
+
+    transform: translateY(-2px);
+  }
+
+  /* =========================================================
+     TAGS / BADGES
+     ========================================================= */
+
+  .teaching .badge,
+  .courses .badge {
+    display: inline-block;
+
+    padding: 4px 9px;
+
+    background: #f4f4f4 !important;
+    color: #222222 !important;
+
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  /* =========================================================
+     CALENDAR
+     ========================================================= */
+
   .calendar,
   #calendar {
-    background: var(--bg-panel);
-    border: 1px solid var(--border-soft);
-    border-radius: 12px;
-    padding: 16px;
-    margin-bottom: 30px;
+    width: 100%;
+
+    background: #ffffff !important;
+
+    color: #111111 !important;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+
+    padding: 18px;
+    margin: 0 auto 30px;
+
+    box-shadow:
+      0 4px 14px rgba(0, 0, 0, 0.07);
+
+    transition:
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
   }
 
+  .calendar:hover,
+  #calendar:hover {
+    border-color: #999999;
+
+    box-shadow:
+      0 8px 22px rgba(0, 0, 0, 0.11);
+  }
+
+  /* Calendar text */
+  .calendar *,
+  #calendar * {
+    color: #111111;
+  }
+
+  /* Calendar headings */
+  .calendar h1,
+  .calendar h2,
+  .calendar h3,
+  .calendar h4,
+  #calendar h1,
+  #calendar h2,
+  #calendar h3,
+  #calendar h4 {
+    color: #000000 !important;
+
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-weight: 700;
+  }
+
+  /* Calendar links */
+  .calendar a,
+  #calendar a {
+    color: #000000 !important;
+    text-decoration: underline;
+  }
+
+  /* =========================================================
+     DIVIDERS
+     ========================================================= */
+
+  .teaching hr,
+  .courses hr,
   hr,
   .divider {
-    border-top: 1px solid var(--border-soft);
+    border: none;
+
+    border-top: 2px solid #000000;
+
+    margin: 30px auto;
+  }
+
+  /* =========================================================
+     FOOTER
+     ========================================================= */
+
+  .site-footer {
+    background: #ffffff !important;
+    color: #111111 !important;
+
+    border-top: 2px solid #000000;
+
+    margin-top: 0;
+    padding: 25px 0;
+  }
+
+  .site-footer p {
+    margin: 0;
+
+    color: #111111 !important;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* =========================================================
+     TABLET
+     ========================================================= */
+
+  @media (max-width: 900px) {
+
+    .teaching,
+    .courses {
+      font-size: 17px;
+    }
+
+    .courses {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .course,
+    .course-item,
+    .courses .card {
+      padding: 22px;
+    }
+
+    .course-title,
+    .courses .card-title {
+      font-size: 20px;
+    }
+
+    .course-subtitle,
+    .course-desc,
+    .course-meta,
+    .courses .card-text {
+      font-size: 15.5px;
+    }
+  }
+
+  /* =========================================================
+     MOBILE
+     ========================================================= */
+
+  @media (max-width: 768px) {
+
+    .teaching,
+    .courses {
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .courses {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .course,
+    .course-item,
+    .courses .card {
+      padding: 20px;
+      margin-bottom: 18px;
+
+      border-radius: 7px;
+    }
+
+    .course-title,
+    .courses .card-title {
+      font-size: 19px;
+    }
+
+    .course-subtitle,
+    .course-desc,
+    .course-meta,
+    .courses .card-text {
+      font-size: 15px;
+      line-height: 1.7;
+
+      text-align: left;
+    }
+
+    .calendar,
+    #calendar {
+      padding: 12px;
+      margin-bottom: 22px;
+    }
+  }
+
+  /* =========================================================
+     SMALL MOBILE
+     ========================================================= */
+
+  @media (max-width: 480px) {
+
+    .courses {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .course,
+    .course-item,
+    .courses .card {
+      padding: 17px;
+      margin-bottom: 15px;
+    }
+
+    .course-title,
+    .courses .card-title {
+      font-size: 18px;
+    }
+
+    .course-subtitle,
+    .course-desc,
+    .course-meta,
+    .courses .card-text {
+      font-size: 14.5px;
+    }
+
+    .teaching .btn,
+    .courses .btn {
+      font-size: 12px;
+      padding: 7px 13px;
+    }
+
+    .site-footer {
+      padding: 22px 0;
+    }
   }
 </style> <div class="post mt-4"> <h2 class="mb-3"> <i class="fas fa-calendar-alt"></i> Upcoming Events</h2> <button class="btn btn-sm btn-outline-primary mb-3 calendar-toggle-btn" type="button" onclick="toggleCalendar()" id="calendar-toggle-btn" aria-pressed="false"> Show Calendar </button> <div class="calendar-wrapper" id="calendar-container" style="display: none;"> <iframe id="calendar-iframe" data-calendar-id="test@gmail.com" data-timezone="Asia/Shanghai" style="border:0; width:100%; height:600px;" frameborder="0" scrolling="no"> </iframe> </div> </div> <div class="courses"> <h2 class="year">2026</h2> <div class="course-list"> <div class="course-item"> <h3 class="course-title"> <a href="/Shakil_Portfolio/teachings/software-engineering/">Software Engineering</a> </h3> <div class="course-meta"> <span class="course-term">Spring</span> <span class="course-instructor">Md. Shakil Ahmed</span> </div> <div class="course-description"> <p>This course introduces the fundamental concepts, methods, tools, and procedures of software engineering. Students will learn software processes, life-cycle models, requirements engineering, software analysis and design, implementation, testing, quality assurance, design patterns, and software project management.</p> </div> </div> <div class="course-item"> <h3 class="course-title"> <a href="/Shakil_Portfolio/teachings/Software%20Engineering%20Lab/">Software Engineering Laboratory</a> </h3> <div class="course-meta"> <span class="course-term">Spring</span> <span class="course-instructor">Md. Shakil Ahmed</span> </div> <div class="course-description"> <p>This course provides practical experience in software engineering methods, tools, and techniques. Students will apply software process models, Agile methodologies, requirements engineering, UML modeling, architectural design, software testing, configuration management, project management, software metrics, and estimation techniques to real-world software projects.</p> </div> </div> <div class="course-item"> <h3 class="course-title"> <a href="/Shakil_Portfolio/teachings/data-science-fundamentals/">Cyber Security and Digital Forensic</a> </h3> <div class="course-meta"> <span class="course-term">Summer</span> <span class="course-instructor">Md Shakil Ahmed</span> </div> <div class="course-description"> <p>This course introduces the fundamental concepts of cyber security, ethical hacking, and digital forensics. Students will learn about common cyber attacks, web vulnerabilities, authentication, security tools, forensic techniques, cryptography, blockchain security, and cybersecurity law.</p> </div> </div> <div class="course-item"> <h3 class="course-title"> <a href="/Shakil_Portfolio/teachings/cyber-security-and-digital-forensic-laboratory/">Cyber Security and Digital Forensic Laboratory</a> </h3> <div class="course-meta"> <span class="course-term">Summer</span> <span class="course-instructor">Md. Shakil Ahmed</span> </div> <div class="course-description"> <p>This course provides practical hands-on experience in cybersecurity, ethical hacking, penetration testing, and digital forensics. Students will work with Kali Linux, VMware, Burp Suite, DVWA, Ghidra, Autopsy, Volatility, and other security tools to investigate vulnerabilities, analyze attacks, and perform forensic investigations.</p> </div> </div> </div> <h2 class="year">2025</h2> <div class="course-list"> <div class="course-item"> <h3 class="course-title"> <a href="/Shakil_Portfolio/teachings/Structured%20Programming%20Language/">Structured Programming Language</a> </h3> <div class="course-meta"> <span class="course-term">Fall</span> <span class="course-instructor">Md. Shakil Ahmed</span> </div> <div class="course-description"> <p>This course introduces the fundamental concepts of structured programming using the C programming language. Students will develop programming logic and problem-solving skills through the study of data types, operators, control statements, functions, arrays, strings, pointers, dynamic memory allocation, structures, file handling, and competitive programming techniques.</p> </div> </div> <div class="course-item"> <h3 class="course-title"> <a href="/Shakil_Portfolio/teachings/Database%20Systems/">Database Systems</a> </h3> <div class="course-meta"> <span class="course-term">Fall</span> <span class="course-instructor">Md. Shakil Ahmed</span> </div> <div class="course-description"> <p>This course introduces the fundamental concepts and practices of database systems, with emphasis on database design, relational models, SQL, relational algebra, normalization, indexing, hashing, transaction management, and concurrency control. Students will develop the ability to design, query, optimize, and manage relational databases efficiently.</p> </div> </div> <div class="course-item"> <h3 class="course-title"> <a href="/Shakil_Portfolio/teachings/database-system-lab/">Database Systems Lab</a> </h3> <div class="course-meta"> <span class="course-term">Spring</span> <span class="course-instructor">Md. Shakil Ahmed</span> </div> <div class="course-description"> <p>This laboratory course provides hands-on experience in designing, creating, modifying, and managing relational database systems. Students will develop practical skills in SQL, database design, data manipulation, constraints, joins, subqueries, indexes, views, triggers, and database application development through laboratory exercises and a group project.</p> </div> </div> </div> <h2 class="year"></h2> <div class="course-list"> <div class="course-item"> <h3 class="course-title"> <a href="/Shakil_Portfolio/teachings/structured-programming-lab/"></a> </h3> <div class="course-meta"> </div> </div> <div class="course-item"> <h3 class="course-title"> <a href="/Shakil_Portfolio/teachings/object-oriented-programming-language/"></a> </h3> <div class="course-meta"> </div> </div> <div class="course-item"> <h3 class="course-title"> <a href="/Shakil_Portfolio/teachings/Object%20Oriented%20Programming%20Language%20Lab/"></a> </h3> <div class="course-meta"> </div> </div> </div> </div> <footer class="site-footer"> <div class="container text-center"> <p class="mb-0"> © 2026 Md. Shakil Ahmed. All rights reserved. </p> </div> </footer> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Md. Shakil Ahmed. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
   window.alFolio = {
