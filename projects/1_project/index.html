@@ -5,161 +5,730 @@
 </style> <link rel="stylesheet" href="/Shakil_Portfolio/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/Shakil_Portfolio/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/Shakil_Portfolio/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://shakil2022.github.io/Shakil_Portfolio/projects/1_project/"> <script src="/Shakil_Portfolio/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/Shakil_Portfolio/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/Shakil_Portfolio/"> <span class="font-weight-bold">Md.</span> Shakil Ahmed </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/publications/">Publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/Shakil_Portfolio/projects/">Projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/contact/">Contact </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Training Program Management System</h1> <p class="post-description">A web-based Training Program Management System for managing courses, trainees, enrollment, payments, communication, and training activities.</p> </header> <article> <style>
-.project-card {
-  position: relative;
-  padding: 28px 30px;
-  margin: 20px 0 35px 0;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 18px;
-  background: linear-gradient(
-    135deg,
-    rgba(38, 65, 105, 0.95),
-    rgba(25, 48, 82, 0.95)
-  );
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  color: #ffffff;
-}
+  /* =========================================================
+     PROJECT DETAIL PAGE
+     WHITE / BLACK ACADEMIC STYLE
+     ========================================================= */
 
-.project-header {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 18px;
-}
+  .project-card,
+  .project-content {
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
 
-.project-icon {
-  width: 58px;
-  height: 72px;
-  border: 1px solid rgba(180, 200, 240, 0.8);
-  border-radius: 14px;
-  background: rgba(35, 65, 100, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  flex-shrink: 0;
-}
+    color: #111111;
+  }
 
-.project-title {
-  margin: 0 !important;
-  font-size: 22px;
-  font-weight: 700;
-  color: #ffffff !important;
-}
+  /* =========================================================
+     MAIN PROJECT HEADER CARD
+     ========================================================= */
 
-.project-subtitle {
-  margin: 5px 0 0 0;
-  font-size: 15px;
-  font-weight: 500;
-  color: #dce5f5;
-}
-
-.project-description {
-  margin-top: 18px;
-  font-size: 15px;
-  line-height: 1.65;
-  color: #e8edf7;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 18px;
-}
-
-.project-tag {
-  display: inline-block;
-  padding: 6px 11px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #eef3fc;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.project-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.project-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 16px;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  text-decoration: none !important;
-  font-size: 13px;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.project-button.primary {
-  background: #aebce8;
-  color: #172746 !important;
-}
-
-.project-button.secondary {
-  background: transparent;
-  color: #e8edf7 !important;
-}
-
-.project-button:hover {
-  transform: translateY(-2px);
-  text-decoration: none !important;
-}
-
-.project-button.primary:hover {
-  background: #c2cdf0;
-}
-
-.project-button.secondary:hover {
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.project-content {
-  margin-top: 35px;
-}
-
-.project-section-title {
-  font-size: 22px;
-  font-weight: 700;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.project-content p {
-  text-align: justify;
-  text-justify: inter-word;
-  line-height: 1.7;
-}
-
-@media (max-width: 576px) {
   .project-card {
-    padding: 20px;
+    position: relative;
+
+    padding: 28px 30px;
+    margin: 20px 0 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+
+    box-shadow:
+      0 5px 16px rgba(0, 0, 0, 0.08);
+
+    color: #111111;
+
+    transition:
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
   }
 
-  .project-title {
-    font-size: 19px;
+  .project-card:hover {
+    border-color: #999999;
+
+    box-shadow:
+      0 10px 26px rgba(0, 0, 0, 0.12);
   }
 
-  .project-description {
-    font-size: 14px;
+  /* =========================================================
+     PROJECT HEADER
+     ========================================================= */
+
+  .project-header {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 18px;
   }
 
   .project-icon {
-    width: 50px;
-    height: 62px;
-    font-size: 25px;
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #f5f5f5;
+
+    border: 1px solid #bdbdbd;
+    border-radius: 7px;
+
+    color: #000000;
+
+    font-size: 28px;
   }
-}
+
+  .project-title {
+    margin: 0 !important;
+
+    color: #000000 !important;
+
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 26px;
+    font-weight: 700;
+
+    line-height: 1.4;
+  }
+
+  .project-subtitle {
+    margin: 6px 0 0;
+
+    color: #444444;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.65;
+  }
+
+  /* =========================================================
+     PROJECT DESCRIPTION
+     ========================================================= */
+
+  .project-description {
+    margin-top: 20px;
+
+    color: #222222;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .project-description strong {
+    color: #000000;
+    font-weight: 700;
+  }
+
+  /* =========================================================
+     PROJECT TAGS
+     ========================================================= */
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+  }
+
+  .project-tag {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    background: #f4f4f4;
+
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+
+    color: #222222;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.4;
+  }
+
+  /* =========================================================
+     PROJECT BUTTONS
+     ========================================================= */
+
+  .project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 22px;
+  }
+
+  .project-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 9px 17px;
+
+    background: #ffffff;
+
+    border: 1px solid #000000;
+    border-radius: 5px;
+
+    color: #000000 !important;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    text-decoration: none !important;
+
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .project-button:hover {
+    background: #000000;
+
+    color: #ffffff !important;
+
+    border-color: #000000;
+
+    transform: translateY(-2px);
+
+    text-decoration: none !important;
+  }
+
+  .project-button.primary,
+  .project-button.secondary {
+    background: #ffffff;
+    color: #000000 !important;
+  }
+
+  .project-button.primary:hover,
+  .project-button.secondary:hover {
+    background: #000000;
+    color: #ffffff !important;
+  }
+
+  /* =========================================================
+     PROJECT CONTENT
+     ========================================================= */
+
+  .project-content {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    color: #111111;
+  }
+
+  .project-content p {
+    margin-top: 0;
+    margin-bottom: 18px;
+
+    color: #222222;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .project-content strong {
+    color: #000000;
+    font-weight: 700;
+  }
+
+  /* =========================================================
+     SECTION HEADINGS
+     ========================================================= */
+
+  .project-section-title {
+    margin-top: 34px;
+    margin-bottom: 18px;
+
+    padding-bottom: 8px;
+
+    color: #000000 !important;
+
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    border-bottom: 2px solid #000000;
+  }
+
+  /* =========================================================
+     FEATURE CARDS
+     ========================================================= */
+
+  .project-content .card,
+  .feature-card {
+    height: 100%;
+
+    background: #ffffff !important;
+
+    border: 1px solid #d2d2d2;
+
+    border-radius: 7px;
+
+    color: #111111;
+
+    box-shadow:
+      0 4px 14px rgba(0, 0, 0, 0.06);
+
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
+  }
+
+  .project-content .card:hover,
+  .feature-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #999999;
+
+    box-shadow:
+      0 9px 22px rgba(0, 0, 0, 0.11);
+  }
+
+  .project-content .card-body {
+    padding: 22px;
+  }
+
+  /* =========================================================
+     CARD TITLES
+     ========================================================= */
+
+  .project-content .card-title {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    color: #000000 !important;
+
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    line-height: 1.45;
+  }
+
+  .project-content .card-title i {
+    margin-right: 7px;
+
+    color: #000000;
+  }
+
+  /* =========================================================
+     CARD TEXT
+     ========================================================= */
+
+  .project-content .card-text {
+    margin-bottom: 0;
+
+    color: #333333;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 15.5px;
+
+    line-height: 1.75;
+
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  /* =========================================================
+     LISTS
+     ========================================================= */
+
+  .project-content ul {
+    margin-top: 8px;
+    margin-bottom: 10px;
+
+    padding-left: 22px;
+
+    color: #222222;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+  }
+
+  .project-content li {
+    margin-bottom: 6px;
+  }
+
+  .project-content li strong {
+    color: #000000;
+  }
+
+  /* =========================================================
+     IMAGES
+     ========================================================= */
+
+  .project-content img {
+    border: 1px solid #d2d2d2;
+
+    box-shadow:
+      0 4px 14px rgba(0, 0, 0, 0.08);
+
+    border-radius: 6px;
+  }
+
+  .caption {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    color: #555555;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    text-align: center;
+
+    font-style: italic;
+  }
+
+  /* =========================================================
+     TABLES
+     ========================================================= */
+
+  .project-content .table {
+    width: 100%;
+
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    background: #ffffff;
+
+    color: #222222;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 15.5px;
+
+    line-height: 1.6;
+
+    border: 1px solid #cfcfcf;
+  }
+
+  .project-content .table th {
+    padding: 11px 14px;
+
+    background: #f3f3f3;
+
+    color: #000000;
+
+    font-family:
+      Arial,
+      Helvetica,
+      sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    border: 1px solid #cfcfcf;
+  }
+
+  .project-content .table td {
+    padding: 10px 14px;
+
+    background: #ffffff;
+
+    color: #222222;
+
+    border: 1px solid #d2d2d2;
+
+    vertical-align: top;
+  }
+
+  .project-content .table tbody tr:hover td {
+    background: #f8f8f8;
+  }
+
+  /* =========================================================
+     GENERAL LINKS
+     ========================================================= */
+
+  .project-content a {
+    color: #000000 !important;
+
+    text-decoration: underline;
+
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .project-content a:hover {
+    color: #000000 !important;
+    opacity: 0.6;
+  }
+
+  /* =========================================================
+     RESPONSIVE — TABLET
+     ========================================================= */
+
+  @media (max-width: 900px) {
+
+    .project-card {
+      margin-left: 20px;
+      margin-right: 20px;
+
+      padding: 25px;
+    }
+
+    .project-content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .project-title {
+      font-size: 24px;
+    }
+
+    .project-content p {
+      font-size: 16px;
+    }
+
+    .project-section-title {
+      font-size: 25px;
+    }
+  }
+
+  /* =========================================================
+     RESPONSIVE — MOBILE
+     ========================================================= */
+
+  @media (max-width: 768px) {
+
+    .project-card {
+      margin: 15px 15px 30px;
+
+      padding: 21px;
+
+      border-radius: 7px;
+    }
+
+    .project-header {
+      gap: 12px;
+    }
+
+    .project-icon {
+      width: 52px;
+      height: 52px;
+
+      font-size: 25px;
+    }
+
+    .project-title {
+      font-size: 21px;
+    }
+
+    .project-subtitle {
+      font-size: 14px;
+    }
+
+    .project-description {
+      font-size: 15px;
+
+      line-height: 1.75;
+
+      text-align: left;
+    }
+
+    .project-content {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .project-content p {
+      font-size: 15.5px;
+
+      line-height: 1.75;
+
+      text-align: left;
+    }
+
+    .project-section-title {
+      margin-top: 30px;
+
+      font-size: 23px;
+    }
+
+    .project-content .card-title {
+      font-size: 18px;
+    }
+
+    .project-content .card-text {
+      font-size: 15px;
+
+      text-align: left;
+    }
+
+    .project-content ul {
+      font-size: 15px;
+    }
+
+    .project-content .table {
+      font-size: 14px;
+    }
+
+    .project-content .table th,
+    .project-content .table td {
+      padding: 9px 10px;
+    }
+  }
+
+  /* =========================================================
+     RESPONSIVE — SMALL MOBILE
+     ========================================================= */
+
+  @media (max-width: 576px) {
+
+    .project-card {
+      margin-left: 10px;
+      margin-right: 10px;
+
+      padding: 18px;
+    }
+
+    .project-header {
+      align-items: flex-start;
+    }
+
+    .project-icon {
+      width: 46px;
+      height: 46px;
+
+      font-size: 22px;
+    }
+
+    .project-title {
+      font-size: 19px;
+    }
+
+    .project-subtitle {
+      font-size: 13.5px;
+    }
+
+    .project-description {
+      font-size: 14px;
+    }
+
+    .project-tags {
+      gap: 6px;
+    }
+
+    .project-tag {
+      font-size: 11px;
+      padding: 5px 8px;
+    }
+
+    .project-button {
+      padding: 8px 13px;
+
+      font-size: 12px;
+    }
+
+    .project-content {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .project-section-title {
+      font-size: 21px;
+    }
+
+    .caption {
+      font-size: 13px;
+    }
+
+    .project-content .table {
+      font-size: 13px;
+    }
+  }
 </style> <div class="project-card"> <div class="project-header"> <div class="project-icon"> <i class="fas fa-chalkboard-teacher"></i> </div> <div> <h1 class="project-title"> Training Program Management System </h1> <p class="project-subtitle"> A web-based platform for managing training programs, courses, trainees, enrollment, payments, and communication. </p> </div> </div> <div class="project-description"> Developed a <strong>Training Program Management System (TPMS)</strong> designed to streamline the administration, organization, and delivery of training programs. The system provides a centralized platform for managing courses, trainees, enrollment, payments, communication, and training-related activities. The application was developed using <strong>PHP</strong> with <strong>MySQL</strong> for database management. The user interface incorporates <strong>HTML, CSS, JavaScript, and Bootstrap</strong>, while GitHub was used for source-code management and collaboration. </div> <div class="project-tags"> <span class="project-tag">PHP</span> <span class="project-tag">MySQL</span> <span class="project-tag">HTML</span> <span class="project-tag">CSS</span> <span class="project-tag">JavaScript</span> <span class="project-tag">Bootstrap</span> <span class="project-tag">Web Application</span> <span class="project-tag">Training Management</span> <span class="project-tag">Live Chat</span> <span class="project-tag">Online Payment</span> </div> <div class="project-buttons"> <a href="https://github.com/shakil2022/Training-Program-Management-System" class="project-button primary" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github"></i> View Code </a> </div> </div> <div class="project-content"> <h2 class="project-section-title"> Project Overview </h2> <p> The <strong>Training Program Management System (TPMS)</strong> is a web-based platform developed to support the administration, documentation, tracking, and management of training programs. The system provides a centralized environment where administrators, instructors, and trainees can perform their respective activities. </p> <p> The system allows administrators or instructors to create and maintain course categories, add and manage courses, monitor trainee enrollment, communicate with trainees, and configure payment and language settings. Trainees can create accounts, manage their profiles, search for courses, add courses to a cart, purchase courses, review courses, view enrolled courses, and communicate through the live chat facility. </p> <div class="row justify-content-sm-center"> <div class="col-sm-8 mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/Shakil_Portfolio/assets/img/training-management-1-480.webp 480w,/Shakil_Portfolio/assets/img/training-management-1-800.webp 800w,/Shakil_Portfolio/assets/img/training-management-1-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/Shakil_Portfolio/assets/img/training-management-1.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Training Program Management System Dashboard" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> <div class="col-sm-4 mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/Shakil_Portfolio/assets/img/training-management-2-480.webp 480w,/Shakil_Portfolio/assets/img/training-management-2-800.webp 800w,/Shakil_Portfolio/assets/img/training-management-2-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/Shakil_Portfolio/assets/img/training-management-2.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Training Program Management System Course Management" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> </div> <div class="caption"> The Training Program Management System provides centralized management of training programs, courses, trainees, enrollment, and related activities. </div> <h2 class="project-section-title"> System Features </h2> <div class="row"> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-user-shield"></i> Admin &amp; Instructor Management </h4> <ul> <li>Provides a dedicated admin/instructor dashboard.</li> <li>Creates and manages course categories.</li> <li>Adds, updates, and deletes courses.</li> <li>Manages trainee enrollment.</li> <li>Controls payment and language settings.</li> </ul> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-user-graduate"></i> Trainee Management </h4> <ul> <li>Provides trainee registration and login.</li> <li>Allows users to view and update their profiles.</li> <li>Allows trainees to search for courses.</li> <li>Supports course enrollment and purchasing.</li> <li>Displays enrolled courses.</li> </ul> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-comments"></i> Live Chat </h4> <ul> <li>Provides direct communication between trainees and instructors.</li> <li>Helps trainees ask questions about courses.</li> <li>Supports communication about enrollment and payment.</li> <li>Improves interaction between trainees and instructors.</li> </ul> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-credit-card"></i> Online Payment </h4> <ul> <li>Supports online course purchasing.</li> <li>Provides payment configuration for administrators.</li> <li>Supports different currency options.</li> <li>Allows trainees to confirm course payments.</li> </ul> </div> </div> </div> </div> <h2 class="project-section-title"> System Components </h2> <div class="row"> <div class="col-sm-6 col-md-4 mt-3"> <div class="card h-100"> <div class="card-body"> <h4 class="card-title">Admin Dashboard</h4> <p class="card-text"> Provides administrative control over courses, categories, trainees, enrollment, payments, and language settings. </p> </div> </div> </div> <div class="col-sm-6 col-md-4 mt-3"> <div class="card h-100"> <div class="card-body"> <h4 class="card-title">Course Management</h4> <p class="card-text"> Allows administrators or instructors to add, update, delete, categorize, and maintain training courses. </p> </div> </div> </div> <div class="col-sm-6 col-md-4 mt-3"> <div class="card h-100"> <div class="card-body"> <h4 class="card-title">Trainee Management</h4> <p class="card-text"> Maintains registered trainees and provides access to their enrollment and course-related information. </p> </div> </div> </div> <div class="col-sm-6 col-md-4 mt-3"> <div class="card h-100"> <div class="card-body"> <h4 class="card-title">Enrollment Management</h4> <p class="card-text"> Tracks course enrollment history and provides information about overall and pending enrollment. </p> </div> </div> </div> <div class="col-sm-6 col-md-4 mt-3"> <div class="card h-100"> <div class="card-body"> <h4 class="card-title">Payment Management</h4> <p class="card-text"> Provides payment-related configuration and supports course purchasing by trainees. </p> </div> </div> </div> <div class="col-sm-6 col-md-4 mt-3"> <div class="card h-100"> <div class="card-body"> <h4 class="card-title">User Profile</h4> <p class="card-text"> Provides trainees with a profile containing their account information and allows profile information to be updated. </p> </div> </div> </div> </div> <h2 class="project-section-title"> User Workflow </h2> <div class="row"> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-user-plus"></i> 1. Registration </h4> <p class="card-text"> New instructors and trainees first create an account by providing the required information. </p> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-sign-in-alt"></i> 2. Login </h4> <p class="card-text"> Users log into the system using their registered username and password. The system provides separate administrative and user-oriented functionality. </p> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-search"></i> 3. Course Search </h4> <p class="card-text"> Trainees can browse and search available courses using course categories to find their desired training program. </p> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-shopping-cart"></i> 4. Course Purchase </h4> <p class="card-text"> Trainees can add courses to their cart, purchase their selected courses, and access the courses after enrollment. </p> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-comments"></i> 5. Communication </h4> <p class="card-text"> Trainees can communicate directly with instructors through the live chat facility when they need assistance. </p> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-book-open"></i> 6. Course Access </h4> <p class="card-text"> After purchasing and enrolling in a course, trainees can view their enrolled courses and access the available course materials. </p> </div> </div> </div> </div> <div class="row justify-content-sm-center"> <div class="col-sm-10 mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/Shakil_Portfolio/assets/img/training-management-3-480.webp 480w,/Shakil_Portfolio/assets/img/training-management-3-800.webp 800w,/Shakil_Portfolio/assets/img/training-management-3-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/Shakil_Portfolio/assets/img/training-management-3.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Training Program Management System User Interface" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> </div> <div class="caption"> The system supports course discovery, enrollment, purchasing, course access, profile management, and communication between trainees and instructors. </div> <h2 class="project-section-title"> Technology Stack </h2> <div class="table-responsive"> <table class="table table-bordered"> <thead> <tr> <th>Technology / Tool</th> <th>Purpose</th> </tr> </thead> <tbody> <tr> <td>PHP</td> <td>Server-side application development</td> </tr> <tr> <td>MySQL</td> <td>Database management and data storage</td> </tr> <tr> <td>HTML</td> <td>Web page structure and content</td> </tr> <tr> <td>CSS</td> <td>User interface styling</td> </tr> <tr> <td>JavaScript</td> <td>Client-side web functionality</td> </tr> <tr> <td>Bootstrap</td> <td>Responsive user interface development</td> </tr> <tr> <td>MySQL Workbench</td> <td>Database design and management</td> </tr> <tr> <td>Visual Studio Code</td> <td>Development environment</td> </tr> <tr> <td>GitHub</td> <td>Version control and code collaboration</td> </tr> </tbody> </table> </div> <h2 class="project-section-title"> Technical Attributes </h2> <div class="table-responsive"> <table class="table table-bordered"> <thead> <tr> <th>Attribute</th> <th>Details</th> </tr> </thead> <tbody> <tr> <td>Project Type</td> <td>Web-Based Training Management System</td> </tr> <tr> <td>Backend</td> <td>PHP</td> </tr> <tr> <td>Database</td> <td>MySQL</td> </tr> <tr> <td>Frontend</td> <td>HTML, CSS, JavaScript, Bootstrap</td> </tr> <tr> <td>User Roles</td> <td>Administrator / Instructor and Trainee</td> </tr> <tr> <td>Course Management</td> <td>Course creation, updating, deletion, and categorization</td> </tr> <tr> <td>Enrollment</td> <td>Course enrollment and enrollment history</td> </tr> <tr> <td>Payment</td> <td>Online course payment and payment configuration</td> </tr> <tr> <td>Communication</td> <td>Live chat between trainees and instructors</td> </tr> <tr> <td>Primary Objective</td> <td>Centralized management of training programs</td> </tr> </tbody> </table> </div> <h2 class="project-section-title"> Key Contributions </h2> <ul> <li> <strong>Centralized Management:</strong> Provides a centralized platform for managing training-related activities. </li> <li> <strong>Course Management:</strong> Supports course categories, course creation, maintenance, and course-related information. </li> <li> <strong>Online Enrollment:</strong> Allows trainees to search for desired courses and enroll in them. </li> <li> <strong>Online Payment:</strong> Provides an online purchasing and payment mechanism for courses. </li> <li> <strong>Live Communication:</strong> Includes a live chat facility that allows trainees to communicate directly with instructors. </li> <li> <strong>User Management:</strong> Provides registration, login, profile management, and enrolled-course functionality. </li> </ul> <h2 class="project-section-title"> Future Improvements </h2> <div class="row"> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-clipboard-check"></i> Assessment System </h4> <p class="card-text"> Introduce an assessment system to evaluate trainee knowledge, performance, and progress during training programs. </p> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-mobile-alt"></i> Mobile Accessibility </h4> <p class="card-text"> Extend the platform with improved mobile accessibility so trainees can access training services conveniently from mobile devices. </p> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-gamepad"></i> Gamification </h4> <p class="card-text"> Introduce gamification techniques to make training activities more engaging and interactive for trainees. </p> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-tachometer-alt"></i> Response Optimization </h4> <p class="card-text"> Improve system performance and minimize response time for a faster and more efficient user experience. </p> </div> </div> </div> </div> <h2 class="project-section-title"> Project Highlights </h2> <p> This project demonstrates practical experience in <strong>full-stack web development, PHP application development, MySQL database management, responsive interface design, course management, user management, online enrollment, payment management, and live communication</strong>. </p> <p> The system provides an integrated platform for managing online training programs and course purchases while allowing administrators or instructors to maintain course information and trainees to search, purchase, and access their enrolled courses. </p> <h2 class="project-section-title"> Project Report </h2> <p> The project was developed as a semester project at the <strong>Institute of Information Technology, Jahangirnagar University</strong>. The project report identifies the development technologies as PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap. </p> <p> The project team consisted of <strong>Mst. Sumiya Siddika, Md. Shakil Ahmed, Shariful Islam, and Amit Azim Amit</strong>, under the supervision of <strong>Professor Dr. M. Shamim Kaiser</strong>. </p> <h2 class="project-section-title"> GitHub Repository </h2> <p> The complete source code of the project is available in the GitHub repository. </p> <div class="project-buttons"> <a href="https://github.com/shakil2022/Training-Program-Management-System" class="project-button primary" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github"></i> GitHub Repository </a> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Md. Shakil Ahmed. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
