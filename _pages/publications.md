@@ -6,8 +6,377 @@ title: publications
 nav: true
 nav_order: 2
 ---
+<style>
+  /* =========================================================
+     PUBLICATIONS PAGE — WHITE / BLACK ACADEMIC STYLE
+     ========================================================= */
 
-<!-- _pages/publications.md -->
+  .publications {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    color: #111111;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  /* =========================================================
+     PUBLICATION ENTRIES
+     ========================================================= */
+
+  .publications .bibliography {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .publications .bibliography li {
+    position: relative;
+
+    margin: 0 0 22px;
+    padding: 22px 24px;
+
+    background: #ffffff;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+
+    color: #111111;
+
+    box-shadow:
+      0 4px 14px rgba(0, 0, 0, 0.07);
+
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
+  }
+
+  .publications .bibliography li:hover {
+    transform: translateY(-3px);
+
+    border-color: #999999;
+
+    box-shadow:
+      0 10px 25px rgba(0, 0, 0, 0.12);
+  }
+
+  /* =========================================================
+     PUBLICATION TEXT
+     ========================================================= */
+
+  .publications .bibliography li,
+  .publications .bibliography li p {
+    color: #222222;
+
+    font-family:
+      "Source Serif 4",
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  /* Publication title */
+  .publications .title {
+    color: #000000 !important;
+
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1.55;
+  }
+
+  /* Authors */
+  .publications .author {
+    color: #222222;
+
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* Venue / journal / conference */
+  .publications .periodical,
+  .publications .journal,
+  .publications .booktitle {
+    color: #444444;
+
+    font-style: italic;
+  }
+
+  /* Year */
+  .publications .year {
+    color: #000000;
+    font-weight: 700;
+  }
+
+  /* =========================================================
+     LINKS
+     ========================================================= */
+
+  .publications a {
+    color: #000000 !important;
+
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
+    transition: opacity 0.2s ease;
+  }
+
+  .publications a:hover {
+    color: #000000 !important;
+    opacity: 0.6;
+  }
+
+  /* =========================================================
+     PUBLICATION BUTTONS
+     ========================================================= */
+
+  .publications .btn,
+  .publications .btn-sm {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 8px;
+    margin-right: 6px;
+
+    padding: 5px 12px;
+
+    background: #ffffff !important;
+    color: #000000 !important;
+
+    border: 1px solid #000000;
+    border-radius: 4px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    text-decoration: none !important;
+
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .publications .btn:hover,
+  .publications .btn-sm:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+
+    border-color: #000000;
+
+    transform: translateY(-1px);
+  }
+
+  /* =========================================================
+     BADGES / TAGS
+     ========================================================= */
+
+  .publications .badge {
+    display: inline-block;
+
+    padding: 4px 9px;
+
+    background: #f4f4f4 !important;
+    color: #222222 !important;
+
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  /* =========================================================
+     BIBSEARCH
+     ========================================================= */
+
+  .publications .bibsearch,
+  .publications #bibsearch {
+    margin-bottom: 25px;
+  }
+
+  .publications input[type="text"],
+  .publications input[type="search"] {
+    background: #ffffff !important;
+    color: #111111 !important;
+
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    padding: 9px 12px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .publications input[type="text"]:focus,
+  .publications input[type="search"]:focus {
+    border-color: #000000;
+
+    outline: none;
+
+    box-shadow:
+      0 0 0 2px rgba(0, 0, 0, 0.08);
+  }
+
+  /* =========================================================
+     DIVIDERS
+     ========================================================= */
+
+  .publications hr {
+    border: none;
+    border-top: 2px solid #000000;
+
+    margin: 30px 0;
+  }
+
+  /* =========================================================
+     FOOTER
+     ========================================================= */
+
+  .site-footer {
+    background: #ffffff !important;
+    color: #111111 !important;
+
+    border-top: 2px solid #000000;
+
+    margin-top: 0;
+    padding: 25px 0;
+  }
+
+  .site-footer p {
+    margin: 0;
+
+    color: #111111 !important;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* =========================================================
+     TABLET
+     ========================================================= */
+
+  @media (max-width: 900px) {
+
+    .publications {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      font-size: 16px;
+    }
+
+    .publications .bibliography li {
+      padding: 20px;
+    }
+
+    .publications .bibliography li,
+    .publications .bibliography li p {
+      font-size: 15.5px;
+    }
+  }
+
+  /* =========================================================
+     MOBILE
+     ========================================================= */
+
+  @media (max-width: 768px) {
+
+    .publications {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      font-size: 16px;
+    }
+
+    .publications .bibliography li {
+      margin-bottom: 18px;
+      padding: 18px;
+      border-radius: 7px;
+    }
+
+    .publications .bibliography li,
+    .publications .bibliography li p {
+      font-size: 15px;
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .publications .title {
+      font-size: 17px;
+    }
+
+    .publications .author {
+      font-size: 15px;
+    }
+  }
+
+  /* =========================================================
+     SMALL MOBILE
+     ========================================================= */
+
+  @media (max-width: 480px) {
+
+    .publications {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .publications .bibliography li {
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .publications .bibliography li,
+    .publications .bibliography li p {
+      font-size: 14.5px;
+    }
+
+    .publications .title {
+      font-size: 16px;
+    }
+
+    .publications .btn,
+    .publications .btn-sm {
+      font-size: 11px;
+      padding: 5px 10px;
+    }
+
+    .site-footer {
+      padding: 22px 0;
+    }
+  }
+</style>
 
 <!-- Bibsearch Feature -->
 
@@ -15,6 +384,6 @@ nav_order: 2
 
 <div class="publications">
 
-{% bibliography %}
+  {% bibliography %}
 
 </div>
