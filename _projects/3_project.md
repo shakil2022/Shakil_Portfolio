@@ -733,6 +733,7 @@ related_publications: false
     }
   }
 </style>
+
 <div class="project-card">
 
   <div class="project-header">
