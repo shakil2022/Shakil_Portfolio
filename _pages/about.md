@@ -1,8 +1,8 @@
 ---
 layout: about
-#title: about
-permalink: /about/
-nav: true
+title: about
+permalink: /
+
 subtitle: >
   <a href="https://bubt.edu.bd/department/department-of-computer-science-engineering/faculty/profile/MDSHA">
   Lecturer</a>, Department of Computer Science and Engineering,
