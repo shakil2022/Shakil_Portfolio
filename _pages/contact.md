@@ -9,7 +9,7 @@ nav_order: 6
 
 <style>
   /* =========================================================
-     CONTACT PAGE — CLEAN ACADEMIC STYLE
+     CONTACT PAGE — CLEAN ACADEMIC WHITE STYLE
      ========================================================= */
 
   .contact-page {
@@ -18,7 +18,8 @@ nav_order: 6
     margin: 0 auto;
     padding: 15px 0 35px;
 
-    color: #222222;
+    background: #ffffff !important;
+    color: #222222 !important;
 
     font-family:
       "Source Serif 4",
@@ -62,7 +63,7 @@ nav_order: 6
 
     text-align: center;
 
-    background: #ffffff;
+    background: #ffffff !important;
 
     border: 1px solid #d2d2d2;
 
@@ -81,10 +82,12 @@ nav_order: 6
   .contact-card:hover {
     transform: translateY(-3px);
 
-    border-color: #a9a9a9;
+    border-color: #999999;
 
     box-shadow:
       0 7px 20px rgba(0, 0, 0, 0.10);
+
+    background: #ffffff !important;
   }
 
 
@@ -105,7 +108,9 @@ nav_order: 6
 
     margin-bottom: 15px;
 
-    color: #000000;
+    background: #ffffff !important;
+
+    color: #000000 !important;
 
     font-size: 32px;
   }
@@ -117,6 +122,8 @@ nav_order: 6
 
   .contact-title {
     margin: 0 0 20px;
+
+    background: transparent !important;
 
     color: #000000 !important;
 
@@ -134,7 +141,7 @@ nav_order: 6
 
 
   /* =========================================================
-     CONTACT BUTTON
+     ALL CONTACT BUTTONS
      ========================================================= */
 
   .contact-button {
@@ -154,7 +161,7 @@ nav_order: 6
 
     color: #000000 !important;
 
-    border: 1px solid #000000;
+    border: 1px solid #000000 !important;
 
     border-radius: 4px;
 
@@ -180,12 +187,16 @@ nav_order: 6
   }
 
 
+  /* =========================================================
+     BUTTON HOVER
+     ========================================================= */
+
   .contact-button:hover {
-    background: #000000 !important;
+    background: #f5f5f5 !important;
 
-    color: #ffffff !important;
+    color: #000000 !important;
 
-    border-color: #000000;
+    border-color: #000000 !important;
 
     text-decoration: none !important;
 
@@ -195,23 +206,43 @@ nav_order: 6
 
   /* =========================================================
      PRIMARY EMAIL BUTTON
+     IMPORTANT: WHITE BOX
      ========================================================= */
 
   .contact-button.primary {
-    background: #000000 !important;
-
-    color: #ffffff !important;
-
-    border-color: #000000;
-  }
-
-
-  .contact-button.primary:hover {
     background: #ffffff !important;
 
     color: #000000 !important;
 
-    border-color: #000000;
+    border: 1px solid #000000 !important;
+  }
+
+
+  .contact-button.primary:hover {
+    background: #f5f5f5 !important;
+
+    color: #000000 !important;
+
+    border-color: #000000 !important;
+  }
+
+
+  /* =========================================================
+     PAGE BACKGROUND
+     ========================================================= */
+
+  body {
+    background: #ffffff !important;
+  }
+
+
+  main {
+    background: #ffffff !important;
+  }
+
+
+  .container {
+    background: #ffffff !important;
   }
 
 
@@ -234,6 +265,8 @@ nav_order: 6
 
   .site-footer p {
     margin: 0;
+
+    background: transparent !important;
 
     color: #111111 !important;
 
@@ -414,7 +447,7 @@ nav_order: 6
         </div>
 
         <h3 class="contact-title">
-          Twitter / X
+          Twitter
         </h3>
 
       </div>
