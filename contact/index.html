@@ -6,7 +6,7 @@
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/Shakil_Portfolio/"> <span class="font-weight-bold">Md.</span> Shakil Ahmed </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/projects/">Projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/cv/">CV </a> </li> <li class="nav-item active"> <a class="nav-link" href="/Shakil_Portfolio/contact/">Contact <span class="sr-only">(current)</span> </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Contact</h1> <p class="post-description"></p> </header> <article> <style>
   /* =========================================================
-     CONTACT PAGE — CLEAN ACADEMIC STYLE
+     CONTACT PAGE — CLEAN ACADEMIC WHITE STYLE
      ========================================================= */
 
   .contact-page {
@@ -15,7 +15,8 @@
     margin: 0 auto;
     padding: 15px 0 35px;
 
-    color: #222222;
+    background: #ffffff !important;
+    color: #222222 !important;
 
     font-family:
       "Source Serif 4",
@@ -59,7 +60,7 @@
 
     text-align: center;
 
-    background: #ffffff;
+    background: #ffffff !important;
 
     border: 1px solid #d2d2d2;
 
@@ -78,10 +79,12 @@
   .contact-card:hover {
     transform: translateY(-3px);
 
-    border-color: #a9a9a9;
+    border-color: #999999;
 
     box-shadow:
       0 7px 20px rgba(0, 0, 0, 0.10);
+
+    background: #ffffff !important;
   }
 
 
@@ -102,7 +105,9 @@
 
     margin-bottom: 15px;
 
-    color: #000000;
+    background: #ffffff !important;
+
+    color: #000000 !important;
 
     font-size: 32px;
   }
@@ -114,6 +119,8 @@
 
   .contact-title {
     margin: 0 0 20px;
+
+    background: transparent !important;
 
     color: #000000 !important;
 
@@ -131,7 +138,7 @@
 
 
   /* =========================================================
-     CONTACT BUTTON
+     ALL CONTACT BUTTONS
      ========================================================= */
 
   .contact-button {
@@ -151,7 +158,7 @@
 
     color: #000000 !important;
 
-    border: 1px solid #000000;
+    border: 1px solid #000000 !important;
 
     border-radius: 4px;
 
@@ -177,12 +184,16 @@
   }
 
 
+  /* =========================================================
+     BUTTON HOVER
+     ========================================================= */
+
   .contact-button:hover {
-    background: #000000 !important;
+    background: #f5f5f5 !important;
 
-    color: #ffffff !important;
+    color: #000000 !important;
 
-    border-color: #000000;
+    border-color: #000000 !important;
 
     text-decoration: none !important;
 
@@ -192,23 +203,43 @@
 
   /* =========================================================
      PRIMARY EMAIL BUTTON
+     IMPORTANT: WHITE BOX
      ========================================================= */
 
   .contact-button.primary {
-    background: #000000 !important;
-
-    color: #ffffff !important;
-
-    border-color: #000000;
-  }
-
-
-  .contact-button.primary:hover {
     background: #ffffff !important;
 
     color: #000000 !important;
 
-    border-color: #000000;
+    border: 1px solid #000000 !important;
+  }
+
+
+  .contact-button.primary:hover {
+    background: #f5f5f5 !important;
+
+    color: #000000 !important;
+
+    border-color: #000000 !important;
+  }
+
+
+  /* =========================================================
+     PAGE BACKGROUND
+     ========================================================= */
+
+  body {
+    background: #ffffff !important;
+  }
+
+
+  main {
+    background: #ffffff !important;
+  }
+
+
+  .container {
+    background: #ffffff !important;
   }
 
 
@@ -231,6 +262,8 @@
 
   .site-footer p {
     margin: 0;
+
+    background: transparent !important;
 
     color: #111111 !important;
 
@@ -342,7 +375,7 @@
       padding: 22px 0;
     }
   }
-</style> <div class="contact-page"> <div class="contact-grid"> <div class="contact-card"> <div> <div class="contact-icon"> <i class="fas fa-envelope"></i> </div> <h3 class="contact-title"> Email </h3> </div> <a href="mailto:shakil.ahmed@bubt.edu.bd" class="contact-button primary"> shakil.ahmed@bubt.edu.bd </a> </div> <div class="contact-card"> <div> <div class="contact-icon"> <i class="fab fa-linkedin"></i> </div> <h3 class="contact-title"> LinkedIn </h3> </div> <a href="https://www.linkedin.com/in/md-shakil-ahmed-6482b13b3/" class="contact-button" target="_blank" rel="noopener noreferrer"> Connect </a> </div> <div class="contact-card"> <div> <div class="contact-icon"> <i class="fab fa-twitter"></i> </div> <h3 class="contact-title"> Twitter / X </h3> </div> <a href="https://x.com/home" class="contact-button" target="_blank" rel="noopener noreferrer"> Follow </a> </div> </div> </div> <footer class="site-footer"> <div class="container text-center"> <p class="mb-0"> © 2026 Md. Shakil Ahmed. All rights reserved. </p> </div> </footer> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Md. Shakil Ahmed. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+</style> <div class="contact-page"> <div class="contact-grid"> <div class="contact-card"> <div> <div class="contact-icon"> <i class="fas fa-envelope"></i> </div> <h3 class="contact-title"> Email </h3> </div> <a href="mailto:shakil.ahmed@bubt.edu.bd" class="contact-button primary"> shakil.ahmed@bubt.edu.bd </a> </div> <div class="contact-card"> <div> <div class="contact-icon"> <i class="fab fa-linkedin"></i> </div> <h3 class="contact-title"> LinkedIn </h3> </div> <a href="https://www.linkedin.com/in/md-shakil-ahmed-6482b13b3/" class="contact-button" target="_blank" rel="noopener noreferrer"> Connect </a> </div> <div class="contact-card"> <div> <div class="contact-icon"> <i class="fab fa-twitter"></i> </div> <h3 class="contact-title"> Twitter </h3> </div> <a href="https://x.com/home" class="contact-button" target="_blank" rel="noopener noreferrer"> Follow </a> </div> </div> </div> <footer class="site-footer"> <div class="container text-center"> <p class="mb-0"> © 2026 Md. Shakil Ahmed. All rights reserved. </p> </div> </footer> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Md. Shakil Ahmed. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
