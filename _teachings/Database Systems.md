@@ -1,5 +1,5 @@
-
 ---
+
 layout: course
 
 title: Database Systems
@@ -17,90 +17,91 @@ importance: 5
 course_id: cse-207-database-systems
 
 schedule:
-  - week: 1
-    date: Week 1
-    topic: Introduction to Database Systems
-    description: Overview of database systems, database applications, limitations of traditional file processing systems, levels of data abstraction, database instances, database languages, storage management, query processing, transaction management, history of database systems, database users, and database administrators.
 
-  - week: 2
-    date: Week 2
-    topic: Relational Model
-    description: Introduction to the relational model, relations, attributes and their types, relation schema and instances, keys, schema diagrams, and relational query languages.
+* week: 1
+  date: Week 1
+  topic: Introduction to Database Systems
+  description: Overview of database systems, database applications, limitations of traditional file processing systems, levels of data abstraction, database instances, database languages, storage management, query processing, transaction management, history of database systems, database users, and database administrators.
 
-  - week: 3
-    date: Week 3
-    topic: Introduction to SQL
-    description: Introduction to Structured Query Language, SQL data definition, basic data types, schema definition, integrity constraints, basic SQL queries, queries on single and multiple relations, Cartesian products, natural joins, filtering, ordering, set operations, and aggregate functions.
+* week: 2
+  date: Week 2
+  topic: Relational Model
+  description: Introduction to the relational model, relations, attributes and their types, relation schema and instances, keys, schema diagrams, and relational query languages.
 
-  - week: 4
-    date: Week 4
-    topic: Database Modification and Nested Queries
-    description: Practical application of INSERT, UPDATE, and DELETE operations, nested subqueries, and complex SQL query construction.
+* week: 3
+  date: Week 3
+  topic: Introduction to SQL
+  description: Introduction to Structured Query Language, SQL data definition, basic data types, schema definition, integrity constraints, basic SQL queries, queries on single and multiple relations, Cartesian products, natural joins, filtering, ordering, set operations, and aggregate functions.
 
-  - week: 5
-    date: Week 5
-    topic: Intermediate SQL
-    description: Advanced SQL operations including inner joins, outer joins, views, materialized views, and view modification and update operations.
+* week: 4
+  date: Week 4
+  topic: Database Modification and Nested Queries
+  description: Practical application of INSERT, UPDATE, and DELETE operations, nested subqueries, and complex SQL query construction.
 
-  - week: 6
-    date: Week 6
-    topic: Integrity Constraints and Relational Algebra
-    description: Application of NOT NULL, UNIQUE, PRIMARY KEY, CHECK, and referential integrity constraints. Introduction to authorization, user-defined domains, and relational algebra operations.
+* week: 5
+  date: Week 5
+  topic: Intermediate SQL
+  description: Advanced SQL operations including inner joins, outer joins, views, materialized views, and view modification and update operations.
 
-  - week: 7
-    date: Week 7
-    topic: Relational Algebra
-    description: Detailed study and problem solving using select, project, set operations, Cartesian product, rename, natural join, assignment, outer join, division, aggregate functions, and relational algebra-based queries.
+* week: 6
+  date: Week 6
+  topic: Integrity Constraints and Relational Algebra
+  description: Application of NOT NULL, UNIQUE, PRIMARY KEY, CHECK, and referential integrity constraints. Introduction to authorization, user-defined domains, and relational algebra operations.
 
-  - week: 8
-    date: Week 8
-    topic: Entity-Relationship Model
-    description: Introduction to entity sets, relationship sets, cardinality constraints, participation constraints, ER diagrams, degrees of relationships, and attribute types.
+* week: 7
+  date: Week 7
+  topic: Relational Algebra
+  description: Detailed study and problem solving using select, project, set operations, Cartesian product, rename, natural join, assignment, outer join, division, aggregate functions, and relational algebra-based queries.
 
-  - week: 9
-    date: Week 9
-    topic: Advanced ER Modeling and Database Design
-    description: Mapping cardinalities, entity roles, weak entity sets, reduction of ER models to relational models, specialization, generalization, aggregation, and real-world database design.
+* week: 8
+  date: Week 8
+  topic: Entity-Relationship Model
+  description: Introduction to entity sets, relationship sets, cardinality constraints, participation constraints, ER diagrams, degrees of relationships, and attribute types.
 
-  - week: 10
-    date: Week 10
-    topic: Relational Database Design
-    description: Study of atomic attributes, decomposition, functional dependencies, closure sets, super keys, candidate keys, and primary keys. Students will analyze functional dependencies for relational database design.
+* week: 9
+  date: Week 9
+  topic: Advanced ER Modeling and Database Design
+  description: Mapping cardinalities, entity roles, weak entity sets, reduction of ER models to relational models, specialization, generalization, aggregation, and real-world database design.
 
-  - week: 11
-    date: Week 11
-    topic: Functional Dependencies and Canonical Cover
-    description: Determination of attribute closure, identification of keys, analysis of functional dependencies, and construction of canonical covers.
+* week: 10
+  date: Week 10
+  topic: Relational Database Design
+  description: Study of atomic attributes, decomposition, functional dependencies, closure sets, super keys, candidate keys, and primary keys. Students will analyze functional dependencies for relational database design.
 
-  - week: 12
-    date: Week 12
-    topic: Normalization and Database Design
-    description: Practical application of First Normal Form, Second Normal Form, Third Normal Form, and Boyce-Codd Normal Form. Students will determine normal forms, normalize relational schemas, and study denormalization.
+* week: 11
+  date: Week 11
+  topic: Functional Dependencies and Canonical Cover
+  description: Determination of attribute closure, identification of keys, analysis of functional dependencies, and construction of canonical covers.
 
-  - week: 13
-    date: Week 13
-    topic: Indexing and Hashing
-    description: Introduction to search keys, index files, ordered indices, dense and sparse indices, hash indices, and evaluation of indexing strategies.
+* week: 12
+  date: Week 12
+  topic: Normalization and Database Design
+  description: Practical application of First Normal Form, Second Normal Form, Third Normal Form, and Boyce-Codd Normal Form. Students will determine normal forms, normalize relational schemas, and study denormalization.
 
-  - week: 14
-    date: Week 14
-    topic: B+ Trees and Hashing
-    description: Introduction to multilevel indexing, B+ tree construction, insertion, updating, deletion, hash functions, buckets, static hashing, bucket overflow, dynamic hashing, and extendible hashing.
+* week: 13
+  date: Week 13
+  topic: Indexing and Hashing
+  description: Introduction to search keys, index files, ordered indices, dense and sparse indices, hash indices, and evaluation of indexing strategies.
 
-  - week: 15
-    date: Week 15
-    topic: Transactions and Concurrency Control
-    description: Study of transaction states, ACID properties, transaction atomicity and durability, storage structures, concurrency control, and transaction management techniques.
+* week: 14
+  date: Week 14
+  topic: B+ Trees and Hashing
+  description: Introduction to multilevel indexing, B+ tree construction, insertion, updating, deletion, hash functions, buckets, static hashing, bucket overflow, dynamic hashing, and extendible hashing.
 
-  - week: 16
-    date: Week 16
-    topic: Database Case Study and Problem Solving
-    description: Application of database design, SQL, normalization, indexing, and transaction concepts to a real-world database case study through problem solving and discussion.
+* week: 15
+  date: Week 15
+  topic: Transactions and Concurrency Control
+  description: Study of transaction states, ACID properties, transaction atomicity and durability, storage structures, concurrency control, and transaction management techniques.
 
-  - week: 17
-    date: Week 17
-    topic: Final Review and Case Study
-    description: Comprehensive review of database systems concepts, SQL, database design, normalization, indexing, hashing, transactions, and concurrency control in preparation for the final examination.
+* week: 16
+  date: Week 16
+  topic: Database Case Study and Problem Solving
+  description: Application of database design, SQL, normalization, indexing, and transaction concepts to a real-world database case study through problem solving and discussion.
+
+* week: 17
+  date: Week 17
+  topic: Final Review and Case Study
+  description: Comprehensive review of database systems concepts, SQL, database design, normalization, indexing, hashing, transactions, and concurrency control in preparation for the final examination.
 
 ---
 
@@ -126,6 +127,7 @@ schedule:
   font-size: 17px;
 
   line-height: 1.8;
+
 }
 
 
@@ -150,6 +152,7 @@ schedule:
     serif;
 
   font-weight: 700;
+
 }
 
 
@@ -161,7 +164,9 @@ schedule:
   line-height: 1.4;
 
   margin-top: 0;
+
   margin-bottom: 20px;
+
 }
 
 
@@ -173,11 +178,13 @@ schedule:
   line-height: 1.4;
 
   margin-top: 34px;
+
   margin-bottom: 18px;
 
   padding-bottom: 8px;
 
   border-bottom: 2px solid #000000;
+
 }
 
 
@@ -189,7 +196,9 @@ schedule:
   line-height: 1.45;
 
   margin-top: 25px;
+
   margin-bottom: 12px;
+
 }
 
 
@@ -199,6 +208,7 @@ schedule:
   font-size: 19px;
 
   line-height: 1.45;
+
 }
 
 
@@ -229,6 +239,7 @@ schedule:
   text-align: justify;
 
   text-justify: inter-word;
+
 }
 
 
@@ -242,6 +253,7 @@ schedule:
   color: #000000;
 
   font-weight: 700;
+
 }
 
 
@@ -271,6 +283,7 @@ schedule:
   font-size: 16px;
 
   line-height: 1.75;
+
 }
 
 
@@ -278,6 +291,7 @@ schedule:
 .course-page li {
 
   margin-bottom: 7px;
+
 }
 
 
@@ -297,6 +311,7 @@ schedule:
   text-underline-offset: 3px;
 
   transition: opacity 0.2s ease;
+
 }
 
 
@@ -306,6 +321,7 @@ schedule:
   color: #000000 !important;
 
   opacity: 0.6;
+
 }
 
 
@@ -327,6 +343,7 @@ schedule:
   font-size: 16px;
 
   line-height: 1.75;
+
 }
 
 
@@ -352,6 +369,7 @@ schedule:
     transform 0.25s ease,
     box-shadow 0.25s ease,
     border-color 0.25s ease;
+
 }
 
 
@@ -364,6 +382,7 @@ schedule:
 
   box-shadow:
     0 9px 22px rgba(0, 0, 0, 0.11);
+
 }
 
 
@@ -371,6 +390,7 @@ schedule:
 .course-page .card-body {
 
   padding: 22px;
+
 }
 
 
@@ -393,6 +413,7 @@ schedule:
   font-weight: 700;
 
   line-height: 1.45;
+
 }
 
 
@@ -416,6 +437,7 @@ schedule:
   text-align: justify;
 
   text-justify: inter-word;
+
 }
 
 
@@ -447,6 +469,7 @@ schedule:
   line-height: 1.6;
 
   border: 1px solid #cfcfcf;
+
 }
 
 
@@ -469,6 +492,7 @@ schedule:
   font-weight: 700;
 
   border: 1px solid #cfcfcf;
+
 }
 
 
@@ -484,6 +508,7 @@ schedule:
   border: 1px solid #d2d2d2;
 
   vertical-align: top;
+
 }
 
 
@@ -491,6 +516,7 @@ schedule:
 .course-page .table tbody tr:hover td {
 
   background: #f8f8f8;
+
 }
 
 
@@ -507,6 +533,7 @@ schedule:
     monospace;
 
   font-size: 14px;
+
 }
 
 
@@ -526,6 +553,7 @@ schedule:
   font-size: 14px;
 
   line-height: 1.6;
+
 }
 
 
@@ -541,6 +569,7 @@ schedule:
   border-top: 2px solid #000000;
 
   margin: 30px auto;
+
 }
 
 
@@ -584,6 +613,7 @@ schedule:
     background-color 0.2s ease,
     color 0.2s ease,
     transform 0.2s ease;
+
 }
 
 
@@ -597,6 +627,7 @@ schedule:
   border-color: #000000;
 
   transform: translateY(-2px);
+
 }
 
 
@@ -608,6 +639,7 @@ schedule:
 .course-page .text-muted {
 
   color: #555555 !important;
+
 }
 
 
@@ -624,6 +656,7 @@ schedule:
     font-size: 16px;
 
     line-height: 1.75;
+
   }
 
 
@@ -631,6 +664,7 @@ schedule:
   .course-page h1 {
 
     font-size: 30px;
+
   }
 
 
@@ -638,6 +672,7 @@ schedule:
   .course-page h2 {
 
     font-size: 25px;
+
   }
 
 
@@ -645,6 +680,7 @@ schedule:
   .course-page h3 {
 
     font-size: 21px;
+
   }
 
 
@@ -653,6 +689,7 @@ schedule:
   .course-description {
 
     font-size: 16px;
+
   }
 
 
@@ -660,7 +697,9 @@ schedule:
   .course-page .card-text {
 
     font-size: 15px;
+
   }
+
 }
 
 
@@ -677,6 +716,7 @@ schedule:
     font-size: 15.5px;
 
     line-height: 1.75;
+
   }
 
 
@@ -684,6 +724,7 @@ schedule:
   .course-page h1 {
 
     font-size: 24px;
+
   }
 
 
@@ -693,6 +734,7 @@ schedule:
     font-size: 23px;
 
     margin-top: 30px;
+
   }
 
 
@@ -700,6 +742,7 @@ schedule:
   .course-page h3 {
 
     font-size: 20px;
+
   }
 
 
@@ -712,6 +755,7 @@ schedule:
     line-height: 1.75;
 
     text-align: left;
+
   }
 
 
@@ -723,6 +767,7 @@ schedule:
     font-size: 15px;
 
     line-height: 1.7;
+
   }
 
 
@@ -730,6 +775,7 @@ schedule:
   .course-page .card-title {
 
     font-size: 18px;
+
   }
 
 
@@ -741,6 +787,7 @@ schedule:
     line-height: 1.7;
 
     text-align: left;
+
   }
 
 
@@ -748,6 +795,7 @@ schedule:
   .course-page .table {
 
     font-size: 14px;
+
   }
 
 
@@ -757,7 +805,9 @@ schedule:
   .course-page .table td {
 
     padding: 9px 10px;
+
   }
+
 }
 
 
@@ -774,6 +824,7 @@ schedule:
     font-size: 14px;
 
     line-height: 1.7;
+
   }
 
 
@@ -781,6 +832,7 @@ schedule:
   .course-page h1 {
 
     font-size: 21px;
+
   }
 
 
@@ -788,6 +840,7 @@ schedule:
   .course-page h2 {
 
     font-size: 21px;
+
   }
 
 
@@ -795,6 +848,7 @@ schedule:
   .course-page h3 {
 
     font-size: 19px;
+
   }
 
 
@@ -805,6 +859,7 @@ schedule:
     font-size: 14px;
 
     line-height: 1.7;
+
   }
 
 
@@ -814,6 +869,7 @@ schedule:
   .course-page ol {
 
     font-size: 14px;
+
   }
 
 
@@ -821,6 +877,7 @@ schedule:
   .course-page .card-title {
 
     font-size: 18px;
+
   }
 
 
@@ -828,6 +885,7 @@ schedule:
   .course-page .card-text {
 
     font-size: 14px;
+
   }
 
 
@@ -835,6 +893,7 @@ schedule:
   .course-page .table {
 
     font-size: 13px;
+
   }
 
 
@@ -844,11 +903,12 @@ schedule:
     font-size: 12px;
 
     padding: 7px 13px;
+
   }
+
 }
 
 </style>
-
 
 ## Course Overview
 
@@ -856,50 +916,68 @@ This course introduces the fundamental concepts and practices of database system
 
 By the end of this course, students will be able to:
 
-- Understand the fundamental concepts and terminology of database management systems.
-- Explain and apply SQL and relational algebra for manipulation of relational data.
-- Design well-defined relational databases using ER modeling and normalization techniques.
-- Analyze functional dependencies and determine appropriate database keys.
-- Apply indexing and hashing techniques for efficient database access.
-- Understand transaction management, ACID properties, and concurrency control.
+* Understand the fundamental concepts and terminology of database management systems.
 
+* Explain and apply SQL and relational algebra for manipulation of relational data.
+
+* Design well-defined relational databases using ER modeling and normalization techniques.
+
+* Analyze functional dependencies and determine appropriate database keys.
+
+* Apply indexing and hashing techniques for efficient database access.
+
+* Understand transaction management, ACID properties, and concurrency control.
 
 ## Prerequisites
 
-- No formal prerequisite.
-- Basic programming knowledge.
-- Basic understanding of data structures and algorithms.
-- Basic mathematical and problem-solving skills.
+* No formal prerequisite.
 
+* Basic programming knowledge.
+
+* Basic understanding of data structures and algorithms.
+
+* Basic mathematical and problem-solving skills.
 
 ## Textbooks
 
-- **Primary:** *Database System Concepts* by Abraham Silberschatz, Henry F. Korth, and S. Sudarshan.
-- **Reference:** *Database Management Systems* by Raghu Ramakrishnan and Johannes Gehrke.
-- **Reference:** *Database Systems* by Ramez Elmasri and Shamkant B. Navathe.
-- **Reference:** *Database Systems: Introduction to Databases and Data Warehouses* by Nenad Jukić, Susan Vrbsky, Svetlozar Nestorov, and Abhishek Sharma.
+* **Primary:** *Database System Concepts* by Abraham Silberschatz, Henry F. Korth, and S. Sudarshan.
 
+* **Reference:** *Database Management Systems* by Raghu Ramakrishnan and Johannes Gehrke.
+
+* **Reference:** *Database Systems* by Ramez Elmasri and Shamkant B. Navathe.
+
+* **Reference:** *Database Systems: Introduction to Databases and Data Warehouses* by Nenad Jukić, Susan Vrbsky, Svetlozar Nestorov, and Abhishek Sharma.
 
 ## Tools and Platforms
 
-- MySQL
-- PostgreSQL
-- Microsoft SQL Server
-- Oracle Database
-- MySQL Workbench
-- phpMyAdmin
-- Visual Studio Code
-- Git and GitHub
-- ER Diagram / UML Modeling Tools
+* MySQL
 
+* PostgreSQL
+
+* Microsoft SQL Server
+
+* Oracle Database
+
+* MySQL Workbench
+
+* phpMyAdmin
+
+* Visual Studio Code
+
+* Git and GitHub
+
+* ER Diagram / UML Modeling Tools
 
 ## Grading
 
-- **Class Participation and Activity:** 5%
-- **Class Tests:** 15%
-- **Assignment/Report and Presentation/Viva:** 10%
-- **Midterm Examination:** 30%
-- **Final Examination:** 40%
+* **Class Participation and Activity:** 5%
+
+* **Class Tests:** 15%
+
+* **Assignment/Report and Presentation/Viva:** 10%
+
+* **Midterm Examination:** 30%
+
+* **Final Examination:** 40%
 
 **Total: 100%**
-
