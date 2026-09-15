@@ -7,57 +7,150 @@
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/Shakil_Portfolio/"> <span class="font-weight-bold">Md.</span> Shakil Ahmed </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/projects/">Projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/Shakil_Portfolio/contact/">Contact </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Database Systems Lab</h1> <p class="post-description">This laboratory course provides hands-on experience in designing, creating, modifying, and managing relational database systems. Students will develop practical skills in SQL, database design, data manipulation, constraints, joins, subqueries, indexes, views, triggers, and database application development through laboratory exercises and a group project.</p> </header> <article> <div class="course"> <div class="course-info"> <p><strong>Instructor:</strong> Md. Shakil Ahmed</p> <p><strong>Term:</strong> Spring</p> </div> <style>
 
 /* =========================================================
-   COURSE PAGE — WHITE / BLACK ACADEMIC STYLE
-   Typography aligned with Teaching and Project pages
+   COURSE DETAIL PAGE
+   WHITE / BLACK ACADEMIC STYLE
    ========================================================= */
 
-.course-page,
-.course-content,
-.course-overview {
+.course-card,
+.course-content {
   font-family:
     "Source Serif 4",
     Georgia,
     "Times New Roman",
     serif;
   color: #111111;
-  font-size: 17px;
-  line-height: 1.8;
 }
+
+
+/* =========================================================
+   MAIN COURSE HEADER CARD
+   ========================================================= */
+
+.course-card {
+  position: relative;
+  padding: 28px 30px;
+  margin: 20px 0 35px;
+  background: #ffffff;
+  border: 1px solid #d2d2d2;
+  border-radius: 8px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
+  color: #111111;
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.course-card:hover {
+  border-color: #999999;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+}
+
 
 /* =========================================================
    COURSE HEADER
    ========================================================= */
 
-.course-page h1,
-.course-page h2,
-.course-page h3,
-.course-page h4,
-.course-content h1,
-.course-content h2,
-.course-content h3,
-.course-content h4 {
+.course-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.course-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #f5f5f5;
+  border: 1px solid #bdbdbd;
+  border-radius: 7px;
+  color: #000000;
+  font-size: 28px;
+}
+
+.course-title {
+  margin: 0 !important;
   color: #000000 !important;
   font-family:
     Georgia,
     "Times New Roman",
     serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.course-subtitle {
+  margin: 6px 0 0;
+  color: #444444;
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   COURSE DESCRIPTION
+   ========================================================= */
+
+.course-description {
+  margin-top: 20px;
+  color: #222222;
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.course-description strong {
+  color: #000000;
   font-weight: 700;
 }
 
-.course-page h1 {
-  font-size: 32px;
-}
-
-.course-page h2 {
-  font-size: 28px;
-}
-
-.course-page h3 {
-  font-size: 22px;
-}
 
 /* =========================================================
-   MAIN COURSE CONTENT
+   COURSE TAGS
+   ========================================================= */
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.course-tag {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #f4f4f4;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  color: #222222;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   COURSE CONTENT
    ========================================================= */
 
 .course-content {
@@ -86,6 +179,7 @@
   font-weight: 700;
 }
 
+
 /* =========================================================
    SECTION HEADINGS
    ========================================================= */
@@ -105,77 +199,40 @@
   border-bottom: 2px solid #000000;
 }
 
-/* =========================================================
-   LISTS
-   ========================================================= */
-
-.course-content ul {
-  margin-top: 8px;
-  margin-bottom: 20px;
-  padding-left: 22px;
-  color: #222222;
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-  font-size: 16px;
-  line-height: 1.75;
-}
-
-.course-content li {
-  margin-bottom: 7px;
-}
-
-.course-content li strong {
-  color: #000000;
-}
 
 /* =========================================================
-   LINKS
+   FEATURE CARDS
    ========================================================= */
 
-.course-content a {
-  color: #000000 !important;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  transition: opacity 0.2s ease;
-}
-
-.course-content a:hover {
-  color: #000000 !important;
-  opacity: 0.6;
-}
-
-/* =========================================================
-   COURSE INFORMATION CARDS
-   ========================================================= */
-
-.course-content .card {
+.course-content .card,
+.feature-card {
   height: 100%;
   background: #ffffff !important;
   border: 1px solid #d2d2d2;
   border-radius: 7px;
   color: #111111;
-  box-shadow:
-    0 4px 14px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease,
     border-color 0.25s ease;
 }
 
-.course-content .card:hover {
+.course-content .card:hover,
+.feature-card:hover {
   transform: translateY(-3px);
   border-color: #999999;
-  box-shadow:
-    0 9px 22px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 9px 22px rgba(0, 0, 0, 0.11);
 }
 
 .course-content .card-body {
   padding: 22px;
 }
+
+
+/* =========================================================
+   CARD TITLES
+   ========================================================= */
 
 .course-content .card-title {
   margin-top: 0;
@@ -190,6 +247,16 @@
   line-height: 1.45;
 }
 
+.course-content .card-title i {
+  margin-right: 7px;
+  color: #000000;
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
 .course-content .card-text {
   margin-bottom: 0;
   color: #333333;
@@ -203,6 +270,34 @@
   text-align: justify;
   text-justify: inter-word;
 }
+
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+.course-content ul {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding-left: 22px;
+  color: #222222;
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.course-content li {
+  margin-bottom: 6px;
+}
+
+.course-content li strong {
+  color: #000000;
+}
+
 
 /* =========================================================
    TABLES
@@ -249,15 +344,23 @@
   background: #f8f8f8;
 }
 
+
 /* =========================================================
-   DIVIDERS
+   GENERAL LINKS
    ========================================================= */
 
-.course-content hr {
-  border: none;
-  border-top: 2px solid #000000;
-  margin: 30px auto;
+.course-content a {
+  color: #000000 !important;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
+
+.course-content a:hover {
+  color: #000000 !important;
+  opacity: 0.6;
+}
+
 
 /* =========================================================
    RESPONSIVE — TABLET
@@ -265,27 +368,19 @@
 
 @media (max-width: 900px) {
 
-  .course-page,
-  .course-content,
-  .course-overview {
-    font-size: 16px;
-  }
-
-  .course-page h1 {
-    font-size: 28px;
-  }
-
-  .course-page h2 {
-    font-size: 24px;
-  }
-
-  .course-page h3 {
-    font-size: 20px;
+  .course-card {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 25px;
   }
 
   .course-content {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .course-title {
+    font-size: 24px;
   }
 
   .course-content p {
@@ -296,10 +391,8 @@
     font-size: 25px;
   }
 
-  .course-content .card-body {
-    padding: 21px;
-  }
 }
+
 
 /* =========================================================
    RESPONSIVE — MOBILE
@@ -307,23 +400,34 @@
 
 @media (max-width: 768px) {
 
-  .course-page,
-  .course-content,
-  .course-overview {
-    font-size: 15.5px;
-    line-height: 1.75;
+  .course-card {
+    margin: 15px 15px 30px;
+    padding: 21px;
+    border-radius: 7px;
   }
 
-  .course-page h1 {
-    font-size: 24px;
+  .course-header {
+    gap: 12px;
   }
 
-  .course-page h2 {
+  .course-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 25px;
+  }
+
+  .course-title {
     font-size: 21px;
   }
 
-  .course-page h3 {
-    font-size: 19px;
+  .course-subtitle {
+    font-size: 14px;
+  }
+
+  .course-description {
+    font-size: 15px;
+    line-height: 1.75;
+    text-align: left;
   }
 
   .course-content {
@@ -353,7 +457,6 @@
 
   .course-content ul {
     font-size: 15px;
-    line-height: 1.75;
   }
 
   .course-content .table {
@@ -364,7 +467,9 @@
   .course-content .table td {
     padding: 9px 10px;
   }
+
 }
+
 
 /* =========================================================
    RESPONSIVE — SMALL MOBILE
@@ -372,16 +477,41 @@
 
 @media (max-width: 576px) {
 
-  .course-page h1 {
-    font-size: 21px;
+  .course-card {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 18px;
   }
 
-  .course-page h2 {
+  .course-header {
+    align-items: flex-start;
+  }
+
+  .course-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 22px;
+  }
+
+  .course-title {
     font-size: 19px;
   }
 
-  .course-page h3 {
-    font-size: 17px;
+  .course-subtitle {
+    font-size: 13.5px;
+  }
+
+  .course-description {
+    font-size: 14px;
+  }
+
+  .course-tags {
+    gap: 6px;
+  }
+
+  .course-tag {
+    font-size: 11px;
+    padding: 5px 8px;
   }
 
   .course-content {
@@ -393,38 +523,13 @@
     font-size: 21px;
   }
 
-  .course-content p {
-    font-size: 15px;
-  }
-
-  .course-content .card-body {
-    padding: 18px;
-  }
-
-  .course-content .card-title {
-    font-size: 17px;
-  }
-
-  .course-content .card-text {
-    font-size: 14.5px;
-  }
-
-  .course-content ul {
-    font-size: 14.5px;
-    padding-left: 20px;
-  }
-
   .course-content .table {
     font-size: 13px;
   }
 
-  .course-content .table th,
-  .course-content .table td {
-    padding: 8px 9px;
-  }
 }
 
-</style> <div class="course-content"> <h2 class="course-section-title"> Course Overview </h2> <p> This laboratory course provides students with practical experience in designing, creating, modifying, and managing relational database systems. The course is based on <strong>CSE 207: Database Management Systems</strong> and focuses on the practical implementation of database concepts using SQL and relational database management systems. </p> <p> By the end of this course, students will be able to: </p> <ul> <li> Demonstrate the use of a relational database management system to create, secure, populate, and maintain databases. </li> <li> Apply SQL commands to create and modify database structures. </li> <li> Perform data manipulation operations, including insertion, deletion, and updating of records. </li> <li> Design and execute SQL queries using selection, projection, restrictions, joins, grouping, and subqueries. </li> <li> Implement database constraints, indexes, views, and triggers. </li> <li> Design relational databases and develop ER diagrams for real-world applications. </li> <li> Develop a database application using a relational database management system. </li> <li> Demonstrate teamwork, problem-solving, and project management skills through a database project. </li> </ul> <h2 class="course-section-title"> Prerequisites </h2> <ul> <li> <strong>CSE 207:</strong> Database Management Systems </li> <li> Basic computer literacy </li> <li> Basic understanding of database concepts and SQL </li> </ul> <h2 class="course-section-title"> Textbooks </h2> <ul> <li> <strong>Primary:</strong> <em>Database System Concepts</em> by Abraham Silberschatz, Henry F. Korth, and S. Sudarshan. </li> </ul> <h2 class="course-section-title"> Reference Books </h2> <ul> <li> <em>Database Design</em> by Adrienne Watt and Nelson Eng. </li> </ul> <h2 class="course-section-title"> Online Resources </h2> <ul> <li> <a href="https://dev.mysql.com/doc/" target="_blank" rel="noopener noreferrer"> MySQL Documentation </a> </li> <li> <a href="https://docs.oracle.com/en/database/" target="_blank" rel="noopener noreferrer"> Oracle Database Documentation </a> </li> </ul> <h2 class="course-section-title"> Grading </h2> <div class="table-responsive"> <table class="table table-bordered"> <thead> <tr> <th>Assessment</th> <th>Weight</th> </tr> </thead> <tbody> <tr> <td> Class Participation and Activity </td> <td> 5% </td> </tr> <tr> <td> Continuous Lab Evaluation &amp; Assignments </td> <td> 25% </td> </tr> <tr> <td> Lab Midterm Examination </td> <td> 30% </td> </tr> <tr> <td> Final Project Evaluation &amp; Report </td> <td> 40% </td> </tr> <tr> <td> <strong>Total</strong> </td> <td> <strong>100%</strong> </td> </tr> </tbody> </table> </div> </div> <h2>Schedule</h2> <table class="table table-sm table-responsive"> <thead> <tr> <th>Week</th> <th>Date</th> <th>Topic</th> <th>Materials</th> </tr> </thead> <tbody> <tr> <td>1</td> <td>Week 1</td> <td> <strong>Introduction to Database Systems and SQL</strong> <div class="schedule-description"> <p>Introduction to relational database management systems, database creation, SQL environments, and the basic structure of relational databases.</p> </div> </td> <td> </td> </tr> <tr> <td>2</td> <td>Week 2</td> <td> <strong>Data Definition Language</strong> <div class="schedule-description"> <p>Practical implementation of CREATE, ALTER, and DROP statements to create and modify databases and tables.</p> </div> </td> <td> </td> </tr> <tr> <td>3</td> <td>Week 3</td> <td> <strong>Data Manipulation Language</strong> <div class="schedule-description"> <p>Practical implementation of INSERT, DELETE, and UPDATE statements to populate and modify database records.</p> </div> </td> <td> </td> </tr> <tr> <td>4</td> <td>Week 4</td> <td> <strong>Selection, Projection, and Restrictions</strong> <div class="schedule-description"> <p>Implementation of SELECT statements, selection and projection operations, filtering records, and applying restrictions using SQL.</p> </div> </td> <td> </td> </tr> <tr> <td>5</td> <td>Week 5</td> <td> <strong>Joins</strong> <div class="schedule-description"> <p>Practical implementation of inner joins, outer joins, and other join operations to retrieve data from multiple related tables.</p> </div> </td> <td> </td> </tr> <tr> <td>6</td> <td>Week 6</td> <td> <strong>Grouping and Aggregate Functions</strong> <div class="schedule-description"> <p>Implementation of GROUP BY, HAVING, and aggregate functions to summarize and analyze database records.</p> </div> </td> <td> </td> </tr> <tr> <td>7</td> <td>Week 7</td> <td> <strong>Midterm Review and Examination</strong> <div class="schedule-description"> <p>Review of SQL concepts and laboratory exercises covered during the first six weeks, followed by the midterm laboratory examination.</p> </div> </td> <td> </td> </tr> <tr> <td>8</td> <td>Week 8</td> <td> <strong>Project Proposal and Database Design</strong> <div class="schedule-description"> <p>Submission and finalization of project proposals, identification of entities and relationships, and introduction to database design and ER diagrams.</p> </div> </td> <td> </td> </tr> <tr> <td>9</td> <td>Week 9</td> <td> <strong>Subqueries</strong> <div class="schedule-description"> <p>Practical implementation of single-row and multiple-row subqueries, nested queries, and subqueries within SELECT, WHERE, and FROM clauses.</p> </div> </td> <td> </td> </tr> <tr> <td>10</td> <td>Week 10</td> <td> <strong>Indexes</strong> <div class="schedule-description"> <p>Introduction to database indexes, index creation, and practical implementation of indexes to improve query performance.</p> </div> </td> <td> </td> </tr> <tr> <td>11</td> <td>Week 11</td> <td> <strong>Database Design and ER Diagrams</strong> <div class="schedule-description"> <p>Supervision of database design, ER diagram development, relational schema design, and implementation of database structures for the project.</p> </div> </td> <td> </td> </tr> <tr> <td>12</td> <td>Week 12</td> <td> <strong>Views</strong> <div class="schedule-description"> <p>Practical implementation of views, creation of virtual tables, and execution of queries through views.</p> </div> </td> <td> </td> </tr> <tr> <td>13</td> <td>Week 13</td> <td> <strong>Triggers</strong> <div class="schedule-description"> <p>Introduction to database triggers and practical implementation of triggers for automated database operations and data integrity.</p> </div> </td> <td> </td> </tr> <tr> <td>14</td> <td>Week 14</td> <td> <strong>Final Project Development</strong> <div class="schedule-description"> <p>Development of the final database application, implementation of SQL operations through a user interface, and supervision of project progress.</p> </div> </td> <td> </td> </tr> <tr> <td>15</td> <td>Week 15</td> <td> <strong>Final Project Evaluation</strong> <div class="schedule-description"> <p>Evaluation of the final database project, demonstration of database functionality, and assessment of project implementation.</p> </div> </td> <td> </td> </tr> <tr> <td>16</td> <td>Week 16</td> <td> <strong>Brainstorming and Problem Solving</strong> <div class="schedule-description"> <p>Intensive discussion, brainstorming, and problem-solving activities to strengthen database design and SQL skills.</p> </div> </td> <td> </td> </tr> <tr> <td>17</td> <td>Week 17</td> <td> <strong>Final Project Evaluation and Review</strong> <div class="schedule-description"> <p>Final project evaluation, comprehensive review of database concepts, questions and answers, and preparation for the final assessment.</p> </div> </td> <td> </td> </tr> </tbody> </table> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Md. Shakil Ahmed. © 2026 Md. Shakil Ahmed. All rights reserved. </div> </footer> <script>
+</style> <div class="course-card"> <div class="course-header"> <div class="course-icon"> <i class="fas fa-database"></i> </div> <div> <h1 class="course-title"> Database Systems Lab </h1> <p class="course-subtitle"> CSE 208 · Database Laboratory Course · 1.0 Credit Hour </p> </div> </div> <div class="course-description"> This laboratory course provides hands-on experience in <strong>designing, creating, modifying, and managing relational database systems</strong>. Students will develop practical skills in SQL, database design, data manipulation, constraints, joins, subqueries, indexes, views, triggers, and database application development through laboratory exercises and a group project. </div> <div class="course-tags"> <span class="course-tag">Database Systems</span> <span class="course-tag">SQL</span> <span class="course-tag">Relational Databases</span> <span class="course-tag">Database Design</span> <span class="course-tag">ER Diagrams</span> <span class="course-tag">Data Manipulation</span> <span class="course-tag">Joins</span> <span class="course-tag">Subqueries</span> <span class="course-tag">Indexes</span> <span class="course-tag">Views</span> <span class="course-tag">Triggers</span> <span class="course-tag">Database Applications</span> </div> </div> <div class="course-content"> <h2 class="course-section-title"> Course Overview </h2> <p> This laboratory course provides students with practical experience in designing, creating, modifying, and managing relational database systems. The course is based on <strong>CSE 207: Database Management Systems</strong> and focuses on the practical implementation of database concepts using SQL and relational database management systems. </p> <p> By the end of this course, students will be able to: </p> <ul> <li> Demonstrate the use of a relational database management system to create, secure, populate, and maintain databases. </li> <li> Apply SQL commands to create and modify database structures. </li> <li> Perform data manipulation operations, including insertion, deletion, and updating of records. </li> <li> Design and execute SQL queries using selection, projection, restrictions, joins, grouping, and subqueries. </li> <li> Implement database constraints, indexes, views, and triggers. </li> <li> Design relational databases and develop ER diagrams for real-world applications. </li> <li> Develop a database application using a relational database management system. </li> <li> Demonstrate teamwork, problem-solving, and project management skills through a database project. </li> </ul> <h2 class="course-section-title"> Course Learning Outcomes </h2> <div class="row"> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-database"></i> CLO1 — Database Fundamentals </h4> <p class="card-text"> Demonstrate the use of a relational database management system to create, secure, populate, and maintain relational databases. </p> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-code"></i> CLO2 — SQL Programming </h4> <p class="card-text"> Apply SQL commands to create and modify database structures and perform data manipulation and retrieval operations. </p> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-search"></i> CLO3 — Query Development </h4> <p class="card-text"> Design and execute SQL queries using selection, projection, restrictions, joins, grouping, aggregate functions, and subqueries. </p> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-laptop-code"></i> CLO4 — Database Application Development </h4> <p class="card-text"> Design relational databases, develop ER diagrams, implement database structures, and develop a database application for a real-world problem. </p> </div> </div> </div> </div> <h2 class="course-section-title"> Prerequisites </h2> <ul> <li> <strong>CSE 207:</strong> Database Management Systems </li> <li> Basic computer literacy </li> <li> Basic understanding of database concepts and SQL </li> </ul> <h2 class="course-section-title"> Textbooks </h2> <ul> <li> <strong>Primary:</strong> <em>Database System Concepts</em> by Abraham Silberschatz, Henry F. Korth, and S. Sudarshan. </li> </ul> <h2 class="course-section-title"> Reference Books </h2> <ul> <li> <em>Database Design</em> by Adrienne Watt and Nelson Eng. </li> </ul> <h2 class="course-section-title"> Tools and Platforms </h2> <div class="row"> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-database"></i> Database Management Systems </h4> <p class="card-text"> MySQL, Oracle Database, relational database management systems, and SQL development environments. </p> </div> </div> </div> <div class="col-md-6 mt-3"> <div class="card h-100 feature-card"> <div class="card-body"> <h4 class="card-title"> <i class="fas fa-project-diagram"></i> Database Design </h4> <p class="card-text"> ER diagram development, relational schema design, database modeling, and database application development. </p> </div> </div> </div> </div> <h2 class="course-section-title"> Online Resources </h2> <ul> <li> <a href="https://dev.mysql.com/doc/" target="_blank" rel="noopener noreferrer"> MySQL Documentation </a> </li> <li> <a href="https://docs.oracle.com/en/database/" target="_blank" rel="noopener noreferrer"> Oracle Database Documentation </a> </li> </ul> <h2 class="course-section-title"> Course Schedule </h2> <div class="table-responsive"> <table class="table table-bordered"> <thead> <tr> <th>Week</th> <th>Topic</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>1</td> <td> Introduction to Database Systems and SQL </td> <td> Introduction to relational database management systems, database creation, SQL environments, and the basic structure of relational databases. </td> </tr> <tr> <td>2</td> <td> Data Definition Language </td> <td> Practical implementation of CREATE, ALTER, and DROP statements to create and modify databases and tables. </td> </tr> <tr> <td>3</td> <td> Data Manipulation Language </td> <td> Practical implementation of INSERT, DELETE, and UPDATE statements to populate and modify database records. </td> </tr> <tr> <td>4</td> <td> Selection, Projection, and Restrictions </td> <td> Implementation of SELECT statements, selection and projection operations, filtering records, and applying restrictions using SQL. </td> </tr> <tr> <td>5</td> <td> Joins </td> <td> Practical implementation of inner joins, outer joins, and other join operations to retrieve data from multiple related tables. </td> </tr> <tr> <td>6</td> <td> Grouping and Aggregate Functions </td> <td> Implementation of GROUP BY, HAVING, and aggregate functions to summarize and analyze database records. </td> </tr> <tr> <td>7</td> <td> Midterm Review and Examination </td> <td> Review of SQL concepts and laboratory exercises covered during the first six weeks, followed by the midterm laboratory examination. </td> </tr> <tr> <td>8</td> <td> Project Proposal and Database Design </td> <td> Submission and finalization of project proposals, identification of entities and relationships, and introduction to database design and ER diagrams. </td> </tr> <tr> <td>9</td> <td> Subqueries </td> <td> Practical implementation of single-row and multiple-row subqueries, nested queries, and subqueries within SELECT, WHERE, and FROM clauses. </td> </tr> <tr> <td>10</td> <td> Indexes </td> <td> Introduction to database indexes, index creation, and practical implementation to improve query performance. </td> </tr> <tr> <td>11</td> <td> Database Design and ER Diagrams </td> <td> Supervision of database design, ER diagram development, relational schema design, and implementation of database structures for the project. </td> </tr> <tr> <td>12</td> <td> Views </td> <td> Practical implementation of views, creation of virtual tables, and execution of queries through views. </td> </tr> <tr> <td>13</td> <td> Triggers </td> <td> Introduction to database triggers and practical implementation for automated database operations and data integrity. </td> </tr> <tr> <td>14</td> <td> Final Project Development </td> <td> Development of the final database application, implementation of SQL operations through a user interface, and supervision of project progress. </td> </tr> <tr> <td>15</td> <td> Final Project Evaluation </td> <td> Evaluation of the final database project, demonstration of database functionality, and assessment of project implementation. </td> </tr> <tr> <td>16</td> <td> Brainstorming and Problem Solving </td> <td> Intensive discussion, brainstorming, and problem-solving activities to strengthen database design and SQL skills. </td> </tr> <tr> <td>17</td> <td> Final Project Evaluation and Review </td> <td> Final project evaluation, comprehensive review of database concepts, questions and answers, and preparation for final assessment. </td> </tr> </tbody> </table> </div> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Md. Shakil Ahmed. © 2026 Md. Shakil Ahmed. All rights reserved. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -918,8 +1023,8 @@ ninja.data = [{
           description: "This laboratory course provides hands-on experience in Object-Oriented Programming using C++. Students will implement classes, objects, constructors, destructors, encapsulation, inheritance, polymorphism, abstraction, function overloading, operator overloading, file handling, templates, exception handling, and Standard Template Library components through practical programming exercises, problem-solving activities, and project development.",
           section: "Teachings",handler: () => {
               window.location.href = "/Shakil_Portfolio/teachings/Object%20Oriented%20Programming%20Language%20Lab/";
-            },},{id: "teachings-",
-          title: '',
+            },},{id: "teachings-software-engineering-lab",
+          title: 'Software engineering lab',
           description: "",
           section: "Teachings",handler: () => {
               window.location.href = "/Shakil_Portfolio/teachings/Software%20Engineering%20Lab/";
@@ -945,17 +1050,17 @@ ninja.data = [{
               window.location.href = "/Shakil_Portfolio/teachings/database-system-lab/";
             },},{id: "teachings-object-oriented-programming-language",
           title: 'Object Oriented Programming Language',
-          description: "This course introduces the fundamental concepts and principles of Object-Oriented Programming using C++. It covers classes, objects, encapsulation, inheritance, polymorphism, abstraction, function overloading, operator overloading, file handling, templates, exception handling, and the Standard Template Library. The course emphasizes programming fundamentals, object-oriented design, problem-solving, and the development of structured, reusable, and maintainable software solutions.",
+          description: "This course introduces the fundamental concepts and principles of Object-Oriented Programming using C++. Students will develop programming logic, object-oriented design, and problem-solving skills through the study of classes, objects, encapsulation, inheritance, polymorphism, abstraction, function overloading, operator overloading, file handling, templates, exception handling, and the Standard Template Library.",
           section: "Teachings",handler: () => {
               window.location.href = "/Shakil_Portfolio/teachings/object-oriented-programming-language/";
             },},{id: "teachings-software-engineering",
           title: 'Software Engineering',
-          description: "This course introduces the fundamental concepts, methods, tools, and procedures of software engineering. Students will learn software processes, life-cycle models, requirements engineering, software analysis and design, implementation, testing, quality assurance, design patterns, and software project management.",
+          description: "",
           section: "Teachings",handler: () => {
               window.location.href = "/Shakil_Portfolio/teachings/software-engineering/";
-            },},{id: "teachings-structured-programming-language-lab",
-          title: 'Structured Programming Language Lab',
-          description: "This laboratory course provides hands-on experience in structured programming using the C programming language. Students will develop practical skills in programming fundamentals, conditional statements, loops, functions, arrays, recursion, strings, pointers, structures, file handling, and programming problem-solving techniques.",
+            },},{id: "teachings-structured-programming-lab",
+          title: 'Structured Programming Lab',
+          description: "",
           section: "Teachings",handler: () => {
               window.location.href = "/Shakil_Portfolio/teachings/structured-programming-lab/";
             },},{
