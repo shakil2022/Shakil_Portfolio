@@ -845,14 +845,24 @@ Learning, Deep Learning, Healthcare AI, Computer Vision</strong>.
 <p>
 My current research focuses on developing
 <strong>privacy-preserving, data-efficient, and reliable machine learning systems</strong>,
-particularly for healthcare applications. As part of my M.Sc. research, I worked on federated semi-supervised learning for Parkinson's disease classification, with an emphasis on learning effectively from limited labeled data while preserving data privacy.
-This research was supported by the
+particularly for healthcare applications. As part of my M.Sc. research, I worked on
+federated semi-supervised learning for Parkinson's disease classification, with an
+emphasis on learning effectively from limited labeled data while preserving patient
+data privacy. This research was supported by the
 <a href="https://ims.ictd.gov.bd/">
-ICT Division Fellowship 2025–2026
+<strong>ICT Division Fellowship (2025–2026)</strong>
 </a>,
-with the project titled
+under the project titled
 <em>FEP-SSL: A Privacy-Preserving Semi-Supervised Learning Framework for Parkinson's Disease Classification</em>.
+I was also awarded the
+<a href="https://grant.most.gov.bd/en/services/most/nst-fellowship"><strong>National Science and Technology (NST) Fellowship (2025–2026)</strong> </a>
+for research on
+<em>Privacy-Preserving Federated Semi-Supervised Learning Model for Healthcare Applications</em>.
+These research experiences have strengthened my interest in developing
+<strong>privacy-preserving and data-efficient learning approaches</strong>
+for privacy-sensitive healthcare applications.
 </p>
+
 
 <p>
 My research journey began with
