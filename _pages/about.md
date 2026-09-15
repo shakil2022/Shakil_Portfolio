@@ -864,7 +864,8 @@ I have completed my M.Sc. and B.Sc. degree in Information and Communication Tech
 Institute of Information Technology, Jahangirnagar University
 </a>.
 My research interests lie at the intersection of
-<strong>Federated Learning, Cyber Security, Artificial Intelligence, Machine Learning, Image Processing, and Computer Vision</strong>.
+<strong>Cyber Security, Federated Learning, Privacy-Preserving and Trustworthy AI, Large Language Model, Machine
+Learning, Deep Learning, Healthcare AI, Computer Vision</strong>.
 </p>
 
 <p>
@@ -923,28 +924,25 @@ These experiences have allowed me to combine academic teaching with hands-on res
 
 <section class="research-interests">
 
+
   <h2>Research Interests</h2>
 
   <div class="interest-tags">
-
-    <span class="interest-tag">
-      Federated Learning
-    </span>
 
     <span class="interest-tag">
       Cyber Security
     </span>
 
     <span class="interest-tag">
-      Privacy Privacy
+      Federated Learning
     </span>
 
     <span class="interest-tag">
-      Artificial Intelligence
+      Privacy-Preserving and Trustworthy AI
     </span>
 
     <span class="interest-tag">
-      Semi-supervised Learning
+      Large Language Model(LLM)
     </span>
 
     <span class="interest-tag">
@@ -952,7 +950,11 @@ These experiences have allowed me to combine academic teaching with hands-on res
     </span>
 
     <span class="interest-tag">
-      Image Processing
+      Deep Learning
+    </span>
+
+    <span class="interest-tag">
+      Healthcare AI
     </span>
 
     <span class="interest-tag">
