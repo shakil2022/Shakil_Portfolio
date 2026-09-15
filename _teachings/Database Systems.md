@@ -113,7 +113,9 @@ schedule:
    ========================================================= */
 
 .course-content,
+
 .course-page,
+
 .course-description {
 
   font-family:
