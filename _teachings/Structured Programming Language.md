@@ -3,7 +3,7 @@ layout: course
 title: Structured Programming Language
 description: This course introduces the fundamental concepts of structured programming using the C programming language. Students will develop programming logic and problem-solving skills through the study of data types, operators, control statements, functions, arrays, strings, pointers, dynamic memory allocation, structures, file handling, and competitive programming techniques.
 instructor: Md. Shakil Ahmed
-year: 2024
+year: 2025
 term: Fall
 importance: 7
 course_id: cse-101-structured-programming-language
