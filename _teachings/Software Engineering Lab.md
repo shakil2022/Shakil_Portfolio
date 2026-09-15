@@ -1059,7 +1059,7 @@ schedule:
 
   <ul>
 
-```
+
 <li>
   Apply software development process models and Agile methodologies
   to software projects.
@@ -1094,7 +1094,7 @@ schedule:
   Apply configuration management, project management, software
   metrics, and estimation techniques.
 </li>
-```
+
 
   </ul>
 
@@ -1104,7 +1104,7 @@ schedule:
 
   <ul>
 
-```
+
 <li>
   <strong>CSE 327:</strong> Software Engineering
 </li>
@@ -1120,7 +1120,7 @@ schedule:
 <li>
   Familiarity with object-oriented programming concepts
 </li>
-```
+
 
   </ul>
 
@@ -1130,7 +1130,6 @@ schedule:
 
   <ul>
 
-```
 <li>
   <strong>Primary:</strong>
   <em>Software Engineering</em>
@@ -1154,7 +1153,7 @@ schedule:
   <em>An Integrated Approach to Software Engineering</em>
   by P. Jalote.
 </li>
-```
+
 
   </ul>
 
