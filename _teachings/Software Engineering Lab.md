@@ -2,7 +2,7 @@
 
 layout: course
 title: Software Engineering Laboratory
-description: This course provides practical experience in software engineering methods, tools, and techniques. Students will apply software process models, Agile methodologies, requirements engineering, UML modeling, architectural design, software testing, configuration management, project management, software metrics, and estimation techniques to real-world software projects.
+description: This course provides practical experience in software engineering methods, tools, and techniques. Students will apply software process models, Agile methodologies, requirements engineering, UML modeling, architectural design, software testing, project management, software metrics, and estimation techniques to real-world software projects.
 instructor: Md. Shakil Ahmed
 year: 2026
 term: Spring
