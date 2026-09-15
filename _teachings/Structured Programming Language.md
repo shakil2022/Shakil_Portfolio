@@ -1,785 +1,942 @@
 ---
-
 layout: course
-
 title: Structured Programming Language
-
 description: This course introduces the fundamental concepts of structured programming using the C programming language. Students will develop programming logic and problem-solving skills through the study of data types, operators, control statements, functions, arrays, strings, pointers, dynamic memory allocation, structures, file handling, and competitive programming techniques.
-
 instructor: Md. Shakil Ahmed
-
 year: 2024
-
 term: Fall
-
 importance: 7
-
 course_id: cse-101-structured-programming-language
 
 schedule:
+  - week: 1
+    date: Week 1
+    topic: Introduction to C Programming
+    description: Overview of structured programming and introduction to C programming, including character sets, C tokens, keywords, identifiers, data types, variables, constants, and type casting.
 
-* week: 1
-  date: Week 1
-  topic: Introduction to C Programming
-  description: Overview of structured programming and introduction to C programming, including character sets, C tokens, keywords, identifiers, data types, variables, constants, and type casting.
+  - week: 2
+    date: Week 2
+    topic: Operators and Expressions
+    description: Study of arithmetic, relational, logical, assignment, and conditional operators, operator precedence and associativity, type conversion in expressions, library functions, and input-output functions.
 
-* week: 2
-  date: Week 2
-  topic: Operators and Expressions
-  description: Study of arithmetic, relational, logical, assignment, and conditional operators, operator precedence and associativity, type conversion in expressions, library functions, and input-output functions.
+  - week: 3
+    date: Week 3
+    topic: Control Statements
+    description: Introduction to decision-making and looping structures, including if-else statements, if ladders, nested if-else statements, for loops, while loops, and do-while loops.
 
-* week: 3
-  date: Week 3
-  topic: Control Statements
-  description: Introduction to decision-making and looping structures, including if-else statements, if ladders, nested if-else statements, for loops, while loops, and do-while loops.
+  - week: 4
+    date: Week 4
+    topic: Nested Loops and Problem Solving
+    description: Analysis and implementation of nested loops and solving programming problems using iterative techniques and appropriate loop structures.
 
-* week: 4
-  date: Week 4
-  topic: Nested Loops and Problem Solving
-  description: Analysis and implementation of nested loops and solving programming problems using iterative techniques and appropriate loop structures.
+  - week: 5
+    date: Week 5
+    topic: Break, Continue, GOTO, and Functions
+    description: Study of break, continue, and GOTO statements, comma operator, function prototypes, function calls, arguments, and return statements.
 
-* week: 5
-  date: Week 5
-  topic: Break, Continue, GOTO, and Functions
-  description: Study of break, continue, and GOTO statements, comma operator, function prototypes, function calls, arguments, and return statements.
+  - week: 6
+    date: Week 6
+    topic: Functions, Parameters, and Recursion
+    description: Practical study of functions with different parameter types, passing arguments to functions, recursive functions, and direct recursion.
 
-* week: 6
-  date: Week 6
-  topic: Functions, Parameters, and Recursion
-  description: Practical study of functions with different parameter types, passing arguments to functions, recursive functions, and direct recursion.
+  - week: 7
+    date: Week 7
+    topic: Midterm Review and Case Study
+    description: Review of the topics covered during the first six weeks through case studies, problem-solving activities, questions and answers, and examination preparation.
 
-* week: 7
-  date: Week 7
-  topic: Midterm Review and Case Study
-  description: Review of the topics covered during the first six weeks through case studies, problem-solving activities, questions and answers, and examination preparation.
+  - week: 8
+    date: Week 8
+    topic: Arrays
+    description: Introduction to arrays, array declaration and initialization, array traversal, passing arrays to functions, array operations, and multidimensional arrays.
 
-* week: 8
-  date: Week 8
-  topic: Arrays
-  description: Introduction to arrays, array declaration and initialization, array traversal, passing arrays to functions, array operations, and multidimensional arrays.
+  - week: 9
+    date: Week 9
+    topic: Strings and Character Processing
+    description: Study of character arrays and strings, string input and output, ASCII values, character frequency, character counting, and binary strings.
 
-* week: 9
-  date: Week 9
-  topic: Strings and Character Processing
-  description: Study of character arrays and strings, string input and output, ASCII values, character frequency, character counting, and binary strings.
+  - week: 10
+    date: Week 10
+    topic: String Manipulation
+    description: Practical implementation of string copying, comparison, reversal, concatenation, and other string operations using standard library functions.
 
-* week: 10
-  date: Week 10
-  topic: String Manipulation
-  description: Practical implementation of string copying, comparison, reversal, concatenation, and other string operations using standard library functions.
+  - week: 11
+    date: Week 11
+    topic: Pointers
+    description: Introduction to pointers, pointer declarations, pointer arithmetic, passing pointers to functions, pointers and one-dimensional arrays, pointers and strings, and string operations.
 
-* week: 11
-  date: Week 11
-  topic: Pointers
-  description: Introduction to pointers, pointer declarations, pointer arithmetic, passing pointers to functions, pointers and one-dimensional arrays, pointers and strings, and string operations.
+  - week: 12
+    date: Week 12
+    topic: Dynamic Memory Allocation and Structures
+    description: Study of dynamic memory allocation using malloc, calloc, and realloc, arrays of pointers, structure definition, structure processing, member access, and structure initialization.
 
-* week: 12
-  date: Week 12
-  topic: Dynamic Memory Allocation and Structures
-  description: Study of dynamic memory allocation using malloc, calloc, and realloc, arrays of pointers, structure definition, structure processing, member access, and structure initialization.
+  - week: 13
+    date: Week 13
+    topic: File Handling
+    description: Introduction to declaring, opening, processing, reading, writing, and closing files. Practical use of fscanf(), fgets(), fread(), and other file operations.
 
-* week: 13
-  date: Week 13
-  topic: File Handling
-  description: Introduction to declaring, opening, processing, reading, writing, and closing files. Practical use of fscanf(), fgets(), fread(), and other file operations.
+  - week: 14
+    date: Week 14
+    topic: ACM-ICPC and Online Judge Systems
+    description: Introduction to programming contest judging systems and solving programming problems using online judges such as UVA.
 
-* week: 14
-  date: Week 14
-  topic: ACM-ICPC and Online Judge Systems
-  description: Introduction to programming contest judging systems and solving programming problems using online judges such as UVA.
+  - week: 15
+    date: Week 15
+    topic: Competitive Programming Problem Solving
+    description: Practical problem solving using ACM-ICPC-style problems and UVA programming problems, with emphasis on algorithmic thinking and efficient solution development.
 
-* week: 15
-  date: Week 15
-  topic: Competitive Programming Problem Solving
-  description: Practical problem solving using ACM-ICPC-style problems and UVA programming problems, with emphasis on algorithmic thinking and efficient solution development.
+  - week: 16
+    date: Week 16
+    topic: Brainstorming and Problem-Solving Week
+    description: Intensive brainstorming, discussion, and problem-solving activities to strengthen programming logic and prepare students for the semester final examination.
 
-* week: 16
-  date: Week 16
-  topic: Brainstorming and Problem-Solving Week
-  description: Intensive brainstorming, discussion, and problem-solving activities to strengthen programming logic and prepare students for the semester final examination.
-
-* week: 17
-  date: Week 17
-  topic: Final Review and Case Study
-  description: Comprehensive review of structured programming concepts through case studies, questions and answers, problem solving, and viva voce preparation for the semester final examination.
-
+  - week: 17
+    date: Week 17
+    topic: Final Review and Case Study
+    description: Comprehensive review of structured programming concepts through case studies, questions and answers, problem solving, and viva voce preparation for the semester final examination.
 ---
 
 <style>
-  /* =========================================================
-     COURSE DETAIL PAGE
-     WHITE / BLACK ACADEMIC STYLE
-     SAME TYPOGRAPHY AS PROJECT PAGES
-     ========================================================= */
 
-  .course-card,
-  .course-content {
-    font-family:
-      "Source Serif 4",
-      Georgia,
-      "Times New Roman",
-      serif;
+/* =========================================================
+   COURSE DETAIL PAGE
+   WHITE / BLACK ACADEMIC STYLE
+   SAME TYPOGRAPHY AS PROJECT PAGES
+   ========================================================= */
 
-    color: #111111;
-  }
+.course-card,
+.course-content {
 
-  /* =========================================================
-     MAIN COURSE HEADER CARD
-     ========================================================= */
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  color: #111111;
+
+}
+
+
+/* =========================================================
+   MAIN COURSE HEADER CARD
+   ========================================================= */
+
+.course-card {
+
+  position: relative;
+
+  padding: 28px 30px;
+
+  margin: 20px 0 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #d2d2d2;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 5px 16px rgba(0, 0, 0, 0.08);
+
+  color: #111111;
+
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+}
+
+.course-card:hover {
+
+  border-color: #999999;
+
+  box-shadow:
+    0 10px 26px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* =========================================================
+   COURSE HEADER
+   ========================================================= */
+
+.course-header {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 18px;
+
+}
+
+.course-icon {
+
+  width: 58px;
+
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #f5f5f5;
+
+  border: 1px solid #bdbdbd;
+
+  border-radius: 7px;
+
+  color: #000000;
+
+  font-size: 28px;
+
+}
+
+.course-title {
+
+  margin: 0 !important;
+
+  color: #000000 !important;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 26px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+}
+
+.course-subtitle {
+
+  margin: 6px 0 0;
+
+  color: #444444;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+}
+
+
+/* =========================================================
+   COURSE DESCRIPTION
+   ========================================================= */
+
+.course-description {
+
+  margin-top: 20px;
+
+  color: #222222;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  text-align: justify;
+
+  text-justify: inter-word;
+
+}
+
+.course-description strong {
+
+  color: #000000;
+
+  font-weight: 700;
+
+}
+
+
+/* =========================================================
+   COURSE TAGS
+   ========================================================= */
+
+.course-tags {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 20px;
+
+}
+
+.course-tag {
+
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  background: #f4f4f4;
+
+  border: 1px solid #cccccc;
+
+  border-radius: 4px;
+
+  color: #222222;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+
+}
+
+
+/* =========================================================
+   COURSE CONTENT
+   ========================================================= */
+
+.course-content {
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  color: #111111;
+
+}
+
+.course-content p {
+
+  margin-top: 0;
+
+  margin-bottom: 18px;
+
+  color: #222222;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  text-align: justify;
+
+  text-justify: inter-word;
+
+}
+
+.course-content strong {
+
+  color: #000000;
+
+  font-weight: 700;
+
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+.course-section-title {
+
+  margin-top: 34px;
+
+  margin-bottom: 18px;
+
+  padding-bottom: 8px;
+
+  color: #000000 !important;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 27px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  border-bottom: 2px solid #000000;
+
+}
+
+
+/* =========================================================
+   FEATURE CARDS
+   ========================================================= */
+
+.course-content .card,
+.feature-card {
+
+  height: 100%;
+
+  background: #ffffff !important;
+
+  border: 1px solid #d2d2d2;
+
+  border-radius: 7px;
+
+  color: #111111;
+
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+}
+
+.course-content .card:hover,
+.feature-card:hover {
+
+  transform: translateY(-3px);
+
+  border-color: #999999;
+
+  box-shadow:
+    0 9px 22px rgba(0, 0, 0, 0.11);
+
+}
+
+.course-content .card-body {
+
+  padding: 22px;
+
+}
+
+
+/* =========================================================
+   CARD TITLES
+   ========================================================= */
+
+.course-content .card-title {
+
+  margin-top: 0;
+
+  margin-bottom: 12px;
+
+  color: #000000 !important;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 19px;
+
+  font-weight: 700;
+
+  line-height: 1.45;
+
+}
+
+.course-content .card-title i {
+
+  margin-right: 7px;
+
+  color: #000000;
+
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.course-content .card-text {
+
+  margin-bottom: 0;
+
+  color: #333333;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 15.5px;
+
+  line-height: 1.75;
+
+  text-align: justify;
+
+  text-justify: inter-word;
+
+}
+
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+.course-content ul {
+
+  margin-top: 8px;
+
+  margin-bottom: 10px;
+
+  padding-left: 22px;
+
+  color: #222222;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.75;
+
+}
+
+.course-content li {
+
+  margin-bottom: 6px;
+
+}
+
+.course-content li strong {
+
+  color: #000000;
+
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.course-content .table {
+
+  width: 100%;
+
+  margin-top: 10px;
+
+  margin-bottom: 25px;
+
+  background: #ffffff;
+
+  color: #222222;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 15.5px;
+
+  line-height: 1.6;
+
+  border: 1px solid #cfcfcf;
+
+}
+
+.course-content .table th {
+
+  padding: 11px 14px;
+
+  background: #f3f3f3;
+
+  color: #000000;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  border: 1px solid #cfcfcf;
+
+}
+
+.course-content .table td {
+
+  padding: 10px 14px;
+
+  background: #ffffff;
+
+  color: #222222;
+
+  border: 1px solid #d2d2d2;
+
+  vertical-align: top;
+
+}
+
+.course-content .table tbody tr:hover td {
+
+  background: #f8f8f8;
+
+}
+
+
+/* =========================================================
+   GENERAL LINKS
+   ========================================================= */
+
+.course-content a {
+
+  color: #000000 !important;
+
+  text-decoration: underline;
+
+  text-decoration-thickness: 1px;
+
+  text-underline-offset: 3px;
+
+}
+
+.course-content a:hover {
+
+  color: #000000 !important;
+
+  opacity: 0.6;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
 
   .course-card {
-    position: relative;
 
-    padding: 28px 30px;
-    margin: 20px 0 35px;
+    margin-left: 20px;
 
-    background: #ffffff;
+    margin-right: 20px;
 
-    border: 1px solid #d2d2d2;
-    border-radius: 8px;
+    padding: 25px;
 
-    box-shadow:
-      0 5px 16px rgba(0, 0, 0, 0.08);
-
-    color: #111111;
-
-    transition:
-      box-shadow 0.25s ease,
-      border-color 0.25s ease;
   }
 
-  .course-card:hover {
-    border-color: #999999;
+  .course-content {
 
-    box-shadow:
-      0 10px 26px rgba(0, 0, 0, 0.12);
-  }
+    padding-left: 20px;
 
-  /* =========================================================
-     COURSE HEADER
-     ========================================================= */
+    padding-right: 20px;
 
-  .course-header {
-    display: flex;
-    align-items: center;
-
-    gap: 16px;
-
-    margin-bottom: 18px;
-  }
-
-  .course-icon {
-    width: 58px;
-    height: 58px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    background: #f5f5f5;
-
-    border: 1px solid #bdbdbd;
-    border-radius: 7px;
-
-    color: #000000;
-
-    font-size: 28px;
   }
 
   .course-title {
-    margin: 0 !important;
 
-    color: #000000 !important;
+    font-size: 24px;
 
-    font-family:
-      Georgia,
-      "Times New Roman",
-      serif;
-
-    font-size: 26px;
-    font-weight: 700;
-
-    line-height: 1.4;
-  }
-
-  .course-subtitle {
-    margin: 6px 0 0;
-
-    color: #444444;
-
-    font-family:
-      "Source Serif 4",
-      Georgia,
-      "Times New Roman",
-      serif;
-
-    font-size: 16px;
-    font-weight: 400;
-
-    line-height: 1.65;
-  }
-
-  /* =========================================================
-     COURSE DESCRIPTION
-     ========================================================= */
-
-  .course-description {
-    margin-top: 20px;
-
-    color: #222222;
-
-    font-family:
-      "Source Serif 4",
-      Georgia,
-      "Times New Roman",
-      serif;
-
-    font-size: 16px;
-    line-height: 1.8;
-
-    text-align: justify;
-    text-justify: inter-word;
-  }
-
-  .course-description strong {
-    color: #000000;
-    font-weight: 700;
-  }
-
-  /* =========================================================
-     COURSE TAGS
-     ========================================================= */
-
-  .course-tags {
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 8px;
-
-    margin-top: 20px;
-  }
-
-  .course-tag {
-    display: inline-block;
-
-    padding: 5px 10px;
-
-    background: #f4f4f4;
-
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-
-    color: #222222;
-
-    font-family:
-      Arial,
-      Helvetica,
-      sans-serif;
-
-    font-size: 12px;
-    font-weight: 600;
-
-    line-height: 1.4;
-  }
-
-  /* =========================================================
-     COURSE CONTENT
-     ========================================================= */
-
-  .course-content {
-    max-width: 1000px;
-
-    margin: 0 auto;
-
-    color: #111111;
   }
 
   .course-content p {
-    margin-top: 0;
-    margin-bottom: 18px;
-
-    color: #222222;
-
-    font-family:
-      "Source Serif 4",
-      Georgia,
-      "Times New Roman",
-      serif;
-
-    font-size: 17px;
-
-    line-height: 1.8;
-
-    text-align: justify;
-    text-justify: inter-word;
-  }
-
-  .course-content strong {
-    color: #000000;
-    font-weight: 700;
-  }
-
-  /* =========================================================
-     SECTION HEADINGS
-     ========================================================= */
-
-  .course-section-title {
-    margin-top: 34px;
-    margin-bottom: 18px;
-
-    padding-bottom: 8px;
-
-    color: #000000 !important;
-
-    font-family:
-      Georgia,
-      "Times New Roman",
-      serif;
-
-    font-size: 27px;
-
-    font-weight: 700;
-
-    line-height: 1.4;
-
-    border-bottom: 2px solid #000000;
-  }
-
-  /* =========================================================
-     FEATURE CARDS
-     ========================================================= */
-
-  .course-content .card,
-  .feature-card {
-    height: 100%;
-
-    background: #ffffff !important;
-
-    border: 1px solid #d2d2d2;
-
-    border-radius: 7px;
-
-    color: #111111;
-
-    box-shadow:
-      0 4px 14px rgba(0, 0, 0, 0.06);
-
-    transition:
-      transform 0.25s ease,
-      box-shadow 0.25s ease,
-      border-color 0.25s ease;
-  }
-
-  .course-content .card:hover,
-  .feature-card:hover {
-    transform: translateY(-3px);
-
-    border-color: #999999;
-
-    box-shadow:
-      0 9px 22px rgba(0, 0, 0, 0.11);
-  }
-
-  .course-content .card-body {
-    padding: 22px;
-  }
-
-  /* =========================================================
-     CARD TITLES
-     ========================================================= */
-
-  .course-content .card-title {
-    margin-top: 0;
-    margin-bottom: 12px;
-
-    color: #000000 !important;
-
-    font-family:
-      Georgia,
-      "Times New Roman",
-      serif;
-
-    font-size: 19px;
-
-    font-weight: 700;
-
-    line-height: 1.45;
-  }
-
-  .course-content .card-title i {
-    margin-right: 7px;
-
-    color: #000000;
-  }
-
-  /* =========================================================
-     CARD TEXT
-     ========================================================= */
-
-  .course-content .card-text {
-    margin-bottom: 0;
-
-    color: #333333;
-
-    font-family:
-      "Source Serif 4",
-      Georgia,
-      "Times New Roman",
-      serif;
-
-    font-size: 15.5px;
-
-    line-height: 1.75;
-
-    text-align: justify;
-    text-justify: inter-word;
-  }
-
-  /* =========================================================
-     LISTS
-     ========================================================= */
-
-  .course-content ul {
-    margin-top: 8px;
-    margin-bottom: 10px;
-
-    padding-left: 22px;
-
-    color: #222222;
-
-    font-family:
-      "Source Serif 4",
-      Georgia,
-      "Times New Roman",
-      serif;
 
     font-size: 16px;
 
-    line-height: 1.75;
   }
 
-  .course-content li {
-    margin-bottom: 6px;
+  .course-section-title {
+
+    font-size: 25px;
+
   }
 
-  .course-content li strong {
-    color: #000000;
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .course-card {
+
+    margin: 15px 15px 30px;
+
+    padding: 21px;
+
+    border-radius: 7px;
+
   }
 
-  /* =========================================================
-     TABLES
-     ========================================================= */
+  .course-header {
 
-  .course-content .table {
-    width: 100%;
+    gap: 12px;
 
-    margin-top: 10px;
-    margin-bottom: 25px;
-
-    background: #ffffff;
-
-    color: #222222;
-
-    font-family:
-      "Source Serif 4",
-      Georgia,
-      "Times New Roman",
-      serif;
-
-    font-size: 15.5px;
-
-    line-height: 1.6;
-
-    border: 1px solid #cfcfcf;
   }
 
-  .course-content .table th {
-    padding: 11px 14px;
+  .course-icon {
 
-    background: #f3f3f3;
+    width: 52px;
 
-    color: #000000;
+    height: 52px;
 
-    font-family:
-      Arial,
-      Helvetica,
-      sans-serif;
+    font-size: 25px;
+
+  }
+
+  .course-title {
+
+    font-size: 21px;
+
+  }
+
+  .course-subtitle {
 
     font-size: 14px;
 
-    font-weight: 700;
-
-    border: 1px solid #cfcfcf;
   }
 
+  .course-description {
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    text-align: left;
+
+  }
+
+  .course-content {
+
+    padding-left: 15px;
+
+    padding-right: 15px;
+
+  }
+
+  .course-content p {
+
+    font-size: 15.5px;
+
+    line-height: 1.75;
+
+    text-align: left;
+
+  }
+
+  .course-section-title {
+
+    margin-top: 30px;
+
+    font-size: 23px;
+
+  }
+
+  .course-content .card-title {
+
+    font-size: 18px;
+
+  }
+
+  .course-content .card-text {
+
+    font-size: 15px;
+
+    text-align: left;
+
+  }
+
+  .course-content ul {
+
+    font-size: 15px;
+
+  }
+
+  .course-content .table {
+
+    font-size: 14px;
+
+  }
+
+  .course-content .table th,
   .course-content .table td {
-    padding: 10px 14px;
 
-    background: #ffffff;
+    padding: 9px 10px;
 
-    color: #222222;
-
-    border: 1px solid #d2d2d2;
-
-    vertical-align: top;
   }
 
-  .course-content .table tbody tr:hover td {
-    background: #f8f8f8;
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+  .course-card {
+
+    margin-left: 10px;
+
+    margin-right: 10px;
+
+    padding: 18px;
+
   }
 
-  /* =========================================================
-     GENERAL LINKS
-     ========================================================= */
+  .course-header {
 
-  .course-content a {
-    color: #000000 !important;
+    align-items: flex-start;
 
-    text-decoration: underline;
-
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
   }
 
-  .course-content a:hover {
-    color: #000000 !important;
-    opacity: 0.6;
+  .course-icon {
+
+    width: 46px;
+
+    height: 46px;
+
+    font-size: 22px;
+
   }
 
-  /* =========================================================
-     RESPONSIVE — TABLET
-     ========================================================= */
+  .course-title {
 
-  @media (max-width: 900px) {
+    font-size: 19px;
 
-    .course-card {
-      margin-left: 20px;
-      margin-right: 20px;
-
-      padding: 25px;
-    }
-
-    .course-content {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    .course-title {
-      font-size: 24px;
-    }
-
-    .course-content p {
-      font-size: 16px;
-    }
-
-    .course-section-title {
-      font-size: 25px;
-    }
   }
 
-  /* =========================================================
-     RESPONSIVE — MOBILE
-     ========================================================= */
+  .course-subtitle {
 
-  @media (max-width: 768px) {
+    font-size: 13.5px;
 
-    .course-card {
-      margin: 15px 15px 30px;
-
-      padding: 21px;
-
-      border-radius: 7px;
-    }
-
-    .course-header {
-      gap: 12px;
-    }
-
-    .course-icon {
-      width: 52px;
-      height: 52px;
-
-      font-size: 25px;
-    }
-
-    .course-title {
-      font-size: 21px;
-    }
-
-    .course-subtitle {
-      font-size: 14px;
-    }
-
-    .course-description {
-      font-size: 15px;
-
-      line-height: 1.75;
-
-      text-align: left;
-    }
-
-    .course-content {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    .course-content p {
-      font-size: 15.5px;
-
-      line-height: 1.75;
-
-      text-align: left;
-    }
-
-    .course-section-title {
-      margin-top: 30px;
-
-      font-size: 23px;
-    }
-
-    .course-content .card-title {
-      font-size: 18px;
-    }
-
-    .course-content .card-text {
-      font-size: 15px;
-
-      text-align: left;
-    }
-
-    .course-content ul {
-      font-size: 15px;
-    }
-
-    .course-content .table {
-      font-size: 14px;
-    }
-
-    .course-content .table th,
-    .course-content .table td {
-      padding: 9px 10px;
-    }
   }
 
-  /* =========================================================
-     RESPONSIVE — SMALL MOBILE
-     ========================================================= */
+  .course-description {
 
-  @media (max-width: 576px) {
+    font-size: 14px;
 
-    .course-card {
-      margin-left: 10px;
-      margin-right: 10px;
-
-      padding: 18px;
-    }
-
-    .course-header {
-      align-items: flex-start;
-    }
-
-    .course-icon {
-      width: 46px;
-      height: 46px;
-
-      font-size: 22px;
-    }
-
-    .course-title {
-      font-size: 19px;
-    }
-
-    .course-subtitle {
-      font-size: 13.5px;
-    }
-
-    .course-description {
-      font-size: 14px;
-    }
-
-    .course-tags {
-      gap: 6px;
-    }
-
-    .course-tag {
-      font-size: 11px;
-
-      padding: 5px 8px;
-    }
-
-    .course-content {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    .course-section-title {
-      font-size: 21px;
-    }
-
-    .course-content .table {
-      font-size: 13px;
-    }
   }
+
+  .course-tags {
+
+    gap: 6px;
+
+  }
+
+  .course-tag {
+
+    font-size: 11px;
+
+    padding: 5px 8px;
+
+  }
+
+  .course-content {
+
+    padding-left: 10px;
+
+    padding-right: 10px;
+
+  }
+
+  .course-section-title {
+
+    font-size: 21px;
+
+  }
+
+  .course-content .table {
+
+    font-size: 13px;
+
+  }
+
+}
+
 </style>
 
 <div class="course-card">
 
   <div class="course-header">
 
-```
-<div class="course-icon">
-  <i class="fas fa-code"></i>
-</div>
+    <div class="course-icon">
+      <i class="fas fa-code"></i>
+    </div>
 
-<div>
+    <div>
 
-  <h1 class="course-title">
-    Structured Programming Language
-  </h1>
+      <h1 class="course-title">
+        Structured Programming Language
+      </h1>
 
-  <p class="course-subtitle">
-    CSE 101 · Core Engineering Course · 3.0 Credit Hours
-  </p>
+      <p class="course-subtitle">
+        CSE 101 · Core Engineering Course · 3.0 Credit Hours
+      </p>
 
-</div>
-```
+    </div>
 
   </div>
 
   <div class="course-description">
 
-```
-This course introduces the fundamental concepts of
-<strong>structured programming using the C programming language</strong>.
-Students develop programming logic, computational thinking, and
-problem-solving skills through practical study of programming constructs,
-functions, arrays, strings, pointers, dynamic memory allocation,
-structures, file handling, and competitive programming.
-```
+    This course introduces the fundamental concepts of
+    <strong>structured programming using the C programming language</strong>.
+    Students develop programming logic, computational thinking, and
+    problem-solving skills through practical study of programming constructs,
+    functions, arrays, strings, pointers, dynamic memory allocation,
+    structures, file handling, and competitive programming.
 
   </div>
 
   <div class="course-tags">
 
-```
-<span class="course-tag">C Programming</span>
-<span class="course-tag">Structured Programming</span>
-<span class="course-tag">Problem Solving</span>
-<span class="course-tag">Algorithms</span>
-<span class="course-tag">Functions</span>
-<span class="course-tag">Arrays</span>
-<span class="course-tag">Strings</span>
-<span class="course-tag">Pointers</span>
-<span class="course-tag">Data Structures</span>
-<span class="course-tag">File Handling</span>
-<span class="course-tag">Competitive Programming</span>
-```
+    <span class="course-tag">C Programming</span>
+    <span class="course-tag">Structured Programming</span>
+    <span class="course-tag">Problem Solving</span>
+    <span class="course-tag">Algorithms</span>
+    <span class="course-tag">Functions</span>
+    <span class="course-tag">Arrays</span>
+    <span class="course-tag">Strings</span>
+    <span class="course-tag">Pointers</span>
+    <span class="course-tag">Data Structures</span>
+    <span class="course-tag">File Handling</span>
+    <span class="course-tag">Competitive Programming</span>
 
   </div>
 
 </div>
+
 
 <div class="course-content">
 
@@ -804,104 +961,127 @@ structures, file handling, and competitive programming.
     constructs.
   </p>
 
+
   <h2 class="course-section-title">
     Course Learning Outcomes
   </h2>
 
   <div class="row">
 
-```
-<div class="col-md-6 mt-3">
+    <div class="col-md-6 mt-3">
 
-  <div class="card h-100 feature-card">
+      <div class="card h-100 feature-card">
 
-    <div class="card-body">
+        <div class="card-body">
 
-      <h4 class="card-title">
-        <i class="fas fa-lightbulb"></i>
-        CLO1 — Programming Fundamentals
-      </h4>
+          <h4 class="card-title">
 
-      <p class="card-text">
-        Understand the fundamental programming concepts, terminology,
-        syntax, and constructs related to structured programming.
-      </p>
+            <i class="fas fa-lightbulb"></i>
+
+            CLO1 — Programming Fundamentals
+
+          </h4>
+
+          <p class="card-text">
+
+            Understand the fundamental programming concepts, terminology,
+            syntax, and constructs related to structured programming.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 mt-3">
+
+      <div class="card h-100 feature-card">
+
+        <div class="card-body">
+
+          <h4 class="card-title">
+
+            <i class="fas fa-project-diagram"></i>
+
+            CLO2 — Programming Concepts
+
+          </h4>
+
+          <p class="card-text">
+
+            Explain and apply programming concepts including flow control,
+            functions, arrays, strings, pointers, structures, and file
+            handling.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 mt-3">
+
+      <div class="card h-100 feature-card">
+
+        <div class="card-body">
+
+          <h4 class="card-title">
+
+            <i class="fas fa-search"></i>
+
+            CLO3 — Problem Analysis
+
+          </h4>
+
+          <p class="card-text">
+
+            Analyze computational problems and determine suitable programming
+            strategies and solutions.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 mt-3">
+
+      <div class="card h-100 feature-card">
+
+        <div class="card-body">
+
+          <h4 class="card-title">
+
+            <i class="fas fa-laptop-code"></i>
+
+            CLO4 — Program Development
+
+          </h4>
+
+          <p class="card-text">
+
+            Apply C programming syntax and structures to develop programs
+            that solve different types of computational problems.
+
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
 
   </div>
 
-</div>
-
-<div class="col-md-6 mt-3">
-
-  <div class="card h-100 feature-card">
-
-    <div class="card-body">
-
-      <h4 class="card-title">
-        <i class="fas fa-project-diagram"></i>
-        CLO2 — Programming Concepts
-      </h4>
-
-      <p class="card-text">
-        Explain and apply programming concepts including flow control,
-        functions, arrays, strings, pointers, structures, and file
-        handling.
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
-
-<div class="col-md-6 mt-3">
-
-  <div class="card h-100 feature-card">
-
-    <div class="card-body">
-
-      <h4 class="card-title">
-        <i class="fas fa-search"></i>
-        CLO3 — Problem Analysis
-      </h4>
-
-      <p class="card-text">
-        Analyze computational problems and determine suitable programming
-        strategies and solutions.
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
-
-<div class="col-md-6 mt-3">
-
-  <div class="card h-100 feature-card">
-
-    <div class="card-body">
-
-      <h4 class="card-title">
-        <i class="fas fa-laptop-code"></i>
-        CLO4 — Program Development
-      </h4>
-
-      <p class="card-text">
-        Apply C programming syntax and structures to develop programs
-        that solve different types of computational problems.
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
-```
-
-  </div>
 
   <h2 class="course-section-title">
     Prerequisites
@@ -909,21 +1089,20 @@ structures, file handling, and competitive programming.
 
   <ul>
 
-```
-<li>
-  No formal prerequisite.
-</li>
+    <li>
+      No formal prerequisite.
+    </li>
 
-<li>
-  Basic computer literacy.
-</li>
+    <li>
+      Basic computer literacy.
+    </li>
 
-<li>
-  Basic mathematical and problem-solving skills.
-</li>
-```
+    <li>
+      Basic mathematical and problem-solving skills.
+    </li>
 
   </ul>
+
 
   <h2 class="course-section-title">
     Textbooks
@@ -931,20 +1110,23 @@ structures, file handling, and competitive programming.
 
   <ul>
 
-```
-<li>
-  <strong>Primary:</strong>
-  <em>Teach Yourself C</em>, 3rd Edition, by Herbert Schildt.
-</li>
+    <li>
 
-<li>
-  <strong>Primary:</strong>
-  <em>C Programming Easily Concisely</em> by M.A.H. Newton,
-  M.M. Akbar, and M. Kaykobad.
-</li>
-```
+      <strong>Primary:</strong>
+      <em>Teach Yourself C</em>, 3rd Edition, by Herbert Schildt.
+
+    </li>
+
+    <li>
+
+      <strong>Primary:</strong>
+      <em>C Programming Easily Concisely</em> by M.A.H. Newton,
+      M.M. Akbar, and M. Kaykobad.
+
+    </li>
 
   </ul>
+
 
   <h2 class="course-section-title">
     Reference Books
@@ -952,28 +1134,27 @@ structures, file handling, and competitive programming.
 
   <ul>
 
-```
-<li>
-  <em>Programming with C</em>, 2nd Edition, by Byron Gottfried.
-</li>
+    <li>
+      <em>Programming with C</em>, 2nd Edition, by Byron Gottfried.
+    </li>
 
-<li>
-  <em>Introduction to C Programming</em>, 2nd Edition,
-  by Reema Thareja.
-</li>
+    <li>
+      <em>Introduction to C Programming</em>, 2nd Edition,
+      by Reema Thareja.
+    </li>
 
-<li>
-  <em>Programming in ANSI C</em>, 8th Edition,
-  by E. Balagurusamy.
-</li>
+    <li>
+      <em>Programming in ANSI C</em>, 8th Edition,
+      by E. Balagurusamy.
+    </li>
 
-<li>
-  <em>Let Us C</em>, 16th Edition,
-  by Yashavant Kanetkar.
-</li>
-```
+    <li>
+      <em>Let Us C</em>, 16th Edition,
+      by Yashavant Kanetkar.
+    </li>
 
   </ul>
+
 
   <h2 class="course-section-title">
     Tools and Platforms
@@ -981,53 +1162,63 @@ structures, file handling, and competitive programming.
 
   <div class="row">
 
-```
-<div class="col-md-6 mt-3">
+    <div class="col-md-6 mt-3">
 
-  <div class="card h-100 feature-card">
+      <div class="card h-100 feature-card">
 
-    <div class="card-body">
+        <div class="card-body">
 
-      <h4 class="card-title">
-        <i class="fas fa-terminal"></i>
-        Programming Environment
-      </h4>
+          <h4 class="card-title">
 
-      <p class="card-text">
-        C Programming Language, GCC Compiler, Visual Studio Code,
-        and Code::Blocks.
-      </p>
+            <i class="fas fa-terminal"></i>
+
+            Programming Environment
+
+          </h4>
+
+          <p class="card-text">
+
+            C Programming Language, GCC Compiler, Visual Studio Code,
+            and Code::Blocks.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 mt-3">
+
+      <div class="card h-100 feature-card">
+
+        <div class="card-body">
+
+          <h4 class="card-title">
+
+            <i class="fas fa-trophy"></i>
+
+            Competitive Programming
+
+          </h4>
+
+          <p class="card-text">
+
+            Online Judge systems, UVA Online Judge, and ACM-ICPC-style
+            programming platforms.
+
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
 
   </div>
 
-</div>
-
-<div class="col-md-6 mt-3">
-
-  <div class="card h-100 feature-card">
-
-    <div class="card-body">
-
-      <h4 class="card-title">
-        <i class="fas fa-trophy"></i>
-        Competitive Programming
-      </h4>
-
-      <p class="card-text">
-        Online Judge systems, UVA Online Judge, and ACM-ICPC-style
-        programming platforms.
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
-```
-
-  </div>
 
   <h2 class="course-section-title">
     Online Resources
@@ -1035,19 +1226,20 @@ structures, file handling, and competitive programming.
 
   <ul>
 
-```
-<li>
-  <a
-    href="https://onlinejudge.org/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    UVA Online Judge
-  </a>
-</li>
-```
+    <li>
+
+      <a
+        href="https://onlinejudge.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        UVA Online Judge
+      </a>
+
+    </li>
 
   </ul>
+
 
   <h2 class="course-section-title">
     Grading
@@ -1055,61 +1247,76 @@ structures, file handling, and competitive programming.
 
   <div class="table-responsive">
 
-```
-<table class="table table-bordered">
+    <table class="table table-bordered">
 
-  <thead>
+      <thead>
 
-    <tr>
-      <th>Assessment</th>
-      <th>Weight</th>
-    </tr>
+        <tr>
 
-  </thead>
+          <th>Assessment</th>
+          <th>Weight</th>
 
-  <tbody>
+        </tr>
 
-    <tr>
-      <td>Class Participation and Activity</td>
-      <td>5%</td>
-    </tr>
+      </thead>
 
-    <tr>
-      <td>Class Test 1</td>
-      <td>7.5%</td>
-    </tr>
+      <tbody>
 
-    <tr>
-      <td>Class Test 2</td>
-      <td>7.5%</td>
-    </tr>
+        <tr>
 
-    <tr>
-      <td>Assignment / Report and Presentation / Viva</td>
-      <td>10%</td>
-    </tr>
+          <td>Class Participation and Activity</td>
+          <td>5%</td>
 
-    <tr>
-      <td>Midterm Examination</td>
-      <td>30%</td>
-    </tr>
+        </tr>
 
-    <tr>
-      <td>Final Examination</td>
-      <td>40%</td>
-    </tr>
+        <tr>
 
-    <tr>
-      <th>Total</th>
-      <th>100%</th>
-    </tr>
+          <td>Class Test 1</td>
+          <td>7.5%</td>
 
-  </tbody>
+        </tr>
 
-</table>
-```
+        <tr>
+
+          <td>Class Test 2</td>
+          <td>7.5%</td>
+
+        </tr>
+
+        <tr>
+
+          <td>Assignment / Report and Presentation / Viva</td>
+          <td>10%</td>
+
+        </tr>
+
+        <tr>
+
+          <td>Midterm Examination</td>
+          <td>30%</td>
+
+        </tr>
+
+        <tr>
+
+          <td>Final Examination</td>
+          <td>40%</td>
+
+        </tr>
+
+        <tr>
+
+          <th>Total</th>
+          <th>100%</th>
+
+        </tr>
+
+      </tbody>
+
+    </table>
 
   </div>
+
 
   <h2 class="course-section-title">
     Course Information
@@ -1117,83 +1324,109 @@ structures, file handling, and competitive programming.
 
   <div class="table-responsive">
 
-```
-<table class="table table-bordered">
+    <table class="table table-bordered">
 
-  <thead>
+      <thead>
 
-    <tr>
-      <th>Attribute</th>
-      <th>Details</th>
-    </tr>
+        <tr>
 
-  </thead>
+          <th>Attribute</th>
+          <th>Details</th>
 
-  <tbody>
+        </tr>
 
-    <tr>
-      <td>Course Code</td>
-      <td>CSE 101</td>
-    </tr>
+      </thead>
 
-    <tr>
-      <td>Course Title</td>
-      <td>Structured Programming Language</td>
-    </tr>
+      <tbody>
 
-    <tr>
-      <td>Course Type</td>
-      <td>Core Engineering Course</td>
-    </tr>
+        <tr>
 
-    <tr>
-      <td>Credit Hours</td>
-      <td>3.0</td>
-    </tr>
+          <td>Course Code</td>
+          <td>CSE 101</td>
 
-    <tr>
-      <td>Academic Session</td>
-      <td>Fall 2024</td>
-    </tr>
+        </tr>
 
-    <tr>
-      <td>Year-Semester</td>
-      <td>1-1</td>
-    </tr>
+        <tr>
 
-    <tr>
-      <td>Contact Hours</td>
-      <td>42.5 hours</td>
-    </tr>
+          <td>Course Title</td>
+          <td>Structured Programming Language</td>
 
-    <tr>
-      <td>Class Schedule</td>
-      <td>
-        Monday, 10:30–11:45 AM;<br>
-        Thursday, 9:15–10:30 AM
-      </td>
-    </tr>
+        </tr>
 
-    <tr>
-      <td>Venue</td>
-      <td>
-        B4-405 and B3-402
-      </td>
-    </tr>
+        <tr>
 
-    <tr>
-      <td>Instructor</td>
-      <td>
-        Md. Shakil Ahmed
-      </td>
-    </tr>
+          <td>Course Type</td>
+          <td>Core Engineering Course</td>
 
-  </tbody>
+        </tr>
 
-</table>
-```
+        <tr>
+
+          <td>Credit Hours</td>
+          <td>3.0</td>
+
+        </tr>
+
+        <tr>
+
+          <td>Academic Session</td>
+          <td>Fall 2024</td>
+
+        </tr>
+
+        <tr>
+
+          <td>Year-Semester</td>
+          <td>1-1</td>
+
+        </tr>
+
+        <tr>
+
+          <td>Contact Hours</td>
+          <td>42.5 hours</td>
+
+        </tr>
+
+        <tr>
+
+          <td>Class Schedule</td>
+
+          <td>
+
+            Monday, 10:30–11:45 AM;<br>
+            Thursday, 9:15–10:30 AM
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>Venue</td>
+
+          <td>
+            B4-405 and B3-402
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>Instructor</td>
+
+          <td>
+            Md. Shakil Ahmed
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
 
   </div>
+
 
   <h2 class="course-section-title">
     Course Schedule
@@ -1201,179 +1434,281 @@ structures, file handling, and competitive programming.
 
   <div class="table-responsive">
 
-```
-<table class="table table-bordered">
+    <table class="table table-bordered">
 
-  <thead>
+      <thead>
 
-    <tr>
-      <th>Week</th>
-      <th>Topic</th>
-      <th>Description</th>
-    </tr>
+        <tr>
 
-  </thead>
+          <th>Week</th>
+          <th>Topic</th>
+          <th>Description</th>
 
-  <tbody>
+        </tr>
 
-    <tr>
-      <td>1</td>
-      <td>Introduction to C Programming</td>
-      <td>
-        Character sets, C tokens, keywords, identifiers, data types,
-        variables, constants, and type casting.
-      </td>
-    </tr>
+      </thead>
 
-    <tr>
-      <td>2</td>
-      <td>Operators and Expressions</td>
-      <td>
-        Arithmetic, relational, logical, assignment, and conditional
-        operators, precedence, associativity, type conversion,
-        library functions, and input-output functions.
-      </td>
-    </tr>
+      <tbody>
 
-    <tr>
-      <td>3</td>
-      <td>Control Statements</td>
-      <td>
-        Decision-making and looping structures including if-else,
-        if ladders, nested if-else, for, while, and do-while loops.
-      </td>
-    </tr>
+        <tr>
 
-    <tr>
-      <td>4</td>
-      <td>Nested Loops and Problem Solving</td>
-      <td>
-        Nested loops and iterative techniques for solving programming
-        problems.
-      </td>
-    </tr>
+          <td>1</td>
 
-    <tr>
-      <td>5</td>
-      <td>Break, Continue, GOTO, and Functions</td>
-      <td>
-        Break, continue, GOTO, comma operator, function prototypes,
-        function calls, arguments, and return statements.
-      </td>
-    </tr>
+          <td>
+            Introduction to C Programming
+          </td>
 
-    <tr>
-      <td>6</td>
-      <td>Functions, Parameters, and Recursion</td>
-      <td>
-        Function parameters, argument passing, recursive functions,
-        and direct recursion.
-      </td>
-    </tr>
+          <td>
+            Character sets, C tokens, keywords, identifiers, data types,
+            variables, constants, and type casting.
+          </td>
 
-    <tr>
-      <td>7</td>
-      <td>Midterm Review and Case Study</td>
-      <td>
-        Review, case studies, problem solving, questions and answers,
-        and examination preparation.
-      </td>
-    </tr>
+        </tr>
 
-    <tr>
-      <td>8</td>
-      <td>Arrays</td>
-      <td>
-        Array declaration, initialization, traversal, array operations,
-        passing arrays to functions, and multidimensional arrays.
-      </td>
-    </tr>
+        <tr>
 
-    <tr>
-      <td>9</td>
-      <td>Strings and Character Processing</td>
-      <td>
-        Character arrays, strings, ASCII values, character frequency,
-        character counting, and binary strings.
-      </td>
-    </tr>
+          <td>2</td>
 
-    <tr>
-      <td>10</td>
-      <td>String Manipulation</td>
-      <td>
-        String copying, comparison, reversal, concatenation,
-        and standard string library functions.
-      </td>
-    </tr>
+          <td>
+            Operators and Expressions
+          </td>
 
-    <tr>
-      <td>11</td>
-      <td>Pointers</td>
-      <td>
-        Pointer declarations, pointer arithmetic, functions with
-        pointers, arrays, strings, and pointer-based operations.
-      </td>
-    </tr>
+          <td>
+            Arithmetic, relational, logical, assignment, and conditional
+            operators, precedence, associativity, type conversion,
+            library functions, and input-output functions.
+          </td>
 
-    <tr>
-      <td>12</td>
-      <td>Dynamic Memory Allocation and Structures</td>
-      <td>
-        malloc, calloc, realloc, arrays of pointers, structures,
-        member access, structure processing, and initialization.
-      </td>
-    </tr>
+        </tr>
 
-    <tr>
-      <td>13</td>
-      <td>File Handling</td>
-      <td>
-        File declaration, opening, processing, reading, writing,
-        closing, fscanf(), fgets(), fread(), and related operations.
-      </td>
-    </tr>
+        <tr>
 
-    <tr>
-      <td>14</td>
-      <td>ACM-ICPC and Online Judge Systems</td>
-      <td>
-        Programming contest judging systems and problem solving
-        using online judges such as UVA.
-      </td>
-    </tr>
+          <td>3</td>
 
-    <tr>
-      <td>15</td>
-      <td>Competitive Programming Problem Solving</td>
-      <td>
-        ACM-ICPC-style and UVA programming problems with emphasis
-        on algorithmic thinking and efficient solution development.
-      </td>
-    </tr>
+          <td>
+            Control Statements
+          </td>
 
-    <tr>
-      <td>16</td>
-      <td>Brainstorming and Problem-Solving Week</td>
-      <td>
-        Brainstorming, discussion, problem solving, and preparation
-        for the semester final examination.
-      </td>
-    </tr>
+          <td>
+            Decision-making and looping structures including if-else,
+            if ladders, nested if-else, for, while, and do-while loops.
+          </td>
 
-    <tr>
-      <td>17</td>
-      <td>Final Review and Case Study</td>
-      <td>
-        Comprehensive review, case studies, questions and answers,
-        problem solving, and viva voce preparation.
-      </td>
-    </tr>
+        </tr>
 
-  </tbody>
+        <tr>
 
-</table>
+          <td>4</td>
 
+          <td>
+            Nested Loops and Problem Solving
+          </td>
+
+          <td>
+            Nested loops and iterative techniques for solving programming
+            problems.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>5</td>
+
+          <td>
+            Break, Continue, GOTO, and Functions
+          </td>
+
+          <td>
+            Break, continue, GOTO, comma operator, function prototypes,
+            function calls, arguments, and return statements.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>6</td>
+
+          <td>
+            Functions, Parameters, and Recursion
+          </td>
+
+          <td>
+            Function parameters, argument passing, recursive functions,
+            and direct recursion.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>7</td>
+
+          <td>
+            Midterm Review and Case Study
+          </td>
+
+          <td>
+            Review, case studies, problem solving, questions and answers,
+            and examination preparation.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>8</td>
+
+          <td>
+            Arrays
+          </td>
+
+          <td>
+            Array declaration, initialization, traversal, array operations,
+            passing arrays to functions, and multidimensional arrays.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>9</td>
+
+          <td>
+            Strings and Character Processing
+          </td>
+
+          <td>
+            Character arrays, strings, ASCII values, character frequency,
+            character counting, and binary strings.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>10</td>
+
+          <td>
+            String Manipulation
+          </td>
+
+          <td>
+            String copying, comparison, reversal, concatenation,
+            and standard string library functions.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>11</td>
+
+          <td>
+            Pointers
+          </td>
+
+          <td>
+            Pointer declarations, pointer arithmetic, functions with
+            pointers, arrays, strings, and pointer-based operations.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>12</td>
+
+          <td>
+            Dynamic Memory Allocation and Structures
+          </td>
+
+          <td>
+            malloc, calloc, realloc, arrays of pointers, structures,
+            member access, structure processing, and initialization.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>13</td>
+
+          <td>
+            File Handling
+          </td>
+
+          <td>
+            File declaration, opening, processing, reading, writing,
+            closing, fscanf(), fgets(), fread(), and related operations.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>14</td>
+
+          <td>
+            ACM-ICPC and Online Judge Systems
+          </td>
+
+          <td>
+            Programming contest judging systems and problem solving
+            using online judges such as UVA.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>15</td>
+
+          <td>
+            Competitive Programming Problem Solving
+          </td>
+
+          <td>
+            ACM-ICPC-style and UVA programming problems with emphasis
+            on algorithmic thinking and efficient solution development.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>16</td>
+
+          <td>
+            Brainstorming and Problem-Solving Week
+          </td>
+
+          <td>
+            Brainstorming, discussion, problem solving, and preparation
+            for the semester final examination.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>17</td>
+
+          <td>
+            Final Review and Case Study
+          </td>
+
+          <td>
+            Comprehensive review, case studies, questions and answers,
+            problem solving, and viva voce preparation.
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
 
   </div>
 
