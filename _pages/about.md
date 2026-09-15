@@ -27,9 +27,10 @@ latest_posts:
 ---
 <style>
 
+
 /* =========================================================
-   GLOBAL DESIGN
-   White background + black academic typography
+   GLOBAL TYPOGRAPHY
+   Consistent academic font throughout the page
    ========================================================= */
 
 :root {
@@ -41,11 +42,6 @@ latest_posts:
   --card-bg: #ffffff;
 }
 
-
-/* =========================================================
-   GLOBAL RESET
-   ========================================================= */
-
 * {
   box-sizing: border-box;
 }
@@ -56,9 +52,8 @@ body {
   padding: 0;
 }
 
-
 /* =========================================================
-   PAGE TYPOGRAPHY
+   BODY
    ========================================================= */
 
 body {
@@ -76,7 +71,6 @@ body {
   font-weight: 400;
 }
 
-
 /* =========================================================
    MAIN CONTENT
    ========================================================= */
@@ -84,20 +78,37 @@ body {
 .post,
 .post-content,
 .about,
-.container {
+.container,
+.research-interests,
+.education-section,
+.section-block,
+.timeline,
+.cert-list,
+.skills-list {
   color: #111111;
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 }
 
-
 /* =========================================================
-   INTRODUCTORY BIOGRAPHY PARAGRAPHS
+   BIOGRAPHY
    ========================================================= */
 
 .post p,
 .post-content p,
 .about p {
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
   font-size: 18px;
   line-height: 1.85;
+  font-weight: 400;
 
   color: #111111;
 
@@ -107,7 +118,6 @@ body {
   margin-top: 0;
   margin-bottom: 22px;
 }
-
 
 /* =========================================================
    HEADINGS
@@ -129,7 +139,6 @@ h6 {
   font-weight: 700;
 }
 
-
 /* =========================================================
    SECTION HEADINGS
    ========================================================= */
@@ -145,8 +154,8 @@ h6 {
     serif;
 
   font-weight: 700;
-
   font-size: 32px;
+  line-height: 1.3;
 
   color: #000000;
 
@@ -154,30 +163,22 @@ h6 {
   margin-bottom: 32px;
 }
 
-
 /* =========================================================
    LINKS
    ========================================================= */
 
 a {
   color: #000000 !important;
-
   text-decoration: underline;
-
   text-decoration-thickness: 1px;
-
   text-underline-offset: 3px;
-
   transition: opacity 0.2s ease;
 }
 
-
 a:hover {
   color: #000000 !important;
-
   opacity: 0.65;
 }
-
 
 /* =========================================================
    STRONG AND EMPHASIS
@@ -185,35 +186,27 @@ a:hover {
 
 strong {
   color: #000000;
-
   font-weight: 700;
 }
-
 
 em {
   color: #111111;
 }
 
-
 /* =========================================================
-   SECTION DIVIDER
-   BOLD BLACK LINE + NO EXTRA GAP
+   DIVIDER
    ========================================================= */
 
 .divider-line {
   width: 100%;
-
   max-width: 900px;
-
   height: 0;
 
   margin: 0 auto;
 
   border: none;
-
   border-top: 2px solid #000000;
 }
-
 
 /* =========================================================
    RESEARCH INTERESTS
@@ -221,21 +214,23 @@ em {
 
 .research-interests {
   max-width: 900px;
-
   margin: 0 auto;
 
   padding: 35px 24px;
 
   text-align: center;
-}
 
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+}
 
 .research-interests h2 {
   margin-top: 0;
-
   margin-bottom: 25px;
 }
-
 
 /* =========================================================
    RESEARCH INTEREST TAGS
@@ -243,7 +238,6 @@ em {
 
 .interest-tags {
   display: flex;
-
   flex-wrap: wrap;
 
   justify-content: center;
@@ -251,33 +245,29 @@ em {
   gap: 12px;
 }
 
-
 .interest-tag {
   display: inline-flex;
 
   align-items: center;
-
   justify-content: center;
 
   padding: 8px 16px;
 
   border: 1px solid #000000;
-
   border-radius: 4px;
 
   background: #ffffff;
-
   color: #000000;
 
+  /* SAME FONT AS MAIN CONTENT */
   font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
-  font-size: 14px;
-
-  font-weight: 500;
-
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.4;
 
   white-space: nowrap;
@@ -287,15 +277,12 @@ em {
     transform 0.2s ease;
 }
 
-
 .interest-tag:hover {
   background: #f2f2f2;
-
   color: #000000;
 
   transform: translateY(-2px);
 }
-
 
 /* =========================================================
    EDUCATION SECTION
@@ -303,10 +290,8 @@ em {
 
 .education-section {
   background: #ffffff;
-
   padding: 35px 24px;
 }
-
 
 /* =========================================================
    EDUCATION TIMELINE
@@ -318,12 +303,10 @@ em {
   margin: 0 auto;
 
   display: flex;
-
   flex-direction: column;
 
   gap: 18px;
 }
-
 
 /* =========================================================
    EDUCATION CARD
@@ -333,7 +316,6 @@ em {
   background: #ffffff;
 
   border: 1px solid #cfcfcf;
-
   border-radius: 0;
 
   padding: 22px 26px;
@@ -341,23 +323,25 @@ em {
   display: flex;
 
   justify-content: space-between;
-
   align-items: flex-start;
 
   gap: 30px;
 
   flex-wrap: wrap;
-}
 
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+}
 
 .edu-main {
   flex: 1;
-
   min-width: 240px;
 
   text-align: left;
 }
-
 
 /* =========================================================
    EDUCATION SCHOOL
@@ -365,12 +349,12 @@ em {
 
 .edu-school {
   font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
   font-size: 18px;
-
   font-weight: 700;
 
   color: #000000;
@@ -378,35 +362,38 @@ em {
   margin: 0 0 6px;
 }
 
-
 /* =========================================================
    EDUCATION DEGREE
    ========================================================= */
 
 .edu-degree {
   font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
-  font-size: 16px;
-
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
 
   color: #111111;
 
   margin: 0;
 }
 
-
 /* =========================================================
    EDUCATION THESIS
    ========================================================= */
 
 .edu-note {
-  font-size: 16px;
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.75;
 
   color: #333333;
 
@@ -417,7 +404,6 @@ em {
   text-align: justify;
 }
 
-
 /* =========================================================
    EDUCATION LOCATION AND DATE
    ========================================================= */
@@ -426,29 +412,26 @@ em {
   text-align: right;
 
   font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
-  font-size: 15px;
+  font-size: 16px;
 
   color: #222222;
 
   flex: none;
 }
 
-
 .edu-loc {
   font-weight: 600;
-
   color: #000000;
 }
-
 
 .edu-date {
   margin-top: 5px;
 }
-
 
 /* =========================================================
    EDUCATION SUBSECTION
@@ -458,7 +441,6 @@ em {
   margin-bottom: 4px;
 }
 
-
 .edu-sub {
   margin: 14px 0 0;
 
@@ -467,15 +449,12 @@ em {
   border-top: 1px solid #dddddd;
 }
 
-
 .edu-sub:first-of-type {
   margin-top: 10px;
-
   padding-top: 0;
 
   border-top: none;
 }
-
 
 /* =========================================================
    GENERAL CONTENT SECTIONS
@@ -487,8 +466,13 @@ em {
   padding: 35px 24px;
 
   background: #ffffff;
-}
 
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+}
 
 /* =========================================================
    CERTIFICATE / HONOR LIST
@@ -500,12 +484,10 @@ em {
   margin: 0 auto;
 
   display: flex;
-
   flex-direction: column;
 
   gap: 22px;
 }
-
 
 /* =========================================================
    CERTIFICATE / HONOR ITEM
@@ -515,7 +497,6 @@ em {
   display: flex;
 
   justify-content: space-between;
-
   align-items: flex-start;
 
   gap: 30px;
@@ -525,24 +506,25 @@ em {
   padding-bottom: 22px;
 
   border-bottom: 1px solid #dddddd;
-}
 
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+}
 
 .cert-item:last-child {
   border-bottom: none;
-
   padding-bottom: 0;
 }
 
-
 .cert-main {
   flex: 1;
-
   min-width: 240px;
 
   text-align: left;
 }
-
 
 /* =========================================================
    CERTIFICATE TITLE
@@ -552,22 +534,20 @@ em {
   margin: 0 0 8px;
 
   font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
   font-size: 18px;
-
   font-weight: 700;
 
   color: #000000;
 }
 
-
 .cert-name a {
   color: #000000 !important;
 }
-
 
 /* =========================================================
    CERTIFICATE DESCRIPTION
@@ -576,15 +556,20 @@ em {
 .cert-desc {
   margin: 0;
 
-  font-size: 17px;
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
+  font-size: 17px;
   line-height: 1.8;
+  font-weight: 400;
 
   color: #222222;
 
   text-align: justify;
 }
-
 
 /* =========================================================
    CERTIFICATE DATE
@@ -592,13 +577,13 @@ em {
 
 .cert-date {
   font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
-  font-size: 15px;
-
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
 
   color: #222222;
 
@@ -608,7 +593,6 @@ em {
 
   text-align: right;
 }
-
 
 /* =========================================================
    TECHNICAL SKILLS
@@ -626,7 +610,6 @@ em {
   gap: 20px;
 }
 
-
 /* =========================================================
    SKILL CARD
    ========================================================= */
@@ -635,23 +618,27 @@ em {
   background: #ffffff;
 
   border: 1px solid #cfcfcf;
-
   border-radius: 0;
 
   padding: 24px;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
 }
 
-
 .skill-item:hover {
   transform: translateY(-3px);
 
-  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 7px 18px rgba(0, 0, 0, 0.08);
 }
-
 
 /* =========================================================
    SKILL NAME
@@ -661,9 +648,10 @@ em {
   margin: 0 0 12px;
 
   font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
   color: #000000;
 
@@ -672,7 +660,6 @@ em {
   font-size: 18px;
 }
 
-
 /* =========================================================
    SKILL DESCRIPTION
    ========================================================= */
@@ -680,15 +667,20 @@ em {
 .skill-desc {
   margin: 0;
 
-  font-size: 16px;
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
+  font-size: 17px;
   line-height: 1.8;
+  font-weight: 400;
 
   color: #222222;
 
   text-align: justify;
 }
-
 
 /* =========================================================
    FOOTER
@@ -706,7 +698,6 @@ em {
   padding: 25px 0;
 }
 
-
 .site-footer p {
   margin: 0;
 
@@ -715,13 +706,13 @@ em {
   text-align: center;
 
   font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
-  font-size: 14px;
+  font-size: 15px;
 }
-
 
 /* =========================================================
    TABLET AND MOBILE
@@ -733,17 +724,14 @@ em {
     font-size: 17px;
   }
 
-
   .post p,
   .post-content p,
   .about p {
     font-size: 17px;
-
     line-height: 1.8;
 
     text-align: left;
   }
-
 
   .education-section h2,
   .section-block h2,
@@ -751,15 +739,12 @@ em {
     font-size: 28px;
   }
 
-
   .education-section,
   .section-block,
   .research-interests {
     padding-top: 30px;
-
     padding-bottom: 30px;
   }
-
 
   .edu-card {
     flex-direction: column;
@@ -769,11 +754,9 @@ em {
     padding: 20px;
   }
 
-
   .edu-side {
     text-align: left;
   }
-
 
   .cert-item {
     flex-direction: column;
@@ -781,30 +764,23 @@ em {
     gap: 10px;
   }
 
-
   .cert-date {
     text-align: left;
   }
-
 
   .skills-list {
     grid-template-columns: 1fr;
   }
 
-
   .skill-item {
     padding: 22px;
   }
 
-
   .interest-tag {
-    font-size: 13px;
-
+    font-size: 15px;
     padding: 7px 13px;
   }
-
 }
-
 
 /* =========================================================
    SMALL MOBILE DEVICES
@@ -816,14 +792,11 @@ em {
   .education-section,
   .research-interests {
     padding-left: 18px;
-
     padding-right: 18px;
 
     padding-top: 25px;
-
     padding-bottom: 25px;
   }
-
 
   .education-section h2,
   .section-block h2,
@@ -833,20 +806,21 @@ em {
     margin-bottom: 25px;
   }
 
-
   .post p,
   .post-content p,
   .about p {
     font-size: 16px;
   }
 
+  .interest-tag {
+    font-size: 14px;
+    padding: 7px 12px;
+  }
 
   .divider-line {
     border-top: 2px solid #000000;
   }
-
 }
-
 </style>
 
 
