@@ -333,7 +333,68 @@ nav_order: 2
     font-size: 14px;
     line-height: 1.5;
   }
+/* =========================================================
+   PUBLICATION SECTIONS
+   ========================================================= */
 
+.publication-section {
+  width: 100%;
+  margin: 0 0 55px;
+  padding: 0;
+}
+
+/* Section heading */
+
+.publication-section-title {
+  margin: 0;
+  padding: 0;
+
+  color: #222222 !important;
+
+  font-family:
+    "Arial Narrow",
+    "Roboto Condensed",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Horizontal line below section heading */
+
+.publication-section-line {
+  width: 90%;
+  height: 2px;
+
+  margin: 30px auto 0;
+
+  background: #666666;
+}
+
+/* Remove the default year headings inside each section */
+
+.publication-section .bibliography h2,
+.publication-section .bibliography .year {
+  display: none;
+}
+
+/* Publication list */
+
+.publication-section .bibliography {
+  margin-top: 10px;
+}
+
+/* Space between sections */
+
+.publication-section + .publication-section {
+  margin-top: 60px;
+}
   /* =========================================================
      TABLET
      ========================================================= */
@@ -383,7 +444,14 @@ nav_order: 2
     .publications .title {
       font-size: 16px;
     }
+.publication-section-title {
+  font-size: 24px;
+}
 
+.publication-section-line {
+  width: 100%;
+  margin-top: 22px;
+}
     .publications .author {
       font-size: 14px;
     }
@@ -424,7 +492,14 @@ nav_order: 2
     .publications .title {
       font-size: 15px;
     }
+.publication-section-title {
+  font-size: 21px;
+  letter-spacing: 0.3px;
+}
 
+.publication-section-line {
+  margin-top: 18px;
+}
     .publications .bibliography li,
     .publications .bibliography li p {
       font-size: 13.5px;
@@ -447,9 +522,83 @@ nav_order: 2
 {% include bib_search.liquid %}
 
 <div class="publications">
-  {% bibliography %}
+
+  <!-- =====================================================
+       JOURNAL PAPERS
+       ===================================================== -->
+
+  <section class="publication-section">
+
+    <h2 class="publication-section-title">
+      JOURNAL PAPERS
+    </h2>
+
+    <div class="publication-section-line"></div>
+
+    {% bibliography --query @*[pub_category=journal && publication_status!=under-review] %}
+
+  </section>
+
+
+  <!-- =====================================================
+       CONFERENCE PAPERS
+       ===================================================== -->
+
+  <section class="publication-section">
+
+    <h2 class="publication-section-title">
+      CONFERENCE PAPERS
+    </h2>
+
+    <div class="publication-section-line"></div>
+
+    {% bibliography --query @*[pub_category=conference && publication_status!=under-review] %}
+
+  </section>
+
+
+  <!-- =====================================================
+       DATASET PUBLICATIONS
+       ===================================================== -->
+
+  <section class="publication-section">
+
+    <h2 class="publication-section-title">
+      DATASET PUBLICATIONS
+    </h2>
+
+    <div class="publication-section-line"></div>
+
+    {% bibliography --query @*[pub_category=dataset && publication_status!=under-review] %}
+
+  </section>
+
+
+  <!-- =====================================================
+       UNDER REVIEW PAPERS
+       ===================================================== -->
+
+  <section class="publication-section">
+
+    <h2 class="publication-section-title">
+      UNDER REVIEW PAPERS
+    </h2>
+
+    <div class="publication-section-line"></div>
+
+    {% bibliography --query @*[publication_status=under-review] %}
+
+  </section>
+
 </div>
 
+<footer class="site-footer">
+  <div class="container text-center">
+    <p class="mb-0">
+      © 2026 Md. Shakil Ahmed. All rights reserved.
+    </p>
+  </div>
+</footer>
 <footer class="site-footer">
   <div class="container text-center">
     <p class="mb-0">
