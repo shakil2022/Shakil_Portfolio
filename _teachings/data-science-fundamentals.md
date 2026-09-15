@@ -1,5 +1,5 @@
-
 ---
+
 layout: course
 
 title: Cyber Security and Digital Forensic
@@ -17,75 +17,76 @@ importance: 1
 course_id: cse-413-cyber-security-and-digital-forensic
 
 schedule:
-  - week: 1
-    date: Week 1
-    topic: Introduction to Cyber Security and Digital Forensics
-    description: Introduction to cybersecurity, the CIA triad, key security issues, incident management, penetration testing, digital evidence, evidence handling, and chain of custody.
 
-  - week: 2
-    date: Week 2
-    topic: SQL Injection and Cross-Site Scripting
-    description: Study of classic, error-based, blind, and UNION-based SQL injection, backend data extraction, and reflected, stored, and DOM-based XSS.
+* week: 1
+  date: Week 1
+  topic: Introduction to Cyber Security and Digital Forensics
+  description: Introduction to cybersecurity, the CIA triad, key security issues, incident management, penetration testing, digital evidence, evidence handling, and chain of custody.
 
-  - week: 3
-    date: Week 3
-    topic: CSRF and Clickjacking
-    description: Understanding Cross-Site Request Forgery, implicit trust in authenticated requests, clickjacking, UI redress attacks, and insecure DOM manipulation.
+* week: 2
+  date: Week 2
+  topic: SQL Injection and Cross-Site Scripting
+  description: Study of classic, error-based, blind, and UNION-based SQL injection, backend data extraction, and reflected, stored, and DOM-based XSS.
 
-  - week: 4
-    date: Week 4
-    topic: CORS, XXE, SSRF, and HTTP Request Smuggling
-    description: Introduction to CORS misconfigurations, XML External Entity injection, Server-Side Request Forgery, and HTTP request smuggling.
+* week: 3
+  date: Week 3
+  topic: CSRF and Clickjacking
+  description: Understanding Cross-Site Request Forgery, implicit trust in authenticated requests, clickjacking, UI redress attacks, and insecure DOM manipulation.
 
-  - week: 5
-    date: Week 5
-    topic: Command Injection, SSTI, and Access Control
-    description: Study of OS command injection, Server-Side Template Injection, path traversal, arbitrary file access, and broken access control vulnerabilities.
+* week: 4
+  date: Week 4
+  topic: CORS, XXE, SSRF, and HTTP Request Smuggling
+  description: Introduction to CORS misconfigurations, XML External Entity injection, Server-Side Request Forgery, and HTTP request smuggling.
 
-  - week: 6
-    date: Week 6
-    topic: Midterm Examination
-    description: Review of the topics covered during the first half of the course followed by the midterm examination.
+* week: 5
+  date: Week 5
+  topic: Command Injection, SSTI, and Access Control
+  description: Study of OS command injection, Server-Side Template Injection, path traversal, arbitrary file access, and broken access control vulnerabilities.
 
-  - week: 7
-    date: Week 7
-    topic: Authentication and Application Logic
-    description: Study of JWT and OAuth authentication issues, token tampering, OAuth misconfiguration, and real-world application logic flaws.
+* week: 6
+  date: Week 6
+  topic: Midterm Examination
+  description: Review of the topics covered during the first half of the course followed by the midterm examination.
 
-  - week: 8
-    date: Week 8
-    topic: OSINT, Social Engineering, and Python Basics
-    description: Introduction to open-source intelligence, information gathering, phishing techniques, Python variables, loops, and file handling.
+* week: 7
+  date: Week 7
+  topic: Authentication and Application Logic
+  description: Study of JWT and OAuth authentication issues, token tampering, OAuth misconfiguration, and real-world application logic flaws.
 
-  - week: 9
-    date: Week 9
-    topic: Python for Security and Reverse Engineering
-    description: Application of Python for security tasks, automation, scanning, payload development, reverse engineering tools, and assembly fundamentals.
+* week: 8
+  date: Week 8
+  topic: OSINT, Social Engineering, and Python Basics
+  description: Introduction to open-source intelligence, information gathering, phishing techniques, Python variables, loops, and file handling.
 
-  - week: 10
-    date: Week 10
-    topic: Binary Analysis and Native Application Security
-    description: Understanding compiled binaries, binary analysis, buffer overflow, integer vulnerabilities, and format string vulnerabilities.
+* week: 9
+  date: Week 9
+  topic: Python for Security and Reverse Engineering
+  description: Application of Python for security tasks, automation, scanning, payload development, reverse engineering tools, and assembly fundamentals.
 
-  - week: 11
-    date: Week 11
-    topic: Advanced and Network Forensics
-    description: Study of data carving, memory analysis, network traffic capture, and analysis techniques for digital forensic investigations.
+* week: 10
+  date: Week 10
+  topic: Binary Analysis and Native Application Security
+  description: Understanding compiled binaries, binary analysis, buffer overflow, integer vulnerabilities, and format string vulnerabilities.
 
-  - week: 12
-    date: Week 12
-    topic: Cryptography and Hashing
-    description: Introduction to cryptographic concepts, cryptographic techniques, and hashing algorithms used in cybersecurity.
+* week: 11
+  date: Week 11
+  topic: Advanced and Network Forensics
+  description: Study of data carving, memory analysis, network traffic capture, and analysis techniques for digital forensic investigations.
 
-  - week: 13
-    date: Week 13
-    topic: Blockchain Security and Cybersecurity Law
-    description: Introduction to ledger integrity, smart contract risks, global cybersecurity laws, standards, and compliance.
+* week: 12
+  date: Week 12
+  topic: Cryptography and Hashing
+  description: Introduction to cryptographic concepts, cryptographic techniques, and hashing algorithms used in cybersecurity.
 
-  - week: 14
-    date: Week 14
-    topic: Final Review and Examination
-    description: Comprehensive review of the course topics followed by the final examination.
+* week: 13
+  date: Week 13
+  topic: Blockchain Security and Cybersecurity Law
+  description: Introduction to ledger integrity, smart contract risks, global cybersecurity laws, standards, and compliance.
+
+* week: 14
+  date: Week 14
+  topic: Final Review and Examination
+  description: Comprehensive review of the course topics followed by the final examination.
 
 ---
 
@@ -111,6 +112,7 @@ schedule:
   font-size: 17px;
 
   line-height: 1.8;
+
 }
 
 
@@ -135,6 +137,7 @@ schedule:
     serif;
 
   font-weight: 700;
+
 }
 
 
@@ -146,7 +149,9 @@ schedule:
   line-height: 1.4;
 
   margin-top: 0;
+
   margin-bottom: 20px;
+
 }
 
 
@@ -158,11 +163,13 @@ schedule:
   line-height: 1.4;
 
   margin-top: 34px;
+
   margin-bottom: 18px;
 
   padding-bottom: 8px;
 
   border-bottom: 2px solid #000000;
+
 }
 
 
@@ -174,7 +181,9 @@ schedule:
   line-height: 1.45;
 
   margin-top: 25px;
+
   margin-bottom: 12px;
+
 }
 
 
@@ -184,6 +193,7 @@ schedule:
   font-size: 19px;
 
   line-height: 1.45;
+
 }
 
 
@@ -214,6 +224,7 @@ schedule:
   text-align: justify;
 
   text-justify: inter-word;
+
 }
 
 
@@ -227,6 +238,7 @@ schedule:
   color: #000000;
 
   font-weight: 700;
+
 }
 
 
@@ -256,6 +268,7 @@ schedule:
   font-size: 16px;
 
   line-height: 1.75;
+
 }
 
 
@@ -263,6 +276,7 @@ schedule:
 .course-page li {
 
   margin-bottom: 7px;
+
 }
 
 
@@ -282,6 +296,7 @@ schedule:
   text-underline-offset: 3px;
 
   transition: opacity 0.2s ease;
+
 }
 
 
@@ -291,6 +306,7 @@ schedule:
   color: #000000 !important;
 
   opacity: 0.6;
+
 }
 
 
@@ -312,6 +328,7 @@ schedule:
   font-size: 16px;
 
   line-height: 1.75;
+
 }
 
 
@@ -337,6 +354,7 @@ schedule:
     transform 0.25s ease,
     box-shadow 0.25s ease,
     border-color 0.25s ease;
+
 }
 
 
@@ -349,6 +367,7 @@ schedule:
 
   box-shadow:
     0 9px 22px rgba(0, 0, 0, 0.11);
+
 }
 
 
@@ -356,6 +375,7 @@ schedule:
 .course-page .card-body {
 
   padding: 22px;
+
 }
 
 
@@ -378,6 +398,7 @@ schedule:
   font-weight: 700;
 
   line-height: 1.45;
+
 }
 
 
@@ -401,6 +422,7 @@ schedule:
   text-align: justify;
 
   text-justify: inter-word;
+
 }
 
 
@@ -432,6 +454,7 @@ schedule:
   line-height: 1.6;
 
   border: 1px solid #cfcfcf;
+
 }
 
 
@@ -454,6 +477,7 @@ schedule:
   font-weight: 700;
 
   border: 1px solid #cfcfcf;
+
 }
 
 
@@ -469,6 +493,7 @@ schedule:
   border: 1px solid #d2d2d2;
 
   vertical-align: top;
+
 }
 
 
@@ -476,6 +501,7 @@ schedule:
 .course-page .table tbody tr:hover td {
 
   background: #f8f8f8;
+
 }
 
 
@@ -492,6 +518,7 @@ schedule:
     monospace;
 
   font-size: 14px;
+
 }
 
 
@@ -511,6 +538,7 @@ schedule:
   font-size: 14px;
 
   line-height: 1.6;
+
 }
 
 
@@ -526,6 +554,7 @@ schedule:
   border-top: 2px solid #000000;
 
   margin: 30px auto;
+
 }
 
 
@@ -569,6 +598,7 @@ schedule:
     background-color 0.2s ease,
     color 0.2s ease,
     transform 0.2s ease;
+
 }
 
 
@@ -582,6 +612,7 @@ schedule:
   border-color: #000000;
 
   transform: translateY(-2px);
+
 }
 
 
@@ -593,6 +624,7 @@ schedule:
 .course-page .text-muted {
 
   color: #555555 !important;
+
 }
 
 
@@ -609,6 +641,7 @@ schedule:
     font-size: 16px;
 
     line-height: 1.75;
+
   }
 
 
@@ -616,6 +649,7 @@ schedule:
   .course-page h1 {
 
     font-size: 30px;
+
   }
 
 
@@ -623,6 +657,7 @@ schedule:
   .course-page h2 {
 
     font-size: 25px;
+
   }
 
 
@@ -630,6 +665,7 @@ schedule:
   .course-page h3 {
 
     font-size: 21px;
+
   }
 
 
@@ -638,6 +674,7 @@ schedule:
   .course-description {
 
     font-size: 16px;
+
   }
 
 
@@ -645,7 +682,9 @@ schedule:
   .course-page .card-text {
 
     font-size: 15px;
+
   }
+
 }
 
 
@@ -662,6 +701,7 @@ schedule:
     font-size: 15.5px;
 
     line-height: 1.75;
+
   }
 
 
@@ -669,6 +709,7 @@ schedule:
   .course-page h1 {
 
     font-size: 24px;
+
   }
 
 
@@ -678,6 +719,7 @@ schedule:
     font-size: 23px;
 
     margin-top: 30px;
+
   }
 
 
@@ -685,6 +727,7 @@ schedule:
   .course-page h3 {
 
     font-size: 20px;
+
   }
 
 
@@ -697,6 +740,7 @@ schedule:
     line-height: 1.75;
 
     text-align: left;
+
   }
 
 
@@ -708,6 +752,7 @@ schedule:
     font-size: 15px;
 
     line-height: 1.7;
+
   }
 
 
@@ -715,6 +760,7 @@ schedule:
   .course-page .card-title {
 
     font-size: 18px;
+
   }
 
 
@@ -726,6 +772,7 @@ schedule:
     line-height: 1.7;
 
     text-align: left;
+
   }
 
 
@@ -733,6 +780,7 @@ schedule:
   .course-page .table {
 
     font-size: 14px;
+
   }
 
 
@@ -742,7 +790,9 @@ schedule:
   .course-page .table td {
 
     padding: 9px 10px;
+
   }
+
 }
 
 
@@ -759,6 +809,7 @@ schedule:
     font-size: 14px;
 
     line-height: 1.7;
+
   }
 
 
@@ -766,6 +817,7 @@ schedule:
   .course-page h1 {
 
     font-size: 21px;
+
   }
 
 
@@ -773,6 +825,7 @@ schedule:
   .course-page h2 {
 
     font-size: 21px;
+
   }
 
 
@@ -780,6 +833,7 @@ schedule:
   .course-page h3 {
 
     font-size: 19px;
+
   }
 
 
@@ -790,6 +844,7 @@ schedule:
     font-size: 14px;
 
     line-height: 1.7;
+
   }
 
 
@@ -799,6 +854,7 @@ schedule:
   .course-page ol {
 
     font-size: 14px;
+
   }
 
 
@@ -806,6 +862,7 @@ schedule:
   .course-page .card-title {
 
     font-size: 18px;
+
   }
 
 
@@ -813,6 +870,7 @@ schedule:
   .course-page .card-text {
 
     font-size: 14px;
+
   }
 
 
@@ -820,6 +878,7 @@ schedule:
   .course-page .table {
 
     font-size: 13px;
+
   }
 
 
@@ -829,48 +888,57 @@ schedule:
     font-size: 12px;
 
     padding: 7px 13px;
+
   }
+
 }
 
 </style>
-
 
 ## Course Overview
 
 This course provides a comprehensive introduction to cybersecurity, ethical hacking, and digital forensics. By the end of this course, students will be able to:
 
-- Understand core principles of cybersecurity, digital forensics, and common security vulnerabilities.
-- Explain system security, authentication, cryptography, and network protection concepts.
-- Apply practical skills to identify, analyze, and investigate cyber threats using security tools and techniques.
-- Demonstrate awareness of ethical responsibilities, legal frameworks, and professional conduct in cybersecurity.
+* Understand core principles of cybersecurity, digital forensics, and common security vulnerabilities.
 
+* Explain system security, authentication, cryptography, and network protection concepts.
+
+* Apply practical skills to identify, analyze, and investigate cyber threats using security tools and techniques.
+
+* Demonstrate awareness of ethical responsibilities, legal frameworks, and professional conduct in cybersecurity.
 
 ## Prerequisites
 
-- No prerequisites required.
-
+* No prerequisites required.
 
 ## Textbooks
 
-- **Primary:** *The Web Application Hacker's Handbook* by Dafydd Stuttard and Marcus Pinto.
-- **Reference:** *Cybersecurity Essentials* by Charles J. Brooks.
-- **Reference:** *Guide to Computer Forensics and Investigations* by Bill Nelson.
-- **Reference:** *Social Engineering: The Art of Human Hacking* by Christopher Hadnagy.
-- **Reference:** *Black Hat Python: Python Programming for Hackers and Pentesters* by Justin Seitz and Tim Arnold.
-- **Reference:** *Practical Reverse Engineering* by Bruce Dang and Alexandre Gazet.
-- **Reference:** *Cybersecurity and Cyberlaw* by Pavan Duggal.
-- **Reference:** *Cryptography and Network Security: Principles and Practice* by William Stallings.
+* **Primary:** *The Web Application Hacker's Handbook* by Dafydd Stuttard and Marcus Pinto.
 
+* **Reference:** *Cybersecurity Essentials* by Charles J. Brooks.
+
+* **Reference:** *Guide to Computer Forensics and Investigations* by Bill Nelson.
+
+* **Reference:** *Social Engineering: The Art of Human Hacking* by Christopher Hadnagy.
+
+* **Reference:** *Black Hat Python: Python Programming for Hackers and Pentesters* by Justin Seitz and Tim Arnold.
+
+* **Reference:** *Practical Reverse Engineering* by Bruce Dang and Alexandre Gazet.
+
+* **Reference:** *Cybersecurity and Cyberlaw* by Pavan Duggal.
+
+* **Reference:** *Cryptography and Network Security: Principles and Practice* by William Stallings.
 
 ## Grading
 
-- **Class Participation:** 5%
-- **Assignment/Presentation/Viva:** 10%
-- **Class Test:** 15%
-- **Midterm Examination:** 30%
-- **Final Examination:** 40%
+* **Class Participation:** 5%
+
+* **Assignment/Presentation/Viva:** 10%
+
+* **Class Test:** 15%
+
+* **Midterm Examination:** 30%
+
+* **Final Examination:** 40%
 
 **Total: 100%**
-
-
-This version is also consistent with your **CSE-414 Cyber Security and Digital Forensic Laboratory** page, so both course pages will have the same visual typography and responsive behavior.
