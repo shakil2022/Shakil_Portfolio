@@ -7,106 +7,17 @@ year: 2024
 term: Fall
 importance: 10
 course_id: cse-1201-2-object-oriented-programming-language-lab
-
-schedule:
-
-  - week: 1
-    date: Week 1
-    topic: Introduction to C++ Programming and Object-Oriented Programming
-    description: Introduction to the C++ programming environment, compiler and IDE setup, basic C++ program structure, input and output operations, namespaces, and implementation of simple C++ programs.
-
-  - week: 2
-    date: Week 2
-    topic: Data Types, Operators, Control Structures, and Functions
-    description: Practical implementation of C++ data types, operators, expressions, conditional statements, loops, nested control structures, and functions through programming exercises and problem-solving tasks.
-
-  - week: 3
-    date: Week 3
-    topic: Functions and Function-Based Problem Solving
-    description: Implementation of function declaration and definition, parameter passing, return values, default arguments, inline functions, recursion, and function-based programming problems in C++.
-
-  - week: 4
-    date: Week 4
-    topic: Classes, Objects, Constructors, and Destructors
-    description: Practical implementation of classes and objects, access specifiers, data members, member functions, default constructors, parameterized constructors, copy constructors, and destructors.
-
-  - week: 5
-    date: Week 5
-    topic: Encapsulation, Function Overloading, and Operator Overloading
-    description: Implementation of encapsulation using access specifiers and implementation of function overloading and operator overloading to demonstrate compile-time polymorphism in C++.
-
-  - week: 6
-    date: Week 6
-    topic: Inheritance and Its Types
-    description: Practical implementation of single, multiple, multilevel, hierarchical, and hybrid inheritance using base and derived classes. Students will explore access control, code reuse, and relationships between classes.
-
-  - week: 7
-    date: Week 7
-    topic: Midterm Review and Examination
-    description: Review of C++ programming, classes, objects, constructors, destructors, encapsulation, function overloading, operator overloading, and inheritance, followed by the midterm laboratory examination.
-
-  - week: 8
-    date: Week 8
-    topic: Polymorphism and Virtual Functions
-    description: Practical implementation of compile-time and runtime polymorphism using function overloading, operator overloading, function overriding, virtual functions, base-class pointers, and dynamic binding.
-
-  - week: 9
-    date: Week 9
-    topic: Abstraction and Abstract Classes
-    description: Implementation of abstraction using abstract classes and pure virtual functions. Students will design programs that demonstrate abstract behavior, reusable class structures, and object-oriented design principles.
-
-  - week: 10
-    date: Week 10
-    topic: File Handling in C++
-    description: Practical implementation of file input and output using fstream, ifstream, and ofstream. Students will create, open, read, write, append, and process text and binary files.
-
-  - week: 11
-    date: Week 11
-    topic: Templates and Exception Handling
-    description: Implementation of function templates and class templates for generic programming. Students will also implement exception handling using try, catch, and throw mechanisms to manage runtime errors.
-
-  - week: 12
-    date: Week 12
-    topic: Standard Template Library
-    description: Practical use of the C++ Standard Template Library, including vectors, lists, stacks, queues, sets, maps, iterators, and standard algorithms for solving programming problems.
-
-  - week: 13
-    date: Week 13
-    topic: STL-Based Problem Solving and Project Development
-    description: Application of object-oriented programming concepts and STL components to develop practical programming solutions. Students will solve programming problems and begin implementation of their final laboratory projects.
-
-  - week: 14
-    date: Week 14
-    topic: Final Project Implementation and Debugging
-    description: Implementation, testing, debugging, and optimization of object-oriented programming projects. Students will apply appropriate concepts such as classes, inheritance, polymorphism, abstraction, file handling, templates, and STL.
-
-  - week: 15
-    date: Week 15
-    topic: Final Project Evaluation
-    description: Evaluation of the final object-oriented programming project, including program functionality, code organization, object-oriented design, testing, documentation, and implementation quality.
-
-  - week: 16
-    date: Week 16
-    topic: Brainstorming and Problem Solving
-    description: Intensive discussion, brainstorming, debugging, and problem-solving activities to strengthen C++ programming, object-oriented design, algorithmic thinking, and practical implementation skills.
-
-  - week: 17
-    date: Week 17
-    topic: Final Project Presentation, Viva, and Review
-    description: Presentation and viva of laboratory projects, demonstration of program functionality, discussion of object-oriented concepts used, project design, implementation, testing, and comprehensive review of laboratory activities.
-
 ---
 
 <style>
 
 /* =========================================================
-   COURSE PAGE — WHITE / BLACK ACADEMIC STYLE
-   Typography aligned with Teaching and Project pages
+   COURSE DETAIL PAGE
+   WHITE / BLACK ACADEMIC STYLE
    ========================================================= */
 
-.course-page,
-.course-content,
-.course-overview {
+.course-card,
+.course-content {
 
   font-family:
     "Source Serif 4",
@@ -116,9 +27,44 @@ schedule:
 
   color: #111111;
 
-  font-size: 17px;
+}
 
-  line-height: 1.8;
+
+/* =========================================================
+   MAIN COURSE HEADER CARD
+   ========================================================= */
+
+.course-card {
+
+  position: relative;
+
+  padding: 28px 30px;
+
+  margin: 20px 0 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #d2d2d2;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 5px 16px rgba(0, 0, 0, 0.08);
+
+  color: #111111;
+
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+}
+
+.course-card:hover {
+
+  border-color: #999999;
+
+  box-shadow:
+    0 10px 26px rgba(0, 0, 0, 0.12);
 
 }
 
@@ -127,14 +73,47 @@ schedule:
    COURSE HEADER
    ========================================================= */
 
-.course-page h1,
-.course-page h2,
-.course-page h3,
-.course-page h4,
-.course-content h1,
-.course-content h2,
-.course-content h3,
-.course-content h4 {
+.course-header {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 18px;
+
+}
+
+.course-icon {
+
+  width: 58px;
+
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #f5f5f5;
+
+  border: 1px solid #bdbdbd;
+
+  border-radius: 7px;
+
+  color: #000000;
+
+  font-size: 28px;
+
+}
+
+.course-title {
+
+  margin: 0 !important;
 
   color: #000000 !important;
 
@@ -143,34 +122,116 @@ schedule:
     "Times New Roman",
     serif;
 
+  font-size: 26px;
+
   font-weight: 700;
 
-}
-
-
-.course-page h1 {
-
-  font-size: 32px;
+  line-height: 1.4;
 
 }
 
+.course-subtitle {
 
-.course-page h2 {
+  margin: 6px 0 0;
 
-  font-size: 28px;
+  color: #444444;
 
-}
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
+  font-size: 16px;
 
-.course-page h3 {
+  font-weight: 400;
 
-  font-size: 22px;
+  line-height: 1.65;
 
 }
 
 
 /* =========================================================
-   MAIN COURSE CONTENT
+   COURSE DESCRIPTION
+   ========================================================= */
+
+.course-description {
+
+  margin-top: 20px;
+
+  color: #222222;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  text-align: justify;
+
+  text-justify: inter-word;
+
+}
+
+.course-description strong {
+
+  color: #000000;
+
+  font-weight: 700;
+
+}
+
+
+/* =========================================================
+   COURSE TAGS
+   ========================================================= */
+
+.course-tags {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 20px;
+
+}
+
+.course-tag {
+
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  background: #f4f4f4;
+
+  border: 1px solid #cccccc;
+
+  border-radius: 4px;
+
+  color: #222222;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+
+}
+
+
+/* =========================================================
+   COURSE CONTENT
    ========================================================= */
 
 .course-content {
@@ -182,7 +243,6 @@ schedule:
   color: #111111;
 
 }
-
 
 .course-content p {
 
@@ -207,7 +267,6 @@ schedule:
   text-justify: inter-word;
 
 }
-
 
 .course-content strong {
 
@@ -249,79 +308,11 @@ schedule:
 
 
 /* =========================================================
-   LISTS
+   FEATURE CARDS
    ========================================================= */
 
-.course-content ul {
-
-  margin-top: 8px;
-
-  margin-bottom: 20px;
-
-  padding-left: 22px;
-
-  color: #222222;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  font-size: 16px;
-
-  line-height: 1.75;
-
-}
-
-
-.course-content li {
-
-  margin-bottom: 7px;
-
-}
-
-
-.course-content li strong {
-
-  color: #000000;
-
-}
-
-
-/* =========================================================
-   LINKS
-   ========================================================= */
-
-.course-content a {
-
-  color: #000000 !important;
-
-  text-decoration: underline;
-
-  text-decoration-thickness: 1px;
-
-  text-underline-offset: 3px;
-
-  transition: opacity 0.2s ease;
-
-}
-
-
-.course-content a:hover {
-
-  color: #000000 !important;
-
-  opacity: 0.6;
-
-}
-
-
-/* =========================================================
-   COURSE INFORMATION CARDS
-   ========================================================= */
-
-.course-content .card {
+.course-content .card,
+.feature-card {
 
   height: 100%;
 
@@ -343,8 +334,8 @@ schedule:
 
 }
 
-
-.course-content .card:hover {
+.course-content .card:hover,
+.feature-card:hover {
 
   transform: translateY(-3px);
 
@@ -355,13 +346,16 @@ schedule:
 
 }
 
-
 .course-content .card-body {
 
   padding: 22px;
 
 }
 
+
+/* =========================================================
+   CARD TITLES
+   ========================================================= */
 
 .course-content .card-title {
 
@@ -384,6 +378,18 @@ schedule:
 
 }
 
+.course-content .card-title i {
+
+  margin-right: 7px;
+
+  color: #000000;
+
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
 
 .course-content .card-text {
 
@@ -404,6 +410,45 @@ schedule:
   text-align: justify;
 
   text-justify: inter-word;
+
+}
+
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+.course-content ul {
+
+  margin-top: 8px;
+
+  margin-bottom: 10px;
+
+  padding-left: 22px;
+
+  color: #222222;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.75;
+
+}
+
+.course-content li {
+
+  margin-bottom: 6px;
+
+}
+
+.course-content li strong {
+
+  color: #000000;
 
 }
 
@@ -438,7 +483,6 @@ schedule:
 
 }
 
-
 .course-content .table th {
 
   padding: 11px 14px;
@@ -460,7 +504,6 @@ schedule:
 
 }
 
-
 .course-content .table td {
 
   padding: 10px 14px;
@@ -475,7 +518,6 @@ schedule:
 
 }
 
-
 .course-content .table tbody tr:hover td {
 
   background: #f8f8f8;
@@ -484,16 +526,26 @@ schedule:
 
 
 /* =========================================================
-   DIVIDERS
+   GENERAL LINKS
    ========================================================= */
 
-.course-content hr {
+.course-content a {
 
-  border: none;
+  color: #000000 !important;
 
-  border-top: 2px solid #000000;
+  text-decoration: underline;
 
-  margin: 30px auto;
+  text-decoration-thickness: 1px;
+
+  text-underline-offset: 3px;
+
+}
+
+.course-content a:hover {
+
+  color: #000000 !important;
+
+  opacity: 0.6;
 
 }
 
@@ -504,14 +556,15 @@ schedule:
 
 @media (max-width: 900px) {
 
-  .course-page,
-  .course-content,
-  .course-overview {
+  .course-card {
 
-    font-size: 16px;
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+    padding: 25px;
 
   }
-
 
   .course-content {
 
@@ -521,6 +574,11 @@ schedule:
 
   }
 
+  .course-title {
+
+    font-size: 24px;
+
+  }
 
   .course-content p {
 
@@ -528,17 +586,9 @@ schedule:
 
   }
 
-
   .course-section-title {
 
     font-size: 25px;
-
-  }
-
-
-  .course-content .card-body {
-
-    padding: 21px;
 
   }
 
@@ -551,16 +601,53 @@ schedule:
 
 @media (max-width: 768px) {
 
-  .course-page,
-  .course-content,
-  .course-overview {
+  .course-card {
 
-    font-size: 15.5px;
+    margin: 15px 15px 30px;
 
-    line-height: 1.75;
+    padding: 21px;
+
+    border-radius: 7px;
 
   }
 
+  .course-header {
+
+    gap: 12px;
+
+  }
+
+  .course-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    font-size: 25px;
+
+  }
+
+  .course-title {
+
+    font-size: 21px;
+
+  }
+
+  .course-subtitle {
+
+    font-size: 14px;
+
+  }
+
+  .course-description {
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    text-align: left;
+
+  }
 
   .course-content {
 
@@ -569,7 +656,6 @@ schedule:
     padding-right: 15px;
 
   }
-
 
   .course-content p {
 
@@ -581,7 +667,6 @@ schedule:
 
   }
 
-
   .course-section-title {
 
     margin-top: 30px;
@@ -590,13 +675,11 @@ schedule:
 
   }
 
-
   .course-content .card-title {
 
     font-size: 18px;
 
   }
-
 
   .course-content .card-text {
 
@@ -606,22 +689,17 @@ schedule:
 
   }
 
-
   .course-content ul {
 
     font-size: 15px;
 
-    line-height: 1.75;
-
   }
-
 
   .course-content .table {
 
     font-size: 14px;
 
   }
-
 
   .course-content .table th,
   .course-content .table td {
@@ -639,6 +717,64 @@ schedule:
 
 @media (max-width: 576px) {
 
+  .course-card {
+
+    margin-left: 10px;
+
+    margin-right: 10px;
+
+    padding: 18px;
+
+  }
+
+  .course-header {
+
+    align-items: flex-start;
+
+  }
+
+  .course-icon {
+
+    width: 46px;
+
+    height: 46px;
+
+    font-size: 22px;
+
+  }
+
+  .course-title {
+
+    font-size: 19px;
+
+  }
+
+  .course-subtitle {
+
+    font-size: 13.5px;
+
+  }
+
+  .course-description {
+
+    font-size: 14px;
+
+  }
+
+  .course-tags {
+
+    gap: 6px;
+
+  }
+
+  .course-tag {
+
+    font-size: 11px;
+
+    padding: 5px 8px;
+
+  }
+
   .course-content {
 
     padding-left: 10px;
@@ -647,50 +783,11 @@ schedule:
 
   }
 
-
   .course-section-title {
 
     font-size: 21px;
 
   }
-
-
-  .course-content p {
-
-    font-size: 15px;
-
-  }
-
-
-  .course-content .card-body {
-
-    padding: 18px;
-
-  }
-
-
-  .course-content .card-title {
-
-    font-size: 17px;
-
-  }
-
-
-  .course-content .card-text {
-
-    font-size: 14.5px;
-
-  }
-
-
-  .course-content ul {
-
-    font-size: 14.5px;
-
-    padding-left: 20px;
-
-  }
-
 
   .course-content .table {
 
@@ -698,17 +795,66 @@ schedule:
 
   }
 
-
-  .course-content .table th,
-  .course-content .table td {
-
-    padding: 8px 9px;
-
-  }
-
 }
 
 </style>
+
+
+<div class="course-card">
+
+  <div class="course-header">
+
+    <div class="course-icon">
+      <i class="fas fa-code"></i>
+    </div>
+
+    <div>
+
+      <h1 class="course-title">
+        Object Oriented Programming Language Lab
+      </h1>
+
+      <p class="course-subtitle">
+        CSE 1201-2 · Object-Oriented Programming Laboratory · 1.5 Credit Hours
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="course-description">
+
+    This laboratory course provides hands-on experience in
+    <strong>Object-Oriented Programming using C++</strong>.
+    Students will implement classes, objects, constructors, destructors,
+    encapsulation, inheritance, polymorphism, abstraction, function
+    overloading, operator overloading, file handling, templates,
+    exception handling, and Standard Template Library components through
+    practical programming exercises, problem-solving activities, and
+    project development.
+
+  </div>
+
+  <div class="course-tags">
+
+    <span class="course-tag">C++</span>
+    <span class="course-tag">Object-Oriented Programming</span>
+    <span class="course-tag">Classes</span>
+    <span class="course-tag">Objects</span>
+    <span class="course-tag">Encapsulation</span>
+    <span class="course-tag">Inheritance</span>
+    <span class="course-tag">Polymorphism</span>
+    <span class="course-tag">Abstraction</span>
+    <span class="course-tag">File Handling</span>
+    <span class="course-tag">Templates</span>
+    <span class="course-tag">Exception Handling</span>
+    <span class="course-tag">STL</span>
+    <span class="course-tag">Problem Solving</span>
+    <span class="course-tag">Project Development</span>
+
+  </div>
+
+</div>
 
 
 <div class="course-content">
@@ -718,14 +864,17 @@ schedule:
   </h2>
 
   <p>
+
     This laboratory course provides students with practical experience in
     Object-Oriented Programming using the C++ programming language. The course
-    is designed to complement CSE 1201-1: Object Oriented Programming Language
-    by providing hands-on implementation of fundamental and advanced
-    object-oriented programming concepts.
+    is designed to complement the theoretical concepts of object-oriented
+    programming by providing hands-on implementation of fundamental and
+    advanced object-oriented programming concepts.
+
   </p>
 
   <p>
+
     Students will develop programs using classes, objects, constructors,
     destructors, encapsulation, inheritance, polymorphism, abstraction,
     function overloading, operator overloading, file handling, templates,
@@ -733,6 +882,7 @@ schedule:
     also emphasizes debugging, code reuse, software design, algorithmic
     problem-solving, and project development through practical programming
     exercises.
+
   </p>
 
   <p>
@@ -752,8 +902,8 @@ schedule:
     </li>
 
     <li>
-      Implement constructors, destructors, function overloading, and operator
-      overloading.
+      Implement constructors, destructors, function overloading, and
+      operator overloading.
     </li>
 
     <li>
@@ -778,21 +928,139 @@ schedule:
     </li>
 
     <li>
-      Use Standard Template Library containers, iterators, and algorithms to
-      solve programming problems.
+      Use Standard Template Library containers, iterators, and algorithms
+      to solve programming problems.
     </li>
 
     <li>
-      Design, implement, debug, test, and document object-oriented programming
-      projects.
-    </li>
-
-    <li>
-      Apply C++ programming and object-oriented techniques to solve
-      computational and real-world problems.
+      Design, implement, debug, test, and document object-oriented
+      programming projects.
     </li>
 
   </ul>
+
+
+  <h2 class="course-section-title">
+    Course Learning Outcomes
+  </h2>
+
+  <div class="row">
+
+    <div class="col-md-6 mt-3">
+
+      <div class="card h-100 feature-card">
+
+        <div class="card-body">
+
+          <h4 class="card-title">
+
+            <i class="fas fa-cubes"></i>
+
+            CLO1 — Classes and Objects
+
+          </h4>
+
+          <p class="card-text">
+
+            Design and implement classes and objects using constructors,
+            destructors, access specifiers, and encapsulation to develop
+            structured C++ programs.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 mt-3">
+
+      <div class="card h-100 feature-card">
+
+        <div class="card-body">
+
+          <h4 class="card-title">
+
+            <i class="fas fa-sitemap"></i>
+
+            CLO2 — Inheritance and Polymorphism
+
+          </h4>
+
+          <p class="card-text">
+
+            Apply inheritance, function overriding, virtual functions,
+            and polymorphism to develop reusable and extensible
+            object-oriented programs.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 mt-3">
+
+      <div class="card h-100 feature-card">
+
+        <div class="card-body">
+
+          <h4 class="card-title">
+
+            <i class="fas fa-layer-group"></i>
+
+            CLO3 — Advanced C++ Programming
+
+          </h4>
+
+          <p class="card-text">
+
+            Implement abstraction, file handling, templates, exception
+            handling, and other advanced C++ programming techniques.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 mt-3">
+
+      <div class="card h-100 feature-card">
+
+        <div class="card-body">
+
+          <h4 class="card-title">
+
+            <i class="fas fa-laptop-code"></i>
+
+            CLO4 — STL and Project Development
+
+          </h4>
+
+          <p class="card-text">
+
+            Use Standard Template Library components to solve programming
+            problems and develop, test, debug, document, and present
+            object-oriented programming projects.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 
 
   <h2 class="course-section-title">
@@ -831,9 +1099,11 @@ schedule:
   <ul>
 
     <li>
+
       <strong>Primary:</strong>
       <em>The C++ Programming Language</em>
       by Bjarne Stroustrup.
+
     </li>
 
   </ul>
@@ -846,13 +1116,17 @@ schedule:
   <ul>
 
     <li>
+
       <em>Object-Oriented Programming with C++</em>
       by E. Balagurusamy.
+
     </li>
 
     <li>
+
       <em>C++ Primer</em>, 5th Edition,
       by Stanley B. Lippman, Josée Lajoie, and Barbara E. Moo.
+
     </li>
 
   </ul>
@@ -862,45 +1136,115 @@ schedule:
     Tools and Platforms
   </h2>
 
+  <div class="row">
+
+    <div class="col-md-6 mt-3">
+
+      <div class="card h-100 feature-card">
+
+        <div class="card-body">
+
+          <h4 class="card-title">
+
+            <i class="fas fa-code"></i>
+
+            C++ Development Environment
+
+          </h4>
+
+          <p class="card-text">
+
+            C++ programming language, GCC/G++ compiler, Visual Studio Code,
+            Code::Blocks, Microsoft Visual Studio, and other C++ development
+            environments.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 mt-3">
+
+      <div class="card h-100 feature-card">
+
+        <div class="card-body">
+
+          <h4 class="card-title">
+
+            <i class="fas fa-tools"></i>
+
+            Programming Libraries and Platforms
+
+          </h4>
+
+          <p class="card-text">
+
+            C++ Standard Template Library, online C++ compilers, online
+            programming platforms, and competitive programming platforms
+            for practical problem solving.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <h2 class="course-section-title">
+    Online Resources
+  </h2>
+
   <ul>
 
     <li>
-      C++ Programming Language
+
+      <a
+        href="https://en.cppreference.com/w/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        C++ Reference — cppreference.com
+      </a>
+
     </li>
 
     <li>
-      GCC / G++ Compiler
+
+      <a
+        href="https://cplusplus.com/doc/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        C++ Documentation — cplusplus.com
+      </a>
+
     </li>
 
     <li>
-      Visual Studio Code
-    </li>
 
-    <li>
-      Code::Blocks
-    </li>
+      <a
+        href="https://isocpp.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Standard C++ Foundation
+      </a>
 
-    <li>
-      Microsoft Visual Studio
-    </li>
-
-    <li>
-      C++ Standard Template Library (STL)
-    </li>
-
-    <li>
-      Online C++ Compilers
-    </li>
-
-    <li>
-      Online Programming and Competitive Programming Platforms
     </li>
 
   </ul>
 
 
   <h2 class="course-section-title">
-    Grading
+    Course Schedule
   </h2>
 
   <div class="table-responsive">
@@ -911,9 +1255,9 @@ schedule:
 
         <tr>
 
-          <th>Assessment</th>
-
-          <th>Weight</th>
+          <th>Week</th>
+          <th>Topic</th>
+          <th>Description</th>
 
         </tr>
 
@@ -923,72 +1267,284 @@ schedule:
 
         <tr>
 
+          <td>1</td>
+
           <td>
-            Class Participation and Activity
+            Introduction to C++ Programming and Object-Oriented Programming
           </td>
 
           <td>
-            5%
-          </td>
-
-        </tr>
-
-        <tr>
-
-          <td>
-            Continuous Lab Evaluation &amp; Assignments
-          </td>
-
-          <td>
-            25%
+            Introduction to the C++ programming environment, compiler and IDE
+            setup, basic C++ program structure, input and output operations,
+            namespaces, and implementation of simple C++ programs.
           </td>
 
         </tr>
 
         <tr>
 
+          <td>2</td>
+
           <td>
-            Lab Midterm Examination
+            Data Types, Operators, Control Structures, and Functions
           </td>
 
           <td>
-            30%
-          </td>
-
-        </tr>
-
-        <tr>
-
-          <td>
-            Final Lab Evaluation
-          </td>
-
-          <td>
-            20%
+            Practical implementation of C++ data types, operators,
+            expressions, conditional statements, loops, nested control
+            structures, and functions through programming exercises and
+            problem-solving tasks.
           </td>
 
         </tr>
 
         <tr>
 
+          <td>3</td>
+
           <td>
-            Final Project, Presentation &amp; Viva
+            Functions and Function-Based Problem Solving
           </td>
 
           <td>
-            20%
+            Implementation of function declaration and definition,
+            parameter passing, return values, default arguments, inline
+            functions, recursion, and function-based programming problems
+            in C++.
           </td>
 
         </tr>
 
         <tr>
 
+          <td>4</td>
+
           <td>
-            <strong>Total</strong>
+            Classes, Objects, Constructors, and Destructors
           </td>
 
           <td>
-            <strong>100%</strong>
+            Practical implementation of classes and objects, access
+            specifiers, data members, member functions, default constructors,
+            parameterized constructors, copy constructors, and destructors.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>5</td>
+
+          <td>
+            Encapsulation, Function Overloading, and Operator Overloading
+          </td>
+
+          <td>
+            Implementation of encapsulation using access specifiers and
+            implementation of function overloading and operator overloading
+            to demonstrate compile-time polymorphism in C++.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>6</td>
+
+          <td>
+            Inheritance and Its Types
+          </td>
+
+          <td>
+            Practical implementation of single, multiple, multilevel,
+            hierarchical, and hybrid inheritance using base and derived
+            classes. Students will explore access control, code reuse,
+            and relationships between classes.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>7</td>
+
+          <td>
+            Midterm Review and Examination
+          </td>
+
+          <td>
+            Review of C++ programming, classes, objects, constructors,
+            destructors, encapsulation, function overloading, operator
+            overloading, and inheritance, followed by the midterm
+            laboratory examination.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>8</td>
+
+          <td>
+            Polymorphism and Virtual Functions
+          </td>
+
+          <td>
+            Practical implementation of compile-time and runtime
+            polymorphism using function overloading, operator overloading,
+            function overriding, virtual functions, base-class pointers,
+            and dynamic binding.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>9</td>
+
+          <td>
+            Abstraction and Abstract Classes
+          </td>
+
+          <td>
+            Implementation of abstraction using abstract classes and pure
+            virtual functions. Students will design programs that demonstrate
+            abstract behavior, reusable class structures, and object-oriented
+            design principles.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>10</td>
+
+          <td>
+            File Handling in C++
+          </td>
+
+          <td>
+            Practical implementation of file input and output using fstream,
+            ifstream, and ofstream. Students will create, open, read, write,
+            append, and process text and binary files.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>11</td>
+
+          <td>
+            Templates and Exception Handling
+          </td>
+
+          <td>
+            Implementation of function templates and class templates for
+            generic programming. Students will also implement exception
+            handling using try, catch, and throw mechanisms to manage
+            runtime errors.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>12</td>
+
+          <td>
+            Standard Template Library
+          </td>
+
+          <td>
+            Practical use of the C++ Standard Template Library, including
+            vectors, lists, stacks, queues, sets, maps, iterators, and
+            standard algorithms for solving programming problems.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>13</td>
+
+          <td>
+            STL-Based Problem Solving and Project Development
+          </td>
+
+          <td>
+            Application of object-oriented programming concepts and STL
+            components to develop practical programming solutions. Students
+            will solve programming problems and begin implementation of
+            their final laboratory projects.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>14</td>
+
+          <td>
+            Final Project Implementation and Debugging
+          </td>
+
+          <td>
+            Implementation, testing, debugging, and optimization of
+            object-oriented programming projects. Students will apply
+            appropriate concepts such as classes, inheritance, polymorphism,
+            abstraction, file handling, templates, and STL.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>15</td>
+
+          <td>
+            Final Project Evaluation
+          </td>
+
+          <td>
+            Evaluation of the final object-oriented programming project,
+            including program functionality, code organization,
+            object-oriented design, testing, documentation, and
+            implementation quality.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>16</td>
+
+          <td>
+            Brainstorming and Problem Solving
+          </td>
+
+          <td>
+            Intensive discussion, brainstorming, debugging, and
+            problem-solving activities to strengthen C++ programming,
+            object-oriented design, algorithmic thinking, and practical
+            implementation skills.
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>17</td>
+
+          <td>
+            Final Project Presentation, Viva, and Review
+          </td>
+
+          <td>
+            Presentation and viva of laboratory projects, demonstration
+            of program functionality, discussion of object-oriented
+            concepts used, project design, implementation, testing,
+            and comprehensive review of laboratory activities.
           </td>
 
         </tr>
@@ -998,94 +1554,5 @@ schedule:
     </table>
 
   </div>
-
-
-  <h2 class="course-section-title">
-    Course Learning Outcomes
-  </h2>
-
-  <ul>
-
-    <li>
-      <strong>CLO1:</strong>
-      Implement fundamental C++ programming concepts and object-oriented
-      programming principles through practical programming exercises.
-    </li>
-
-    <li>
-      <strong>CLO2:</strong>
-      Design and implement classes, objects, constructors, destructors, and
-      overloaded functions and operators.
-    </li>
-
-    <li>
-      <strong>CLO3:</strong>
-      Apply encapsulation, inheritance, polymorphism, and abstraction to
-      develop reusable and maintainable C++ programs.
-    </li>
-
-    <li>
-      <strong>CLO4:</strong>
-      Implement file handling, templates, exception handling, and Standard
-      Template Library components in C++ applications.
-    </li>
-
-    <li>
-      <strong>CLO5:</strong>
-      Analyze programming problems and develop appropriate object-oriented
-      solutions using C++.
-    </li>
-
-    <li>
-      <strong>CLO6:</strong>
-      Design, implement, test, debug, document, and present an
-      object-oriented programming project.
-    </li>
-
-  </ul>
-
-
-  <h2 class="course-section-title">
-    Course Information
-  </h2>
-
-  <ul>
-
-    <li>
-      <strong>Course Code:</strong>
-      CSE 1201-2
-    </li>
-
-    <li>
-      <strong>Course Type:</strong>
-      Laboratory Course
-    </li>
-
-    <li>
-      <strong>Credit Hours:</strong>
-      1.5
-    </li>
-
-    <li>
-      <strong>Academic Session:</strong>
-      Fall 2024
-    </li>
-
-    <li>
-      <strong>Year-Semester:</strong>
-      1-2
-    </li>
-
-    <li>
-      <strong>Contact Hours:</strong>
-      24 hours
-    </li>
-
-    <li>
-      <strong>Instructor:</strong>
-      Md. Shakil Ahmed
-    </li>
-
-  </ul>
 
 </div>
