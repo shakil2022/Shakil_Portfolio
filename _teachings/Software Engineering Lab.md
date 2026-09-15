@@ -2,1259 +2,694 @@
 
 layout: course
 title: Software Engineering Laboratory
-description: This course provides practical experience in software engineering methods, tools, and techniques. Students will apply software process models, Agile methodologies, requirements engineering, UML modeling, architectural design, software testing, project management, software metrics, and estimation techniques to real-world software projects.
+description: This laboratory course provides hands-on experience in applying software engineering methods, tools, and techniques to practical software projects. Students will apply software process models, Agile methodologies, requirements engineering, UML modeling, architectural design, software testing, configuration management, project management, software metrics, and estimation techniques to real-world software projects.
 instructor: Md. Shakil Ahmed
 year: 2026
 term: Spring
 importance: 4
 course_id: cse-328-software-engineering-laboratory
-
-schedule:
-
-* week: 1
-  date: Week 1
-  topic: Introduction to Software Engineering Tools
-  description: Introduction to the software engineering laboratory, development environments, project organization, software engineering tools, and the software development workflow.
-
-* week: 2
-  date: Week 2
-  topic: Software Process Models
-  description: Practical comparison of Waterfall, V-Model, Incremental, Spiral, and other software development process models using sample software projects.
-
-* week: 3
-  date: Week 3
-  topic: Agile Software Development
-  description: Practical application of Agile principles, Scrum activities, sprint planning, task management, and iterative software development.
-
-* week: 4
-  date: Week 4
-  topic: Requirements Engineering
-  description: Practical identification, analysis, documentation, and management of functional and non-functional software requirements.
-
-* week: 5
-  date: Week 5
-  topic: Use Case and Activity Diagrams
-  description: Development of Use Case Diagrams, Activity Diagrams, and Swimlane Diagrams for real-world software systems.
-
-* week: 6
-  date: Week 6
-  topic: Class and Object Modeling
-  description: Practical development of Class Diagrams, CRC cards, analysis classes, relationships, and analysis packages.
-
-* week: 7
-  date: Week 7
-  topic: Behavioral Modeling
-  description: Development of State Diagrams and Sequence Diagrams to represent system behavior, events, states, and interactions.
-
-* week: 8
-  date: Week 8
-  topic: Software Architecture and Design
-  description: Practical design of software architecture using architectural views, components, modules, interfaces, and common architectural patterns.
-
-* week: 9
-  date: Week 9
-  topic: Software Design Patterns
-  description: Practical implementation and application of common software design patterns to improve software flexibility, maintainability, and reusability.
-
-* week: 10
-  date: Week 10
-  topic: Software Implementation and Code Quality
-  description: Practical software implementation, modular programming, code organization, component reuse, debugging, and maintainable coding practices.
-
-* week: 11
-  date: Week 11
-  topic: Software Testing
-  description: Practical development of test cases and application of unit testing, integration testing, system testing, and other software testing techniques.
-
-* week: 12
-  date: Week 12
-  topic: Software Quality Assurance
-  description: Practical application of software quality assurance, verification and validation, quality metrics, reviews, and quality improvement activities.
-
-* week: 13
-  date: Week 13
-  topic: Software Configuration Management
-  description: Practical use of version control, configuration management, change tracking, branching, merging, and collaborative software development.
-
-* week: 14
-  date: Week 14
-  topic: Software Project Management
-  description: Practical project planning, task allocation, scheduling, resource management, project organization, and software project monitoring.
-
-* week: 15
-  date: Week 15
-  topic: Software Metrics and Estimation
-  description: Practical calculation and analysis of software process metrics, product metrics, project metrics, and software development effort estimation.
-
-* week: 16
-  date: Week 16
-  topic: Software Project Development
-  description: Development and documentation of a software project using requirements analysis, UML modeling, architecture, implementation, testing, and project management techniques.
-
-* week: 17
-  date: Week 17
-  topic: Project Presentation and Final Evaluation
-  description: Final project demonstration, presentation, documentation, project evaluation, and review of software engineering laboratory activities.
-
----
+--------------------------------------------------
 
 <style>
-
-/* =========================================================
-   COURSE PAGE — WHITE / BLACK ACADEMIC STYLE
-   Typography aligned with Teaching page
-   ========================================================= */
-
-.course-page,
+.course-card,
 .course-content,
 .course-overview {
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  color: #111111;
-
-  font-size: 17px;
-
-  line-height: 1.8;
-
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  color: #111;
 }
 
+.course-card {
+  background: #fff;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 35px;
+  overflow: hidden;
+}
 
-/* =========================================================
-   HEADINGS
-   ========================================================= */
+.course-header {
+  padding: 35px 40px;
+  border-bottom: 1px solid #d2d2d2;
+  background: #fff;
+}
 
-.course-page h1,
-.course-page h2,
-.course-page h3,
-.course-page h4,
-.course-content h1,
-.course-content h2,
-.course-content h3,
-.course-content h4 {
+.course-icon {
+  font-size: 34px;
+  color: #111;
+  margin-bottom: 15px;
+}
 
-  color: #000000 !important;
-
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
-
+.course-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
   font-weight: 700;
-
+  line-height: 1.25;
+  margin: 0 0 8px;
+  color: #111;
 }
 
-
-.course-page h1 {
-
-  font-size: 32px;
-
+.course-subtitle {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #444;
 }
 
-
-.course-page h2 {
-
-  font-size: 28px;
-
+.course-description {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0;
+  color: #111;
+  text-align: justify;
 }
 
-
-.course-page h3 {
-
-  font-size: 22px;
-
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
 }
 
-
-/* =========================================================
-   MAIN COURSE CONTENT
-   ========================================================= */
+.course-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border: 1px solid #bdbdbd;
+  border-radius: 20px;
+  background: #fff;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #111;
+}
 
 .course-content {
-
   max-width: 1000px;
-
   margin: 0 auto;
-
-  color: #111111;
-
+  padding: 30px 20px 50px;
+  font-size: 17px;
+  line-height: 1.8;
 }
-
 
 .course-content p {
-
-  margin-top: 0;
-
-  margin-bottom: 18px;
-
-  color: #222222;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
   font-size: 17px;
-
   line-height: 1.8;
-
+  color: #111;
   text-align: justify;
-
-  text-justify: inter-word;
-
+  margin-bottom: 18px;
 }
-
-
-.course-content strong {
-
-  color: #000000;
-
-  font-weight: 700;
-
-}
-
-
-/* =========================================================
-   SECTION HEADINGS
-   ========================================================= */
 
 .course-section-title {
-
-  margin-top: 34px;
-
-  margin-bottom: 18px;
-
-  padding-bottom: 8px;
-
-  color: #000000 !important;
-
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
-
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 27px;
-
   font-weight: 700;
-
-  line-height: 1.4;
-
-  border-bottom: 2px solid #000000;
-
+  line-height: 1.3;
+  color: #111;
+  margin: 42px 0 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #111;
 }
 
-
-/* =========================================================
-   LISTS
-   ========================================================= */
-
-.course-content ul {
-
-  margin-top: 8px;
-
-  margin-bottom: 20px;
-
-  padding-left: 22px;
-
-  color: #222222;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  font-size: 16px;
-
-  line-height: 1.75;
-
+.course-content ul,
+.course-content ol {
+  margin: 10px 0 22px 25px;
+  padding-left: 15px;
 }
-
 
 .course-content li {
-
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #111;
   margin-bottom: 7px;
-
 }
-
-
-.course-content li strong {
-
-  color: #000000;
-
-}
-
-
-/* =========================================================
-   LINKS
-   ========================================================= */
 
 .course-content a {
-
-  color: #000000 !important;
-
+  color: #111;
   text-decoration: underline;
-
-  text-decoration-thickness: 1px;
-
-  text-underline-offset: 3px;
-
-  transition: opacity 0.2s ease;
-
 }
-
 
 .course-content a:hover {
-
-  color: #000000 !important;
-
-  opacity: 0.6;
-
+  text-decoration: none;
 }
 
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 25px 0 30px;
+}
 
-/* =========================================================
-   COURSE CARDS
-   ========================================================= */
-
-.course-content .card {
-
-  height: 100%;
-
-  background: #ffffff !important;
-
+.feature-card {
+  background: #fff;
   border: 1px solid #d2d2d2;
-
-  border-radius: 7px;
-
-  color: #111111;
-
-  box-shadow:
-    0 4px 14px rgba(0, 0, 0, 0.06);
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
-
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-
-.course-content .card:hover {
-
-  transform: translateY(-3px);
-
-  border-color: #999999;
-
-  box-shadow:
-    0 9px 22px rgba(0, 0, 0, 0.11);
-
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
 }
 
-
-.course-content .card-body {
-
-  padding: 22px;
-
-}
-
-
-/* =========================================================
-   CARD TITLES
-   ========================================================= */
-
-.course-content .card-title {
-
-  margin-top: 0;
-
-  margin-bottom: 12px;
-
-  color: #000000 !important;
-
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
-
+.feature-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 19px;
-
   font-weight: 700;
-
-  line-height: 1.45;
-
+  line-height: 1.4;
+  color: #111;
+  margin: 0 0 10px;
 }
 
-
-/* =========================================================
-   CARD TEXT
-   ========================================================= */
-
-.course-content .card-text {
-
-  margin-bottom: 0;
-
-  color: #333333;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
+.feature-card p {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
   font-size: 15.5px;
-
-  line-height: 1.75;
-
+  line-height: 1.7;
+  color: #111;
   text-align: justify;
-
-  text-justify: inter-word;
-
+  margin: 0;
 }
 
-
-/* =========================================================
-   SCHEDULE
-   Same body font as Course Overview and Textbooks
-   ========================================================= */
-
-.course-page .schedule,
-.course-content .schedule,
-.course-page .course-schedule,
-.course-content .course-schedule {
-
-  color: #222222 !important;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  font-size: 17px;
-
-  line-height: 1.8;
-
+.course-content .table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0 30px;
+  -webkit-overflow-scrolling: touch;
 }
-
-
-/* Force schedule child elements to inherit body font */
-
-.course-page .schedule *,
-.course-content .schedule *,
-.course-page .course-schedule *,
-.course-content .course-schedule * {
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
-}
-
-
-/* Schedule body text */
-
-.course-page .schedule p,
-.course-content .schedule p,
-.course-page .course-schedule p,
-.course-content .course-schedule p {
-
-  color: #222222 !important;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  font-size: 17px;
-
-  line-height: 1.8;
-
-}
-
-
-/* Schedule descriptions */
-
-.course-page .schedule .description,
-.course-content .schedule .description,
-.course-page .course-schedule .description,
-.course-content .course-schedule .description {
-
-  color: #222222 !important;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  font-size: 17px;
-
-  line-height: 1.8;
-
-  text-align: justify;
-
-  text-justify: inter-word;
-
-}
-
-
-/* Schedule week and date */
-
-.course-page .schedule .week,
-.course-content .schedule .week,
-.course-page .schedule .date,
-.course-content .schedule .date,
-.course-page .course-schedule .week,
-.course-content .course-schedule .week,
-.course-page .course-schedule .date,
-.course-content .course-schedule .date {
-
-  color: #222222 !important;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  font-size: 17px;
-
-}
-
-
-/* Schedule topic headings */
-
-.course-page .schedule .topic,
-.course-content .schedule .topic,
-.course-page .course-schedule .topic,
-.course-content .course-schedule .topic {
-
-  color: #000000 !important;
-
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  font-size: 19px;
-
-  font-weight: 700;
-
-  line-height: 1.45;
-
-}
-
-
-/* Schedule headings, if generated as heading elements */
-
-.course-page .schedule h1,
-.course-page .schedule h2,
-.course-page .schedule h3,
-.course-page .schedule h4,
-.course-content .schedule h1,
-.course-content .schedule h2,
-.course-content .schedule h3,
-.course-content .schedule h4,
-.course-page .course-schedule h1,
-.course-page .course-schedule h2,
-.course-page .course-schedule h3,
-.course-page .course-schedule h4,
-.course-content .course-schedule h1,
-.course-content .course-schedule h2,
-.course-content .course-schedule h3,
-.course-content .course-schedule h4 {
-
-  color: #000000 !important;
-
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  font-weight: 700;
-
-}
-
-
-/* Schedule links */
-
-.course-page .schedule a,
-.course-content .schedule a,
-.course-page .course-schedule a,
-.course-content .course-schedule a {
-
-  color: #000000 !important;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
-}
-
-
-/* =========================================================
-   TABLES
-   ========================================================= */
 
 .course-content .table {
-
   width: 100%;
-
-  margin-top: 10px;
-
-  margin-bottom: 25px;
-
-  background: #ffffff;
-
-  color: #222222;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
   font-size: 15.5px;
-
   line-height: 1.6;
-
-  border: 1px solid #cfcfcf;
-
+  color: #111;
+  background: #fff;
 }
 
+.course-content .table th,
+.course-content .table td {
+  border: 1px solid #cfcfcf;
+  padding: 11px 13px;
+  vertical-align: top;
+  text-align: left;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
 
 .course-content .table th {
-
-  padding: 11px 14px;
-
-  background: #f3f3f3;
-
-  color: #000000;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
   font-size: 15px;
-
   font-weight: 700;
-
-  border: 1px solid #cfcfcf;
-
+  background: #f5f5f5;
+  color: #111;
 }
-
 
 .course-content .table td {
-
-  padding: 10px 14px;
-
-  background: #ffffff;
-
-  color: #222222;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  border: 1px solid #d2d2d2;
-
-  vertical-align: top;
-
+  font-size: 15.5px;
+  font-weight: 400;
+  background: #fff;
 }
-
 
 .course-content .table tbody tr:hover td {
-
   background: #f8f8f8;
-
 }
 
-
-/* =========================================================
-   DIVIDERS
-   ========================================================= */
-
-.course-content hr {
-
-  border: none;
-
-  border-top: 2px solid #000000;
-
-  margin: 30px auto;
-
+.course-content .table th:first-child,
+.course-content .table td:first-child {
+  width: 80px;
+  text-align: center;
+  white-space: nowrap;
 }
 
+.course-content .table th:nth-child(2),
+.course-content .table td:nth-child(2) {
+  width: 28%;
+}
 
-/* =========================================================
-   RESPONSIVE — TABLET
-   ========================================================= */
+.course-content .table th:nth-child(3),
+.course-content .table td:nth-child(3) {
+  width: auto;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 30px;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 16px;
+}
+
+.info-table th,
+.info-table td {
+  border: 1px solid #d0d0d0;
+  padding: 11px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.info-table th {
+  width: 30%;
+  font-weight: 700;
+  background: #f5f5f5;
+}
+
+.info-table td {
+  background: #fff;
+}
 
 @media (max-width: 900px) {
-
-  .course-page,
-  .course-content,
-  .course-overview {
-
-    font-size: 16px;
-
-  }
-
-
   .course-content {
-
-    padding-left: 20px;
-
-    padding-right: 20px;
-
+    max-width: 95%;
   }
 
-
-  .course-content p {
-
-    font-size: 16px;
-
+  .feature-grid {
+    grid-template-columns: 1fr;
   }
-
-
-  .course-section-title {
-
-    font-size: 25px;
-
-  }
-
-
-  .course-content .card-body {
-
-    padding: 21px;
-
-  }
-
-
-  .course-page .schedule,
-  .course-content .schedule,
-  .course-page .course-schedule,
-  .course-content .course-schedule {
-
-    font-size: 16px;
-
-  }
-
-
-  .course-page .schedule *,
-  .course-content .schedule *,
-  .course-page .course-schedule *,
-  .course-content .course-schedule * {
-
-    font-size: inherit;
-
-  }
-
-
-  .course-page .schedule .topic,
-  .course-content .schedule .topic,
-  .course-page .course-schedule .topic,
-  .course-content .course-schedule .topic {
-
-    font-size: 18px;
-
-  }
-
 }
-
-
-/* =========================================================
-   RESPONSIVE — MOBILE
-   ========================================================= */
 
 @media (max-width: 768px) {
-
-  .course-page,
-  .course-content,
-  .course-overview {
-
-    font-size: 15.5px;
-
-    line-height: 1.75;
-
+  .course-header {
+    padding: 28px 25px;
   }
 
+  .course-title {
+    font-size: 30px;
+  }
+
+  .course-subtitle {
+    font-size: 16px;
+  }
+
+  .course-description {
+    font-size: 16px;
+  }
 
   .course-content {
-
-    padding-left: 15px;
-
-    padding-right: 15px;
-
+    padding: 25px 15px 40px;
   }
-
-
-  .course-content p {
-
-    font-size: 15.5px;
-
-    line-height: 1.75;
-
-    text-align: left;
-
-  }
-
 
   .course-section-title {
-
-    margin-top: 30px;
-
-    font-size: 23px;
-
+    font-size: 25px;
   }
 
-
-  .course-content .card-title {
-
-    font-size: 18px;
-
-  }
-
-
-  .course-content .card-text {
-
-    font-size: 15px;
-
+  .course-content p {
+    font-size: 16px;
     text-align: left;
-
   }
-
-
-  .course-content ul {
-
-    font-size: 15px;
-
-    line-height: 1.75;
-
-  }
-
 
   .course-content .table {
-
-    font-size: 14px;
-
+    min-width: 700px;
   }
 
-
-  .course-content .table th,
-  .course-content .table td {
-
-    padding: 9px 10px;
-
-  }
-
-
-  /* Schedule */
-
-  .course-page .schedule,
-  .course-content .schedule,
-  .course-page .course-schedule,
-  .course-content .course-schedule {
-
+  .info-table {
     font-size: 15px;
-
-    line-height: 1.7;
-
   }
-
-
-  .course-page .schedule p,
-  .course-content .schedule p,
-  .course-page .course-schedule p,
-  .course-content .course-schedule p {
-
-    font-size: 15px;
-
-    line-height: 1.7;
-
-    text-align: left;
-
-  }
-
-
-  .course-page .schedule .description,
-  .course-content .schedule .description,
-  .course-page .course-schedule .description,
-  .course-content .course-schedule .description {
-
-    font-size: 15px;
-
-    line-height: 1.7;
-
-    text-align: left;
-
-  }
-
-
-  .course-page .schedule .topic,
-  .course-content .schedule .topic,
-  .course-page .course-schedule .topic,
-  .course-content .course-schedule .topic {
-
-    font-size: 18px;
-
-  }
-
 }
-
-
-/* =========================================================
-   RESPONSIVE — SMALL MOBILE
-   ========================================================= */
 
 @media (max-width: 576px) {
+  .course-header {
+    padding: 24px 18px;
+  }
+
+  .course-icon {
+    font-size: 30px;
+  }
+
+  .course-title {
+    font-size: 26px;
+  }
+
+  .course-subtitle {
+    font-size: 15px;
+  }
+
+  .course-description {
+    font-size: 15.5px;
+    text-align: left;
+  }
 
   .course-content {
-
-    padding-left: 10px;
-
-    padding-right: 10px;
-
+    max-width: 100%;
+    padding: 20px 12px 35px;
   }
-
 
   .course-section-title {
-
-    font-size: 21px;
-
+    font-size: 23px;
+    margin-top: 35px;
   }
 
-
-  .course-content p {
-
+  .course-content li {
     font-size: 15px;
-
   }
 
-
-  .course-content .card-body {
-
-    padding: 18px;
-
+  .feature-card {
+    padding: 17px;
   }
 
-
-  .course-content .card-title {
-
-    font-size: 17px;
-
+  .info-table th,
+  .info-table td {
+    padding: 9px 10px;
   }
-
-
-  .course-content .card-text {
-
-    font-size: 14.5px;
-
-  }
-
-
-  .course-content ul {
-
-    font-size: 14.5px;
-
-    padding-left: 20px;
-
-  }
-
-
-  .course-content .table {
-
-    font-size: 13px;
-
-  }
-
-
-  .course-content .table th,
-  .course-content .table td {
-
-    padding: 8px 9px;
-
-  }
-
-
-  /* Schedule */
-
-  .course-page .schedule,
-  .course-content .schedule,
-  .course-page .course-schedule,
-  .course-content .course-schedule {
-
-    font-size: 14.5px;
-
-    line-height: 1.7;
-
-  }
-
-
-  .course-page .schedule p,
-  .course-content .schedule p,
-  .course-page .course-schedule p,
-  .course-content .course-schedule p {
-
-    font-size: 14.5px;
-
-    line-height: 1.7;
-
-  }
-
-
-  .course-page .schedule .description,
-  .course-content .schedule .description,
-  .course-page .course-schedule .description,
-  .course-content .course-schedule .description {
-
-    font-size: 14.5px;
-
-    line-height: 1.7;
-
-  }
-
-
-  .course-page .schedule .topic,
-  .course-content .schedule .topic,
-  .course-page .course-schedule .topic,
-  .course-content .course-schedule .topic {
-
-    font-size: 17px;
-
-  }
-
 }
-
 </style>
+
+<div class="course-card">
+  <div class="course-header">
+    <div class="course-icon">
+      <i class="fas fa-laptop-code"></i>
+    </div>
+
+
+<h1 class="course-title">Software Engineering Laboratory</h1>
+
+<div class="course-subtitle">
+  CSE 328 · Laboratory Course
+</div>
+
+<p class="course-description">
+  This laboratory course provides hands-on experience in applying software engineering methods, tools, and techniques to practical software projects. Students will apply software process models, Agile methodologies, requirements engineering, UML modeling, architectural design, software testing, configuration management, project management, software metrics, and estimation techniques to real-world software projects.
+</p>
+
+<div class="course-tags">
+  <span class="course-tag">Software Engineering</span>
+  <span class="course-tag">Agile</span>
+  <span class="course-tag">Requirements Engineering</span>
+  <span class="course-tag">UML</span>
+  <span class="course-tag">Software Architecture</span>
+  <span class="course-tag">Design Patterns</span>
+  <span class="course-tag">Software Testing</span>
+  <span class="course-tag">Git &amp; GitHub</span>
+  <span class="course-tag">Project Management</span>
+  <span class="course-tag">Software Metrics</span>
+</div>
+
+
+  </div>
+</div>
 
 <div class="course-content">
 
-  <h2 class="course-section-title">
-    Course Overview
-  </h2>
+  <h2 class="course-section-title">Course Overview</h2>
 
   <p>
-    This laboratory course provides hands-on experience in applying
-    software engineering principles and techniques to practical software
-    projects.
+    This laboratory course provides hands-on experience in applying software engineering principles and techniques to practical software projects. Students will work with commonly used software engineering tools and development practices to understand how software systems are analyzed, designed, implemented, tested, managed, and evaluated.
   </p>
 
   <p>
     By the end of this course, students will be able to:
   </p>
 
-  <ul>
+  <div class="feature-grid">
 
 
-<li>
-  Apply software development process models and Agile methodologies
-  to software projects.
-</li>
+<div class="feature-card">
+  <h3>1. Software Development Processes</h3>
+  <p>
+    Apply software development process models and Agile methodologies to software projects.
+  </p>
+</div>
 
-<li>
-  Analyze and document software requirements using appropriate
-  techniques.
-</li>
+<div class="feature-card">
+  <h3>2. Requirements Engineering</h3>
+  <p>
+    Analyze and document software requirements using appropriate requirements engineering techniques.
+  </p>
+</div>
 
-<li>
-  Develop UML models including Use Case, Activity, Class, State,
-  and Sequence Diagrams.
-</li>
+<div class="feature-card">
+  <h3>3. UML Modeling</h3>
+  <p>
+    Develop UML models including Use Case, Activity, Class, State, and Sequence Diagrams.
+  </p>
+</div>
 
-<li>
-  Design software architecture and apply suitable software design
-  patterns.
-</li>
+<div class="feature-card">
+  <h3>4. Software Architecture and Design</h3>
+  <p>
+    Design software architecture and apply suitable software design patterns to practical software systems.
+  </p>
+</div>
 
-<li>
-  Implement software systems using structured and maintainable
-  development practices.
-</li>
+<div class="feature-card">
+  <h3>5. Software Implementation</h3>
+  <p>
+    Implement software systems using structured, maintainable, and systematic development practices.
+  </p>
+</div>
 
-<li>
-  Develop and execute software testing strategies and evaluate
-  software quality.
-</li>
+<div class="feature-card">
+  <h3>6. Software Testing and Quality</h3>
+  <p>
+    Develop and execute software testing strategies and evaluate software quality.
+  </p>
+</div>
 
-<li>
-  Apply configuration management, project management, software
-  metrics, and estimation techniques.
-</li>
-
-
-  </ul>
-
-  <h2 class="course-section-title">
-    Prerequisites
-  </h2>
-
-  <ul>
-
-
-<li>
-  <strong>CSE 327:</strong> Software Engineering
-</li>
-
-<li>
-  Basic programming knowledge
-</li>
-
-<li>
-  Basic understanding of software development processes
-</li>
-
-<li>
-  Familiarity with object-oriented programming concepts
-</li>
+<div class="feature-card">
+  <h3>7. Software Project Management</h3>
+  <p>
+    Apply configuration management, project management, software metrics, and estimation techniques.
+  </p>
+</div>
 
 
-  </ul>
+  </div>
 
-  <h2 class="course-section-title">
-    Textbooks
-  </h2>
+  <h2 class="course-section-title">Prerequisites</h2>
 
   <ul>
-
-<li>
-  <strong>Primary:</strong>
-  <em>Software Engineering</em>
-  by Ian Sommerville, 9th Edition.
-</li>
-
-<li>
-  <strong>Reference:</strong>
-  <em>Software Engineering: A Practitioner's Approach</em>
-  by Roger S. Pressman.
-</li>
-
-<li>
-  <strong>Reference:</strong>
-  <em>Fundamentals of Software Engineering</em>
-  by R. Mall.
-</li>
-
-<li>
-  <strong>Reference:</strong>
-  <em>An Integrated Approach to Software Engineering</em>
-  by P. Jalote.
-</li>
-
-
+    <li>CSE 327: Software Engineering</li>
+    <li>Basic programming knowledge</li>
+    <li>Basic understanding of software development processes</li>
+    <li>Familiarity with object-oriented programming concepts</li>
   </ul>
 
-  <h2 class="course-section-title">
-    Tools and Platforms
-  </h2>
+  <h2 class="course-section-title">Textbooks</h2>
 
   <ul>
-
-
-<li>Visual Studio Code</li>
-
-<li>Git</li>
-
-<li>GitHub</li>
-
-<li>UML Modeling Tools</li>
-
-<li>Project Management Tools</li>
-
-<li>Software Testing Tools</li>
-
+    <li>
+      <strong>Primary:</strong> Software Engineering by Ian Sommerville, 9th Edition.
+    </li>
+    <li>
+      <strong>Reference:</strong> Software Engineering: A Practitioner's Approach by Roger S. Pressman.
+    </li>
+    <li>
+      <strong>Reference:</strong> Fundamentals of Software Engineering by R. Mall.
+    </li>
+    <li>
+      <strong>Reference:</strong> An Integrated Approach to Software Engineering by P. Jalote.
+    </li>
   </ul>
 
-  <h2 class="course-section-title">
-    Grading
-  </h2>
+  <h2 class="course-section-title">Tools and Platforms</h2>
+
+  <ul>
+    <li>Visual Studio Code</li>
+    <li>Git</li>
+    <li>GitHub</li>
+    <li>UML Modeling Tools</li>
+    <li>Project Management Tools</li>
+    <li>Software Testing Tools</li>
+  </ul>
+
+  <h2 class="course-section-title">Course Information</h2>
+
+  <table class="info-table">
+    <tbody>
+      <tr>
+        <th>Course Code</th>
+        <td>CSE 328</td>
+      </tr>
+      <tr>
+        <th>Course Title</th>
+        <td>Software Engineering Laboratory</td>
+      </tr>
+      <tr>
+        <th>Course Type</th>
+        <td>Laboratory Course</td>
+      </tr>
+      <tr>
+        <th>Academic Year</th>
+        <td>2026</td>
+      </tr>
+      <tr>
+        <th>Term</th>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <th>Instructor</th>
+        <td>Md. Shakil Ahmed</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="course-section-title">Course Schedule</h2>
 
   <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Topic</th>
+          <th>Description</th>
+        </tr>
+      </thead>
 
-
-<table class="table table-bordered">
-
-  <thead>
-
-    <tr>
-
-      <th>Assessment</th>
-
-      <th>Weight</th>
-
-    </tr>
-
-  </thead>
 
   <tbody>
-
     <tr>
-
-      <td>Class Participation and Lab Activity</td>
-
-      <td>5%</td>
-
+      <td>1</td>
+      <td>Introduction to Software Engineering Tools</td>
+      <td>Introduction to software engineering laboratory tools, development environments, version control systems, project repositories, and collaborative software development platforms.</td>
     </tr>
 
     <tr>
-
-      <td>Lab Assignments/Reports and Presentation</td>
-
-      <td>10%</td>
-
+      <td>2</td>
+      <td>Software Process Models</td>
+      <td>Practical exploration of software development process models including Waterfall, Incremental, Iterative, and Spiral models and their application to software projects.</td>
     </tr>
 
     <tr>
-
-      <td>Class Test/Lab Performance</td>
-
-      <td>15%</td>
-
+      <td>3</td>
+      <td>Agile Software Development</td>
+      <td>Hands-on activities involving Agile principles, Scrum framework, user stories, sprint planning, sprint execution, and Agile project management practices.</td>
     </tr>
 
     <tr>
-
-      <td>Midterm Examination/Project Evaluation</td>
-
-      <td>30%</td>
-
+      <td>4</td>
+      <td>Requirements Engineering</td>
+      <td>Practical requirements elicitation, analysis, specification, documentation, and validation using appropriate requirements engineering techniques.</td>
     </tr>
 
     <tr>
-
-      <td>Final Examination/Project Evaluation</td>
-
-      <td>40%</td>
-
+      <td>5</td>
+      <td>Use Case and Activity Diagrams</td>
+      <td>Development of UML Use Case and Activity Diagrams to model system functionality, actors, workflows, and business processes.</td>
     </tr>
 
     <tr>
-
-      <td>
-        <strong>Total</strong>
-      </td>
-
-      <td>
-        <strong>100%</strong>
-      </td>
-
+      <td>6</td>
+      <td>Class and Object Modeling</td>
+      <td>Development of UML Class and Object Diagrams to represent system structure, classes, attributes, methods, objects, and relationships.</td>
     </tr>
 
+    <tr>
+      <td>7</td>
+      <td>Behavioral Modeling</td>
+      <td>Creation of UML Sequence and State Diagrams to model system interactions, object behavior, events, and state transitions.</td>
+    </tr>
+
+    <tr>
+      <td>8</td>
+      <td>Software Architecture and Design</td>
+      <td>Practical application of software architecture principles, architectural styles, modular design, component identification, and system-level design.</td>
+    </tr>
+
+    <tr>
+      <td>9</td>
+      <td>Software Design Patterns</td>
+      <td>Implementation and analysis of common software design patterns and their application to improve software flexibility, maintainability, and reusability.</td>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td>Software Implementation and Code Quality</td>
+      <td>Practical software implementation using structured and maintainable coding practices, code organization, documentation, refactoring, and code quality principles.</td>
+    </tr>
+
+    <tr>
+      <td>11</td>
+      <td>Software Testing</td>
+      <td>Hands-on implementation of software testing techniques including unit testing, integration testing, system testing, test case design, and defect identification.</td>
+    </tr>
+
+    <tr>
+      <td>12</td>
+      <td>Software Quality Assurance</td>
+      <td>Application of software quality assurance practices, quality standards, reviews, inspections, quality metrics, and continuous quality improvement.</td>
+    </tr>
+
+    <tr>
+      <td>13</td>
+      <td>Software Configuration Management</td>
+      <td>Practical use of version control, Git, branching, merging, repository management, change tracking, and configuration management practices.</td>
+    </tr>
+
+    <tr>
+      <td>14</td>
+      <td>Software Project Management</td>
+      <td>Application of project planning, task allocation, scheduling, risk management, resource management, collaboration, and project monitoring techniques.</td>
+    </tr>
+
+    <tr>
+      <td>15</td>
+      <td>Software Metrics and Estimation</td>
+      <td>Practical application of software metrics and estimation techniques for evaluating software size, effort, cost, productivity, and project progress.</td>
+    </tr>
+
+    <tr>
+      <td>16</td>
+      <td>Software Project Development</td>
+      <td>Development, integration, testing, documentation, and refinement of a software project by applying the software engineering concepts and tools covered throughout the course.</td>
+    </tr>
+
+    <tr>
+      <td>17</td>
+      <td>Project Presentation and Final Evaluation</td>
+      <td>Final project presentation, demonstration, documentation review, evaluation of project outcomes, and assessment of the overall software engineering practices applied.</td>
+    </tr>
   </tbody>
+</table>
 
+
+  </div>
+
+  <h2 class="course-section-title">Grading</h2>
+
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Assessment</th>
+          <th>Weight</th>
+        </tr>
+      </thead>
+
+
+  <tbody>
+    <tr>
+      <td>Class Participation and Lab Activity</td>
+      <td>5%</td>
+    </tr>
+
+    <tr>
+      <td>Lab Assignments/Reports and Presentation</td>
+      <td>10%</td>
+    </tr>
+
+    <tr>
+      <td>Class Test/Lab Performance</td>
+      <td>15%</td>
+    </tr>
+
+    <tr>
+      <td>Midterm Examination/Project Evaluation</td>
+      <td>30%</td>
+    </tr>
+
+    <tr>
+      <td>Final Examination/Project Evaluation</td>
+      <td>40%</td>
+    </tr>
+
+    <tr>
+      <td><strong>Total</strong></td>
+      <td><strong>100%</strong></td>
+    </tr>
+  </tbody>
 </table>
 
 

@@ -1,156 +1,670 @@
 ---
+
 layout: course
-
 title: Structured Programming Language Lab
-
 description: This laboratory course provides hands-on experience in structured programming using the C programming language. Students will develop practical skills in programming fundamentals, conditional statements, loops, functions, arrays, recursion, strings, pointers, structures, file handling, and programming problem-solving techniques.
-
 instructor: Md. Shakil Ahmed
-
 year: 2024
-
 term: Spring
-
 importance: 8
-
 course_id: cse-102-structured-programming-language-lab
+------------------------------------------------------
 
-schedule:
+<style>
+.course-card,
+.course-content,
+.course-overview {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  color: #111;
+}
 
-  - week: 1
-    date: Week 1
-    topic: Introduction to Programming Tools and Basic C Programs
-    description: Introduction to the C programming environment, compiler and IDE setup, and writing, compiling, and executing basic C programs.
+.course-card {
+  background: #fff;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 35px;
+  overflow: hidden;
+}
 
-  - week: 2
-    date: Week 2
-    topic: Conditional Statements and Operators
-    description: Practical implementation of arithmetic, relational, logical, and assignment operators, along with if, if-else, and nested if-else statements.
+.course-header {
+  padding: 35px 40px;
+  border-bottom: 1px solid #d2d2d2;
+  background: #fff;
+}
 
-  - week: 3
-    date: Week 3
-    topic: Looping Statements
-    description: Practical implementation of for, while, and do-while loops for iterative problem solving.
+.course-icon {
+  font-size: 34px;
+  color: #111;
+  margin-bottom: 15px;
+}
 
-  - week: 4
-    date: Week 4
-    topic: Nested Loops and Loop-Based Problem Solving
-    description: Implementation of nested loops, pattern printing, series, summation, and other loop-based programming problems.
+.course-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 8px;
+  color: #111;
+}
 
-  - week: 5
-    date: Week 5
-    topic: Switch-Case, Break, and Continue
-    description: Practical implementation of switch-case structures, menu-driven programs, and break and continue statements.
+.course-subtitle {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #444;
+}
 
-  - week: 6
-    date: Week 6
-    topic: Functions and Argument Passing
-    description: Implementation of function declaration, definition, calling, argument passing, return values, and modular programming.
+.course-description {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0;
+  color: #111;
+  text-align: justify;
+}
 
-  - week: 7
-    date: Week 7
-    topic: One-Dimensional and Two-Dimensional Arrays
-    description: Practical implementation of array declaration, initialization, traversal, searching, basic array operations, two-dimensional arrays, and matrix operations.
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
 
-  - week: 8
-    date: Week 8
-    topic: Midterm Laboratory Examination
-    description: Midterm laboratory examination covering programming fundamentals, conditional statements, loops, functions, and arrays.
+.course-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border: 1px solid #bdbdbd;
+  border-radius: 20px;
+  background: #fff;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #111;
+}
 
-  - week: 9
-    date: Week 9
-    topic: Recursive Functions
-    description: Introduction to recursion and implementation of recursive functions for factorial, Fibonacci, summation, and other problem-solving tasks.
+.course-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+  font-size: 17px;
+  line-height: 1.8;
+}
 
-  - week: 10
-    date: Week 10
-    topic: Strings and String Functions
-    description: Practical implementation of character arrays, strings, string input and output, common string library functions, and string processing problems.
+.course-content p {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #111;
+  text-align: justify;
+  margin-bottom: 18px;
+}
 
-  - week: 11
-    date: Week 11
-    topic: String Manipulation
-    description: Implementation of string copying, comparison, reversal, concatenation, and other string manipulation operations.
+.course-section-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111;
+  margin: 42px 0 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #111;
+}
 
-  - week: 12
-    date: Week 12
-    topic: Pointers and Pointer-Based Programming
-    description: Introduction to pointers and practical implementation of pointers with arrays, strings, and functions.
+.course-content ul,
+.course-content ol {
+  margin: 10px 0 22px 25px;
+  padding-left: 15px;
+}
 
-  - week: 13
-    date: Week 13
-    topic: File Handling and Structures
-    description: Practical implementation of file creation, reading, writing, copying, and deletion, along with structures, typedef, and structure-based problem solving.
+.course-content li {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #111;
+  margin-bottom: 7px;
+}
 
-  - week: 14
-    date: Week 14
-    topic: Online Judges and Competitive Programming
-    description: Introduction to online judges, problem submission, verdicts, input and output specifications, time and memory limits, and basic competitive programming techniques.
+.course-content strong {
+  color: #111;
+  font-weight: 700;
+}
 
-  - week: 15
-    date: Week 15
-    topic: Practice with Online Judge Problems
-    description: Practice and discussion of programming problems from online judges, with emphasis on problem-solving and efficient implementation.
+.course-content em {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
 
-  - week: 16
-    date: Week 16
-    topic: Final Laboratory Examination
-    description: Final laboratory examination assessing programming implementation and problem-solving skills.
+.course-content a {
+  color: #111;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
 
----
+.course-content a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
 
-## Course Overview
+.course-content .table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0 30px;
+  -webkit-overflow-scrolling: touch;
+}
 
-This laboratory course provides students with practical experience in structured programming using the C programming language. The course is based on CSE 101: Structured Programming Language and focuses on implementing programming concepts through hands-on laboratory exercises and problem-solving activities.
+.course-content .table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #111;
+  background: #fff;
+}
 
-By the end of this course, students will be able to:
+.course-content .table th,
+.course-content .table td {
+  border: 1px solid #cfcfcf;
+  padding: 11px 13px;
+  vertical-align: top;
+  text-align: left;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
 
-- Apply fundamental programming concepts using the C programming language.
+.course-content .table th {
+  font-size: 15px;
+  font-weight: 700;
+  background: #f5f5f5;
+  color: #111;
+}
 
-- Implement conditional statements, loops, functions, arrays, and recursion.
+.course-content .table td {
+  font-size: 15.5px;
+  font-weight: 400;
+  background: #fff;
+}
 
-- Manipulate strings and use pointers in C programs.
+.course-content .table tbody tr:hover td {
+  background: #f8f8f8;
+}
 
-- Implement structures and file-handling operations.
+.course-content .schedule-table th:first-child,
+.course-content .schedule-table td:first-child {
+  width: 80px;
+  text-align: center;
+  white-space: nowrap;
+}
 
-- Apply programming concepts to solve computational problems.
+.course-content .schedule-table th:nth-child(2),
+.course-content .schedule-table td:nth-child(2) {
+  width: 30%;
+}
 
-- Develop analytical and algorithmic problem-solving skills.
+.course-content .schedule-table th:nth-child(3),
+.course-content .schedule-table td:nth-child(3) {
+  width: auto;
+}
 
-- Solve programming problems using online judges and competitive programming techniques.
+.course-content .grading-table th:first-child,
+.course-content .grading-table td:first-child {
+  width: auto;
+}
 
-## Prerequisites
+.course-content .grading-table th:last-child,
+.course-content .grading-table td:last-child {
+  width: 120px;
+  text-align: center;
+  white-space: nowrap;
+}
 
-- CSE 101: Structured Programming Language
+.course-footer {
+  background: #fff;
+  color: #111;
+  border-top: 2px solid #111;
+  margin-top: 30px;
+  padding: 25px 20px;
+}
 
-- Basic computer literacy
+.course-footer p {
+  margin: 0;
+  color: #111;
+  text-align: center;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
 
-- Basic understanding of programming concepts
+@media (max-width: 900px) {
+  .course-content {
+    max-width: 95%;
+  }
+}
 
-## Textbooks
+@media (max-width: 768px) {
+  .course-header {
+    padding: 28px 25px;
+  }
 
-- **Primary:** *Teach Yourself C*, 3rd Edition, by Herbert Schildt.
+  .course-title {
+    font-size: 30px;
+  }
 
-## Reference Books
+  .course-subtitle {
+    font-size: 16px;
+  }
 
-- *Programming in ANSI C*, 8th Edition, by E. Balagurusamy.
+  .course-description {
+    font-size: 16px;
+  }
 
-## Online Resources
+  .course-content {
+    padding: 25px 15px 40px;
+  }
 
-- C programming documentation and tutorials.
+  .course-section-title {
+    font-size: 25px;
+  }
 
-- Online C compilers and programming practice platforms.
+  .course-content p {
+    font-size: 16px;
+    text-align: left;
+  }
 
-- Online judge and programming practice platforms.
+  .course-content .table {
+    min-width: 700px;
+  }
+}
 
-## Grading
+@media (max-width: 576px) {
+  .course-header {
+    padding: 24px 18px;
+  }
 
-- **Class Participation and Activity:** 5%
+  .course-icon {
+    font-size: 30px;
+  }
 
-- **Continuous Lab Evaluation & Assignments:** 25%
+  .course-title {
+    font-size: 26px;
+  }
 
-- **Lab Midterm Examination:** 30%
+  .course-subtitle {
+    font-size: 15px;
+  }
 
-- **Final Lab Evaluation:** 40%
+  .course-description {
+    font-size: 15.5px;
+    text-align: left;
+  }
 
-**Total: 100%**
+  .course-content {
+    max-width: 100%;
+    padding: 20px 12px 35px;
+  }
+
+  .course-section-title {
+    font-size: 23px;
+    margin-top: 35px;
+  }
+
+  .course-content li {
+    font-size: 15px;
+  }
+
+  .course-tag {
+    font-size: 13px;
+    padding: 4px 10px;
+  }
+}
+</style>
+
+<div class="course-card">
+  <div class="course-header">
+    <div class="course-icon">
+      <i class="fas fa-code"></i>
+    </div>
+
+
+<h1 class="course-title">Structured Programming Language Lab</h1>
+
+<div class="course-subtitle">
+  CSE 102 · Laboratory Course
+</div>
+
+<p class="course-description">
+  This laboratory course provides hands-on experience in structured programming using the C programming language. Students will develop practical skills in programming fundamentals, conditional statements, loops, functions, arrays, recursion, strings, pointers, structures, file handling, and programming problem-solving techniques.
+</p>
+
+<div class="course-tags">
+  <span class="course-tag">C Programming</span>
+  <span class="course-tag">Programming Fundamentals</span>
+  <span class="course-tag">Conditional Statements</span>
+  <span class="course-tag">Loops</span>
+  <span class="course-tag">Functions</span>
+  <span class="course-tag">Arrays</span>
+  <span class="course-tag">Recursion</span>
+  <span class="course-tag">Strings</span>
+  <span class="course-tag">Pointers</span>
+  <span class="course-tag">File Handling</span>
+  <span class="course-tag">Problem Solving</span>
+  <span class="course-tag">Competitive Programming</span>
+</div>
+
+
+  </div>
+</div>
+
+<div class="course-content">
+
+  <h2 class="course-section-title">Course Overview</h2>
+
+  <p>
+    This laboratory course provides students with practical experience in
+    structured programming using the C programming language. The course is
+    based on CSE 101: Structured Programming Language and focuses on
+    implementing programming concepts through hands-on laboratory exercises
+    and problem-solving activities.
+  </p>
+
+  <p>
+    By the end of this course, students will be able to:
+  </p>
+
+  <ul>
+    <li>
+      Apply fundamental programming concepts using the C programming language.
+    </li>
+
+
+<li>
+  Implement conditional statements, loops, functions, arrays, and
+  recursion.
+</li>
+
+<li>
+  Manipulate strings and use pointers in C programs.
+</li>
+
+<li>
+  Implement structures and file-handling operations.
+</li>
+
+<li>
+  Apply programming concepts to solve computational problems.
+</li>
+
+<li>
+  Develop analytical and algorithmic problem-solving skills.
+</li>
+
+<li>
+  Solve programming problems using online judges and competitive
+  programming techniques.
+</li>
+
+
+  </ul>
+
+  <h2 class="course-section-title">Prerequisites</h2>
+
+  <ul>
+    <li>CSE 101: Structured Programming Language</li>
+    <li>Basic computer literacy</li>
+    <li>Basic understanding of programming concepts</li>
+  </ul>
+
+  <h2 class="course-section-title">Textbooks</h2>
+
+  <ul>
+    <li>
+      <strong>Primary:</strong>
+      <em>Teach Yourself C</em>, 3rd Edition, by Herbert Schildt.
+    </li>
+  </ul>
+
+  <h2 class="course-section-title">Reference Books</h2>
+
+  <ul>
+    <li>
+      <em>Programming in ANSI C</em>, 8th Edition, by E. Balagurusamy.
+    </li>
+  </ul>
+
+  <h2 class="course-section-title">Online Resources</h2>
+
+  <ul>
+    <li>
+      C programming documentation and tutorials.
+    </li>
+
+
+<li>
+  Online C compilers and programming practice platforms.
+</li>
+
+<li>
+  Online judge and programming practice platforms.
+</li>
+
+
+  </ul>
+
+  <h2 class="course-section-title">Course Schedule</h2>
+
+  <div class="table-responsive">
+    <table class="table schedule-table">
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Topic</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+
+
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Introduction to Programming Tools and Basic C Programs</td>
+      <td>
+        Introduction to the C programming environment, compiler and IDE
+        setup, and writing, compiling, and executing basic C programs.
+      </td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>Conditional Statements and Operators</td>
+      <td>
+        Practical implementation of arithmetic, relational, logical, and
+        assignment operators, along with if, if-else, and nested if-else
+        statements.
+      </td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>Looping Statements</td>
+      <td>
+        Practical implementation of for, while, and do-while loops for
+        iterative problem solving.
+      </td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>Nested Loops and Loop-Based Problem Solving</td>
+      <td>
+        Implementation of nested loops, pattern printing, series,
+        summation, and other loop-based programming problems.
+      </td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>Switch-Case, Break, and Continue</td>
+      <td>
+        Practical implementation of switch-case structures, menu-driven
+        programs, and break and continue statements.
+      </td>
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td>Functions and Argument Passing</td>
+      <td>
+        Implementation of function declaration, definition, calling,
+        argument passing, return values, and modular programming.
+      </td>
+    </tr>
+
+    <tr>
+      <td>7</td>
+      <td>One-Dimensional and Two-Dimensional Arrays</td>
+      <td>
+        Practical implementation of array declaration, initialization,
+        traversal, searching, basic array operations, two-dimensional
+        arrays, and matrix operations.
+      </td>
+    </tr>
+
+    <tr>
+      <td>8</td>
+      <td>Midterm Laboratory Examination</td>
+      <td>
+        Midterm laboratory examination covering programming fundamentals,
+        conditional statements, loops, functions, and arrays.
+      </td>
+    </tr>
+
+    <tr>
+      <td>9</td>
+      <td>Recursive Functions</td>
+      <td>
+        Introduction to recursion and implementation of recursive
+        functions for factorial, Fibonacci, summation, and other
+        problem-solving tasks.
+      </td>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td>Strings and String Functions</td>
+      <td>
+        Practical implementation of character arrays, strings, string
+        input and output, common string library functions, and string
+        processing problems.
+      </td>
+    </tr>
+
+    <tr>
+      <td>11</td>
+      <td>String Manipulation</td>
+      <td>
+        Implementation of string copying, comparison, reversal,
+        concatenation, and other string manipulation operations.
+      </td>
+    </tr>
+
+    <tr>
+      <td>12</td>
+      <td>Pointers and Pointer-Based Programming</td>
+      <td>
+        Introduction to pointers and practical implementation of pointers
+        with arrays, strings, and functions.
+      </td>
+    </tr>
+
+    <tr>
+      <td>13</td>
+      <td>File Handling and Structures</td>
+      <td>
+        Practical implementation of file creation, reading, writing,
+        copying, and deletion, along with structures, typedef, and
+        structure-based problem solving.
+      </td>
+    </tr>
+
+    <tr>
+      <td>14</td>
+      <td>Online Judges and Competitive Programming</td>
+      <td>
+        Introduction to online judges, problem submission, verdicts,
+        input and output specifications, time and memory limits, and
+        basic competitive programming techniques.
+      </td>
+    </tr>
+
+    <tr>
+      <td>15</td>
+      <td>Practice with Online Judge Problems</td>
+      <td>
+        Practice and discussion of programming problems from online
+        judges, with emphasis on problem-solving and efficient
+        implementation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>16</td>
+      <td>Final Laboratory Examination</td>
+      <td>
+        Final laboratory examination assessing programming implementation
+        and problem-solving skills.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+  <h2 class="course-section-title">Grading</h2>
+
+  <div class="table-responsive">
+    <table class="table grading-table">
+      <thead>
+        <tr>
+          <th>Assessment</th>
+          <th>Weight</th>
+        </tr>
+      </thead>
+
+
+  <tbody>
+    <tr>
+      <td>Class Participation and Activity</td>
+      <td>5%</td>
+    </tr>
+
+    <tr>
+      <td>Continuous Lab Evaluation &amp; Assignments</td>
+      <td>25%</td>
+    </tr>
+
+    <tr>
+      <td>Lab Midterm Examination</td>
+      <td>30%</td>
+    </tr>
+
+    <tr>
+      <td>Final Lab Evaluation</td>
+      <td>40%</td>
+    </tr>
+
+    <tr>
+      <td><strong>Total</strong></td>
+      <td><strong>100%</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+</div>
+
+
