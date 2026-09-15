@@ -1,17 +1,14 @@
 ---
+
 layout: course
-
 title: Cyber Security and Digital Forensic Laboratory
-
-description: This laboratory course provides practical hands-on experience in cybersecurity, ethical hacking, penetration testing, and digital forensics. Students will work with Kali Linux, VMware, Burp Suite, DVWA, Ghidra, Autopsy, Volatility, and other security tools to investigate vulnerabilities, analyze attacks, and perform forensic investigations.
-
+description: This laboratory course provides practical hands-on experience in cybersecurity, ethical hacking, penetration testing, and digital forensics. Students will work with Kali Linux, VMware, Burp Suite, DVWA, Ghidra, Autopsy, Volatility, and other security tools to identify vulnerabilities, analyze security incidents, and perform digital forensic investigations.
 instructor: Md. Shakil Ahmed
-
 year: 2026
-
 term: Summer
-
 importance: 2
+course_id: cse-xxx-cyber-security-and-digital-forensic-laboratory
+
 
 ---
 
@@ -20,10 +17,12 @@ importance: 2
 /* =========================================================
    COURSE DETAIL PAGE
    WHITE / BLACK ACADEMIC STYLE
+   SAME TYPOGRAPHY AS PROJECT PAGES
    ========================================================= */
 
-.course-content,
-.course-page {
+.course-card,
+.course-content {
+
   font-family:
     "Source Serif 4",
     Georgia,
@@ -31,20 +30,95 @@ importance: 2
     serif;
 
   color: #111111;
+
 }
 
+
 /* =========================================================
-   MAIN HEADINGS
+   MAIN COURSE HEADER CARD
    ========================================================= */
 
-.course-content h1,
-.course-content h2,
-.course-content h3,
-.course-content h4,
-.course-page h1,
-.course-page h2,
-.course-page h3,
-.course-page h4 {
+.course-card {
+
+  position: relative;
+
+  padding: 28px 30px;
+
+  margin: 20px 0 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #d2d2d2;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 5px 16px rgba(0, 0, 0, 0.08);
+
+  color: #111111;
+
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+}
+
+.course-card:hover {
+
+  border-color: #999999;
+
+  box-shadow:
+    0 10px 26px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* =========================================================
+   COURSE HEADER
+   ========================================================= */
+
+.course-header {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 18px;
+
+}
+
+.course-icon {
+
+  width: 58px;
+
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #f5f5f5;
+
+  border: 1px solid #bdbdbd;
+
+  border-radius: 7px;
+
+  color: #000000;
+
+  font-size: 28px;
+
+}
+
+.course-title {
+
+  margin: 0 !important;
+
   color: #000000 !important;
 
   font-family:
@@ -52,65 +126,134 @@ importance: 2
     "Times New Roman",
     serif;
 
-  font-weight: 700;
-}
-
-/* =========================================================
-   MAIN PAGE HEADING
-   ========================================================= */
-
-.course-content h1,
-.course-page h1 {
   font-size: 26px;
+
+  font-weight: 700;
+
   line-height: 1.4;
-  margin-top: 0;
-  margin-bottom: 20px;
+
 }
 
+.course-subtitle {
+
+  margin: 6px 0 0;
+
+  color: #444444;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+}
+
+
 /* =========================================================
-   SECTION HEADINGS
+   COURSE DESCRIPTION
    ========================================================= */
 
-.course-content h2,
-.course-page h2 {
-  font-size: 27px;
+.course-description {
+
+  margin-top: 20px;
+
+  color: #222222;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  text-align: justify;
+
+  text-justify: inter-word;
+
+}
+
+.course-description strong {
+
+  color: #000000;
+
+  font-weight: 700;
+
+}
+
+
+/* =========================================================
+   COURSE TAGS
+   ========================================================= */
+
+.course-tags {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 20px;
+
+}
+
+.course-tag {
+
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  background: #f4f4f4;
+
+  border: 1px solid #cccccc;
+
+  border-radius: 4px;
+
+  color: #222222;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
   line-height: 1.4;
-  margin-top: 34px;
-  margin-bottom: 18px;
-  padding-bottom: 8px;
-  border-bottom: 2px solid #000000;
+
 }
 
+
 /* =========================================================
-   SUBSECTION HEADINGS
+   COURSE CONTENT
    ========================================================= */
 
-.course-content h3,
-.course-page h3 {
-  font-size: 22px;
-  line-height: 1.45;
-  margin-top: 25px;
-  margin-bottom: 12px;
+.course-content {
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  color: #111111;
+
 }
 
-/* =========================================================
-   SMALLER HEADINGS
-   ========================================================= */
+.course-content p {
 
-.course-content h4,
-.course-page h4 {
-  font-size: 19px;
-  line-height: 1.45;
-}
-
-/* =========================================================
-   PARAGRAPHS
-   ========================================================= */
-
-.course-content p,
-.course-page p {
   margin-top: 0;
+
   margin-bottom: 18px;
+
   color: #222222;
 
   font-family:
@@ -120,97 +263,69 @@ importance: 2
     serif;
 
   font-size: 17px;
+
   line-height: 1.8;
 
   text-align: justify;
+
   text-justify: inter-word;
+
 }
 
-/* =========================================================
-   STRONG / BOLD TEXT
-   ========================================================= */
+.course-content strong {
 
-.course-content strong,
-.course-page strong {
   color: #000000;
+
   font-weight: 700;
+
 }
 
+
 /* =========================================================
-   LISTS
+   SECTION HEADINGS
    ========================================================= */
 
-.course-content ul,
-.course-content ol,
-.course-page ul,
-.course-page ol {
-  margin-top: 8px;
+.course-section-title {
+
+  margin-top: 34px;
+
   margin-bottom: 18px;
-  padding-left: 22px;
-  color: #222222;
+
+  padding-bottom: 8px;
+
+  color: #000000 !important;
 
   font-family:
-    "Source Serif 4",
     Georgia,
     "Times New Roman",
     serif;
 
-  font-size: 16px;
-  line-height: 1.75;
+  font-size: 27px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  border-bottom: 2px solid #000000;
+
 }
 
-.course-content li,
-.course-page li {
-  margin-bottom: 6px;
-}
 
 /* =========================================================
-   LINKS
-   ========================================================= */
-
-.course-content a,
-.course-page a {
-  color: #000000 !important;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  transition: opacity 0.2s ease;
-}
-
-.course-content a:hover,
-.course-page a:hover {
-  color: #000000 !important;
-  opacity: 0.6;
-}
-
-/* =========================================================
-   COURSE INFORMATION
-   ========================================================= */
-
-.course-info,
-.course-meta {
-  color: #333333;
-
-  font-family:
-    "Source Serif 4",
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  font-size: 16px;
-  line-height: 1.75;
-}
-
-/* =========================================================
-   COURSE CARDS
+   FEATURE CARDS
    ========================================================= */
 
 .course-content .card,
-.course-page .card {
+.feature-card {
+
   height: 100%;
+
   background: #ffffff !important;
+
   border: 1px solid #d2d2d2;
+
   border-radius: 7px;
+
   color: #111111;
 
   box-shadow:
@@ -220,33 +335,36 @@ importance: 2
     transform 0.25s ease,
     box-shadow 0.25s ease,
     border-color 0.25s ease;
+
 }
 
 .course-content .card:hover,
-.course-page .card:hover {
+.feature-card:hover {
+
   transform: translateY(-3px);
+
   border-color: #999999;
 
   box-shadow:
     0 9px 22px rgba(0, 0, 0, 0.11);
+
 }
 
-/* =========================================================
-   CARD BODY
-   ========================================================= */
+.course-content .card-body {
 
-.course-content .card-body,
-.course-page .card-body {
   padding: 22px;
+
 }
+
 
 /* =========================================================
    CARD TITLES
    ========================================================= */
 
-.course-content .card-title,
-.course-page .card-title {
+.course-content .card-title {
+
   margin-top: 0;
+
   margin-bottom: 12px;
 
   color: #000000 !important;
@@ -257,17 +375,30 @@ importance: 2
     serif;
 
   font-size: 19px;
+
   font-weight: 700;
+
   line-height: 1.45;
+
 }
+
+.course-content .card-title i {
+
+  margin-right: 7px;
+
+  color: #000000;
+
+}
+
 
 /* =========================================================
    CARD TEXT
    ========================================================= */
 
-.course-content .card-text,
-.course-page .card-text {
+.course-content .card-text {
+
   margin-bottom: 0;
+
   color: #333333;
 
   font-family:
@@ -277,23 +408,69 @@ importance: 2
     serif;
 
   font-size: 15.5px;
+
   line-height: 1.75;
 
   text-align: justify;
+
   text-justify: inter-word;
+
 }
+
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+.course-content ul {
+
+  margin-top: 8px;
+
+  margin-bottom: 10px;
+
+  padding-left: 22px;
+
+  color: #222222;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.75;
+
+}
+
+.course-content li {
+
+  margin-bottom: 6px;
+
+}
+
+.course-content li strong {
+
+  color: #000000;
+
+}
+
 
 /* =========================================================
    TABLES
    ========================================================= */
 
-.course-content .table,
-.course-page .table {
+.course-content .table {
+
   width: 100%;
+
   margin-top: 10px;
+
   margin-bottom: 25px;
 
   background: #ffffff;
+
   color: #222222;
 
   font-family:
@@ -303,16 +480,19 @@ importance: 2
     serif;
 
   font-size: 15.5px;
+
   line-height: 1.6;
 
   border: 1px solid #cfcfcf;
+
 }
 
-.course-content .table th,
-.course-page .table th {
+.course-content .table th {
+
   padding: 11px 14px;
 
   background: #f3f3f3;
+
   color: #000000;
 
   font-family:
@@ -321,388 +501,1047 @@ importance: 2
     sans-serif;
 
   font-size: 14px;
+
   font-weight: 700;
 
   border: 1px solid #cfcfcf;
+
 }
 
-.course-content .table td,
-.course-page .table td {
+.course-content .table td {
+
   padding: 10px 14px;
 
   background: #ffffff;
+
   color: #222222;
 
   border: 1px solid #d2d2d2;
 
   vertical-align: top;
+
 }
 
-.course-content .table tbody tr:hover td,
-.course-page .table tbody tr:hover td {
+.course-content .table tbody tr:hover td {
+
   background: #f8f8f8;
+
 }
+
 
 /* =========================================================
-   CODE / PRE
+   GENERAL LINKS
    ========================================================= */
 
-.course-content code,
-.course-page code {
-  font-family:
-    "Courier New",
-    Courier,
-    monospace;
+.course-content a {
 
-  font-size: 14px;
-}
-
-.course-content pre,
-.course-page pre {
-  padding: 15px;
-
-  background: #f5f5f5;
-
-  border: 1px solid #d2d2d2;
-  border-radius: 6px;
-
-  overflow-x: auto;
-
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-/* =========================================================
-   HORIZONTAL DIVIDERS
-   ========================================================= */
-
-.course-content hr,
-.course-page hr {
-  border: none;
-  border-top: 2px solid #000000;
-  margin: 30px auto;
-}
-
-/* =========================================================
-   BUTTONS
-   ========================================================= */
-
-.course-content .btn,
-.course-page .btn {
-  display: inline-flex;
-
-  align-items: center;
-  justify-content: center;
-
-  padding: 8px 16px;
-
-  background: #ffffff !important;
   color: #000000 !important;
 
-  border: 1px solid #000000;
-  border-radius: 5px;
+  text-decoration: underline;
 
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+  text-decoration-thickness: 1px;
 
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.4;
+  text-underline-offset: 3px;
 
-  text-decoration: none !important;
-
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
 }
 
-.course-content .btn:hover,
-.course-page .btn:hover {
-  background: #000000 !important;
-  color: #ffffff !important;
-  border-color: #000000;
+.course-content a:hover {
 
-  transform: translateY(-2px);
+  color: #000000 !important;
+
+  opacity: 0.6;
+
 }
+
 
 /* =========================================================
-   MUTED TEXT
-   ========================================================= */
-
-.course-content .text-muted,
-.course-page .text-muted {
-  color: #555555 !important;
-}
-
-/* =========================================================
-   TABLET
+   RESPONSIVE — TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
 
-  .course-content h1,
-  .course-page h1 {
+  .course-card {
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+    padding: 25px;
+
+  }
+
+  .course-content {
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+  }
+
+  .course-title {
+
     font-size: 24px;
+
   }
 
-  .course-content h2,
-  .course-page h2 {
-    font-size: 25px;
-  }
+  .course-content p {
 
-  .course-content h3,
-  .course-page h3 {
-    font-size: 21px;
-  }
-
-  .course-content p,
-  .course-page p {
     font-size: 16px;
+
   }
 
-  .course-content .card-text,
-  .course-page .card-text {
-    font-size: 15px;
+  .course-section-title {
+
+    font-size: 25px;
+
   }
+
 }
 
+
 /* =========================================================
-   MOBILE
+   RESPONSIVE — MOBILE
    ========================================================= */
 
 @media (max-width: 768px) {
 
-  .course-content h1,
-  .course-page h1 {
+  .course-card {
+
+    margin: 15px 15px 30px;
+
+    padding: 21px;
+
+    border-radius: 7px;
+
+  }
+
+  .course-header {
+
+    gap: 12px;
+
+  }
+
+  .course-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    font-size: 25px;
+
+  }
+
+  .course-title {
+
     font-size: 21px;
+
   }
 
-  .course-content h2,
-  .course-page h2 {
-    font-size: 23px;
-    margin-top: 30px;
-  }
+  .course-subtitle {
 
-  .course-content h3,
-  .course-page h3 {
-    font-size: 20px;
-  }
-
-  .course-content p,
-  .course-page p {
-    font-size: 15.5px;
-    line-height: 1.75;
-    text-align: left;
-  }
-
-  .course-content ul,
-  .course-content ol,
-  .course-page ul,
-  .course-page ol {
-    font-size: 15px;
-    line-height: 1.7;
-  }
-
-  .course-content .card-title,
-  .course-page .card-title {
-    font-size: 18px;
-  }
-
-  .course-content .card-text,
-  .course-page .card-text {
-    font-size: 15px;
-    line-height: 1.7;
-    text-align: left;
-  }
-
-  .course-content .table,
-  .course-page .table {
     font-size: 14px;
+
+  }
+
+  .course-description {
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    text-align: left;
+
+  }
+
+  .course-content {
+
+    padding-left: 15px;
+
+    padding-right: 15px;
+
+  }
+
+  .course-content p {
+
+    font-size: 15.5px;
+
+    line-height: 1.75;
+
+    text-align: left;
+
+  }
+
+  .course-section-title {
+
+    margin-top: 30px;
+
+    font-size: 23px;
+
+  }
+
+  .course-content .card-title {
+
+    font-size: 18px;
+
+  }
+
+  .course-content .card-text {
+
+    font-size: 15px;
+
+    text-align: left;
+
+  }
+
+  .course-content ul {
+
+    font-size: 15px;
+
+  }
+
+  .course-content .table {
+
+    font-size: 14px;
+
   }
 
   .course-content .table th,
-  .course-content .table td,
-  .course-page .table th,
-  .course-page .table td {
+  .course-content .table td {
+
     padding: 9px 10px;
+
   }
+
 }
 
+
 /* =========================================================
-   SMALL MOBILE
+   RESPONSIVE — SMALL MOBILE
    ========================================================= */
 
 @media (max-width: 576px) {
 
-  .course-content h1,
-  .course-page h1 {
-    font-size: 19px;
+  .course-card {
+
+    margin-left: 10px;
+
+    margin-right: 10px;
+
+    padding: 18px;
+
   }
 
-  .course-content h2,
-  .course-page h2 {
+  .course-header {
+
+    align-items: flex-start;
+
+  }
+
+  .course-icon {
+
+    width: 46px;
+
+    height: 46px;
+
+    font-size: 22px;
+
+  }
+
+  .course-title {
+
+    font-size: 19px;
+
+  }
+
+  .course-subtitle {
+
+    font-size: 13.5px;
+
+  }
+
+  .course-description {
+
+    font-size: 14px;
+
+  }
+
+  .course-tags {
+
+    gap: 6px;
+
+  }
+
+  .course-tag {
+
+    font-size: 11px;
+
+    padding: 5px 8px;
+
+  }
+
+  .course-content {
+
+    padding-left: 10px;
+
+    padding-right: 10px;
+
+  }
+
+  .course-section-title {
+
     font-size: 21px;
+
   }
 
-  .course-content h3,
-  .course-page h3 {
-    font-size: 19px;
-  }
+  .course-content .table {
 
-  .course-content p,
-  .course-page p {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .course-content ul,
-  .course-content ol,
-  .course-page ul,
-  .course-page ol {
-    font-size: 14px;
-  }
-
-  .course-content .card-title,
-  .course-page .card-title {
-    font-size: 18px;
-  }
-
-  .course-content .card-text,
-  .course-page .card-text {
-    font-size: 14px;
-  }
-
-  .course-content .table,
-  .course-page .table {
     font-size: 13px;
+
   }
 
-  .course-content .btn,
-  .course-page .btn {
-    font-size: 12px;
-    padding: 7px 13px;
-  }
 }
 
 </style>
 
-## Course Overview
+<div class="course-card">
 
-This laboratory course provides practical experience in cybersecurity, ethical hacking, penetration testing, and digital forensics. By the end of this course, students will be able to:
+  <div class="course-header">
 
-* Configure and use cybersecurity laboratory environments using Kali Linux, VMware, Burp Suite, and DVWA.
 
-* Perform controlled web application security testing and identify common vulnerabilities.
+<div class="course-icon">
+  <i class="fas fa-shield-alt"></i>
+</div>
 
-* Apply Python scripting and security tools to practical cybersecurity tasks.
+<div>
 
-* Perform cryptographic, OSINT, reverse engineering, and binary analysis exercises.
+  <h1 class="course-title">
+    Cyber Security and Digital Forensic Laboratory
+  </h1>
 
-* Use digital forensic tools and techniques for investigation and analysis.
+  <p class="course-subtitle">
+    CSE XXX · Core Laboratory Course · 1.5 Credit Hours
+  </p>
 
-* Apply ethical, legal, and safe practices when using cybersecurity tools.
+</div>
+```
 
-## Prerequisites
+  </div>
 
-* No prerequisites required.
+  <div class="course-description">
 
-## Textbooks
+```
+This laboratory course provides practical experience in
+<strong>cybersecurity, ethical hacking, penetration testing, and digital forensics</strong>.
+Students develop practical security skills through controlled laboratory
+exercises involving security testing, vulnerability analysis, incident
+investigation, and digital forensic techniques.
+```
 
-* **Primary:** *Kali Linux for Hackers: Exploring Tools, Exploits, and Vulnerabilities* by C. Campbell, Code Academy, 2024.
+  </div>
 
-* **Reference:** *Cybersecurity Essentials* by Charles J. Brooks.
+  <div class="course-tags">
 
-* **Reference:** *Guide to Computer Forensics and Investigations* by Bill Nelson.
+```
+<span class="course-tag">Cybersecurity</span>
+<span class="course-tag">Ethical Hacking</span>
+<span class="course-tag">Penetration Testing</span>
+<span class="course-tag">Digital Forensics</span>
+<span class="course-tag">Kali Linux</span>
+<span class="course-tag">Burp Suite</span>
+<span class="course-tag">DVWA</span>
+<span class="course-tag">Python</span>
+<span class="course-tag">Cryptography</span>
+<span class="course-tag">OSINT</span>
+<span class="course-tag">Reverse Engineering</span>
+<span class="course-tag">Incident Analysis</span>
+```
 
-* **Reference:** *Social Engineering: The Art of Human Hacking* by Christopher Hadnagy.
+  </div>
 
-* **Reference:** *Black Hat Python: Python Programming for Hackers and Pentesters* by Justin Seitz and Tim Arnold.
+</div>
 
-* **Reference:** *Practical Reverse Engineering* by Bruce Dang and Alexandre Gazet.
+<div class="course-content">
 
-* **Reference:** *Cybersecurity and Cyberlaw* by Pavan Duggal.
+  <h2 class="course-section-title">
+    Course Overview
+  </h2>
 
-* **Reference:** *Cryptography and Network Security: Principles and Practice* by William Stallings.
+  <p>
+    This laboratory course provides hands-on experience in cybersecurity,
+    ethical hacking, penetration testing, and digital forensics. Students
+    will work with industry-relevant security tools and controlled laboratory
+    environments to understand common security vulnerabilities, investigate
+    security incidents, and perform forensic analysis.
+  </p>
 
-## Grading
+  <p>
+    The course emphasizes practical learning through laboratory exercises,
+    security testing, scripting, cryptography, information gathering,
+    reverse engineering, binary analysis, and digital forensic investigation.
+    Students will also learn to apply ethical, legal, and responsible
+    practices when conducting cybersecurity activities.
+  </p>
 
-* **Class Participation:** 5%
+  <h2 class="course-section-title">
+    Course Learning Outcomes
+  </h2>
 
-* **Assignment/Presentation/Viva:** 10%
+  <div class="row">
 
-* **Class Test/Lab Performance:** 15%
+```
+<div class="col-md-6 mt-3">
 
-* **Midterm Examination/Project Evaluation:** 30%
+  <div class="card h-100 feature-card">
 
-* **Final Examination/Project Evaluation:** 40%
+    <div class="card-body">
 
-**## Total: 100%**
+      <h4 class="card-title">
 
-schedule:
+        <i class="fas fa-shield-alt"></i>
 
-* week: 1
+        CLO1 — Cybersecurity Fundamentals
 
-  date: Week 1
+      </h4>
 
-  topic: Cyber Security Laboratory Setup
+      <p class="card-text">
 
-  description: Introduction to the cybersecurity laboratory environment, VMware, Kali Linux installation, configuration, and basic security tools.
+        Understand fundamental cybersecurity concepts, common
+        vulnerabilities, security threats, and responsible security
+        practices.
 
-* week: 2
+      </p>
 
-  date: Week 2
+    </div>
 
-  topic: Burp Suite and DVWA
+  </div>
 
-  description: Installation and configuration of Burp Suite and DVWA for practicing web application security testing in a controlled laboratory environment.
+</div>
 
-* week: 3
 
-  date: Week 3
+<div class="col-md-6 mt-3">
 
-  topic: Web Server Attacks
+  <div class="card h-100 feature-card">
 
-  description: Practical study of web server concepts and controlled demonstrations of SQL injection, XSS, CSRF, clickjacking, and file upload vulnerabilities.
+    <div class="card-body">
 
-* week: 4
+      <h4 class="card-title">
 
-  date: Week 4
+        <i class="fas fa-user-secret"></i>
 
-  topic: Python Scripting and Security Tasks
+        CLO2 — Security Testing
 
-  description: Introduction to Python scripting for security tasks, port scanning, malware concepts, keylogger concepts, file upload vulnerabilities, and remote code execution in controlled laboratory environments.
+      </h4>
 
-* week: 5
+      <p class="card-text">
 
-  date: Week 5
+        Apply cybersecurity tools and techniques to perform controlled
+        vulnerability assessment, web application security testing,
+        and penetration testing exercises.
 
-  topic: Cryptography and Information Gathering
+      </p>
 
-  description: Practical implementation of encryption and decryption algorithms, hashing algorithms, OSINT, Shodan, IP lookup, and information-gathering techniques.
+    </div>
 
-* week: 6
+  </div>
 
-  date: Week 6
+</div>
 
-  topic: Reverse Engineering and Binary Exploitation
 
-  description: Introduction to reverse engineering using Ghidra and similar tools, with practical exercises on buffer overflow, stack overflow, and integer overflow vulnerabilities.
+<div class="col-md-6 mt-3">
 
-* week: 7
+  <div class="card h-100 feature-card">
 
-  date: Week 7
+    <div class="card-body">
 
-  topic: Cyber Law and Safe Cybersecurity Practice
+      <h4 class="card-title">
 
-  description: Understanding ethical and unethical use of cybersecurity tools and applying safe and responsible practices in cybersecurity laboratories.
+        <i class="fas fa-search"></i>
 
-* week: 8
+        CLO3 — Security Analysis
 
-  date: Week 8
+      </h4>
 
-  topic: Final Project and Practical Evaluation
+      <p class="card-text">
 
-  description: Practical project evaluation covering cybersecurity tools, ethical hacking techniques, security analysis, and digital forensic practices learned throughout the course.
+        Analyze security incidents, network and system information,
+        malicious artifacts, and binary files using appropriate
+        cybersecurity and analysis tools.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="col-md-6 mt-3">
+
+  <div class="card h-100 feature-card">
+
+    <div class="card-body">
+
+      <h4 class="card-title">
+
+        <i class="fas fa-folder-open"></i>
+
+        CLO4 — Digital Forensic Investigation
+
+      </h4>
+
+      <p class="card-text">
+
+        Apply digital forensic techniques and tools to acquire,
+        examine, analyze, and interpret digital evidence in controlled
+        investigation scenarios.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <h2 class="course-section-title">
+    Prerequisites
+  </h2>
+
+  <ul>
+
+```
+<li>
+  No formal prerequisite.
+</li>
+
+<li>
+  Basic computer and operating system knowledge.
+</li>
+
+<li>
+  Basic networking and programming concepts are recommended.
+</li>
+```
+
+  </ul>
+
+  <h2 class="course-section-title">
+    Textbooks
+  </h2>
+
+  <ul>
+
+```
+<li>
+
+  <strong>Primary:</strong>
+  <em>Kali Linux for Hackers: Exploring Tools, Exploits, and Vulnerabilities</em>
+  by C. Campbell.
+
+</li>
+
+<li>
+
+  <strong>Primary:</strong>
+  <em>Guide to Computer Forensics and Investigations</em>
+  by Bill Nelson.
+
+</li>
+```
+
+  </ul>
+
+  <h2 class="course-section-title">
+    Reference Books
+  </h2>
+
+  <ul>
+
+```
+<li>
+  <em>Cybersecurity Essentials</em> by Charles J. Brooks.
+</li>
+
+<li>
+  <em>Social Engineering: The Science of Human Hacking</em>
+  by Christopher Hadnagy.
+</li>
+
+<li>
+  <em>Black Hat Python: Python Programming for Hackers and Pentesters</em>
+  by Justin Seitz and Tim Arnold.
+</li>
+
+<li>
+  <em>Practical Reverse Engineering</em>
+  by Bruce Dang and Alexandre Gazet.
+</li>
+
+<li>
+  <em>Cryptography and Network Security: Principles and Practice</em>
+  by William Stallings.
+</li>
+
+<li>
+  <em>Cybersecurity and Cyberlaw</em>
+  by Pavan Duggal.
+</li>
+```
+
+  </ul>
+
+  <h2 class="course-section-title">
+    Tools and Platforms
+  </h2>
+
+  <div class="row">
+
+```
+<div class="col-md-6 mt-3">
+
+  <div class="card h-100 feature-card">
+
+    <div class="card-body">
+
+      <h4 class="card-title">
+
+        <i class="fas fa-terminal"></i>
+
+        Cybersecurity Laboratory
+
+      </h4>
+
+      <p class="card-text">
+
+        Kali Linux, VMware, Burp Suite, DVWA, Python, Ghidra,
+        and other cybersecurity tools for controlled laboratory
+        exercises.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="col-md-6 mt-3">
+
+  <div class="card h-100 feature-card">
+
+    <div class="card-body">
+
+      <h4 class="card-title">
+
+        <i class="fas fa-folder-open"></i>
+
+        Digital Forensics
+
+      </h4>
+
+      <p class="card-text">
+
+        Autopsy, Volatility, Ghidra, and related forensic and
+        binary-analysis tools for controlled investigation exercises.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <h2 class="course-section-title">
+    Online Resources
+  </h2>
+
+  <ul>
+
+```
+<li>
+
+  <a
+    href="https://www.kali.org/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Kali Linux
+  </a>
+
+</li>
+
+<li>
+
+  <a
+    href="https://portswigger.net/burp"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    PortSwigger Burp Suite
+  </a>
+
+</li>
+
+<li>
+
+  <a
+    href="https://owasp.org/www-project-web-security-testing-guide/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    OWASP Web Security Testing Guide
+  </a>
+
+</li>
+```
+
+  </ul>
+
+  <h2 class="course-section-title">
+    Course Information
+  </h2>
+
+  <div class="table-responsive">
+
+```
+<table class="table table-bordered">
+
+  <thead>
+
+    <tr>
+
+      <th>Attribute</th>
+      <th>Details</th>
+
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+    <tr>
+
+      <td>Course Code</td>
+      <td>CSE XXX</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Course Title</td>
+      <td>Cyber Security and Digital Forensic Laboratory</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Course Type</td>
+      <td>Core Laboratory Course</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Credit Hours</td>
+      <td>1.5</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Academic Session</td>
+      <td>Summer 2026</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Year-Semester</td>
+      <td>—</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Contact Hours</td>
+      <td>—</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Class Schedule</td>
+
+      <td>
+        To be announced
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>Venue</td>
+
+      <td>
+        To be announced
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>Instructor</td>
+
+      <td>
+        Md. Shakil Ahmed
+      </td>
+
+    </tr>
+
+  </tbody>
+
+</table>
+```
+
+  </div>
+
+  <h2 class="course-section-title">
+    Grading
+  </h2>
+
+  <div class="table-responsive">
+
+
+<table class="table table-bordered">
+
+  <thead>
+
+    <tr>
+
+      <th>Assessment</th>
+      <th>Weight</th>
+
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+    <tr>
+
+      <td>Class Participation</td>
+      <td>5%</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Assignment / Presentation / Viva</td>
+      <td>10%</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Class Test / Lab Performance</td>
+      <td>15%</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Midterm Examination / Project Evaluation</td>
+      <td>30%</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Final Examination / Project Evaluation</td>
+      <td>40%</td>
+
+    </tr>
+
+    <tr>
+
+      <td><strong>Total</strong></td>
+      <td><strong>100%</strong></td>
+
+    </tr>
+
+  </tbody>
+
+</table>
+
+
+  </div>
+
+  <h2 class="course-section-title">
+    Course Schedule
+  </h2>
+
+  <div class="table-responsive">
+
+
+<table class="table table-bordered">
+
+  <thead>
+
+    <tr>
+
+      <th>Week</th>
+      <th>Topic</th>
+      <th>Description</th>
+
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+    <tr>
+
+      <td>1</td>
+
+      <td>
+        Cybersecurity Laboratory Setup
+      </td>
+
+      <td>
+        Introduction to the cybersecurity laboratory environment,
+        VMware, Kali Linux installation and configuration, and
+        basic security tools.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>2</td>
+
+      <td>
+        Burp Suite and DVWA
+      </td>
+
+      <td>
+        Installation and configuration of Burp Suite and DVWA for
+        controlled web application security testing.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>3</td>
+
+      <td>
+        Web Application Security Testing
+      </td>
+
+      <td>
+        Practical study of common web application vulnerabilities,
+        including SQL injection, cross-site scripting, CSRF,
+        clickjacking, and file upload vulnerabilities in controlled
+        environments.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>4</td>
+
+      <td>
+        Python Scripting for Cybersecurity
+      </td>
+
+      <td>
+        Introduction to Python scripting for security tasks,
+        including network scanning, file analysis, and security
+        automation in controlled laboratory environments.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>5</td>
+
+      <td>
+        Cryptography and Information Gathering
+      </td>
+
+      <td>
+        Practical exercises involving encryption, decryption,
+        hashing, OSINT, Shodan, IP lookup, and information-gathering
+        techniques.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>6</td>
+
+      <td>
+        Reverse Engineering and Binary Analysis
+      </td>
+
+      <td>
+        Introduction to reverse engineering using Ghidra and related
+        tools, with practical exercises involving binary analysis
+        and common memory-related vulnerabilities.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>7</td>
+
+      <td>
+        Digital Forensics and Cyber Law
+      </td>
+
+      <td>
+        Introduction to digital forensic investigation, ethical and
+        legal considerations, evidence handling, and responsible use
+        of cybersecurity tools.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>8</td>
+
+      <td>
+        Final Project and Practical Evaluation
+      </td>
+
+      <td>
+        Practical project evaluation covering cybersecurity tools,
+        security testing, incident analysis, and digital forensic
+        techniques learned throughout the course.
+      </td>
+
+    </tr>
+
+  </tbody>
+
+</table>
+
+
+  </div>
+
+</div>
+---

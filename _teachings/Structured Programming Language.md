@@ -93,7 +93,7 @@ course_id: cse-101-structured-programming-language
 #     date: Week 17
 #     topic: Final Review and Case Study
 #     description: Comprehensive review of structured programming concepts through case studies, questions and answers, problem solving, and viva voce preparation for the semester final examination.
-# ---
+# 
 ---
 <style>
 
@@ -1240,82 +1240,6 @@ course_id: cse-101-structured-programming-language
 
   </ul>
 
-
-  <h2 class="course-section-title">
-    Grading
-  </h2>
-
-  <div class="table-responsive">
-
-    <table class="table table-bordered">
-
-      <thead>
-
-        <tr>
-
-          <th>Assessment</th>
-          <th>Weight</th>
-
-        </tr>
-
-      </thead>
-
-      <tbody>
-
-        <tr>
-
-          <td>Class Participation and Activity</td>
-          <td>5%</td>
-
-        </tr>
-
-        <tr>
-
-          <td>Class Test 1</td>
-          <td>7.5%</td>
-
-        </tr>
-
-        <tr>
-
-          <td>Class Test 2</td>
-          <td>7.5%</td>
-
-        </tr>
-
-        <tr>
-
-          <td>Assignment / Report and Presentation / Viva</td>
-          <td>10%</td>
-
-        </tr>
-
-        <tr>
-
-          <td>Midterm Examination</td>
-          <td>30%</td>
-
-        </tr>
-
-        <tr>
-
-          <td>Final Examination</td>
-          <td>40%</td>
-
-        </tr>
-
-        <tr>
-
-          <th>Total</th>
-          <th>100%</th>
-
-        </tr>
-
-      </tbody>
-
-    </table>
-
-  </div>
 
 
   <h2 class="course-section-title">
