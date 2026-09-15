@@ -9,7 +9,6 @@ term: Summer
 importance: 2
 course_id: cse-xxx-cyber-security-and-digital-forensic-laboratory
 
-
 ---
 
 <style>
@@ -807,7 +806,6 @@ course_id: cse-xxx-cyber-security-and-digital-forensic-laboratory
 
   <div class="course-header">
 
-
 <div class="course-icon">
   <i class="fas fa-shield-alt"></i>
 </div>
@@ -823,25 +821,25 @@ course_id: cse-xxx-cyber-security-and-digital-forensic-laboratory
   </p>
 
 </div>
-```
+
 
   </div>
 
   <div class="course-description">
 
-```
+
 This laboratory course provides practical experience in
 <strong>cybersecurity, ethical hacking, penetration testing, and digital forensics</strong>.
 Students develop practical security skills through controlled laboratory
-exercises involving security testing, vulnerability analysis, incident
-investigation, and digital forensic techniques.
-```
+exercises involving vulnerability assessment, security analysis,
+incident investigation, and digital forensic techniques.
+
 
   </div>
 
   <div class="course-tags">
 
-```
+
 <span class="course-tag">Cybersecurity</span>
 <span class="course-tag">Ethical Hacking</span>
 <span class="course-tag">Penetration Testing</span>
@@ -854,7 +852,7 @@ investigation, and digital forensic techniques.
 <span class="course-tag">OSINT</span>
 <span class="course-tag">Reverse Engineering</span>
 <span class="course-tag">Incident Analysis</span>
-```
+
 
   </div>
 
@@ -867,19 +865,19 @@ investigation, and digital forensic techniques.
   </h2>
 
   <p>
-    This laboratory course provides hands-on experience in cybersecurity,
-    ethical hacking, penetration testing, and digital forensics. Students
-    will work with industry-relevant security tools and controlled laboratory
-    environments to understand common security vulnerabilities, investigate
-    security incidents, and perform forensic analysis.
+    This laboratory course emphasizes practical cybersecurity and digital
+    forensic skills through controlled laboratory environments. Students
+    will configure security testing environments, examine common
+    vulnerabilities, perform security assessments, analyze digital
+    artifacts, and investigate simulated security incidents.
   </p>
 
   <p>
-    The course emphasizes practical learning through laboratory exercises,
-    security testing, scripting, cryptography, information gathering,
-    reverse engineering, binary analysis, and digital forensic investigation.
-    Students will also learn to apply ethical, legal, and responsible
-    practices when conducting cybersecurity activities.
+    Laboratory activities cover web application security, Python-based
+    security tasks, cryptography, information gathering, reverse engineering,
+    binary analysis, digital forensics, and responsible cybersecurity
+    practices. All practical activities are conducted in authorized and
+    controlled environments.
   </p>
 
   <h2 class="course-section-title">
@@ -888,7 +886,7 @@ investigation, and digital forensic techniques.
 
   <div class="row">
 
-```
+
 <div class="col-md-6 mt-3">
 
   <div class="card h-100 feature-card">
@@ -934,7 +932,7 @@ investigation, and digital forensic techniques.
 
       <p class="card-text">
 
-        Apply cybersecurity tools and techniques to perform controlled
+        Apply appropriate tools and techniques to perform controlled
         vulnerability assessment, web application security testing,
         and penetration testing exercises.
 
@@ -963,9 +961,9 @@ investigation, and digital forensic techniques.
 
       <p class="card-text">
 
-        Analyze security incidents, network and system information,
-        malicious artifacts, and binary files using appropriate
-        cybersecurity and analysis tools.
+        Analyze security incidents, system information, digital
+        artifacts, and binary files using appropriate cybersecurity
+        and analysis techniques.
 
       </p>
 
@@ -992,8 +990,8 @@ investigation, and digital forensic techniques.
 
       <p class="card-text">
 
-        Apply digital forensic techniques and tools to acquire,
-        examine, analyze, and interpret digital evidence in controlled
+        Apply digital forensic techniques to acquire, examine,
+        analyze, and interpret digital evidence in controlled
         investigation scenarios.
 
       </p>
@@ -1003,7 +1001,7 @@ investigation, and digital forensic techniques.
   </div>
 
 </div>
-```
+
 
   </div>
 
@@ -1013,7 +1011,7 @@ investigation, and digital forensic techniques.
 
   <ul>
 
-```
+
 <li>
   No formal prerequisite.
 </li>
@@ -1025,7 +1023,7 @@ investigation, and digital forensic techniques.
 <li>
   Basic networking and programming concepts are recommended.
 </li>
-```
+
 
   </ul>
 
@@ -1035,7 +1033,7 @@ investigation, and digital forensic techniques.
 
   <ul>
 
-```
+
 <li>
 
   <strong>Primary:</strong>
@@ -1051,7 +1049,7 @@ investigation, and digital forensic techniques.
   by Bill Nelson.
 
 </li>
-```
+
 
   </ul>
 
@@ -1061,7 +1059,7 @@ investigation, and digital forensic techniques.
 
   <ul>
 
-```
+
 <li>
   <em>Cybersecurity Essentials</em> by Charles J. Brooks.
 </li>
@@ -1090,7 +1088,7 @@ investigation, and digital forensic techniques.
   <em>Cybersecurity and Cyberlaw</em>
   by Pavan Duggal.
 </li>
-```
+
 
   </ul>
 
@@ -1100,7 +1098,7 @@ investigation, and digital forensic techniques.
 
   <div class="row">
 
-```
+
 <div class="col-md-6 mt-3">
 
   <div class="card h-100 feature-card">
@@ -1117,9 +1115,9 @@ investigation, and digital forensic techniques.
 
       <p class="card-text">
 
-        Kali Linux, VMware, Burp Suite, DVWA, Python, Ghidra,
-        and other cybersecurity tools for controlled laboratory
-        exercises.
+        Kali Linux, VMware, Burp Suite, DVWA, Python, and related
+        security tools for controlled vulnerability assessment,
+        web security testing, and security analysis.
 
       </p>
 
@@ -1140,14 +1138,15 @@ investigation, and digital forensic techniques.
 
         <i class="fas fa-folder-open"></i>
 
-        Digital Forensics
+        Digital Forensics and Analysis
 
       </h4>
 
       <p class="card-text">
 
-        Autopsy, Volatility, Ghidra, and related forensic and
-        binary-analysis tools for controlled investigation exercises.
+        Autopsy, Volatility, Ghidra, and related tools for digital
+        evidence examination, memory analysis, reverse engineering,
+        and binary analysis.
 
       </p>
 
@@ -1156,7 +1155,7 @@ investigation, and digital forensic techniques.
   </div>
 
 </div>
-```
+
 
   </div>
 
@@ -1166,7 +1165,7 @@ investigation, and digital forensic techniques.
 
   <ul>
 
-```
+
 <li>
 
   <a
@@ -1202,117 +1201,21 @@ investigation, and digital forensic techniques.
   </a>
 
 </li>
-```
+
+<li>
+
+  <a
+    href="https://www.autopsy.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Autopsy Digital Forensics
+  </a>
+
+</li>
+
 
   </ul>
-
-  <h2 class="course-section-title">
-    Course Information
-  </h2>
-
-  <div class="table-responsive">
-
-```
-<table class="table table-bordered">
-
-  <thead>
-
-    <tr>
-
-      <th>Attribute</th>
-      <th>Details</th>
-
-    </tr>
-
-  </thead>
-
-  <tbody>
-
-    <tr>
-
-      <td>Course Code</td>
-      <td>CSE XXX</td>
-
-    </tr>
-
-    <tr>
-
-      <td>Course Title</td>
-      <td>Cyber Security and Digital Forensic Laboratory</td>
-
-    </tr>
-
-    <tr>
-
-      <td>Course Type</td>
-      <td>Core Laboratory Course</td>
-
-    </tr>
-
-    <tr>
-
-      <td>Credit Hours</td>
-      <td>1.5</td>
-
-    </tr>
-
-    <tr>
-
-      <td>Academic Session</td>
-      <td>Summer 2026</td>
-
-    </tr>
-
-    <tr>
-
-      <td>Year-Semester</td>
-      <td>—</td>
-
-    </tr>
-
-    <tr>
-
-      <td>Contact Hours</td>
-      <td>—</td>
-
-    </tr>
-
-    <tr>
-
-      <td>Class Schedule</td>
-
-      <td>
-        To be announced
-      </td>
-
-    </tr>
-
-    <tr>
-
-      <td>Venue</td>
-
-      <td>
-        To be announced
-      </td>
-
-    </tr>
-
-    <tr>
-
-      <td>Instructor</td>
-
-      <td>
-        Md. Shakil Ahmed
-      </td>
-
-    </tr>
-
-  </tbody>
-
-</table>
-```
-
-  </div>
 
   <h2 class="course-section-title">
     Grading
@@ -1338,43 +1241,73 @@ investigation, and digital forensic techniques.
 
     <tr>
 
-      <td>Class Participation</td>
-      <td>5%</td>
+      <td>
+        Class Participation
+      </td>
+
+      <td>
+        5%
+      </td>
 
     </tr>
 
     <tr>
 
-      <td>Assignment / Presentation / Viva</td>
-      <td>10%</td>
+      <td>
+        Assignment / Presentation / Viva
+      </td>
+
+      <td>
+        10%
+      </td>
 
     </tr>
 
     <tr>
 
-      <td>Class Test / Lab Performance</td>
-      <td>15%</td>
+      <td>
+        Class Test / Lab Performance
+      </td>
+
+      <td>
+        15%
+      </td>
 
     </tr>
 
     <tr>
 
-      <td>Midterm Examination / Project Evaluation</td>
-      <td>30%</td>
+      <td>
+        Midterm Examination / Project Evaluation
+      </td>
+
+      <td>
+        30%
+      </td>
 
     </tr>
 
     <tr>
 
-      <td>Final Examination / Project Evaluation</td>
-      <td>40%</td>
+      <td>
+        Final Examination / Project Evaluation
+      </td>
+
+      <td>
+        40%
+      </td>
 
     </tr>
 
     <tr>
 
-      <td><strong>Total</strong></td>
-      <td><strong>100%</strong></td>
+      <td>
+        <strong>Total</strong>
+      </td>
+
+      <td>
+        <strong>100%</strong>
+      </td>
 
     </tr>
 
@@ -1410,7 +1343,9 @@ investigation, and digital forensic techniques.
 
     <tr>
 
-      <td>1</td>
+      <td>
+        1
+      </td>
 
       <td>
         Cybersecurity Laboratory Setup
@@ -1426,22 +1361,26 @@ investigation, and digital forensic techniques.
 
     <tr>
 
-      <td>2</td>
+      <td>
+        2
+      </td>
 
       <td>
         Burp Suite and DVWA
       </td>
 
       <td>
-        Installation and configuration of Burp Suite and DVWA for
-        controlled web application security testing.
+        Configuration of Burp Suite and DVWA for controlled
+        web application security testing and vulnerability analysis.
       </td>
 
     </tr>
 
     <tr>
 
-      <td>3</td>
+      <td>
+        3
+      </td>
 
       <td>
         Web Application Security Testing
@@ -1458,7 +1397,9 @@ investigation, and digital forensic techniques.
 
     <tr>
 
-      <td>4</td>
+      <td>
+        4
+      </td>
 
       <td>
         Python Scripting for Cybersecurity
@@ -1474,7 +1415,9 @@ investigation, and digital forensic techniques.
 
     <tr>
 
-      <td>5</td>
+      <td>
+        5
+      </td>
 
       <td>
         Cryptography and Information Gathering
@@ -1490,48 +1433,54 @@ investigation, and digital forensic techniques.
 
     <tr>
 
-      <td>6</td>
+      <td>
+        6
+      </td>
 
       <td>
         Reverse Engineering and Binary Analysis
       </td>
 
       <td>
-        Introduction to reverse engineering using Ghidra and related
-        tools, with practical exercises involving binary analysis
-        and common memory-related vulnerabilities.
+        Introduction to reverse engineering using Ghidra and
+        related tools, with practical exercises involving binary
+        analysis and common memory-related vulnerabilities.
       </td>
 
     </tr>
 
     <tr>
 
-      <td>7</td>
+      <td>
+        7
+      </td>
 
       <td>
         Digital Forensics and Cyber Law
       </td>
 
       <td>
-        Introduction to digital forensic investigation, ethical and
-        legal considerations, evidence handling, and responsible use
-        of cybersecurity tools.
+        Introduction to digital forensic investigation, evidence
+        handling, ethical and legal considerations, and responsible
+        use of cybersecurity tools.
       </td>
 
     </tr>
 
     <tr>
 
-      <td>8</td>
+      <td>
+        8
+      </td>
 
       <td>
         Final Project and Practical Evaluation
       </td>
 
       <td>
-        Practical project evaluation covering cybersecurity tools,
-        security testing, incident analysis, and digital forensic
-        techniques learned throughout the course.
+        Practical project evaluation covering security testing,
+        incident analysis, digital forensic techniques, and
+        responsible cybersecurity practices.
       </td>
 
     </tr>
