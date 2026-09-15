@@ -8,7 +8,7 @@ description: This laboratory course provides hands-on experience in structured p
 
 instructor: Md. Shakil Ahmed
 
-year: 2025
+year: 2024
 
 term: Spring
 importance: 8
