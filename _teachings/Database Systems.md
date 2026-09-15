@@ -1,122 +1,25 @@
 ---
 
 layout: course
-
 title: Database Systems
-
 description: This course introduces the fundamental concepts and practices of database systems, with emphasis on database design, relational models, SQL, relational algebra, normalization, indexing, hashing, transaction management, and concurrency control. Students will develop the ability to design, query, optimize, and manage relational databases efficiently.
-
 instructor: Md. Shakil Ahmed
-
 year: 2025
-
 term: Fall
-
 importance: 5
-
 course_id: cse-207-database-systems
-
-schedule:
-
-* week: 1
-  date: Week 1
-  topic: Introduction to Database Systems
-  description: Overview of database systems, database applications, limitations of traditional file processing systems, levels of data abstraction, database instances, database languages, storage management, query processing, transaction management, history of database systems, database users, and database administrators.
-
-* week: 2
-  date: Week 2
-  topic: Relational Model
-  description: Introduction to the relational model, relations, attributes and their types, relation schema and instances, keys, schema diagrams, and relational query languages.
-
-* week: 3
-  date: Week 3
-  topic: Introduction to SQL
-  description: Introduction to Structured Query Language, SQL data definition, basic data types, schema definition, integrity constraints, basic SQL queries, queries on single and multiple relations, Cartesian products, natural joins, filtering, ordering, set operations, and aggregate functions.
-
-* week: 4
-  date: Week 4
-  topic: Database Modification and Nested Queries
-  description: Practical application of INSERT, UPDATE, and DELETE operations, nested subqueries, and complex SQL query construction.
-
-* week: 5
-  date: Week 5
-  topic: Intermediate SQL
-  description: Advanced SQL operations including inner joins, outer joins, views, materialized views, and view modification and update operations.
-
-* week: 6
-  date: Week 6
-  topic: Integrity Constraints and Relational Algebra
-  description: Application of NOT NULL, UNIQUE, PRIMARY KEY, CHECK, and referential integrity constraints. Introduction to authorization, user-defined domains, and relational algebra operations.
-
-* week: 7
-  date: Week 7
-  topic: Relational Algebra
-  description: Detailed study and problem solving using select, project, set operations, Cartesian product, rename, natural join, assignment, outer join, division, aggregate functions, and relational algebra-based queries.
-
-* week: 8
-  date: Week 8
-  topic: Entity-Relationship Model
-  description: Introduction to entity sets, relationship sets, cardinality constraints, participation constraints, ER diagrams, degrees of relationships, and attribute types.
-
-* week: 9
-  date: Week 9
-  topic: Advanced ER Modeling and Database Design
-  description: Mapping cardinalities, entity roles, weak entity sets, reduction of ER models to relational models, specialization, generalization, aggregation, and real-world database design.
-
-* week: 10
-  date: Week 10
-  topic: Relational Database Design
-  description: Study of atomic attributes, decomposition, functional dependencies, closure sets, super keys, candidate keys, and primary keys. Students will analyze functional dependencies for relational database design.
-
-* week: 11
-  date: Week 11
-  topic: Functional Dependencies and Canonical Cover
-  description: Determination of attribute closure, identification of keys, analysis of functional dependencies, and construction of canonical covers.
-
-* week: 12
-  date: Week 12
-  topic: Normalization and Database Design
-  description: Practical application of First Normal Form, Second Normal Form, Third Normal Form, and Boyce-Codd Normal Form. Students will determine normal forms, normalize relational schemas, and study denormalization.
-
-* week: 13
-  date: Week 13
-  topic: Indexing and Hashing
-  description: Introduction to search keys, index files, ordered indices, dense and sparse indices, hash indices, and evaluation of indexing strategies.
-
-* week: 14
-  date: Week 14
-  topic: B+ Trees and Hashing
-  description: Introduction to multilevel indexing, B+ tree construction, insertion, updating, deletion, hash functions, buckets, static hashing, bucket overflow, dynamic hashing, and extendible hashing.
-
-* week: 15
-  date: Week 15
-  topic: Transactions and Concurrency Control
-  description: Study of transaction states, ACID properties, transaction atomicity and durability, storage structures, concurrency control, and transaction management techniques.
-
-* week: 16
-  date: Week 16
-  topic: Database Case Study and Problem Solving
-  description: Application of database design, SQL, normalization, indexing, and transaction concepts to a real-world database case study through problem solving and discussion.
-
-* week: 17
-  date: Week 17
-  topic: Final Review and Case Study
-  description: Comprehensive review of database systems concepts, SQL, database design, normalization, indexing, hashing, transactions, and concurrency control in preparation for the final examination.
-
----
+-----------------------------------
 
 <style>
 
 /* =========================================================
    COURSE DETAIL PAGE
    WHITE / BLACK ACADEMIC STYLE
+   SAME TYPOGRAPHY AS PROJECT PAGES
    ========================================================= */
 
-.course-content,
-
-.course-page,
-
-.course-description {
+.course-card,
+.course-content {
 
   font-family:
     "Source Serif 4",
@@ -126,25 +29,93 @@ schedule:
 
   color: #111111;
 
-  font-size: 17px;
+}
 
-  line-height: 1.8;
+
+/* =========================================================
+   MAIN COURSE HEADER CARD
+   ========================================================= */
+
+.course-card {
+
+  position: relative;
+
+  padding: 28px 30px;
+
+  margin: 20px 0 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #d2d2d2;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 5px 16px rgba(0, 0, 0, 0.08);
+
+  color: #111111;
+
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+}
+
+.course-card:hover {
+
+  border-color: #999999;
+
+  box-shadow:
+    0 10px 26px rgba(0, 0, 0, 0.12);
 
 }
 
 
 /* =========================================================
-   HEADINGS
+   COURSE HEADER
    ========================================================= */
 
-.course-content h1,
-.course-content h2,
-.course-content h3,
-.course-content h4,
-.course-page h1,
-.course-page h2,
-.course-page h3,
-.course-page h4 {
+.course-header {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 18px;
+
+}
+
+.course-icon {
+
+  width: 58px;
+
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #f5f5f5;
+
+  border: 1px solid #bdbdbd;
+
+  border-radius: 7px;
+
+  color: #000000;
+
+  font-size: 28px;
+
+}
+
+.course-title {
+
+  margin: 0 !important;
 
   color: #000000 !important;
 
@@ -153,74 +124,42 @@ schedule:
     "Times New Roman",
     serif;
 
+  font-size: 26px;
+
   font-weight: 700;
 
-}
-
-
-.course-content h1,
-.course-page h1 {
-
-  font-size: 32px;
-
   line-height: 1.4;
 
-  margin-top: 0;
-
-  margin-bottom: 20px;
-
 }
 
+.course-subtitle {
 
-.course-content h2,
-.course-page h2 {
+  margin: 6px 0 0;
 
-  font-size: 27px;
+  color: #444444;
 
-  line-height: 1.4;
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
-  margin-top: 34px;
+  font-size: 16px;
 
-  margin-bottom: 18px;
+  font-weight: 400;
 
-  padding-bottom: 8px;
-
-  border-bottom: 2px solid #000000;
-
-}
-
-
-.course-content h3,
-.course-page h3 {
-
-  font-size: 22px;
-
-  line-height: 1.45;
-
-  margin-top: 25px;
-
-  margin-bottom: 12px;
-
-}
-
-
-.course-content h4,
-.course-page h4 {
-
-  font-size: 19px;
-
-  line-height: 1.45;
+  line-height: 1.65;
 
 }
 
 
 /* =========================================================
-   PARAGRAPHS
+   COURSE DESCRIPTION
    ========================================================= */
 
-.course-content p,
-.course-page p,
 .course-description {
+
+  margin-top: 20px;
 
   color: #222222;
 
@@ -230,13 +169,9 @@ schedule:
     "Times New Roman",
     serif;
 
-  font-size: 17px;
+  font-size: 16px;
 
   line-height: 1.8;
-
-  margin-top: 0;
-
-  margin-bottom: 18px;
 
   text-align: justify;
 
@@ -244,13 +179,7 @@ schedule:
 
 }
 
-
-/* =========================================================
-   BOLD TEXT
-   ========================================================= */
-
-.course-content strong,
-.course-page strong {
+.course-description strong {
 
   color: #000000;
 
@@ -260,19 +189,68 @@ schedule:
 
 
 /* =========================================================
-   LISTS
+   COURSE TAGS
    ========================================================= */
 
-.course-content ul,
-.course-content ol,
-.course-page ul,
-.course-page ol {
+.course-tags {
 
-  margin-top: 8px;
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 20px;
+
+}
+
+.course-tag {
+
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  background: #f4f4f4;
+
+  border: 1px solid #cccccc;
+
+  border-radius: 4px;
+
+  color: #222222;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+
+}
+
+
+/* =========================================================
+   COURSE CONTENT
+   ========================================================= */
+
+.course-content {
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  color: #111111;
+
+}
+
+.course-content p {
+
+  margin-top: 0;
 
   margin-bottom: 18px;
-
-  padding-left: 25px;
 
   color: #222222;
 
@@ -282,87 +260,71 @@ schedule:
     "Times New Roman",
     serif;
 
-  font-size: 16px;
+  font-size: 17px;
 
-  line-height: 1.75;
+  line-height: 1.8;
 
-}
+  text-align: justify;
 
-
-.course-content li,
-.course-page li {
-
-  margin-bottom: 7px;
+  text-justify: inter-word;
 
 }
 
+.course-content strong {
 
-/* =========================================================
-   LINKS
-   ========================================================= */
+  color: #000000;
 
-.course-content a,
-.course-page a {
-
-  color: #000000 !important;
-
-  text-decoration: underline;
-
-  text-decoration-thickness: 1px;
-
-  text-underline-offset: 3px;
-
-  transition: opacity 0.2s ease;
-
-}
-
-
-.course-content a:hover,
-.course-page a:hover {
-
-  color: #000000 !important;
-
-  opacity: 0.6;
+  font-weight: 700;
 
 }
 
 
 /* =========================================================
-   COURSE INFORMATION
+   SECTION HEADINGS
    ========================================================= */
 
-.course-info,
-.course-meta {
+.course-section-title {
 
-  color: #333333;
+  margin-top: 34px;
+
+  margin-bottom: 18px;
+
+  padding-bottom: 8px;
+
+  color: #000000 !important;
 
   font-family:
-    "Source Serif 4",
     Georgia,
     "Times New Roman",
     serif;
 
-  font-size: 16px;
+  font-size: 27px;
 
-  line-height: 1.75;
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  border-bottom: 2px solid #000000;
 
 }
 
 
 /* =========================================================
-   CARDS
+   FEATURE CARDS
    ========================================================= */
 
 .course-content .card,
-.course-page .card {
+.feature-card {
+
+  height: 100%;
 
   background: #ffffff !important;
-
-  color: #111111 !important;
 
   border: 1px solid #d2d2d2;
 
   border-radius: 7px;
+
+  color: #111111;
 
   box-shadow:
     0 4px 14px rgba(0, 0, 0, 0.06);
@@ -374,9 +336,8 @@ schedule:
 
 }
 
-
 .course-content .card:hover,
-.course-page .card:hover {
+.feature-card:hover {
 
   transform: translateY(-3px);
 
@@ -387,17 +348,18 @@ schedule:
 
 }
 
-
-.course-content .card-body,
-.course-page .card-body {
+.course-content .card-body {
 
   padding: 22px;
 
 }
 
 
-.course-content .card-title,
-.course-page .card-title {
+/* =========================================================
+   CARD TITLES
+   ========================================================= */
+
+.course-content .card-title {
 
   margin-top: 0;
 
@@ -418,9 +380,20 @@ schedule:
 
 }
 
+.course-content .card-title i {
 
-.course-content .card-text,
-.course-page .card-text {
+  margin-right: 7px;
+
+  color: #000000;
+
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.course-content .card-text {
 
   margin-bottom: 0;
 
@@ -444,11 +417,49 @@ schedule:
 
 
 /* =========================================================
+   LISTS
+   ========================================================= */
+
+.course-content ul {
+
+  margin-top: 8px;
+
+  margin-bottom: 10px;
+
+  padding-left: 22px;
+
+  color: #222222;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.75;
+
+}
+
+.course-content li {
+
+  margin-bottom: 6px;
+
+}
+
+.course-content li strong {
+
+  color: #000000;
+
+}
+
+
+/* =========================================================
    TABLES
    ========================================================= */
 
-.course-content .table,
-.course-page .table {
+.course-content .table {
 
   width: 100%;
 
@@ -474,9 +485,7 @@ schedule:
 
 }
 
-
-.course-content .table th,
-.course-page .table th {
+.course-content .table th {
 
   padding: 11px 14px;
 
@@ -497,9 +506,7 @@ schedule:
 
 }
 
-
-.course-content .table td,
-.course-page .table td {
+.course-content .table td {
 
   padding: 10px 14px;
 
@@ -513,9 +520,7 @@ schedule:
 
 }
 
-
-.course-content .table tbody tr:hover td,
-.course-page .table tbody tr:hover td {
+.course-content .table tbody tr:hover td {
 
   background: #f8f8f8;
 
@@ -523,234 +528,138 @@ schedule:
 
 
 /* =========================================================
-   CODE
+   GENERAL LINKS
    ========================================================= */
 
-.course-content code,
-.course-page code {
-
-  font-family:
-    "Courier New",
-    Courier,
-    monospace;
-
-  font-size: 14px;
-
-}
-
-
-.course-content pre,
-.course-page pre {
-
-  padding: 15px;
-
-  background: #f5f5f5;
-
-  border: 1px solid #d2d2d2;
-
-  border-radius: 6px;
-
-  overflow-x: auto;
-
-  font-size: 14px;
-
-  line-height: 1.6;
-
-}
-
-
-/* =========================================================
-   DIVIDERS
-   ========================================================= */
-
-.course-content hr,
-.course-page hr {
-
-  border: none;
-
-  border-top: 2px solid #000000;
-
-  margin: 30px auto;
-
-}
-
-
-/* =========================================================
-   BUTTONS
-   ========================================================= */
-
-.course-content .btn,
-.course-page .btn {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  padding: 8px 16px;
-
-  background: #ffffff !important;
+.course-content a {
 
   color: #000000 !important;
 
-  border: 1px solid #000000;
+  text-decoration: underline;
 
-  border-radius: 5px;
+  text-decoration-thickness: 1px;
 
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-
-  font-size: 13px;
-
-  font-weight: 600;
-
-  line-height: 1.4;
-
-  text-decoration: none !important;
-
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
+  text-underline-offset: 3px;
 
 }
 
+.course-content a:hover {
 
-.course-content .btn:hover,
-.course-page .btn:hover {
+  color: #000000 !important;
 
-  background: #000000 !important;
-
-  color: #ffffff !important;
-
-  border-color: #000000;
-
-  transform: translateY(-2px);
+  opacity: 0.6;
 
 }
 
 
 /* =========================================================
-   MUTED TEXT
-   ========================================================= */
-
-.course-content .text-muted,
-.course-page .text-muted {
-
-  color: #555555 !important;
-
-}
-
-
-/* =========================================================
-   TABLET
+   RESPONSIVE — TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
 
-  .course-content,
-  .course-page,
-  .course-description {
+  .course-card {
 
-    font-size: 16px;
+    margin-left: 20px;
 
-    line-height: 1.75;
+    margin-right: 20px;
 
-  }
-
-
-  .course-content h1,
-  .course-page h1 {
-
-    font-size: 30px;
+    padding: 25px;
 
   }
 
+  .course-content {
 
-  .course-content h2,
-  .course-page h2 {
+    padding-left: 20px;
 
-    font-size: 25px;
-
-  }
-
-
-  .course-content h3,
-  .course-page h3 {
-
-    font-size: 21px;
+    padding-right: 20px;
 
   }
 
-
-  .course-content p,
-  .course-page p,
-  .course-description {
-
-    font-size: 16px;
-
-  }
-
-
-  .course-content .card-text,
-  .course-page .card-text {
-
-    font-size: 15px;
-
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-  .course-content,
-  .course-page,
-  .course-description {
-
-    font-size: 15.5px;
-
-    line-height: 1.75;
-
-  }
-
-
-  .course-content h1,
-  .course-page h1 {
+  .course-title {
 
     font-size: 24px;
 
   }
 
+  .course-content p {
 
-  .course-content h2,
-  .course-page h2 {
-
-    font-size: 23px;
-
-    margin-top: 30px;
+    font-size: 16px;
 
   }
 
+  .course-section-title {
 
-  .course-content h3,
-  .course-page h3 {
-
-    font-size: 20px;
+    font-size: 25px;
 
   }
 
+}
 
-  .course-content p,
-  .course-page p,
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .course-card {
+
+    margin: 15px 15px 30px;
+
+    padding: 21px;
+
+    border-radius: 7px;
+
+  }
+
+  .course-header {
+
+    gap: 12px;
+
+  }
+
+  .course-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    font-size: 25px;
+
+  }
+
+  .course-title {
+
+    font-size: 21px;
+
+  }
+
+  .course-subtitle {
+
+    font-size: 14px;
+
+  }
+
   .course-description {
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    text-align: left;
+
+  }
+
+  .course-content {
+
+    padding-left: 15px;
+
+    padding-right: 15px;
+
+  }
+
+  .course-content p {
 
     font-size: 15.5px;
 
@@ -760,51 +669,42 @@ schedule:
 
   }
 
+  .course-section-title {
 
-  .course-content ul,
-  .course-content ol,
-  .course-page ul,
-  .course-page ol {
+    margin-top: 30px;
 
-    font-size: 15px;
-
-    line-height: 1.7;
+    font-size: 23px;
 
   }
 
-
-  .course-content .card-title,
-  .course-page .card-title {
+  .course-content .card-title {
 
     font-size: 18px;
 
   }
 
-
-  .course-content .card-text,
-  .course-page .card-text {
+  .course-content .card-text {
 
     font-size: 15px;
-
-    line-height: 1.7;
 
     text-align: left;
 
   }
 
+  .course-content ul {
 
-  .course-content .table,
-  .course-page .table {
+    font-size: 15px;
+
+  }
+
+  .course-content .table {
 
     font-size: 14px;
 
   }
 
-
   .course-content .table th,
-  .course-content .table td,
-  .course-page .table th,
-  .course-page .table td {
+  .course-content .table td {
 
     padding: 9px 10px;
 
@@ -814,97 +714,86 @@ schedule:
 
 
 /* =========================================================
-   SMALL MOBILE
+   RESPONSIVE — SMALL MOBILE
    ========================================================= */
 
 @media (max-width: 576px) {
 
-  .course-content,
-  .course-page,
-  .course-description {
+  .course-card {
 
-    font-size: 14px;
+    margin-left: 10px;
 
-    line-height: 1.7;
+    margin-right: 10px;
 
-  }
-
-
-  .course-content h1,
-  .course-page h1 {
-
-    font-size: 21px;
+    padding: 18px;
 
   }
 
+  .course-header {
 
-  .course-content h2,
-  .course-page h2 {
-
-    font-size: 21px;
+    align-items: flex-start;
 
   }
 
+  .course-icon {
 
-  .course-content h3,
-  .course-page h3 {
+    width: 46px;
+
+    height: 46px;
+
+    font-size: 22px;
+
+  }
+
+  .course-title {
 
     font-size: 19px;
 
   }
 
+  .course-subtitle {
 
-  .course-content p,
-  .course-page p,
+    font-size: 13.5px;
+
+  }
+
   .course-description {
 
     font-size: 14px;
 
-    line-height: 1.7;
+  }
+
+  .course-tags {
+
+    gap: 6px;
 
   }
 
+  .course-tag {
 
-  .course-content ul,
-  .course-content ol,
-  .course-page ul,
-  .course-page ol {
+    font-size: 11px;
 
-    font-size: 14px;
+    padding: 5px 8px;
 
   }
 
+  .course-content {
 
-  .course-content .card-title,
-  .course-page .card-title {
+    padding-left: 10px;
 
-    font-size: 18px;
-
-  }
-
-
-  .course-content .card-text,
-  .course-page .card-text {
-
-    font-size: 14px;
+    padding-right: 10px;
 
   }
 
+  .course-section-title {
 
-  .course-content .table,
-  .course-page .table {
+    font-size: 21px;
+
+  }
+
+  .course-content .table {
 
     font-size: 13px;
-
-  }
-
-
-  .course-content .btn,
-  .course-page .btn {
-
-    font-size: 12px;
-
-    padding: 7px 13px;
 
   }
 
@@ -912,74 +801,684 @@ schedule:
 
 </style>
 
-## Course Overview
+<div class="course-card">
 
-This course introduces the fundamental concepts and practices of database systems, with emphasis on designing, implementing, maintaining, and retrieving information efficiently from database management systems. Students will develop practical and theoretical knowledge of relational databases, SQL, database design, normalization, indexing, hashing, and transaction management. The course also develops the ability to analyze database performance and apply appropriate techniques for efficient database management.
+  <div class="course-header">
 
-By the end of this course, students will be able to:
+```
+<div class="course-icon">
+  <i class="fas fa-database"></i>
+</div>
 
-* Understand the fundamental concepts and terminology of database management systems.
+<div>
 
-* Explain and apply SQL and relational algebra for manipulation of relational data.
+  <h1 class="course-title">
+    Database Systems
+  </h1>
 
-* Design well-defined relational databases using ER modeling and normalization techniques.
+  <p class="course-subtitle">
+    CSE 207 · Core Engineering Course · 3.0 Credit Hours
+  </p>
 
-* Analyze functional dependencies and determine appropriate database keys.
+</div>
+```
 
-* Apply indexing and hashing techniques for efficient database access.
+  </div>
 
-* Understand transaction management, ACID properties, and concurrency control.
+  <div class="course-description">
 
-## Prerequisites
+```
+This course introduces the fundamental concepts of
+<strong>database systems and relational database management</strong>.
+Students develop practical and theoretical knowledge of database design,
+SQL, relational algebra, normalization, indexing, hashing, transaction
+management, and concurrency control.
+```
 
-* No formal prerequisite.
+  </div>
 
-* Basic programming knowledge.
+  <div class="course-tags">
 
-* Basic understanding of data structures and algorithms.
+```
+<span class="course-tag">Database Systems</span>
+<span class="course-tag">Relational Model</span>
+<span class="course-tag">SQL</span>
+<span class="course-tag">Relational Algebra</span>
+<span class="course-tag">ER Modeling</span>
+<span class="course-tag">Normalization</span>
+<span class="course-tag">Indexing</span>
+<span class="course-tag">Hashing</span>
+<span class="course-tag">Transactions</span>
+<span class="course-tag">Concurrency Control</span>
+```
 
-* Basic mathematical and problem-solving skills.
+  </div>
 
-## Textbooks
+</div>
 
-* **Primary:** *Database System Concepts* by Abraham Silberschatz, Henry F. Korth, and S. Sudarshan.
+<div class="course-content">
 
-* **Reference:** *Database Management Systems* by Raghu Ramakrishnan and Johannes Gehrke.
+  <h2 class="course-section-title">
+    Course Overview
+  </h2>
 
-* **Reference:** *Database Systems* by Ramez Elmasri and Shamkant B. Navathe.
+  <p>
+    This course introduces the fundamental concepts and practices of database
+    systems, with emphasis on designing, implementing, maintaining, and
+    retrieving information efficiently from database management systems.
+    Students will develop practical and theoretical knowledge of relational
+    databases, SQL, database design, normalization, indexing, hashing, and
+    transaction management.
+  </p>
 
-* **Reference:** *Database Systems: Introduction to Databases and Data Warehouses* by Nenad Jukić, Susan Vrbsky, Svetlozar Nestorov, and Abhishek Sharma.
+  <p>
+    The course emphasizes database modeling, query formulation, database
+    optimization, integrity constraints, functional dependencies, and
+    transaction processing. Students will learn to analyze database
+    requirements and develop efficient relational database solutions through
+    practical exercises, problem solving, and real-world case studies.
+  </p>
 
-## Tools and Platforms
+  <h2 class="course-section-title">
+    Course Learning Outcomes
+  </h2>
 
-* MySQL
+  <div class="row">
 
-* PostgreSQL
+```
+<div class="col-md-6 mt-3">
 
-* Microsoft SQL Server
+  <div class="card h-100 feature-card">
 
-* Oracle Database
+    <div class="card-body">
 
-* MySQL Workbench
+      <h4 class="card-title">
 
-* phpMyAdmin
+        <i class="fas fa-database"></i>
 
-* Visual Studio Code
+        CLO1 — Database Fundamentals
 
-* Git and GitHub
+      </h4>
 
-* ER Diagram / UML Modeling Tools
+      <p class="card-text">
 
-## Grading
+        Understand the fundamental concepts, terminology, architecture,
+        components, and applications of database management systems.
 
-* **Class Participation and Activity:** 5%
+      </p>
 
-* **Class Tests:** 15%
+    </div>
 
-* **Assignment/Report and Presentation/Viva:** 10%
+  </div>
 
-* **Midterm Examination:** 30%
+</div>
 
-* **Final Examination:** 40%
 
-**Total: 100%**
+<div class="col-md-6 mt-3">
+
+  <div class="card h-100 feature-card">
+
+    <div class="card-body">
+
+      <h4 class="card-title">
+
+        <i class="fas fa-code"></i>
+
+        CLO2 — SQL and Relational Algebra
+
+      </h4>
+
+      <p class="card-text">
+
+        Explain and apply SQL and relational algebra to define, query,
+        manipulate, and retrieve information from relational databases.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="col-md-6 mt-3">
+
+  <div class="card h-100 feature-card">
+
+    <div class="card-body">
+
+      <h4 class="card-title">
+
+        <i class="fas fa-project-diagram"></i>
+
+        CLO3 — Database Design
+
+      </h4>
+
+      <p class="card-text">
+
+        Design relational databases using entity-relationship modeling,
+        functional dependencies, decomposition, and normalization
+        techniques.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="col-md-6 mt-3">
+
+  <div class="card h-100 feature-card">
+
+    <div class="card-body">
+
+      <h4 class="card-title">
+
+        <i class="fas fa-tachometer-alt"></i>
+
+        CLO4 — Database Performance and Management
+
+      </h4>
+
+      <p class="card-text">
+
+        Apply indexing, hashing, transaction management, and concurrency
+        control techniques to improve database access and ensure reliable
+        database operations.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <h2 class="course-section-title">
+    Prerequisites
+  </h2>
+
+  <ul>
+
+```
+<li>
+  No formal prerequisite.
+</li>
+
+<li>
+  Basic programming knowledge.
+</li>
+
+<li>
+  Basic understanding of data structures and algorithms.
+</li>
+
+<li>
+  Basic mathematical and problem-solving skills.
+</li>
+```
+
+  </ul>
+
+  <h2 class="course-section-title">
+    Textbooks
+  </h2>
+
+  <ul>
+
+```
+<li>
+
+  <strong>Primary:</strong>
+  <em>Database System Concepts</em> by Abraham Silberschatz,
+  Henry F. Korth, and S. Sudarshan.
+
+</li>
+
+<li>
+
+  <strong>Primary:</strong>
+  <em>Database Management Systems</em> by Raghu Ramakrishnan
+  and Johannes Gehrke.
+
+</li>
+```
+
+  </ul>
+
+  <h2 class="course-section-title">
+    Reference Books
+  </h2>
+
+  <ul>
+
+```
+<li>
+  <em>Database Systems</em> by Ramez Elmasri and Shamkant B. Navathe.
+</li>
+
+<li>
+  <em>Database Systems: Introduction to Databases and Data Warehouses</em>
+  by Nenad Jukić, Susan Vrbsky, Svetlozar Nestorov, and Abhishek Sharma.
+</li>
+```
+
+  </ul>
+
+  <h2 class="course-section-title">
+    Tools and Platforms
+  </h2>
+
+  <div class="row">
+
+```
+<div class="col-md-6 mt-3">
+
+  <div class="card h-100 feature-card">
+
+    <div class="card-body">
+
+      <h4 class="card-title">
+
+        <i class="fas fa-database"></i>
+
+        Database Management Systems
+
+      </h4>
+
+      <p class="card-text">
+
+        MySQL, PostgreSQL, Microsoft SQL Server, and Oracle Database
+        for database implementation, querying, and management.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="col-md-6 mt-3">
+
+  <div class="card h-100 feature-card">
+
+    <div class="card-body">
+
+      <h4 class="card-title">
+
+        <i class="fas fa-tools"></i>
+
+        Development and Modeling Tools
+
+      </h4>
+
+      <p class="card-text">
+
+        MySQL Workbench, phpMyAdmin, Visual Studio Code, Git, GitHub,
+        and ER diagram and UML modeling tools.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <h2 class="course-section-title">
+    Course Schedule
+  </h2>
+
+  <div class="table-responsive">
+
+```
+<table class="table table-bordered">
+
+  <thead>
+
+    <tr>
+
+      <th>Week</th>
+      <th>Topic</th>
+      <th>Description</th>
+
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+    <tr>
+
+      <td>1</td>
+
+      <td>
+        Introduction to Database Systems
+      </td>
+
+      <td>
+        Overview of database systems, database applications, limitations
+        of traditional file processing systems, levels of data abstraction,
+        database instances, database languages, storage management,
+        query processing, transaction management, database users,
+        and database administrators.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>2</td>
+
+      <td>
+        Relational Model
+      </td>
+
+      <td>
+        Introduction to the relational model, relations, attributes and
+        their types, relation schemas and instances, keys, schema
+        diagrams, and relational query languages.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>3</td>
+
+      <td>
+        Introduction to SQL
+      </td>
+
+      <td>
+        Introduction to Structured Query Language, SQL data definition,
+        basic data types, schema definition, integrity constraints,
+        basic SQL queries, queries on single and multiple relations,
+        Cartesian products, natural joins, filtering, ordering,
+        set operations, and aggregate functions.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>4</td>
+
+      <td>
+        Database Modification and Nested Queries
+      </td>
+
+      <td>
+        Practical application of INSERT, UPDATE, and DELETE operations,
+        nested subqueries, and complex SQL query construction.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>5</td>
+
+      <td>
+        Intermediate SQL
+      </td>
+
+      <td>
+        Advanced SQL operations including inner joins, outer joins,
+        views, materialized views, and view modification and update
+        operations.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>6</td>
+
+      <td>
+        Integrity Constraints and Relational Algebra
+      </td>
+
+      <td>
+        Application of NOT NULL, UNIQUE, PRIMARY KEY, CHECK, and
+        referential integrity constraints. Introduction to authorization,
+        user-defined domains, and relational algebra operations.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>7</td>
+
+      <td>
+        Relational Algebra
+      </td>
+
+      <td>
+        Detailed study and problem solving using select, project,
+        set operations, Cartesian product, rename, natural join,
+        assignment, outer join, division, aggregate functions,
+        and relational algebra-based queries.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>8</td>
+
+      <td>
+        Entity-Relationship Model
+      </td>
+
+      <td>
+        Introduction to entity sets, relationship sets, cardinality
+        constraints, participation constraints, ER diagrams, degrees
+        of relationships, and attribute types.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>9</td>
+
+      <td>
+        Advanced ER Modeling and Database Design
+      </td>
+
+      <td>
+        Mapping cardinalities, entity roles, weak entity sets, reduction
+        of ER models to relational models, specialization, generalization,
+        aggregation, and real-world database design.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>10</td>
+
+      <td>
+        Relational Database Design
+      </td>
+
+      <td>
+        Study of atomic attributes, decomposition, functional
+        dependencies, attribute closure, superkeys, candidate keys,
+        and primary keys. Students will analyze functional dependencies
+        for relational database design.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>11</td>
+
+      <td>
+        Functional Dependencies and Canonical Cover
+      </td>
+
+      <td>
+        Determination of attribute closure, identification of keys,
+        analysis of functional dependencies, and construction of
+        canonical covers.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>12</td>
+
+      <td>
+        Normalization and Database Design
+      </td>
+
+      <td>
+        Practical application of First Normal Form, Second Normal Form,
+        Third Normal Form, and Boyce-Codd Normal Form. Students will
+        determine normal forms, normalize relational schemas, and study
+        denormalization.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>13</td>
+
+      <td>
+        Indexing and Hashing
+      </td>
+
+      <td>
+        Introduction to search keys, index files, ordered indices,
+        dense and sparse indices, hash indices, and evaluation of
+        indexing strategies.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>14</td>
+
+      <td>
+        B+ Trees and Hashing
+      </td>
+
+      <td>
+        Introduction to multilevel indexing, B+ tree construction,
+        insertion, updating, deletion, hash functions, buckets,
+        static hashing, bucket overflow, dynamic hashing, and
+        extendible hashing.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>15</td>
+
+      <td>
+        Transactions and Concurrency Control
+      </td>
+
+      <td>
+        Study of transaction states, ACID properties, transaction
+        atomicity and durability, storage structures, concurrency
+        control, and transaction management techniques.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>16</td>
+
+      <td>
+        Database Case Study and Problem Solving
+      </td>
+
+      <td>
+        Application of database design, SQL, normalization, indexing,
+        and transaction concepts to a real-world database case study
+        through problem solving and discussion.
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>17</td>
+
+      <td>
+        Final Review and Case Study
+      </td>
+
+      <td>
+        Comprehensive review of database systems concepts, SQL,
+        database design, normalization, indexing, hashing, transactions,
+        and concurrency control in preparation for the final examination.
+      </td>
+
+    </tr>
+
+  </tbody>
+
+</table>
+```
+
+  </div>
+
+  <h2 class="course-section-title">
+    Grading
+  </h2>
+
+  <ul>
+
+```
+<li>
+  <strong>Class Participation and Activity:</strong> 5%
+</li>
+
+<li>
+  <strong>Class Tests:</strong> 15%
+</li>
+
+<li>
+  <strong>Assignment/Report and Presentation/Viva:</strong> 10%
+</li>
+
+<li>
+  <strong>Midterm Examination:</strong> 30%
+</li>
+
+<li>
+  <strong>Final Examination:</strong> 40%
+</li>
+
+<li>
+  <strong>Total:</strong> 100%
+</li>
+```
+
+  </ul>
+
+</div>
