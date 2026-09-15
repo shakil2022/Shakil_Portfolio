@@ -1,4 +1,5 @@
 ---
+
 layout: course
 title: Database Systems Lab
 description: This laboratory course provides hands-on experience in designing, creating, modifying, and managing relational database systems. Students will develop practical skills in SQL, database design, data manipulation, constraints, joins, subqueries, indexes, views, triggers, and database application development through laboratory exercises and a group project.
@@ -10,90 +11,90 @@ course_id: cse-208-database-systems-lab
 
 schedule:
 
-  - week: 1
-    date: Week 1
-    topic: Introduction to Database Systems and SQL
-    description: Introduction to relational database management systems, database creation, SQL environments, and the basic structure of relational databases.
+* week: 1
+  date: Week 1
+  topic: Introduction to Database Systems and SQL
+  description: Introduction to relational database management systems, database creation, SQL environments, and the basic structure of relational databases.
 
-  - week: 2
-    date: Week 2
-    topic: Data Definition Language
-    description: Practical implementation of CREATE, ALTER, and DROP statements to create and modify databases and tables.
+* week: 2
+  date: Week 2
+  topic: Data Definition Language
+  description: Practical implementation of CREATE, ALTER, and DROP statements to create and modify databases and tables.
 
-  - week: 3
-    date: Week 3
-    topic: Data Manipulation Language
-    description: Practical implementation of INSERT, DELETE, and UPDATE statements to populate and modify database records.
+* week: 3
+  date: Week 3
+  topic: Data Manipulation Language
+  description: Practical implementation of INSERT, DELETE, and UPDATE statements to populate and modify database records.
 
-  - week: 4
-    date: Week 4
-    topic: Selection, Projection, and Restrictions
-    description: Implementation of SELECT statements, selection and projection operations, filtering records, and applying restrictions using SQL.
+* week: 4
+  date: Week 4
+  topic: Selection, Projection, and Restrictions
+  description: Implementation of SELECT statements, selection and projection operations, filtering records, and applying restrictions using SQL.
 
-  - week: 5
-    date: Week 5
-    topic: Joins
-    description: Practical implementation of inner joins, outer joins, and other join operations to retrieve data from multiple related tables.
+* week: 5
+  date: Week 5
+  topic: Joins
+  description: Practical implementation of inner joins, outer joins, and other join operations to retrieve data from multiple related tables.
 
-  - week: 6
-    date: Week 6
-    topic: Grouping and Aggregate Functions
-    description: Implementation of GROUP BY, HAVING, and aggregate functions to summarize and analyze database records.
+* week: 6
+  date: Week 6
+  topic: Grouping and Aggregate Functions
+  description: Implementation of GROUP BY, HAVING, and aggregate functions to summarize and analyze database records.
 
-  - week: 7
-    date: Week 7
-    topic: Midterm Review and Examination
-    description: Review of SQL concepts and laboratory exercises covered during the first six weeks, followed by the midterm laboratory examination.
+* week: 7
+  date: Week 7
+  topic: Midterm Review and Examination
+  description: Review of SQL concepts and laboratory exercises covered during the first six weeks, followed by the midterm laboratory examination.
 
-  - week: 8
-    date: Week 8
-    topic: Project Proposal and Database Design
-    description: Submission and finalization of project proposals, identification of entities and relationships, and introduction to database design and ER diagrams.
+* week: 8
+  date: Week 8
+  topic: Project Proposal and Database Design
+  description: Submission and finalization of project proposals, identification of entities and relationships, and introduction to database design and ER diagrams.
 
-  - week: 9
-    date: Week 9
-    topic: Subqueries
-    description: Practical implementation of single-row and multiple-row subqueries, nested queries, and subqueries within SELECT, WHERE, and FROM clauses.
+* week: 9
+  date: Week 9
+  topic: Subqueries
+  description: Practical implementation of single-row and multiple-row subqueries, nested queries, and subqueries within SELECT, WHERE, and FROM clauses.
 
-  - week: 10
-    date: Week 10
-    topic: Indexes
-    description: Introduction to database indexes, index creation, and practical implementation of indexes to improve query performance.
+* week: 10
+  date: Week 10
+  topic: Indexes
+  description: Introduction to database indexes, index creation, and practical implementation of indexes to improve query performance.
 
-  - week: 11
-    date: Week 11
-    topic: Database Design and ER Diagrams
-    description: Supervision of database design, ER diagram development, relational schema design, and implementation of database structures for the project.
+* week: 11
+  date: Week 11
+  topic: Database Design and ER Diagrams
+  description: Supervision of database design, ER diagram development, relational schema design, and implementation of database structures for the project.
 
-  - week: 12
-    date: Week 12
-    topic: Views
-    description: Practical implementation of views, creation of virtual tables, and execution of queries through views.
+* week: 12
+  date: Week 12
+  topic: Views
+  description: Practical implementation of views, creation of virtual tables, and execution of queries through views.
 
-  - week: 13
-    date: Week 13
-    topic: Triggers
-    description: Introduction to database triggers and practical implementation of triggers for automated database operations and data integrity.
+* week: 13
+  date: Week 13
+  topic: Triggers
+  description: Introduction to database triggers and practical implementation of triggers for automated database operations and data integrity.
 
-  - week: 14
-    date: Week 14
-    topic: Final Project Development
-    description: Development of the final database application, implementation of SQL operations through a user interface, and supervision of project progress.
+* week: 14
+  date: Week 14
+  topic: Final Project Development
+  description: Development of the final database application, implementation of SQL operations through a user interface, and supervision of project progress.
 
-  - week: 15
-    date: Week 15
-    topic: Final Project Evaluation
-    description: Evaluation of the final database project, demonstration of database functionality, and assessment of project implementation.
+* week: 15
+  date: Week 15
+  topic: Final Project Evaluation
+  description: Evaluation of the final database project, demonstration of database functionality, and assessment of project implementation.
 
-  - week: 16
-    date: Week 16
-    topic: Brainstorming and Problem Solving
-    description: Intensive discussion, brainstorming, and problem-solving activities to strengthen database design and SQL skills.
+* week: 16
+  date: Week 16
+  topic: Brainstorming and Problem Solving
+  description: Intensive discussion, brainstorming, and problem-solving activities to strengthen database design and SQL skills.
 
-  - week: 17
-    date: Week 17
-    topic: Final Project Evaluation and Review
-    description: Final project evaluation, comprehensive review of database concepts, questions and answers, and preparation for the final assessment.
+* week: 17
+  date: Week 17
+  topic: Final Project Evaluation and Review
+  description: Final project evaluation, comprehensive review of database concepts, questions and answers, and preparation for the final assessment.
 
 ---
 
@@ -101,7 +102,7 @@ schedule:
 
 /* =========================================================
    COURSE PAGE — WHITE / BLACK ACADEMIC STYLE
-   Typography aligned with Teaching and Project pages
+   TYPOGRAPHY CONSISTENT WITH PROJECT TEMPLATE
    ========================================================= */
 
 .course-page,
@@ -116,15 +117,11 @@ schedule:
 
   color: #111111;
 
-  font-size: 17px;
-
-  line-height: 1.8;
-
 }
 
 
 /* =========================================================
-   COURSE HEADER
+   COURSE HEADINGS
    ========================================================= */
 
 .course-page h1,
@@ -148,9 +145,15 @@ schedule:
 }
 
 
+/* =========================================================
+   COURSE TITLE HIERARCHY
+   ========================================================= */
+
 .course-page h1 {
 
   font-size: 32px;
+
+  line-height: 1.4;
 
 }
 
@@ -159,12 +162,16 @@ schedule:
 
   font-size: 28px;
 
+  line-height: 1.4;
+
 }
 
 
 .course-page h3 {
 
   font-size: 22px;
+
+  line-height: 1.4;
 
 }
 
@@ -184,6 +191,10 @@ schedule:
 }
 
 
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+
 .course-content p {
 
   margin-top: 0;
@@ -200,6 +211,8 @@ schedule:
 
   font-size: 17px;
 
+  font-weight: 400;
+
   line-height: 1.8;
 
   text-align: justify;
@@ -214,6 +227,17 @@ schedule:
   color: #000000;
 
   font-weight: 700;
+
+}
+
+
+.course-content em {
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
 }
 
@@ -256,7 +280,7 @@ schedule:
 
   margin-top: 8px;
 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   padding-left: 22px;
 
@@ -270,6 +294,8 @@ schedule:
 
   font-size: 16px;
 
+  font-weight: 400;
+
   line-height: 1.75;
 
 }
@@ -277,7 +303,7 @@ schedule:
 
 .course-content li {
 
-  margin-bottom: 7px;
+  margin-bottom: 6px;
 
 }
 
@@ -285,6 +311,8 @@ schedule:
 .course-content li strong {
 
   color: #000000;
+
+  font-weight: 700;
 
 }
 
@@ -296,6 +324,12 @@ schedule:
 .course-content a {
 
   color: #000000 !important;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
 
   text-decoration: underline;
 
@@ -363,6 +397,10 @@ schedule:
 }
 
 
+/* =========================================================
+   CARD TITLES
+   ========================================================= */
+
 .course-content .card-title {
 
   margin-top: 0;
@@ -385,6 +423,10 @@ schedule:
 }
 
 
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
 .course-content .card-text {
 
   margin-bottom: 0;
@@ -398,6 +440,8 @@ schedule:
     serif;
 
   font-size: 15.5px;
+
+  font-weight: 400;
 
   line-height: 1.75;
 
@@ -432,6 +476,8 @@ schedule:
 
   font-size: 15.5px;
 
+  font-weight: 400;
+
   line-height: 1.6;
 
   border: 1px solid #cfcfcf;
@@ -456,6 +502,8 @@ schedule:
 
   font-weight: 700;
 
+  line-height: 1.4;
+
   border: 1px solid #cfcfcf;
 
 }
@@ -468,6 +516,18 @@ schedule:
   background: #ffffff;
 
   color: #222222;
+
+  font-family:
+    "Source Serif 4",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 15.5px;
+
+  font-weight: 400;
+
+  line-height: 1.6;
 
   border: 1px solid #d2d2d2;
 
@@ -504,15 +564,6 @@ schedule:
 
 @media (max-width: 900px) {
 
-  .course-page,
-  .course-content,
-  .course-overview {
-
-    font-size: 16px;
-
-  }
-
-
   .course-content {
 
     padding-left: 20px;
@@ -525,6 +576,8 @@ schedule:
   .course-content p {
 
     font-size: 16px;
+
+    line-height: 1.8;
 
   }
 
@@ -550,17 +603,6 @@ schedule:
    ========================================================= */
 
 @media (max-width: 768px) {
-
-  .course-page,
-  .course-content,
-  .course-overview {
-
-    font-size: 15.5px;
-
-    line-height: 1.75;
-
-  }
-
 
   .course-content {
 
@@ -601,6 +643,8 @@ schedule:
   .course-content .card-text {
 
     font-size: 15px;
+
+    line-height: 1.75;
 
     text-align: left;
 
@@ -659,6 +703,8 @@ schedule:
 
     font-size: 15px;
 
+    line-height: 1.75;
+
   }
 
 
@@ -680,12 +726,16 @@ schedule:
 
     font-size: 14.5px;
 
+    line-height: 1.7;
+
   }
 
 
   .course-content ul {
 
     font-size: 14.5px;
+
+    line-height: 1.7;
 
     padding-left: 20px;
 
@@ -710,7 +760,6 @@ schedule:
 
 </style>
 
-
 <div class="course-content">
 
   <h2 class="course-section-title">
@@ -731,46 +780,47 @@ schedule:
 
   <ul>
 
-    <li>
-      Demonstrate the use of a relational database management system to
-      create, secure, populate, and maintain databases.
-    </li>
+```
+<li>
+  Demonstrate the use of a relational database management system to
+  create, secure, populate, and maintain databases.
+</li>
 
-    <li>
-      Apply SQL commands to create and modify database structures.
-    </li>
+<li>
+  Apply SQL commands to create and modify database structures.
+</li>
 
-    <li>
-      Perform data manipulation operations, including insertion, deletion,
-      and updating of records.
-    </li>
+<li>
+  Perform data manipulation operations, including insertion, deletion,
+  and updating of records.
+</li>
 
-    <li>
-      Design and execute SQL queries using selection, projection,
-      restrictions, joins, grouping, and subqueries.
-    </li>
+<li>
+  Design and execute SQL queries using selection, projection,
+  restrictions, joins, grouping, and subqueries.
+</li>
 
-    <li>
-      Implement database constraints, indexes, views, and triggers.
-    </li>
+<li>
+  Implement database constraints, indexes, views, and triggers.
+</li>
 
-    <li>
-      Design relational databases and develop ER diagrams for real-world
-      applications.
-    </li>
+<li>
+  Design relational databases and develop ER diagrams for real-world
+  applications.
+</li>
 
-    <li>
-      Develop a database application using a relational database management
-      system.
-    </li>
+<li>
+  Develop a database application using a relational database management
+  system.
+</li>
 
-    <li>
-      Demonstrate teamwork, problem-solving, and project management skills
-      through a database project.
-    </li>
+<li>
+  Demonstrate teamwork, problem-solving, and project management skills
+  through a database project.
+</li>
+```
 
   </ul>
-
 
   <h2 class="course-section-title">
     Prerequisites
@@ -778,20 +828,21 @@ schedule:
 
   <ul>
 
-    <li>
-      <strong>CSE 207:</strong> Database Management Systems
-    </li>
+```
+<li>
+  <strong>CSE 207:</strong> Database Management Systems
+</li>
 
-    <li>
-      Basic computer literacy
-    </li>
+<li>
+  Basic computer literacy
+</li>
 
-    <li>
-      Basic understanding of database concepts and SQL
-    </li>
+<li>
+  Basic understanding of database concepts and SQL
+</li>
+```
 
   </ul>
-
 
   <h2 class="course-section-title">
     Textbooks
@@ -799,14 +850,15 @@ schedule:
 
   <ul>
 
-    <li>
-      <strong>Primary:</strong>
-      <em>Database System Concepts</em>
-      by Abraham Silberschatz, Henry F. Korth, and S. Sudarshan.
-    </li>
+```
+<li>
+  <strong>Primary:</strong>
+  <em>Database System Concepts</em>
+  by Abraham Silberschatz, Henry F. Korth, and S. Sudarshan.
+</li>
+```
 
   </ul>
-
 
   <h2 class="course-section-title">
     Reference Books
@@ -814,13 +866,14 @@ schedule:
 
   <ul>
 
-    <li>
-      <em>Database Design</em>
-      by Adrienne Watt and Nelson Eng.
-    </li>
+```
+<li>
+  <em>Database Design</em>
+  by Adrienne Watt and Nelson Eng.
+</li>
+```
 
   </ul>
-
 
   <h2 class="course-section-title">
     Online Resources
@@ -828,32 +881,33 @@ schedule:
 
   <ul>
 
-    <li>
+```
+<li>
 
-      <a
-        href="https://dev.mysql.com/doc/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        MySQL Documentation
-      </a>
+  <a
+    href="https://dev.mysql.com/doc/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    MySQL Documentation
+  </a>
 
-    </li>
+</li>
 
-    <li>
+<li>
 
-      <a
-        href="https://docs.oracle.com/en/database/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Oracle Database Documentation
-      </a>
+  <a
+    href="https://docs.oracle.com/en/database/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Oracle Database Documentation
+  </a>
 
-    </li>
+</li>
+```
 
   </ul>
-
 
   <h2 class="course-section-title">
     Grading
@@ -861,85 +915,87 @@ schedule:
 
   <div class="table-responsive">
 
-    <table class="table table-bordered">
+```
+<table class="table table-bordered">
 
-      <thead>
+  <thead>
 
-        <tr>
+    <tr>
 
-          <th>Assessment</th>
+      <th>Assessment</th>
 
-          <th>Weight</th>
+      <th>Weight</th>
 
-        </tr>
+    </tr>
 
-      </thead>
+  </thead>
 
-      <tbody>
+  <tbody>
 
-        <tr>
+    <tr>
 
-          <td>
-            Class Participation and Activity
-          </td>
+      <td>
+        Class Participation and Activity
+      </td>
 
-          <td>
-            5%
-          </td>
+      <td>
+        5%
+      </td>
 
-        </tr>
+    </tr>
 
-        <tr>
+    <tr>
 
-          <td>
-            Continuous Lab Evaluation &amp; Assignments
-          </td>
+      <td>
+        Continuous Lab Evaluation &amp; Assignments
+      </td>
 
-          <td>
-            25%
-          </td>
+      <td>
+        25%
+      </td>
 
-        </tr>
+    </tr>
 
-        <tr>
+    <tr>
 
-          <td>
-            Lab Midterm Examination
-          </td>
+      <td>
+        Lab Midterm Examination
+      </td>
 
-          <td>
-            30%
-          </td>
+      <td>
+        30%
+      </td>
 
-        </tr>
+    </tr>
 
-        <tr>
+    <tr>
 
-          <td>
-            Final Project Evaluation &amp; Report
-          </td>
+      <td>
+        Final Project Evaluation &amp; Report
+      </td>
 
-          <td>
-            40%
-          </td>
+      <td>
+        40%
+      </td>
 
-        </tr>
+    </tr>
 
-        <tr>
+    <tr>
 
-          <td>
-            <strong>Total</strong>
-          </td>
+      <td>
+        <strong>Total</strong>
+      </td>
 
-          <td>
-            <strong>100%</strong>
-          </td>
+      <td>
+        <strong>100%</strong>
+      </td>
 
-        </tr>
+    </tr>
 
-      </tbody>
+  </tbody>
 
-    </table>
+</table>
+```
 
   </div>
 
