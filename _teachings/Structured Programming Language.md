@@ -8,92 +8,92 @@ term: Fall
 importance: 7
 course_id: cse-101-structured-programming-language
 
-schedule:
-  - week: 1
-    date: Week 1
-    topic: Introduction to C Programming
-    description: Overview of structured programming and introduction to C programming, including character sets, C tokens, keywords, identifiers, data types, variables, constants, and type casting.
+# schedule:
+#   - week: 1
+#     date: Week 1
+#     topic: Introduction to C Programming
+#     description: Overview of structured programming and introduction to C programming, including character sets, C tokens, keywords, identifiers, data types, variables, constants, and type casting.
 
-  - week: 2
-    date: Week 2
-    topic: Operators and Expressions
-    description: Study of arithmetic, relational, logical, assignment, and conditional operators, operator precedence and associativity, type conversion in expressions, library functions, and input-output functions.
+#   - week: 2
+#     date: Week 2
+#     topic: Operators and Expressions
+#     description: Study of arithmetic, relational, logical, assignment, and conditional operators, operator precedence and associativity, type conversion in expressions, library functions, and input-output functions.
 
-  - week: 3
-    date: Week 3
-    topic: Control Statements
-    description: Introduction to decision-making and looping structures, including if-else statements, if ladders, nested if-else statements, for loops, while loops, and do-while loops.
+#   - week: 3
+#     date: Week 3
+#     topic: Control Statements
+#     description: Introduction to decision-making and looping structures, including if-else statements, if ladders, nested if-else statements, for loops, while loops, and do-while loops.
 
-  - week: 4
-    date: Week 4
-    topic: Nested Loops and Problem Solving
-    description: Analysis and implementation of nested loops and solving programming problems using iterative techniques and appropriate loop structures.
+#   - week: 4
+#     date: Week 4
+#     topic: Nested Loops and Problem Solving
+#     description: Analysis and implementation of nested loops and solving programming problems using iterative techniques and appropriate loop structures.
 
-  - week: 5
-    date: Week 5
-    topic: Break, Continue, GOTO, and Functions
-    description: Study of break, continue, and GOTO statements, comma operator, function prototypes, function calls, arguments, and return statements.
+#   - week: 5
+#     date: Week 5
+#     topic: Break, Continue, GOTO, and Functions
+#     description: Study of break, continue, and GOTO statements, comma operator, function prototypes, function calls, arguments, and return statements.
 
-  - week: 6
-    date: Week 6
-    topic: Functions, Parameters, and Recursion
-    description: Practical study of functions with different parameter types, passing arguments to functions, recursive functions, and direct recursion.
+#   - week: 6
+#     date: Week 6
+#     topic: Functions, Parameters, and Recursion
+#     description: Practical study of functions with different parameter types, passing arguments to functions, recursive functions, and direct recursion.
 
-  - week: 7
-    date: Week 7
-    topic: Midterm Review and Case Study
-    description: Review of the topics covered during the first six weeks through case studies, problem-solving activities, questions and answers, and examination preparation.
+#   - week: 7
+#     date: Week 7
+#     topic: Midterm Review and Case Study
+#     description: Review of the topics covered during the first six weeks through case studies, problem-solving activities, questions and answers, and examination preparation.
 
-  - week: 8
-    date: Week 8
-    topic: Arrays
-    description: Introduction to arrays, array declaration and initialization, array traversal, passing arrays to functions, array operations, and multidimensional arrays.
+#   - week: 8
+#     date: Week 8
+#     topic: Arrays
+#     description: Introduction to arrays, array declaration and initialization, array traversal, passing arrays to functions, array operations, and multidimensional arrays.
 
-  - week: 9
-    date: Week 9
-    topic: Strings and Character Processing
-    description: Study of character arrays and strings, string input and output, ASCII values, character frequency, character counting, and binary strings.
+#   - week: 9
+#     date: Week 9
+#     topic: Strings and Character Processing
+#     description: Study of character arrays and strings, string input and output, ASCII values, character frequency, character counting, and binary strings.
 
-  - week: 10
-    date: Week 10
-    topic: String Manipulation
-    description: Practical implementation of string copying, comparison, reversal, concatenation, and other string operations using standard library functions.
+#   - week: 10
+#     date: Week 10
+#     topic: String Manipulation
+#     description: Practical implementation of string copying, comparison, reversal, concatenation, and other string operations using standard library functions.
 
-  - week: 11
-    date: Week 11
-    topic: Pointers
-    description: Introduction to pointers, pointer declarations, pointer arithmetic, passing pointers to functions, pointers and one-dimensional arrays, pointers and strings, and string operations.
+#   - week: 11
+#     date: Week 11
+#     topic: Pointers
+#     description: Introduction to pointers, pointer declarations, pointer arithmetic, passing pointers to functions, pointers and one-dimensional arrays, pointers and strings, and string operations.
 
-  - week: 12
-    date: Week 12
-    topic: Dynamic Memory Allocation and Structures
-    description: Study of dynamic memory allocation using malloc, calloc, and realloc, arrays of pointers, structure definition, structure processing, member access, and structure initialization.
+#   - week: 12
+#     date: Week 12
+#     topic: Dynamic Memory Allocation and Structures
+#     description: Study of dynamic memory allocation using malloc, calloc, and realloc, arrays of pointers, structure definition, structure processing, member access, and structure initialization.
 
-  - week: 13
-    date: Week 13
-    topic: File Handling
-    description: Introduction to declaring, opening, processing, reading, writing, and closing files. Practical use of fscanf(), fgets(), fread(), and other file operations.
+#   - week: 13
+#     date: Week 13
+#     topic: File Handling
+#     description: Introduction to declaring, opening, processing, reading, writing, and closing files. Practical use of fscanf(), fgets(), fread(), and other file operations.
 
-  - week: 14
-    date: Week 14
-    topic: ACM-ICPC and Online Judge Systems
-    description: Introduction to programming contest judging systems and solving programming problems using online judges such as UVA.
+#   - week: 14
+#     date: Week 14
+#     topic: ACM-ICPC and Online Judge Systems
+#     description: Introduction to programming contest judging systems and solving programming problems using online judges such as UVA.
 
-  - week: 15
-    date: Week 15
-    topic: Competitive Programming Problem Solving
-    description: Practical problem solving using ACM-ICPC-style problems and UVA programming problems, with emphasis on algorithmic thinking and efficient solution development.
+#   - week: 15
+#     date: Week 15
+#     topic: Competitive Programming Problem Solving
+#     description: Practical problem solving using ACM-ICPC-style problems and UVA programming problems, with emphasis on algorithmic thinking and efficient solution development.
 
-  - week: 16
-    date: Week 16
-    topic: Brainstorming and Problem-Solving Week
-    description: Intensive brainstorming, discussion, and problem-solving activities to strengthen programming logic and prepare students for the semester final examination.
+#   - week: 16
+#     date: Week 16
+#     topic: Brainstorming and Problem-Solving Week
+#     description: Intensive brainstorming, discussion, and problem-solving activities to strengthen programming logic and prepare students for the semester final examination.
 
-  - week: 17
-    date: Week 17
-    topic: Final Review and Case Study
-    description: Comprehensive review of structured programming concepts through case studies, questions and answers, problem solving, and viva voce preparation for the semester final examination.
----
+#   - week: 17
+#     date: Week 17
+#     topic: Final Review and Case Study
+#     description: Comprehensive review of structured programming concepts through case studies, questions and answers, problem solving, and viva voce preparation for the semester final examination.
+# ---
 
 <style>
 
