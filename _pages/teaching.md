@@ -478,53 +478,9 @@ nav_order: 4
   }
 </style>
 
-{% assign courses = site.courses | sort: "importance" %}
+{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
 
-<div class="courses">
-
-  {% for course in courses %}
-
-    <div class="course">
-
-      <h3 class="course-title">
-        <a href="{{ course.url | relative_url }}">
-          {{ course.title }}
-        </a>
-      </h3>
-
-      {% if course.description %}
-        <div class="course-desc">
-          {{ course.description }}
-        </div>
-      {% endif %}
-
-      {% if course.year or course.term %}
-        <div class="course-meta">
-
-          {% if course.year %}
-            {{ course.year }}
-          {% endif %}
-
-          {% if course.term %}
-            · {{ course.term }}
-          {% endif %}
-
-          {% if course.course_id %}
-            · {{ course.course_id }}
-          {% endif %}
-
-        </div>
-      {% endif %}
-
-    </div>
-
-  {% endfor %}
-
-</div>
-
-<!-- {% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
-
-{% include courses.liquid %} -->
+{% include courses.liquid %}
 
 <!-- <footer class="site-footer">
   <div class="container text-center">
