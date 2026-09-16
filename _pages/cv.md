@@ -1,26 +1,25 @@
 ---
-
 layout: cv
 permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: https://drive.google.com/file/d/1HlkxKDLyXjt4L-9M5Q9rOel9BVHarZmE/view?usp=drive_link
+cv_pdf: assets/pdf/Md_Shakil_Ahmed_Cv.pdf
 cv_format: rendercv
 toc:
-sidebar: left
--------------
+  sidebar: left
+---
 
 <style>
   :root {
     --bg-deep: #0b1120;
     --bg-panel: #111a2e;
     --bg-card: #16213a;
-    --border-soft: rgba(255, 255, 255, 0.08);
+    --border-soft: rgba(255,255,255,0.08);
     --text-main: #dde3ef;
     --text-dim: #8b93a7;
     --accent: #5b8def;
-    --accent-soft: rgba(91, 141, 239, 0.15);
+    --accent-soft: rgba(91,141,239,0.15);
   }
 
   body,
@@ -31,6 +30,7 @@ sidebar: left
     background: var(--bg-deep);
   }
 
+  /* Headings */
   .cv-page h1,
   .cv-page h2,
   .cv-page h3,
@@ -40,16 +40,18 @@ sidebar: left
     color: #eef1f8;
   }
 
+  /* Links */
   .cv-page a {
     color: var(--accent);
     text-decoration: none;
-    border-bottom: 1px solid rgba(91, 141, 239, 0.3);
+    border-bottom: 1px solid rgba(91,141,239,0.3);
   }
 
   .cv-page a:hover {
     border-bottom-color: var(--accent);
   }
 
+  /* Sidebar TOC */
   #toc-sidebar,
   .toc-sidebar,
   nav.toc {
@@ -72,6 +74,7 @@ sidebar: left
     color: var(--accent);
   }
 
+  /* CV entry cards / sections */
   .cv-entry,
   .entry,
   .cv-section {
@@ -82,6 +85,7 @@ sidebar: left
     margin-bottom: 18px;
   }
 
+  /* Dates / secondary text */
   .cv-entry .date,
   .entry .date,
   .cv-date,
@@ -89,6 +93,7 @@ sidebar: left
     color: var(--text-dim) !important;
   }
 
+  /* PDF download button, if theme renders one */
   .cv-download-btn,
   a.pdf-download {
     display: inline-flex;
@@ -101,10 +106,7 @@ sidebar: left
     background: var(--accent-soft);
     text-decoration: none !important;
     font-weight: 600;
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease,
-      transform 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
   }
 
   .cv-download-btn:hover,
