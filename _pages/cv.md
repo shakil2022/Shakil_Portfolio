@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: https://drive.google.com/file/d/1Xdx-BkCkRkMPFScgEqKK_Em54uxiUbKF/view?usp=drive_link
+cv_pdf: assets/pdf/Md_Shakil_Ahmed_Cv.pdf
 cv_format: rendercv
 toc:
   sidebar: left
