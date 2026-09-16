@@ -468,7 +468,7 @@ nav_order: 6
 </div>
 
 
-<footer class="site-footer">
+<!-- <footer class="site-footer">
 
   <div class="container text-center">
 
@@ -478,4 +478,4 @@ nav_order: 6
 
   </div>
 
-</footer>
+</footer> -->

@@ -450,10 +450,10 @@ nav_order: 2
   {% bibliography %}
 </div>
 
-<footer class="site-footer">
+<!-- <footer class="site-footer">
   <div class="container text-center">
     <p class="mb-0">
       © 2026 Md. Shakil Ahmed. All rights reserved.
     </p>
   </div>
-</footer>
+</footer> -->
