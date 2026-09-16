@@ -482,10 +482,10 @@ nav_order: 4
 
 {% include courses.liquid %}
 
-<footer class="site-footer">
+<!-- <footer class="site-footer">
   <div class="container text-center">
     <p class="mb-0">
       © 2026 Md. Shakil Ahmed. All rights reserved.
     </p>
   </div>
-</footer>
+</footer> -->

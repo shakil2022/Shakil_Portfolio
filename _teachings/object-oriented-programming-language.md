@@ -806,7 +806,7 @@ course_id: cse-1201-1-object-oriented-programming-language
 
   <div class="course-header">
 
-```
+
 <div class="course-icon">
   <i class="fas fa-cubes"></i>
 </div>
@@ -822,26 +822,25 @@ course_id: cse-1201-1-object-oriented-programming-language
   </p>
 
 </div>
-```
+
 
   </div>
 
   <div class="course-description">
 
-```
+
 This course introduces the fundamental concepts and principles of
 <strong>Object-Oriented Programming using C++</strong>. Students develop
 programming logic, object-oriented design, and problem-solving skills
 through classes, objects, encapsulation, inheritance, polymorphism,
 abstraction, file handling, templates, exception handling, and the
 Standard Template Library.
-```
+
 
   </div>
 
   <div class="course-tags">
 
-```
 <span class="course-tag">C++ Programming</span>
 <span class="course-tag">Object-Oriented Programming</span>
 <span class="course-tag">Classes and Objects</span>
@@ -853,7 +852,6 @@ Standard Template Library.
 <span class="course-tag">Templates</span>
 <span class="course-tag">Exception Handling</span>
 <span class="course-tag">STL</span>
-```
 
   </div>
 
@@ -887,7 +885,7 @@ Standard Template Library.
 
   <div class="row">
 
-```
+
 <div class="col-md-6 mt-3">
 
   <div class="card h-100 feature-card">
@@ -1000,7 +998,7 @@ Standard Template Library.
   </div>
 
 </div>
-```
+
 
   </div>
 
@@ -1010,7 +1008,7 @@ Standard Template Library.
 
   <ul>
 
-```
+
 <li>
   Basic programming knowledge.
 </li>
@@ -1030,7 +1028,7 @@ Standard Template Library.
 <li>
   Basic knowledge of C or C++ programming.
 </li>
-```
+
 
   </ul>
 
@@ -1040,7 +1038,7 @@ Standard Template Library.
 
   <ul>
 
-```
+
 <li>
 
   <strong>Primary:</strong>
@@ -1048,7 +1046,7 @@ Standard Template Library.
   by Bjarne Stroustrup.
 
 </li>
-```
+
 
   </ul>
 
@@ -1058,7 +1056,7 @@ Standard Template Library.
 
   <ul>
 
-```
+
 <li>
   <em>Object-Oriented Programming with C++</em>
   by E. Balagurusamy.
@@ -1068,7 +1066,7 @@ Standard Template Library.
   <em>C++ Primer</em>, 5th Edition,
   by Stanley B. Lippman, Josée Lajoie, and Barbara E. Moo.
 </li>
-```
+
 
   </ul>
 
@@ -1078,7 +1076,6 @@ Standard Template Library.
 
   <div class="row">
 
-```
 <div class="col-md-6 mt-3">
 
   <div class="card h-100 feature-card">
@@ -1133,7 +1130,7 @@ Standard Template Library.
   </div>
 
 </div>
-```
+
 
   </div>
 
@@ -1143,7 +1140,7 @@ Standard Template Library.
 
   <ul>
 
-```
+
 <li>
   C++ programming language documentation and language references.
 </li>
@@ -1155,7 +1152,7 @@ Standard Template Library.
 <li>
   Online C++ programming resources and tutorials.
 </li>
-```
+
 
   </ul>
 
@@ -1165,7 +1162,7 @@ Standard Template Library.
 
   <div class="table-responsive">
 
-```
+
 <table class="table table-bordered">
 
   <thead>
@@ -1244,7 +1241,7 @@ Standard Template Library.
   </tbody>
 
 </table>
-```
+
 
   </div>
 
@@ -1254,7 +1251,6 @@ Standard Template Library.
 
   <ul>
 
-```
 <li>
   <strong>Course Code:</strong>
   CSE 1201-1
@@ -1289,7 +1285,7 @@ Standard Template Library.
   <strong>Instructor:</strong>
   Md. Shakil Ahmed
 </li>
-```
+
 
   </ul>
 
@@ -1299,7 +1295,7 @@ Standard Template Library.
 
   <div class="table-responsive">
 
-```
+
 <table class="table table-bordered">
 
   <thead>
