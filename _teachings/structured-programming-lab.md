@@ -3,7 +3,7 @@ layout: course
 title: Structured Programming Language Lab
 description: This laboratory course provides hands-on experience in structured programming using the C programming language. Students will develop practical skills in programming fundamentals, conditional statements, loops, functions, arrays, recursion, strings, pointers, structures, file handling, and programming problem-solving techniques.
 instructor: Md. Shakil Ahmed
-year: 2024
+year: 2025
 term: Spring
 importance: 8
 course_id: cse-102-structured-programming-language-lab
