@@ -1,5 +1,4 @@
 ---
-
 layout: course
 title: Database Systems
 description: This course introduces the fundamental concepts and practices of database systems, with emphasis on database design, relational models, SQL, relational algebra, normalization, indexing, hashing, transaction management, and concurrency control. Students will develop the ability to design, query, optimize, and manage relational databases efficiently.
@@ -8,7 +7,8 @@ year: 2025
 term: Fall
 importance: 5
 course_id: cse-207-database-systems
------------------------------------
+
+---
 
 <style>
 
@@ -805,52 +805,46 @@ course_id: cse-207-database-systems
 
   <div class="course-header">
 
-```
-<div class="course-icon">
-  <i class="fas fa-database"></i>
-</div>
+    <div class="course-icon">
+      <i class="fas fa-database"></i>
+    </div>
 
-<div>
+    <div>
 
-  <h1 class="course-title">
-    Database Systems
-  </h1>
+      <h1 class="course-title">
+        Database Systems
+      </h1>
 
-  <p class="course-subtitle">
-    CSE 207 · Core Engineering Course · 3.0 Credit Hours
-  </p>
+      <p class="course-subtitle">
+        CSE 207 · Core Course · 3.0 Credit Hours
+      </p>
 
-</div>
-```
+    </div>
 
   </div>
 
   <div class="course-description">
 
-```
-This course introduces the fundamental concepts of
-<strong>database systems and relational database management</strong>.
-Students develop practical and theoretical knowledge of database design,
-SQL, relational algebra, normalization, indexing, hashing, transaction
-management, and concurrency control.
-```
+    This course introduces the fundamental concepts of
+    <strong>database systems and relational database management</strong>.
+    Students develop practical and theoretical knowledge of database design,
+    SQL, relational algebra, normalization, indexing, hashing, transaction
+    management, and concurrency control.
 
   </div>
 
   <div class="course-tags">
 
-```
-<span class="course-tag">Database Systems</span>
-<span class="course-tag">Relational Model</span>
-<span class="course-tag">SQL</span>
-<span class="course-tag">Relational Algebra</span>
-<span class="course-tag">ER Modeling</span>
-<span class="course-tag">Normalization</span>
-<span class="course-tag">Indexing</span>
-<span class="course-tag">Hashing</span>
-<span class="course-tag">Transactions</span>
-<span class="course-tag">Concurrency Control</span>
-```
+    <span class="course-tag">Database Systems</span>
+    <span class="course-tag">Relational Model</span>
+    <span class="course-tag">SQL</span>
+    <span class="course-tag">Relational Algebra</span>
+    <span class="course-tag">ER Modeling</span>
+    <span class="course-tag">Normalization</span>
+    <span class="course-tag">Indexing</span>
+    <span class="course-tag">Hashing</span>
+    <span class="course-tag">Transactions</span>
+    <span class="course-tag">Concurrency Control</span>
 
   </div>
 
@@ -876,7 +870,7 @@ management, and concurrency control.
     optimization, integrity constraints, functional dependencies, and
     transaction processing. Students will learn to analyze database
     requirements and develop efficient relational database solutions through
-    practical exercises, problem solving, and real-world case studies.
+    theoretical study, problem solving, and real-world case studies.
   </p>
 
   <h2 class="course-section-title">
@@ -885,120 +879,115 @@ management, and concurrency control.
 
   <div class="row">
 
-```
-<div class="col-md-6 mt-3">
+    <div class="col-md-6 mt-3">
 
-  <div class="card h-100 feature-card">
+      <div class="card h-100 feature-card">
 
-    <div class="card-body">
+        <div class="card-body">
 
-      <h4 class="card-title">
+          <h4 class="card-title">
 
-        <i class="fas fa-database"></i>
+            <i class="fas fa-database"></i>
 
-        CLO1 — Database Fundamentals
+            CLO1 — Database Fundamentals
 
-      </h4>
+          </h4>
 
-      <p class="card-text">
+          <p class="card-text">
 
-        Understand the fundamental concepts, terminology, architecture,
-        components, and applications of database management systems.
+            Understand the fundamental concepts, terminology, architecture,
+            components, and applications of database management systems.
 
-      </p>
+          </p>
 
-    </div>
+        </div>
 
-  </div>
-
-</div>
-
-
-<div class="col-md-6 mt-3">
-
-  <div class="card h-100 feature-card">
-
-    <div class="card-body">
-
-      <h4 class="card-title">
-
-        <i class="fas fa-code"></i>
-
-        CLO2 — SQL and Relational Algebra
-
-      </h4>
-
-      <p class="card-text">
-
-        Explain and apply SQL and relational algebra to define, query,
-        manipulate, and retrieve information from relational databases.
-
-      </p>
+      </div>
 
     </div>
 
-  </div>
+    <div class="col-md-6 mt-3">
 
-</div>
+      <div class="card h-100 feature-card">
 
+        <div class="card-body">
 
-<div class="col-md-6 mt-3">
+          <h4 class="card-title">
 
-  <div class="card h-100 feature-card">
+            <i class="fas fa-code"></i>
 
-    <div class="card-body">
+            CLO2 — SQL and Relational Algebra
 
-      <h4 class="card-title">
+          </h4>
 
-        <i class="fas fa-project-diagram"></i>
+          <p class="card-text">
 
-        CLO3 — Database Design
+            Apply SQL and relational algebra to define, query, manipulate,
+            and retrieve information from relational databases.
 
-      </h4>
+          </p>
 
-      <p class="card-text">
+        </div>
 
-        Design relational databases using entity-relationship modeling,
-        functional dependencies, decomposition, and normalization
-        techniques.
-
-      </p>
+      </div>
 
     </div>
 
-  </div>
+    <div class="col-md-6 mt-3">
 
-</div>
+      <div class="card h-100 feature-card">
 
+        <div class="card-body">
 
-<div class="col-md-6 mt-3">
+          <h4 class="card-title">
 
-  <div class="card h-100 feature-card">
+            <i class="fas fa-project-diagram"></i>
 
-    <div class="card-body">
+            CLO3 — Database Design
 
-      <h4 class="card-title">
+          </h4>
 
-        <i class="fas fa-tachometer-alt"></i>
+          <p class="card-text">
 
-        CLO4 — Database Performance and Management
+            Design relational databases using entity-relationship modeling,
+            functional dependencies, decomposition, and normalization
+            techniques.
 
-      </h4>
+          </p>
 
-      <p class="card-text">
+        </div>
 
-        Apply indexing, hashing, transaction management, and concurrency
-        control techniques to improve database access and ensure reliable
-        database operations.
-
-      </p>
+      </div>
 
     </div>
 
-  </div>
+    <div class="col-md-6 mt-3">
 
-</div>
-```
+      <div class="card h-100 feature-card">
+
+        <div class="card-body">
+
+          <h4 class="card-title">
+
+            <i class="fas fa-tachometer-alt"></i>
+
+            CLO4 — Database Performance and Management
+
+          </h4>
+
+          <p class="card-text">
+
+            Apply indexing, hashing, transaction management, and concurrency
+            control techniques to improve database access and ensure reliable
+            database operations.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 
@@ -1008,23 +997,21 @@ management, and concurrency control.
 
   <ul>
 
-```
-<li>
-  No formal prerequisite.
-</li>
+    <li>
+      No formal prerequisite.
+    </li>
 
-<li>
-  Basic programming knowledge.
-</li>
+    <li>
+      Basic programming knowledge.
+    </li>
 
-<li>
-  Basic understanding of data structures and algorithms.
-</li>
+    <li>
+      Basic understanding of data structures and algorithms.
+    </li>
 
-<li>
-  Basic mathematical and problem-solving skills.
-</li>
-```
+    <li>
+      Basic mathematical and problem-solving skills.
+    </li>
 
   </ul>
 
@@ -1034,23 +1021,21 @@ management, and concurrency control.
 
   <ul>
 
-```
-<li>
+    <li>
 
-  <strong>Primary:</strong>
-  <em>Database System Concepts</em> by Abraham Silberschatz,
-  Henry F. Korth, and S. Sudarshan.
+      <strong>Primary:</strong>
+      <em>Database System Concepts</em> by Abraham Silberschatz,
+      Henry F. Korth, and S. Sudarshan.
 
-</li>
+    </li>
 
-<li>
+    <li>
 
-  <strong>Primary:</strong>
-  <em>Database Management Systems</em> by Raghu Ramakrishnan
-  and Johannes Gehrke.
+      <strong>Primary:</strong>
+      <em>Database Management Systems</em> by Raghu Ramakrishnan
+      and Johannes Gehrke.
 
-</li>
-```
+    </li>
 
   </ul>
 
@@ -1060,16 +1045,20 @@ management, and concurrency control.
 
   <ul>
 
-```
-<li>
-  <em>Database Systems</em> by Ramez Elmasri and Shamkant B. Navathe.
-</li>
+    <li>
+      <em>Fundamentals of Database Systems</em> by Ramez Elmasri and
+      Shamkant B. Navathe.
+    </li>
 
-<li>
-  <em>Database Systems: Introduction to Databases and Data Warehouses</em>
-  by Nenad Jukić, Susan Vrbsky, Svetlozar Nestorov, and Abhishek Sharma.
-</li>
-```
+    <li>
+      <em>Database Systems: The Complete Book</em> by Hector Garcia-Molina,
+      Jeffrey D. Ullman, and Jennifer Widom.
+    </li>
+
+    <li>
+      <em>Database Management Systems</em> by Raghu Ramakrishnan and
+      Johannes Gehrke.
+    </li>
 
   </ul>
 
@@ -1079,62 +1068,215 @@ management, and concurrency control.
 
   <div class="row">
 
-```
-<div class="col-md-6 mt-3">
+    <div class="col-md-6 mt-3">
 
-  <div class="card h-100 feature-card">
+      <div class="card h-100 feature-card">
 
-    <div class="card-body">
+        <div class="card-body">
 
-      <h4 class="card-title">
+          <h4 class="card-title">
 
-        <i class="fas fa-database"></i>
+            <i class="fas fa-database"></i>
 
-        Database Management Systems
+            Database Management Systems
 
-      </h4>
+          </h4>
 
-      <p class="card-text">
+          <p class="card-text">
 
-        MySQL, PostgreSQL, Microsoft SQL Server, and Oracle Database
-        for database implementation, querying, and management.
+            MySQL, PostgreSQL, Microsoft SQL Server, and Oracle Database
+            for database implementation, querying, administration, and
+            management.
 
-      </p>
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-6 mt-3">
+
+      <div class="card h-100 feature-card">
+
+        <div class="card-body">
+
+          <h4 class="card-title">
+
+            <i class="fas fa-tools"></i>
+
+            Development and Modeling Tools
+
+          </h4>
+
+          <p class="card-text">
+
+            MySQL Workbench, phpMyAdmin, Visual Studio Code, Git, GitHub,
+            and ER diagram and database modeling tools.
+
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
 
   </div>
 
-</div>
+  <h2 class="course-section-title">
+    Online Resources
+  </h2>
 
+  <ul>
 
-<div class="col-md-6 mt-3">
+    <li>
 
-  <div class="card h-100 feature-card">
+      <a
+        href="https://dev.mysql.com/doc/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        MySQL Documentation
+      </a>
 
-    <div class="card-body">
+    </li>
 
-      <h4 class="card-title">
+    <li>
 
-        <i class="fas fa-tools"></i>
+      <a
+        href="https://www.postgresql.org/docs/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        PostgreSQL Documentation
+      </a>
 
-        Development and Modeling Tools
+    </li>
 
-      </h4>
+    <li>
 
-      <p class="card-text">
+      <a
+        href="https://www.w3schools.com/sql/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        W3Schools SQL Tutorial
+      </a>
 
-        MySQL Workbench, phpMyAdmin, Visual Studio Code, Git, GitHub,
-        and ER diagram and UML modeling tools.
+    </li>
 
-      </p>
+    <li>
 
-    </div>
+      <a
+        href="https://sqlzoo.net/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        SQLZoo
+      </a>
 
-  </div>
+    </li>
 
-</div>
-```
+  </ul>
+
+  <h2 class="course-section-title">
+    Grading
+  </h2>
+
+  <div class="table-responsive">
+
+    <table class="table table-bordered">
+
+      <thead>
+
+        <tr>
+
+          <th>Assessment</th>
+          <th>Weight</th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+
+          <td>
+            Class Participation and Activity
+          </td>
+
+          <td>
+            5%
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>
+            Class Tests
+          </td>
+
+          <td>
+            15%
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>
+            Assignment / Report / Presentation / Viva
+          </td>
+
+          <td>
+            10%
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>
+            Midterm Examination
+          </td>
+
+          <td>
+            30%
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>
+            Final Examination
+          </td>
+
+          <td>
+            40%
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>
+            <strong>Total</strong>
+          </td>
+
+          <td>
+            <strong>100%</strong>
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
 
   </div>
 
@@ -1144,341 +1286,322 @@ management, and concurrency control.
 
   <div class="table-responsive">
 
-```
-<table class="table table-bordered">
+    <table class="table table-bordered">
 
-  <thead>
+      <thead>
 
-    <tr>
+        <tr>
 
-      <th>Week</th>
-      <th>Topic</th>
-      <th>Description</th>
+          <th>Week</th>
+          <th>Topic</th>
+          <th>Description</th>
 
-    </tr>
+        </tr>
 
-  </thead>
+      </thead>
 
-  <tbody>
+      <tbody>
 
-    <tr>
+        <tr>
 
-      <td>1</td>
+          <td>
+            1
+          </td>
 
-      <td>
-        Introduction to Database Systems
-      </td>
+          <td>
+            Introduction to Database Systems
+          </td>
 
-      <td>
-        Overview of database systems, database applications, limitations
-        of traditional file processing systems, levels of data abstraction,
-        database instances, database languages, storage management,
-        query processing, transaction management, database users,
-        and database administrators.
-      </td>
+          <td>
+            Overview of database systems, database applications,
+            limitations of traditional file processing systems,
+            levels of data abstraction, database instances,
+            database languages, storage management, query processing,
+            transaction management, database users, and database
+            administrators.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>2</td>
+          <td>
+            2
+          </td>
 
-      <td>
-        Relational Model
-      </td>
+          <td>
+            Relational Model
+          </td>
 
-      <td>
-        Introduction to the relational model, relations, attributes and
-        their types, relation schemas and instances, keys, schema
-        diagrams, and relational query languages.
-      </td>
+          <td>
+            Introduction to the relational model, relations, attributes,
+            relation schemas and instances, keys, schema diagrams,
+            and relational query languages.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>3</td>
+          <td>
+            3
+          </td>
 
-      <td>
-        Introduction to SQL
-      </td>
+          <td>
+            Introduction to SQL
+          </td>
 
-      <td>
-        Introduction to Structured Query Language, SQL data definition,
-        basic data types, schema definition, integrity constraints,
-        basic SQL queries, queries on single and multiple relations,
-        Cartesian products, natural joins, filtering, ordering,
-        set operations, and aggregate functions.
-      </td>
+          <td>
+            Introduction to Structured Query Language, SQL data definition,
+            basic data types, schema definition, integrity constraints,
+            basic SQL queries, queries on single and multiple relations,
+            Cartesian products, natural joins, filtering, ordering,
+            set operations, and aggregate functions.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>4</td>
+          <td>
+            4
+          </td>
 
-      <td>
-        Database Modification and Nested Queries
-      </td>
+          <td>
+            Database Modification and Nested Queries
+          </td>
 
-      <td>
-        Practical application of INSERT, UPDATE, and DELETE operations,
-        nested subqueries, and complex SQL query construction.
-      </td>
+          <td>
+            Practical application of INSERT, UPDATE, and DELETE operations,
+            nested subqueries, and complex SQL query construction.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>5</td>
+          <td>
+            5
+          </td>
 
-      <td>
-        Intermediate SQL
-      </td>
+          <td>
+            Intermediate SQL
+          </td>
 
-      <td>
-        Advanced SQL operations including inner joins, outer joins,
-        views, materialized views, and view modification and update
-        operations.
-      </td>
+          <td>
+            Advanced SQL operations including inner joins, outer joins,
+            views, materialized views, and view modification and update
+            operations.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>6</td>
+          <td>
+            6
+          </td>
 
-      <td>
-        Integrity Constraints and Relational Algebra
-      </td>
+          <td>
+            Integrity Constraints and Relational Algebra
+          </td>
 
-      <td>
-        Application of NOT NULL, UNIQUE, PRIMARY KEY, CHECK, and
-        referential integrity constraints. Introduction to authorization,
-        user-defined domains, and relational algebra operations.
-      </td>
+          <td>
+            Application of NOT NULL, UNIQUE, PRIMARY KEY, CHECK, and
+            referential integrity constraints. Introduction to authorization,
+            user-defined domains, and relational algebra operations.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>7</td>
+          <td>
+            7
+          </td>
 
-      <td>
-        Relational Algebra
-      </td>
+          <td>
+            Relational Algebra
+          </td>
 
-      <td>
-        Detailed study and problem solving using select, project,
-        set operations, Cartesian product, rename, natural join,
-        assignment, outer join, division, aggregate functions,
-        and relational algebra-based queries.
-      </td>
+          <td>
+            Detailed study and problem solving using select, project,
+            set operations, Cartesian product, rename, natural join,
+            assignment, outer join, division, aggregate functions,
+            and relational algebra-based queries.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>8</td>
+          <td>
+            8
+          </td>
 
-      <td>
-        Entity-Relationship Model
-      </td>
+          <td>
+            Entity-Relationship Model
+          </td>
 
-      <td>
-        Introduction to entity sets, relationship sets, cardinality
-        constraints, participation constraints, ER diagrams, degrees
-        of relationships, and attribute types.
-      </td>
+          <td>
+            Introduction to entity sets, relationship sets, cardinality
+            constraints, participation constraints, ER diagrams,
+            degrees of relationships, and attribute types.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>9</td>
+          <td>
+            9
+          </td>
 
-      <td>
-        Advanced ER Modeling and Database Design
-      </td>
+          <td>
+            Advanced ER Modeling and Database Design
+          </td>
 
-      <td>
-        Mapping cardinalities, entity roles, weak entity sets, reduction
-        of ER models to relational models, specialization, generalization,
-        aggregation, and real-world database design.
-      </td>
+          <td>
+            Mapping cardinalities, entity roles, weak entity sets,
+            reduction of ER models to relational models, specialization,
+            generalization, aggregation, and real-world database design.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>10</td>
+          <td>
+            10
+          </td>
 
-      <td>
-        Relational Database Design
-      </td>
+          <td>
+            Relational Database Design
+          </td>
 
-      <td>
-        Study of atomic attributes, decomposition, functional
-        dependencies, attribute closure, superkeys, candidate keys,
-        and primary keys. Students will analyze functional dependencies
-        for relational database design.
-      </td>
+          <td>
+            Study of atomic attributes, decomposition, functional
+            dependencies, attribute closure, superkeys, candidate keys,
+            and primary keys. Students will analyze functional dependencies
+            for relational database design.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>11</td>
+          <td>
+            11
+          </td>
 
-      <td>
-        Functional Dependencies and Canonical Cover
-      </td>
+          <td>
+            Functional Dependencies and Canonical Cover
+          </td>
 
-      <td>
-        Determination of attribute closure, identification of keys,
-        analysis of functional dependencies, and construction of
-        canonical covers.
-      </td>
+          <td>
+            Determination of attribute closure, identification of keys,
+            analysis of functional dependencies, and construction of
+            canonical covers.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>12</td>
+          <td>
+            12
+          </td>
 
-      <td>
-        Normalization and Database Design
-      </td>
+          <td>
+            Normalization and Database Design
+          </td>
 
-      <td>
-        Practical application of First Normal Form, Second Normal Form,
-        Third Normal Form, and Boyce-Codd Normal Form. Students will
-        determine normal forms, normalize relational schemas, and study
-        denormalization.
-      </td>
+          <td>
+            Practical application of First Normal Form, Second Normal Form,
+            Third Normal Form, and Boyce-Codd Normal Form. Students will
+            determine normal forms, normalize relational schemas, and study
+            denormalization.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>13</td>
+          <td>
+            13
+          </td>
 
-      <td>
-        Indexing and Hashing
-      </td>
+          <td>
+            Indexing and Hashing
+          </td>
 
-      <td>
-        Introduction to search keys, index files, ordered indices,
-        dense and sparse indices, hash indices, and evaluation of
-        indexing strategies.
-      </td>
+          <td>
+            Introduction to search keys, index files, ordered indices,
+            dense and sparse indices, hash indices, and evaluation of
+            indexing strategies.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>14</td>
+          <td>
+            14
+          </td>
 
-      <td>
-        B+ Trees and Hashing
-      </td>
+          <td>
+            B+ Trees and Hashing
+          </td>
 
-      <td>
-        Introduction to multilevel indexing, B+ tree construction,
-        insertion, updating, deletion, hash functions, buckets,
-        static hashing, bucket overflow, dynamic hashing, and
-        extendible hashing.
-      </td>
+          <td>
+            Introduction to multilevel indexing, B+ tree construction,
+            insertion, updating, deletion, hash functions, buckets,
+            static hashing, bucket overflow, dynamic hashing, and
+            extendible hashing.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>15</td>
+          <td>
+            15
+          </td>
 
-      <td>
-        Transactions and Concurrency Control
-      </td>
+          <td>
+            Transactions and Concurrency Control
+          </td>
 
-      <td>
-        Study of transaction states, ACID properties, transaction
-        atomicity and durability, storage structures, concurrency
-        control, and transaction management techniques.
-      </td>
+          <td>
+            Study of transaction states, ACID properties, transaction
+            atomicity and durability, storage structures, concurrency
+            control, and transaction management techniques.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+        <tr>
 
-      <td>16</td>
+          <td>
+            16
+          </td>
 
-      <td>
-        Database Case Study and Problem Solving
-      </td>
+          <td>
+            Database Case Study and Problem Solving
+          </td>
 
-      <td>
-        Application of database design, SQL, normalization, indexing,
-        and transaction concepts to a real-world database case study
-        through problem solving and discussion.
-      </td>
+          <td>
+            Application of database design, SQL, normalization, indexing,
+            and transaction concepts to a real-world database case study
+            through problem solving and discussion.
+          </td>
 
-    </tr>
+        </tr>
 
-    <tr>
+      </tbody>
 
-      <td>17</td>
-
-      <td>
-        Final Review and Case Study
-      </td>
-
-      <td>
-        Comprehensive review of database systems concepts, SQL,
-        database design, normalization, indexing, hashing, transactions,
-        and concurrency control in preparation for the final examination.
-      </td>
-
-    </tr>
-
-  </tbody>
-
-</table>
-```
+    </table>
 
   </div>
-
-  <h2 class="course-section-title">
-    Grading
-  </h2>
-
-  <ul>
-
-```
-<li>
-  <strong>Class Participation and Activity:</strong> 5%
-</li>
-
-<li>
-  <strong>Class Tests:</strong> 15%
-</li>
-
-<li>
-  <strong>Assignment/Report and Presentation/Viva:</strong> 10%
-</li>
-
-<li>
-  <strong>Midterm Examination:</strong> 30%
-</li>
-
-<li>
-  <strong>Final Examination:</strong> 40%
-</li>
-
-<li>
-  <strong>Total:</strong> 100%
-</li>
-```
-
-  </ul>
 
 </div>
