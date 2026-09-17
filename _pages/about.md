@@ -1441,7 +1441,7 @@ These experiences have allowed me to combine academic teaching with hands-on res
 <div class="skill-item">
 
 <p class="skill-name">
-Languages
+Programming Languages
 </p>
 
 <p class="skill-desc">
@@ -1458,7 +1458,7 @@ Machine Learning
 </p>
 
 <p class="skill-desc">
-PyTorch, Keras, OpenCV, TensorFlow, NLTK, Pandas, NumPy, Matplotlib
+PyTorch, Keras, OpenCV, TensorFlow, Pandas, NumPy, Matplotlib
 </p>
 
 </div>
@@ -1471,7 +1471,7 @@ Developer Tools
 </p>
 
 <p class="skill-desc">
-Visual Studio Code, Code::Blocks, LaTeX, PyCharm,
+Visual Studio Code, CodeBlocks, LaTeX, PyCharm,
 Jupyter Notebook, Eclipse
 </p>
 

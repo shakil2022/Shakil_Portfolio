@@ -749,7 +749,7 @@ related_publications: false
       </h1>
 
       <p class="project-subtitle">
-        A full-stack Learning Management System for B-JET.
+        A full-stack Learning Management System.
       </p>
     </div>
 
@@ -770,7 +770,7 @@ related_publications: false
 
   </div>
 
-Technology:,, Toolkit,Material ,,,.
+
   <div class="project-tags">
 
     <span class="project-tag">React</span>
