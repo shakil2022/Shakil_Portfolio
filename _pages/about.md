@@ -839,7 +839,7 @@ Institute of Information Technology, Jahangirnagar University
 </a>.
 My research interests lie at the intersection of
 <strong>Cyber Security, Federated Learning, Privacy-Preserving and Trustworthy AI, Large Language Model, Machine
-Learning, Deep Learning, Healthcare AI, Computer Vision</strong>.
+Learning, Deep Learning, Healthcare AI</strong>.
 </p>
 
 <p>
@@ -941,10 +941,7 @@ These experiences have allowed me to combine academic teaching with hands-on res
       Healthcare AI
     </span>
 
-    <span class="interest-tag">
-      Computer Vision
-    </span>
-
+  
 
   </div>
 
