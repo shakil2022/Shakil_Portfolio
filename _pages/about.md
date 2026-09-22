@@ -968,7 +968,7 @@ These experiences have allowed me to combine academic teaching with hands-on res
            target="_blank"
            rel="noopener noreferrer">
           <p class="edu-degree">
-            M.Sc. in ICT; CGPA: 3.75/4.0
+            M.Sc. in ICT; CGPA: 3.81/4.0
           </p>
         </a>
 
