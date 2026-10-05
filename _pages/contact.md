@@ -9,7 +9,7 @@ nav_order: 6
 
 <style>
   /* =========================================================
-     CONTACT PAGE — CLEAN ACADEMIC WHITE STYLE
+     CONTACT PAGE — LIGHT ACADEMIC STYLE
      ========================================================= */
 
   .contact-page {
@@ -18,8 +18,8 @@ nav_order: 6
     margin: 0 auto;
     padding: 15px 0 35px;
 
-    background: #ffffff !important;
-    color: #222222 !important;
+    background: #ffffff;
+    color: #222222;
 
     font-family:
       "Source Serif 4",
@@ -35,11 +35,8 @@ nav_order: 6
 
   .contact-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 22px;
-
     align-items: stretch;
   }
 
@@ -50,27 +47,21 @@ nav_order: 6
 
   .contact-card {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     justify-content: space-between;
 
     min-height: 210px;
-
     padding: 28px 20px;
 
     text-align: center;
 
-    background: #ffffff !important;
+    background: #ffffff;
 
     border: 1px solid #d2d2d2;
-
     border-radius: 7px;
 
-    box-shadow:
-      0 4px 14px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
 
     transition:
       transform 0.2s ease,
@@ -84,10 +75,9 @@ nav_order: 6
 
     border-color: #999999;
 
-    box-shadow:
-      0 7px 20px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.10);
 
-    background: #ffffff !important;
+    background: #ffffff;
   }
 
 
@@ -97,20 +87,16 @@ nav_order: 6
 
   .contact-icon {
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     width: 58px;
-
     height: 58px;
 
     margin-bottom: 15px;
 
-    background: #ffffff !important;
-
-    color: #000000 !important;
+    background: #ffffff;
+    color: #000000;
 
     font-size: 32px;
   }
@@ -123,9 +109,8 @@ nav_order: 6
   .contact-title {
     margin: 0 0 20px;
 
-    background: transparent !important;
-
-    color: #000000 !important;
+    background: transparent;
+    color: #000000;
 
     font-family:
       Georgia,
@@ -133,9 +118,7 @@ nav_order: 6
       serif;
 
     font-size: 20px;
-
     font-weight: 700;
-
     line-height: 1.4;
   }
 
@@ -146,23 +129,18 @@ nav_order: 6
 
   .contact-button {
     display: inline-flex;
-
     align-items: center;
-
     justify-content: center;
 
     min-height: 40px;
-
     max-width: 100%;
 
     padding: 8px 15px;
 
-    background: #ffffff !important;
+    background: #ffffff;
+    color: #000000;
 
-    color: #000000 !important;
-
-    border: 1px solid #000000 !important;
-
+    border: 1px solid #000000;
     border-radius: 4px;
 
     font-family:
@@ -171,13 +149,10 @@ nav_order: 6
       sans-serif;
 
     font-size: 13px;
-
     font-weight: 600;
-
     line-height: 1.4;
 
     text-decoration: none !important;
-
     word-break: break-word;
 
     transition:
@@ -192,11 +167,10 @@ nav_order: 6
      ========================================================= */
 
   .contact-button:hover {
-    background: #f5f5f5 !important;
+    background: #f5f5f5;
+    color: #000000;
 
-    color: #000000 !important;
-
-    border-color: #000000 !important;
+    border-color: #000000;
 
     text-decoration: none !important;
 
@@ -209,20 +183,18 @@ nav_order: 6
      ========================================================= */
 
   .contact-button.primary {
-    background: #ffffff !important;
+    background: #ffffff;
+    color: #000000;
 
-    color: #000000 !important;
-
-    border: 1px solid #000000 !important;
+    border: 1px solid #000000;
   }
 
 
   .contact-button.primary:hover {
-    background: #f5f5f5 !important;
+    background: #f5f5f5;
+    color: #000000;
 
-    color: #000000 !important;
-
-    border-color: #000000 !important;
+    border-color: #000000;
   }
 
 
@@ -232,13 +204,11 @@ nav_order: 6
 
   .site-footer {
     background: #000000 !important;
-
     color: #ffffff !important;
 
     border-top: 2px solid #000000;
 
     margin-top: 0;
-
     padding: 25px 0;
   }
 
@@ -247,7 +217,6 @@ nav_order: 6
     margin: 0;
 
     background: transparent !important;
-
     color: #ffffff !important;
 
     text-align: center;
@@ -258,7 +227,6 @@ nav_order: 6
       sans-serif;
 
     font-size: 14px;
-
     line-height: 1.5;
   }
 
@@ -295,7 +263,6 @@ nav_order: 6
       grid-template-columns: 1fr;
 
       max-width: 430px;
-
       margin: 0 auto;
 
       gap: 18px;
@@ -303,7 +270,6 @@ nav_order: 6
 
     .contact-card {
       min-height: 190px;
-
       padding: 25px 18px;
     }
 
@@ -330,27 +296,22 @@ nav_order: 6
 
     .contact-card {
       min-height: 180px;
-
       padding: 23px 15px;
     }
 
     .contact-icon {
       width: 50px;
-
       height: 50px;
-
       font-size: 29px;
     }
 
     .contact-title {
       font-size: 18px;
-
       margin-bottom: 17px;
     }
 
     .contact-button {
       font-size: 12px;
-
       padding: 7px 12px;
     }
 
@@ -452,10 +413,10 @@ nav_order: 6
      FOOTER
      ========================================================= -->
 
-<!-- <footer class="site-footer">
+<footer class="site-footer">
   <div class="container text-center">
     <p class="mb-0">
       © 2026 Md. Shakil Ahmed. All rights reserved.
     </p>
   </div>
-</footer> -->
+</footer>
