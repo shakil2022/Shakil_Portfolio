@@ -141,7 +141,7 @@ nav_order: 6
 
 
   /* =========================================================
-     ALL CONTACT BUTTONS
+     CONTACT BUTTONS
      ========================================================= */
 
   .contact-button {
@@ -206,7 +206,6 @@ nav_order: 6
 
   /* =========================================================
      PRIMARY EMAIL BUTTON
-     IMPORTANT: WHITE BOX
      ========================================================= */
 
   .contact-button.primary {
@@ -228,36 +227,17 @@ nav_order: 6
 
 
   /* =========================================================
-     PAGE BACKGROUND
-     ========================================================= */
-
-  body {
-    background: #ffffff !important;
-  }
-
-
-  main {
-    background: #ffffff !important;
-  }
-
-
-  .container {
-    background: #ffffff !important;
-  }
-
-
-  /* =========================================================
-     FOOTER
+     FOOTER — BLACK ACADEMIC STYLE
      ========================================================= */
 
   .site-footer {
-    background: #ffffff !important;
+    background: #000000 !important;
 
-    color: #111111 !important;
+    color: #ffffff !important;
 
     border-top: 2px solid #000000;
 
-    margin-top: 40px;
+    margin-top: 0;
 
     padding: 25px 0;
   }
@@ -268,7 +248,7 @@ nav_order: 6
 
     background: transparent !important;
 
-    color: #111111 !important;
+    color: #ffffff !important;
 
     text-align: center;
 
@@ -468,11 +448,14 @@ nav_order: 6
 </div>
 
 
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
 
-<!-- <footer class="site-footer">
+<footer class="site-footer">
   <div class="container text-center">
     <p class="mb-0">
       © 2026 Md. Shakil Ahmed. All rights reserved.
     </p>
   </div>
-</footer> -->
+</footer>
